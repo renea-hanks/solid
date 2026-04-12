@@ -1,0 +1,25 @@
+# Environment & secrets
+.env
+.env.local
+.env.*
+*.key
+*.pem
+
+# Firebase
+.firebase/
+firebase-adminsdk*.json
+*serviceAccount*.json
+
+# Functions
+functions/node_modules/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
