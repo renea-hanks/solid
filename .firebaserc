@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "solid-solutions-today-bc55a"
+  },
+  "targets": {
+    "solid-solutions-today-bc55a": {
+      "hosting": {
+        "solidsolutionstoday": [
+          "solid-solutions-today-bc55a"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

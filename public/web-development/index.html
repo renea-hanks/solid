@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development for Small Business | Solid Solutions Today | Renea Hanks</title>
+  <meta name="description" content="Firebase-built websites that are fast, clean, and architecturally sound from day one. Design that communicates authority. Infrastructure Google rewards. Solid Solutions Today." />
+
+  <link rel="canonical" href="https://solidsolutionstoday.com/web-development/" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6YBJ8J45"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-VQ6YBJ8J45');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://solidsolutionstoday.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Web Development",
+        "item": "https://solidsolutionstoday.com/web-development/"
+      }
+    ]
+  }
+  </script>
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .page-hero { padding: 140px 48px 80px; max-width: 860px; margin: 0 auto; }
+    .page-hero-label { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: #050d35; margin-bottom: 24px; }
+    .page-hero-headline { font-family: 'Raleway', sans-serif; font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; color: #111111; line-height: 1.2; margin-bottom: 0; }
+    .page-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .page-rule.light { background: rgba(255,255,255,0.25); }
+    .webdev-section { padding: 80px 48px; max-width: 860px; margin: 0 auto; background: #ffffff; }
+    .webdev-section + .webdev-section { border-top: 0.5px solid rgba(5,13,53,0.1); }
+    .webdev-section.dark { background: #050d35; max-width: 100%; padding: 80px 48px; border-top: none; }
+    .webdev-section.dark .inner { max-width: 860px; margin: 0 auto; }
+    .webdev-section.wide { background: #ffffff; max-width: 100%; padding: 80px 48px; border-top: 0.5px solid rgba(5,13,53,0.1); }
+    .webdev-section.wide .inner { max-width: 860px; margin: 0 auto; }
+    .section-tag { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: #050d35; margin-bottom: 20px; }
+    .section-tag.light { color: rgba(255,255,255,0.5); }
+    .webdev-heading { font-family: 'Raleway', sans-serif; font-size: clamp(1.4rem, 2.5vw, 2rem); font-weight: 400; color: #111111; line-height: 1.3; margin-bottom: 32px; }
+    .webdev-heading.light { color: #ffffff; }
+    .webdev-body { font-family: 'Raleway', sans-serif; font-size: 1rem; font-weight: 400; color: #333333; line-height: 1.85; margin-bottom: 20px; }
+    .webdev-body.light { color: rgba(255,255,255,0.82); }
+    .webdev-body strong { font-weight: 600; color: #050d35; }
+    .webdev-body.light strong { color: #ffffff; }
+    .arch-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
+    .arch-card { border: 0.5px solid rgba(5,13,53,0.12); border-radius: 4px; padding: 32px 28px; background: #ffffff; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .arch-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(5,13,53,0.10); }
+    .arch-card-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .arch-card-text { font-family: 'Raleway', sans-serif; font-size: 0.92rem; color: #444444; line-height: 1.7; }
+    .speed-callout { margin-top: 48px; background: #050d35; border-radius: 4px; padding: 40px; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .speed-callout:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(5,13,53,0.25); }
+    .speed-callout-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .speed-callout-text { font-family: 'Raleway', sans-serif; font-size: 1rem; color: rgba(255,255,255,0.85); line-height: 1.85; margin-bottom: 0; }
+    .speed-callout-text strong { color: #ffffff; font-weight: 600; }
+    .hosting-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 48px; }
+    .hosting-card { border: 0.5px solid rgba(5,13,53,0.15); border-radius: 4px; padding: 36px 28px; background: #ffffff; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .hosting-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(5,13,53,0.10); }
+    .hosting-name { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 16px; }
+    .hosting-price { font-family: 'Raleway', sans-serif; font-size: 2rem; font-weight: 300; color: #111111; margin-bottom: 4px; }
+    .hosting-sub { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; color: #999999; letter-spacing: 1px; margin-bottom: 20px; }
+    .hosting-desc { font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: #555555; line-height: 1.7; }
+    .demo-block { margin-top: 48px; border: 0.5px solid rgba(5,13,53,0.15); border-radius: 4px; padding: 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; background: #ffffff; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .demo-block:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(5,13,53,0.10); }
+    .demo-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .demo-headline { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 500; color: #111111; line-height: 1.4; margin-bottom: 8px; }
+    .demo-sub { font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: #666666; }
+    .demo-btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; border: 1.5px solid #050d35; padding: 14px 28px; border-radius: 100px; text-decoration: none; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    .demo-btn:hover { background: #050d35; color: #ffffff; }
+    .cta-section { padding: 100px 48px; text-align: center; max-width: 700px; margin: 0 auto; }
+    .cta-question { font-family: 'Raleway', sans-serif; font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 400; color: #111111; margin-bottom: 40px; line-height: 1.3; }
+    .cta-btn-webdev { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 18px 40px; border-radius: 100px; text-decoration: none; transition: background 0.2s; }
+    .cta-btn-webdev:hover { background: #000000; }
+    @media (max-width: 768px) {
+      .page-hero, .webdev-section, .cta-section { padding-left: 24px; padding-right: 24px; }
+      .webdev-section.dark, .webdev-section.wide { padding-left: 24px; padding-right: 24px; }
+      .hosting-row { grid-template-columns: 1fr; }
+      .demo-block { flex-direction: column; align-items: flex-start; padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="/" class="nav-logo">
+      <img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" />
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a>
+      <a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item">
+        <a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a>
+        <div class="nav-dropdown">
+          <a href="/web-development/">Web Development</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="/about/" class="has-dropdown">About</a>
+        <div class="nav-dropdown">
+          <a href="/partnerships/">Partnerships</a>
+        </div>
+      </div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item">
+        <a href="/sunday-sessions/" class="has-dropdown">Sunday Sessions</a>
+        <div class="nav-dropdown">
+          <a href="/resources/">Resources</a>
+        </div>
+      </div>
+      <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <p class="page-hero-label">Web Development</p>
+    <h1 class="page-hero-headline">The site your clients see is only half of it.<br>The architecture underneath is where the work happens.</h1>
+    <div class="page-rule"></div>
+  </div>
+
+  <!-- SECTION ONE -->
+  <div class="webdev-section">
+    <p class="section-tag">Design &amp; Architecture</p>
+    <h2 class="webdev-heading">This is design work and architecture work.<br>They are not separable here.</h2>
+    <p class="webdev-body">A site that looks like it was built from a template communicates something before a single word is read. So does a site that doesn't. The visual standard of every build here is clean, elevated, and intentional — matched to the caliber of the business it represents.</p>
+    <p class="webdev-body">There are no cartoony illustrations. No stock photo galleries. No template layouts slightly rearranged and called custom. If that is what you are looking for, this is not the right engagement — and that is stated plainly because your time and investment deserve honesty up front.</p>
+    <p class="webdev-body">What gets built here is a site that looks exactly as serious as your business is. One that a prospect lands on and immediately understands they are dealing with someone at the top of their field. The aesthetic does the qualifying before you ever speak to them.</p>
+    <p class="webdev-body">And underneath that aesthetic is infrastructure most web developers never touch — because they don't know it exists, or because it takes time they aren't billing for. Every build here starts with the architecture. The design and the foundation are built together, from the first line of code.</p>
+  </div>
+
+  <!-- SECTION TWO: FIREBASE -->
+  <div class="webdev-section dark">
+    <div class="inner">
+      <p class="section-tag light">The Platform</p>
+      <h2 class="webdev-heading light">Every site is built on Firebase.<br>Here is why that matters to your business.</h2>
+      <div class="page-rule light"></div>
+      <p class="webdev-body light">Firebase is Google's application platform — and every site built here is hosted on Google's global content delivery network. That means your site loads from a server geographically close to whoever is visiting it, anywhere in the world, without any extra configuration required.</p>
+      <p class="webdev-body light">This is not shared hosting. It is not a WordPress install on a server someone else is managing. It is a clean, direct deployment on infrastructure that Google itself runs — the same infrastructure that powers products used by billions of people daily.</p>
+      <p class="webdev-body light">The result is a site that is fast, secure, and stable from day one. Not optimized later. Not patched after launch. Built correctly the first time, on a platform built to perform.</p>
+      <p class="webdev-body light">You own the Firebase project. You own the deployment. If you ever part ways, you walk away with your infrastructure intact — nothing held hostage, nothing locked to a platform you don't control.</p>
+    </div>
+  </div>
+
+  <!-- SECTION THREE: SPEED -->
+  <div class="webdev-section">
+    <p class="section-tag">Speed &amp; Search</p>
+    <h2 class="webdev-heading">Speed is not a nice-to-have.<br>Google uses it to decide who wins.</h2>
+    <p class="webdev-body">Google's Core Web Vitals — the metrics that measure how fast a page loads, how quickly it becomes interactive, and how stable it is as it renders — are direct ranking signals. A slow site loses search position to a faster competitor even when the content is better. That is not a theory. That is Google's stated policy.</p>
+    <p class="webdev-body">Most small business websites are slow. Built on platforms optimized for ease of use, not performance. Loaded with plugins that add weight. Hosted on shared servers competing for bandwidth. The business owner never knows — because no one ever told them speed was costing them rankings.</p>
+    <p class="webdev-body">Every site built here is fast from the first deployment. Firebase hosting on Google's CDN delivers content at the edge. Images are optimized before they are uploaded. Code is clean and minimal — nothing unnecessary, nothing redundant. The performance is built in, not bolted on later when someone notices the problem.</p>
+    <p class="webdev-body">Your competitor may have a prettier logo. They will not have a faster site.</p>
+    <div class="speed-callout">
+      <p class="speed-callout-label">The architecture your competitors don't have</p>
+      <p class="speed-callout-text"><strong>Schema markup</strong> tells Google exactly what your business is, who it serves, and where it operates — in structured data search engines read directly. <strong>GA4 analytics</strong> connected from day one means you have real data from the first visitor, not from whenever someone remembers to set it up. <strong>Sitemap and robots.txt</strong> configured correctly so Google crawls the right pages and ignores the right ones. <strong>Meta titles and descriptions</strong> written for humans and search engines simultaneously. <strong>Open Graph tags</strong> so every share on social looks intentional. None of this is added later. All of it is in the build.</p>
+    </div>
+  </div>
+
+  <!-- SECTION FOUR: WHAT'S INCLUDED -->
+  <div class="webdev-section wide">
+    <div class="inner">
+      <p class="section-tag">What Gets Built</p>
+      <h2 class="webdev-heading">No stone unturned. Not one.</h2>
+      <div class="page-rule"></div>
+      <p class="webdev-body">Every build is scoped to the engagement tier. Every engagement includes the architecture that most web developers skip.</p>
+      <div class="arch-grid">
+        <div class="arch-card">
+          <p class="arch-card-label">Firebase Hosting</p>
+          <p class="arch-card-text">Google's global CDN. Fast from day one. Clean deployment. You own the project and every file in it.</p>
+        </div>
+        <div class="arch-card">
+          <p class="arch-card-label">Schema Markup</p>
+          <p class="arch-card-text">Structured data that tells Google — and AI recommendation engines — exactly who you are, what you do, and where you do it.</p>
+        </div>
+        <div class="arch-card">
+          <p class="arch-card-label">GA4 Analytics</p>
+          <p class="arch-card-text">Connected, configured, and tracking from the first visitor. Not set up months later when someone asks about the data.</p>
+        </div>
+        <div class="arch-card">
+          <p class="arch-card-label">SEO Foundation</p>
+          <p class="arch-card-text">Sitemap, robots.txt, meta titles, descriptions, Open Graph — every technical SEO element in place before the site goes live.</p>
+        </div>
+        <div class="arch-card">
+          <p class="arch-card-label">Performance Optimization</p>
+          <p class="arch-card-text">Optimized images, clean code, minimal dependencies. Core Web Vitals considered at every decision, not audited after launch.</p>
+        </div>
+        <div class="arch-card">
+          <p class="arch-card-label">Mobile Architecture</p>
+          <p class="arch-card-text">Built mobile-first. Not a desktop site scaled down. A site that works exactly as intended on every screen size.</p>
+        </div>
+      </div>
+      <div class="demo-block">
+        <div>
+          <p class="demo-label">Live Example</p>
+          <p class="demo-headline">See a Firebase build in the real world.</p>
+          <p class="demo-sub">Built for a third-generation Colorado Springs asphalt contractor — full architecture, custom AI agent, and 40+ AEO-optimized portfolio entries.</p>
+        </div>
+        <a href="https://dawleyasphalt.com" target="_blank" rel="noopener" class="demo-btn">Visit Dawley Asphalt &rarr;</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION FIVE: HOSTING -->
+  <div class="webdev-section">
+    <p class="section-tag">Monthly Hosting</p>
+    <h2 class="webdev-heading">Your site stays up because a real person<br>is responsible for keeping it up.</h2>
+    <p class="webdev-body">Hosting is not a server bill passed along with a markup. It is a managed relationship. Your site is monitored, maintained, and supported by the same person who built it — not a ticket system, not an offshore team, not a chatbot.</p>
+    <p class="webdev-body">This is what professional hosting looks like when one person is accountable for the entire thing.</p>
+    <div class="hosting-row">
+      <div class="hosting-card">
+        <p class="hosting-name">Standard Hosting</p>
+        <p class="hosting-price">$75</p>
+        <p class="hosting-sub">per month</p>
+        <p class="hosting-desc">Firebase hosting on Google's CDN. Managed by the person who built it. One point of contact. No ticket queues.</p>
+      </div>
+      <div class="hosting-card">
+        <p class="hosting-name">Enterprise Hosting</p>
+        <p class="hosting-price">$150</p>
+        <p class="hosting-sub">per month</p>
+        <p class="hosting-desc">For luxury, high-liability, or high-traffic builds where uptime and response time are non-negotiable.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <p class="cta-question">Ready to build something that performs as well as it looks?</p>
+    <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" class="cta-btn-webdev">Schedule a Consultation</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+      <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram">
+  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+</a>
+      </nav>
+    </div>
+    <div class="footer-sitemap">
+      <a href="/ai-consulting/">AI Consulting</a>
+      <span class="footer-sep">·</span>
+      <a href="/ai-agents/">AI Agents</a>
+      <span class="footer-sep">·</span>
+      <a href="/brand-strategy/">Brand Strategy</a>
+      <span class="footer-sep">·</span>
+      <a href="/web-development/">Web Development</a>
+      <span class="footer-sep">·</span>
+      <a href="/about/">About</a>
+      <span class="footer-sep">·</span>
+      <a href="/partnerships/">Partnerships</a>
+      <span class="footer-sep">·</span>
+      <a href="/blog/">Blog</a>
+      <span class="footer-sep">·</span>
+      <a href="/sunday-sessions/">Sunday Sessions</a>
+      <span class="footer-sep">·</span>
+      <a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p>
+      <span class="footer-sep">·</span>
+      <a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+    </div>
+  </footer>
+
+  <!-- SOLI LAUNCHER -->
+  <div class="soli-circle-launcher" onclick="toggleSoli()">
+    <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
+  </div>
+
+  <div id="soli-window">
+    <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+    <div class="soli-body" id="soli-chat-history">
+      <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+    </div>
+    <div class="soli-footer">
+      <div class="soli-input-row">
+        <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+        <button id="soli-send" aria-label="Send message">&#10140;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

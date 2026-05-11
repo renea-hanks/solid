@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page Not Found | Solid Solutions Today</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .not-found {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 48px;
+    }
+    .not-found-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: 300;
+      color: #091554;
+      opacity: 0.1;
+      line-height: 1;
+      margin-bottom: 24px;
+    }
+    .not-found-heading {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.2rem, 3vw, 2rem);
+      font-weight: 500;
+      color: #111111;
+      margin-bottom: 16px;
+    }
+    .not-found-body {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
+      color: #888888;
+      line-height: 1.8;
+      max-width: 480px;
+      margin-bottom: 48px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="not-found">
+    <p class="not-found-num">404</p>
+    <h1 class="not-found-heading">This page does not exist.</h1>
+    <p class="not-found-body">The page you are looking for may have moved or never existed. Let's get you back to where you need to be.</p>
+    <a href="index.html" class="cta-btn">Back to Solid Solutions Today</a>
+  </div>
+
+  <!-- SOLI LAUNCHER -->
+  <div class="soli-circle-launcher" onclick="toggleSoli()">
+    <div class="soli-initial">S</div>
+    <div class="soli-label">Soli</div>
+  </div>
+
+  <div id="soli-window">
+    <div class="soli-header">
+      <h3>Soli &mdash; AI Assistant</h3>
+    </div>
+    <div class="soli-body" id="soli-chat-history">
+      <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+    </div>
+    <div class="soli-footer">
+      <div class="soli-input-row">
+        <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+        <button id="soli-send" aria-label="Send message">&#10140;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
