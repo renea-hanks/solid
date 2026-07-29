@@ -188,23 +188,30 @@
       color: #ffffff !important;
     }
     .contact-strip {
-      background: #f7f7f9;
+      background: #ffffff !important;
       border-bottom: 0.5px solid rgba(5,13,53,0.1);
-      padding: 14px 48px;
-      display: flex;
+      padding: 14px 48px !important;
+      display: flex !important;
       justify-content: center;
       gap: 32px;
       flex-wrap: wrap;
+      opacity: 1 !important;
+      visibility: visible !important;
+      animation: none !important;
+      transition: none !important;
+      position: relative;
+      z-index: 5;
     }
     .contact-strip a {
       font-family: 'Montserrat', sans-serif;
       font-size: 0.75rem;
       font-weight: 600;
       letter-spacing: 0.5px;
-      color: #050d35;
+      color: #050d35 !important;
       text-decoration: none;
+      opacity: 1 !important;
     }
-    .contact-strip a:hover { opacity: 0.7; }
+    .contact-strip a:hover { opacity: 0.7 !important; }
     .low-ticket-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -241,8 +248,28 @@
       color: #666666;
       line-height: 1.6;
     }
+    .close-phone {
+      display: block;
+      font-family: 'Raleway', sans-serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: inherit;
+      text-decoration: none;
+      margin-top: 16px;
+      line-height: 1.2;
+    }
+    .close-email {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      color: inherit;
+      text-decoration: underline;
+      opacity: 0.7;
+      margin-top: 8px;
+    }
     @media (max-width: 768px) {
-      .contact-strip { padding: 12px 24px; gap: 16px; }
+      .contact-strip { padding: 12px 24px !important; gap: 16px; }
+      .close-phone { font-size: 24px; }
     }
   </style>
 </head>
@@ -288,18 +315,17 @@
       <source src="media/Solid-Solutions-Today-Hero-Video.mp4" type="video/mp4" />
     </video>
     <div class="hero-overlay-text">
-      <h1 class="hero-headline">AI is throwing curves, but we got this.</h1>
+      <h1 class="hero-headline">I build the AI infrastructure your business actually needs.</h1>
       <p class="hero-brand">Solid Solutions Today</p>
     </div>
   </section>
 
   <section class="content-section" id="hook">
     <div class="section-inner">
-      <h2 class="section-heading">I build the infrastructure that runs your business.</h2>
+      <h2 class="section-heading">Most small businesses will have an AI agent by the end of 2026. Most of those will be built wrong.</h2>
       <div class="section-rule"></div>
-      <p class="section-body">By the end of 2026, 40% of small and mid-size businesses will have at least one AI agent working in their business. Walk into a room of ten business owners — four of them will have AI doing real, autonomous work before the year is out.</p>
-      <p class="section-body">The businesses that figure this out first don't just get efficiency. They get months of advantage that compound. The ones who wait are closing a gap, not opening a door.</p>
-      <p class="section-body">The problem isn't access to AI. The problem is that most implementations are built wrong — no guardrails, no strategy, no human in the loop. They fail publicly and expensively.</p>
+      <p class="section-body">Four in ten small and mid-size businesses will have an AI agent doing real, autonomous work before the year is out. The ones who move first get months of compounding advantage. The ones who wait aren't playing it safe — they're closing a gap that gets harder to close every quarter.</p>
+      <p class="section-body">Access to AI was never the problem. The problem is that most implementations skip the guardrails, skip the strategy, and skip the human in the loop — then fail publicly, expensively, and in front of the exact customers they were built to impress.</p>
       <p class="section-body">This is where that stops.</p>
     </div>
   </section>
@@ -307,10 +333,10 @@
   <section class="case-section" id="proof">
     <div class="section-inner">
       <p class="section-label light">Proven Result</p>
-      <h2 class="section-heading light">A 50-year contractor. Zero digital presence. One engagement.</h2>
+      <h2 class="section-heading light">A 50-year contractor with zero digital presence. One engagement changed that.</h2>
       <div class="section-rule light"></div>
-      <p class="section-body light">Dawley Asphalt & Paving — Colorado Springs, CO. Fifty-plus years in business, a sterling reputation, and no digital presence at all before this engagement. One build delivered a full Firebase web application, a custom AI agent trained on every service and escalation path, 40+ AEO and GEO optimized portfolio entries, unified analytics, a 30-day content calendar, and a complete SEO recovery — including 40+ redirect fixes to stop the site from bleeding search equity it never knew it had.</p>
-      <p class="section-body light">Google AI Mode now surfaces the business first for its core local searches. The client owns every asset, every account, every credential.</p>
+      <p class="section-body light">Dawley Asphalt & Paving — Colorado Springs, CO. Fifty-plus years in business, a reputation built entirely on word of mouth, and no website, no schema, no AI agent, nothing searchable. One engagement delivered a full Firebase site, a custom AI agent trained on every service and escalation path, 40+ AEO and GEO portfolio entries, unified analytics, a 30-day content calendar, and 40+ redirect fixes to stop the old site from bleeding search equity nobody knew it had.</p>
+      <p class="section-body light">Google AI Mode now surfaces the business first for its core local searches. The client owns every asset, every account, every credential — no exceptions.</p>
       <div class="case-stats">
         <div class="stat-item"><span class="stat-num">50+</span><span class="stat-label">Years in business before this build</span></div>
         <div class="stat-item"><span class="stat-num">40+</span><span class="stat-label">AEO / GEO portfolio entries delivered</span></div>
@@ -324,14 +350,14 @@
   <section class="case-section" id="work">
     <div class="section-inner">
       <p class="section-label light">Tier II — Growth</p>
-      <h2 class="section-heading light">What one engagement actually looks like.</h2>
+      <h2 class="section-heading light">What one engagement actually delivers.</h2>
       <div class="section-rule light"></div>
-      <p class="section-body light">Before the first deliverable ships, the technical foundation gets audited and corrected. Canonical conflicts. Redirect chains. URL inconsistencies that have been quietly bleeding search equity for years. Most agencies never touch this. It gets done here before anything else goes live.</p>
-      <p class="section-body light">Then the build. A high-performance custom website — architected for speed, structured for post-2026 AI Mode search, and deployed on infrastructure that doesn't wobble. A separate content property stood up for portfolio depth and keyword authority. Every page configured with schema, meta, and the technical signals that tell search engines exactly what this business is and where it operates.</p>
-      <p class="section-body light">Then the content. Forty-plus portfolio and service entries — each one written for answer-engine optimization and geographic relevance. Not keyword stuffing. Copy that answers the specific questions a serious prospect is actually asking, in the places they're asking them.</p>
-      <p class="section-body light">Then the agent. A custom AI agent — named for the brand, trained on every service, every geography, every likely question, and every escalation path. Not a chatbot running a script. A reasoning agent that qualifies leads, answers real questions, and routes conversations to the right next step — at any hour, without a human having to be available.</p>
-      <p class="section-body light">A unified analytics ecosystem connected across every property. A 30-day Google Business Profile content calendar delivered at launch. Every account built, configured, and handed over — every credential included.</p>
-      <p class="section-body light"><a href="#pricing" class="inline-link" style="color:rgba(255,255,255,0.75); border-bottom: 1px solid rgba(255,255,255,0.35);">This is Tier II. See what's included &rarr;</a></p>
+      <p class="section-body light">Every engagement starts with an audit — canonical conflicts, redirect chains, URL inconsistencies quietly bleeding search equity for years. Most agencies never look. This gets fixed before anything new goes live.</p>
+      <p class="section-body light">Then the build: a high-performance custom site architected for speed, structured for AI Mode search, deployed on infrastructure that doesn't wobble under traffic. A separate content property for portfolio depth and keyword authority. Schema and meta on every page, telling search engines exactly who you are and where you operate.</p>
+      <p class="section-body light">Then the content: forty-plus portfolio and service entries, each one answering the specific question a serious prospect is actually asking — not keyword stuffing dressed up as copy.</p>
+      <p class="section-body light">Then the agent: a custom AI trained on every service, every geography, every likely question, and every escalation path. Not a chatbot reading a script — a reasoning agent that qualifies leads and routes conversations at 2am with the same competence it has at 2pm.</p>
+      <p class="section-body light">Analytics connected across every property. A 30-day Google Business Profile calendar delivered at launch. Every account, every credential, handed over — nothing withheld.</p>
+      <p class="section-body light"><a href="/web-development/#pricing" class="inline-link" style="color:rgba(255,255,255,0.75); border-bottom: 1px solid rgba(255,255,255,0.35);">See full pricing on the Web Development page &rarr;</a></p>
       <div class="case-stats">
         <div class="stat-item"><span class="stat-num">40+</span><span class="stat-label">Deliverables — portfolio, AEO &amp; GEO entries, GBP content</span></div>
         <div class="stat-item"><span class="stat-num">2</span><span class="stat-label">Properties built and integrated — Firebase + content platform</span></div>
@@ -344,9 +370,9 @@
   <section class="content-section" id="calculator">
     <div class="section-inner">
       <p class="section-label">What is your digital absence costing you?</p>
-      <h2 class="section-heading">Calculate what you are losing right now.</h2>
+      <h2 class="section-heading">Move the sliders. See the number.</h2>
       <div class="section-rule"></div>
-      <p class="section-body">Every month your digital presence underperforms, revenue goes to a competitor who showed up where you didn't. Move the sliders and see the number.</p>
+      <p class="section-body">Every month your digital presence underperforms, revenue goes to whichever competitor showed up where you didn't.</p>
       <div class="calc-box">
         <div class="calc-row">
           <label class="calc-label">Monthly revenue</label>
@@ -377,11 +403,11 @@
   <section class="soli-intro-section" id="soli">
     <div class="section-inner">
       <p class="section-label light">Meet Soli</p>
-      <h2 class="section-heading light">Your AI agent. Built for your business. Not a chatbot.</h2>
+      <h2 class="section-heading light">Your AI agent. Built for your business. Not installed from a marketplace.</h2>
       <div class="section-rule light"></div>
-      <p class="section-body light">Soli isn't installed from a marketplace. She is built from scratch — named for your brand, trained on your services, your voice, your industry. She qualifies leads, answers real questions, and routes visitors to the right next step — 24 hours a day.</p>
-      <p class="section-body light">A chatbot follows a script. Soli reasons. She knows what your business does, how it works, and what a serious prospect needs to hear. When something is outside her scope, she escalates gracefully to a human — because that boundary is built in by design, not by accident.</p>
-      <p class="section-body light">Every Soli is different. Because every business is.</p>
+      <p class="section-body light">Soli is built from scratch for one business at a time — named for your brand, trained on your services, your voice, your industry. She qualifies leads, answers real questions, and routes visitors to the right next step, 24 hours a day.</p>
+      <p class="section-body light">A chatbot follows a script. Soli reasons — she knows what your business does and what a serious prospect actually needs to hear. When a conversation goes past her scope, she escalates cleanly to a human, because that boundary was designed in from the start, not patched in after something went wrong.</p>
+      <p class="section-body light">Every Soli is different. Every business is different.</p>
       <div class="soli-tiers">
         <div class="tier-card dark-card">
           <p class="tier-name">Soli Standard</p>
@@ -392,7 +418,7 @@
         <div class="tier-card dark-card">
           <p class="tier-name">Soli Enterprise</p>
           <p class="tier-price">From $7,000</p>
-          <p class="tier-desc">Luxury real estate, legal, financial services, multilingual, CRM-integrated, complex industry knowledge with guardrails that match the liability of the industry.</p>
+          <p class="tier-desc">Luxury real estate, legal, financial services — multilingual, CRM-integrated, with guardrails built to match the liability of the industry.</p>
           <p class="tier-retrain">+ $500/mo retraining</p>
         </div>
       </div>
@@ -402,9 +428,9 @@
   <section class="content-section" id="start-small">
     <div class="section-inner">
       <p class="section-label">Not ready for $9,500?</p>
-      <h2 class="section-heading">Start for as little as $5.</h2>
+      <h2 class="section-heading">Start for $5. See where you land.</h2>
       <div class="section-rule"></div>
-      <p class="section-body">Templates, guides, and checklists built to be used today — no consultation required. See where you land, then decide what's next.</p>
+      <p class="section-body">Templates and guides built to use today, no consultation required. Try one, decide what's next.</p>
       <div class="low-ticket-grid">
         <a href="/is-this-ai/" class="low-ticket-card">
           <p class="low-ticket-price">$5</p>
@@ -430,48 +456,17 @@
     </div>
   </section>
 
-  <section class="content-section" id="pricing">
-    <div class="section-inner">
-      <p class="section-label">Services &amp; pricing</p>
-      <h2 class="section-heading">A word on pricing.</h2>
-      <div class="section-rule"></div>
-      <p class="section-body">The number is on the page because you deserve to know it before we ever speak. No discovery call designed to qualify your budget. No proposal that arrives three days later with a number that surprises you.</p>
-      <p class="section-body">You don't get sticker shock at a Corvette dealership. The MSRP is posted. You know what you're walking into. And you know that the $5,000 Corvette on Facebook Marketplace is missing an engine.</p>
-      <p class="section-body">Same principle here. What's on this page is what it costs. What's in the engagement is everything it promises. If the investment isn't right for where you are today — the Sunday session exists for exactly that reason. <a href="/sunday-sessions/" class="inline-link">Take Me To Sunday.</a></p>
-      <div class="tier-row">
-        <div class="tier-card">
-          <p class="tier-name">Tier I — Launch</p>
-          <p class="tier-price">$9,500</p>
-          <p class="tier-sub">+ $950/mo retainer</p>
-          <p class="tier-desc">Full infrastructure setup · Custom website build · Analytics ecosystem · SEO, schema, meta · 30-day GMB calendar · QR review capture</p>
-        </div>
-        <div class="tier-card">
-          <p class="tier-name">Tier II — Growth</p>
-          <p class="tier-price">$15,500</p>
-          <p class="tier-sub">+ $1,650/mo retainer</p>
-          <p class="tier-desc">Everything in Tier I · Soli AI agent built and deployed · Hero video · Portfolio entries up to 50 · AEO and GEO optimization</p>
-        </div>
-        <div class="tier-card">
-          <p class="tier-name">Tier III — Flagship</p>
-          <p class="tier-price">$22,500</p>
-          <p class="tier-sub">+ $2,250/mo retainer</p>
-          <p class="tier-desc">Everything in Tier II · 100 portfolio entries · AI advisory 3 months · Soli retraining · Fully turnkey</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="content-section alt" id="process">
     <div class="section-inner">
       <p class="section-label light">The Process</p>
       <h2 class="section-heading light">No surprises. Not in the price. Not in the process.</h2>
       <div class="section-rule light"></div>
       <div class="process-steps">
-        <div class="process-step"><span class="step-num">01</span><div class="step-body"><p class="step-title">The consultation. $150. Paid before we speak.</p><p class="step-desc">This is not a free discovery call. It is a working hour. You bring where you are. I bring what I see and what I would do about it. Honest. Direct. No pitch at the end.</p></div></div>
-        <div class="process-step"><span class="step-num">02</span><div class="step-body"><p class="step-title">The scope. Same business day.</p><p class="step-desc">Every line item. Every deliverable. Every revision round. Exact investment. No vague ranges. No surprises. If you are moving forward with a tier, the scope reflects exactly what we discussed — along with your invoice for 50% to begin work.</p></div></div>
-        <div class="process-step"><span class="step-num">03</span><div class="step-body"><p class="step-title">Your assets. Delivered via ShareFile.</p><p class="step-desc">Once the agreement is signed and deposit received, you receive a ShareFile link. Drop everything there — digital images, logos, current copy, website links, social handles, and any other pertinent information.</p></div></div>
-        <div class="process-step"><span class="step-num">04</span><div class="step-body"><p class="step-title">The build. All of it. By one person.</p><p class="step-desc">You are never passed to someone else. Never left wondering who is handling what. Never chasing anyone for an update.</p></div></div>
-        <div class="process-step"><span class="step-num">05</span><div class="step-body"><p class="step-title">You own everything.</p><p class="step-desc">Every asset. Every account. Every file. Yours. Not held hostage. Not dependent on a monthly fee to access. Built for you, handed to you, completely yours when we are done.</p></div></div>
+        <div class="process-step"><span class="step-num">01</span><div class="step-body"><p class="step-title">The consultation. $150. Paid before we speak.</p><p class="step-desc">Not a free discovery call — a working hour. You bring where you are. I bring what I see and what I'd do about it. Honest, direct, no pitch at the end.</p></div></div>
+        <div class="process-step"><span class="step-num">02</span><div class="step-body"><p class="step-title">The scope. Same business day.</p><p class="step-desc">Every line item, every deliverable, every revision round, the exact investment — no vague ranges. If you move forward, the scope reflects exactly what we discussed, with your invoice for 50% to begin.</p></div></div>
+        <div class="process-step"><span class="step-num">03</span><div class="step-body"><p class="step-title">Your assets. Delivered via ShareFile.</p><p class="step-desc">Once the agreement is signed and deposit received, you get a ShareFile link. Drop everything there — images, logos, current copy, website links, social handles, anything relevant.</p></div></div>
+        <div class="process-step"><span class="step-num">04</span><div class="step-body"><p class="step-title">The build. All of it. By one person.</p><p class="step-desc">You are never passed to someone else, never left wondering who's handling what, never chasing anyone for an update.</p></div></div>
+        <div class="process-step"><span class="step-num">05</span><div class="step-body"><p class="step-title">You own everything.</p><p class="step-desc">Every asset, every account, every file — yours. Not held hostage, not dependent on a monthly fee to access. Built for you, handed to you, completely yours when we're done.</p></div></div>
       </div>
     </div>
   </section>
@@ -479,12 +474,12 @@
   <section class="content-section" id="sunday">
     <div class="section-inner">
       <p class="section-label">Not ready for a full engagement?</p>
-      <h2 class="section-heading">Sunday Sessions — $597 per seat.</h2>
+      <h2 class="section-heading">Solo Sunday Session — $597.</h2>
       <div class="section-rule"></div>
-      <p class="section-body">Not a webinar. Not a course. A real working half-day with Renea — hands on, your questions, your business. Up to 15 seats. First come. First serve. Hosted on Google Meet, 1PM–7PM CST. Non-refundable.</p>
-      <p class="section-body">The Sunday session is where you build the knowledge to know exactly what your business needs before you invest in building it. Some attendees walk away and handle their own foundation. Some realize after the first session that they would rather hand it off. Either outcome is a win.</p>
+      <p class="section-body">Two hours, one on one, with a fellow small business owner — not a corporate trainer reading from a deck. Built around your business, not a fixed curriculum. Includes four free one-hour follow-up consultations, redeemable any time within a year of your original session.</p>
+      <p class="section-body">No question is too small. This is where you get a real plan and somewhere to return to as new questions come up.</p>
       <div class="cta-block">
-        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn">Reserve a Sunday Session — $597</a>
+        <a href="https://app.reclaim.ai/m/sundaysessions" target="_blank" rel="noopener" class="cta-btn">Book Your Solo Sunday Session — $597</a>
       </div>
     </div>
   </section>
@@ -495,7 +490,8 @@
       <h2 class="close-headline">where the search stops.</h2>
       <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn cta-dark">Schedule your consultation</a>
       <p class="close-sub">1-hour consultation · $150 due upon booking</p>
-      <p class="close-sub" style="margin-top:12px;"><a href="tel:+14054286691" style="color:inherit;text-decoration:underline;">405-428-6691</a> &nbsp;·&nbsp; <a href="mailto:hello@solidsolutionstoday.com" style="color:inherit;text-decoration:underline;">hello@solidsolutionstoday.com</a></p>
+      <a href="tel:+14054286691" class="close-phone">405-428-6691</a>
+      <a href="mailto:hello@solidsolutionstoday.com" class="close-email">hello@solidsolutionstoday.com</a>
     </div>
   </section>
 
