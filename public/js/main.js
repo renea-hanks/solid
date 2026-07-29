@@ -144,9 +144,10 @@ async function sendMessage() {
     var typingEl = document.getElementById('soli-typing');
     if (typingEl) typingEl.remove();
 
-    if (data.reply) {
-      soliMessages.push({ role: 'assistant', content: data.reply });
-      appendMessage(history, data.reply, 'soli');
+    if (data.content && data.content[0] && data.content[0].text) {
+      var reply = data.content[0].text;
+      soliMessages.push({ role: 'assistant', content: reply });
+      appendMessage(history, reply, 'soli');
     } else {
       appendMessage(history, 'Something went wrong. Please try again.', 'soli');
     }

@@ -66,7 +66,7 @@ body {
 }
 
 .nav-cta:hover {
-  background: #000000 !important;
+  background: #050d35 !important;
   color: #ffffff !important;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(5,13,53,0.25);
@@ -575,7 +575,7 @@ body {
 }
 
 .cta-btn.cta-dark:hover {
-  background: #000000;
+  background: #050d35;
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(5,13,53,0.3);
 }

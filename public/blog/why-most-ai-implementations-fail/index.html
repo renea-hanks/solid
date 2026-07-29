@@ -8,10 +8,22 @@
 
   <link rel="canonical" href="https://solidsolutionstoday.com/blog/why-most-ai-implementations-fail/" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Why Most AI Implementations Fail — And What Small Businesses Should Do Instead" />
+  <meta property="og:description" content="95% of generative AI pilots stall. Not because the technology is bad — because the foundation was never built. Here is what the research says, and what small businesses should do instead." />
+  <meta property="og:url" content="https://solidsolutionstoday.com/blog/why-most-ai-implementations-fail/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://solidsolutionstoday.com/images/blog/why-most-ai-implementations-fail-og.png" />
+  <meta property="og:site_name" content="Solid Solutions Today" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Why Most AI Implementations Fail — And What Small Businesses Should Do Instead" />
+  <meta name="twitter:description" content="95% of generative AI pilots stall. Not because the technology is bad — because the foundation was never built." />
+  <meta name="twitter:image" content="https://solidsolutionstoday.com/images/blog/why-most-ai-implementations-fail-og.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -47,227 +59,131 @@
   }
   </script>
 
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do most AI implementations fail?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MIT's NANDA initiative found that about 95% of generative AI pilots stall because of what surrounds the models, not the models themselves. Fragmented data, no governance, outputs that cannot connect to actual workflows — these are the failure points. The tool is rarely the problem. The foundation is."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should a small business do instead of buying an AI tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Start with one specific problem, not a tool. Define what you want AI to do in a single sentence. Understand what information it will be trained on. Build guardrails before going live. And make sure you own everything at the end — the knowledge base, the accounts, the system itself."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can a small business avoid a failed AI project?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pick one pain point and execute against it specifically. Ensure your data is clean and accurate before you build. Define guardrails — what the AI answers, escalates, and never touches. Work with someone who has built AI infrastructure for real businesses before, not a vendor selling a generic subscription."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://solidsolutionstoday.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://solidsolutionstoday.com/blog/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Why Most AI Implementations Fail",
+        "item": "https://solidsolutionstoday.com/blog/why-most-ai-implementations-fail/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Speakable Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Why Most AI Implementations Fail — And What Small Businesses Should Do Instead",
+    "url": "https://solidsolutionstoday.com/blog/why-most-ai-implementations-fail/",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".post-title", ".post-p", ".post-section-heading"]
+    }
+  }
+  </script>
+
   <link rel="stylesheet" href="/css/style.css" />
 
   <style>
-    .post-hero {
-      padding: 140px 48px 64px;
-      max-width: 740px;
-      margin: 0 auto;
-    }
-    .post-breadcrumb {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(5,13,53,0.4);
-      margin-bottom: 32px;
-    }
-    .post-breadcrumb a {
-      color: rgba(5,13,53,0.4);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .post-hero { padding: 140px 48px 64px; max-width: 740px; margin: 0 auto; }
+    .post-breadcrumb { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 32px; }
+    .post-breadcrumb a { color: rgba(5,13,53,0.4); text-decoration: none; transition: color 0.2s; }
     .post-breadcrumb a:hover { color: #050d35; }
     .post-breadcrumb span { margin: 0 8px; }
-    .post-meta {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(5,13,53,0.4);
-      margin-bottom: 24px;
-    }
-    .post-title {
-      font-family: 'Raleway', sans-serif;
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 400;
-      color: #111111;
-      line-height: 1.2;
-      margin-bottom: 0;
-    }
-    .post-rule {
-      width: 48px;
-      height: 1px;
-      background: #050d35;
-      margin: 32px 0;
-    }
-    .post-body {
-      max-width: 740px;
-      margin: 0 auto;
-      padding: 0 48px 80px;
-    }
-    .post-p {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 400;
-      color: #333333;
-      line-height: 1.9;
-      margin-bottom: 24px;
-    }
-    .post-p a {
-      color: #050d35;
-      font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      transition: opacity 0.2s;
-    }
+    .post-meta { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .post-title { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; margin-bottom: 0; }
+    .post-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .post-body { max-width: 740px; margin: 0 auto; padding: 0 48px 80px; }
+    .post-p { font-family: 'Raleway', sans-serif; font-size: 1.05rem; font-weight: 400; color: #333333; line-height: 1.9; margin-bottom: 24px; }
+    .post-p a { color: #050d35; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; transition: opacity 0.2s; }
     .post-p a:hover { opacity: 0.7; }
-    .post-section-heading {
-      font-family: 'Raleway', sans-serif;
-      font-size: clamp(1.2rem, 2vw, 1.5rem);
-      font-weight: 400;
-      color: #111111;
-      line-height: 1.3;
-      margin-top: 56px;
-      margin-bottom: 24px;
-    }
-    .post-divider {
-      width: 48px;
-      height: 1px;
-      background: rgba(5,13,53,0.15);
-      margin: 48px 0;
-    }
-    .post-action-item {
-      padding: 32px 36px;
-      border: 0.5px solid rgba(5,13,53,0.12);
-      border-radius: 4px;
-      margin-bottom: 20px;
-      background: #ffffff;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-    .post-action-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 32px rgba(5,13,53,0.09);
-    }
-    .post-action-label {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #050d35;
-      margin-bottom: 12px;
-    }
-    .post-action-text {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1rem;
-      color: #333333;
-      line-height: 1.8;
-    }
-    .post-action-text a {
-      color: #050d35;
-      font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 3px;
-      transition: opacity 0.2s;
-    }
+    .post-section-heading { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin-top: 56px; margin-bottom: 24px; }
+    .post-divider { width: 48px; height: 1px; background: rgba(5,13,53,0.15); margin: 48px 0; }
+    .post-action-item { padding: 32px 36px; border: 0.5px solid rgba(5,13,53,0.12); border-radius: 4px; margin-bottom: 20px; background: #ffffff; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .post-action-item:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(5,13,53,0.09); }
+    .post-action-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .post-action-text { font-family: 'Raleway', sans-serif; font-size: 1rem; color: #333333; line-height: 1.8; }
+    .post-action-text a { color: #050d35; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; transition: opacity 0.2s; }
     .post-action-text a:hover { opacity: 0.7; }
-    .post-closing {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.05rem;
-      font-weight: 400;
-      color: #111111;
-      line-height: 1.9;
-      margin-top: 56px;
-      margin-bottom: 24px;
-    }
-    .post-sources {
-      margin-top: 64px;
-      padding-top: 40px;
-      border-top: 0.5px solid rgba(5,13,53,0.1);
-    }
-    .post-sources-label {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(5,13,53,0.4);
-      margin-bottom: 20px;
-    }
-    .post-source-item {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.85rem;
-      color: #666666;
-      line-height: 1.7;
-      margin-bottom: 10px;
-    }
-    .post-source-item a {
-      color: #050d35;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      transition: opacity 0.2s;
-    }
+    .post-closing { font-family: 'Raleway', sans-serif; font-size: 1.05rem; font-weight: 400; color: #111111; line-height: 1.9; margin-top: 56px; margin-bottom: 24px; }
+    .post-sources { margin-top: 64px; padding-top: 40px; border-top: 0.5px solid rgba(5,13,53,0.1); }
+    .post-sources-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 20px; }
+    .post-source-item { font-family: 'Raleway', sans-serif; font-size: 0.85rem; color: #666666; line-height: 1.7; margin-bottom: 10px; }
+    .post-source-item a { color: #050d35; text-decoration: underline; text-underline-offset: 2px; transition: opacity 0.2s; }
     .post-source-item a:hover { opacity: 0.7; }
-    .post-author-block {
-      margin-top: 64px;
-      padding: 0;
-      background: transparent;
-    }
-    .post-author-label {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(5,13,53,0.4);
-      margin-bottom: 12px;
-    }
-    .post-author-name {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #050d35;
-      margin-bottom: 8px;
-    }
-    .post-author-bio {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.9rem;
-      color: #555555;
-      line-height: 1.75;
-    }
-    .post-author-bio a {
-      color: #050d35;
-      font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    .cta-section {
-      padding: 100px 48px;
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
-      border-top: 0.5px solid rgba(5,13,53,0.1);
-    }
-    .cta-question {
-      font-family: 'Raleway', sans-serif;
-      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-      font-weight: 400;
-      color: #111111;
-      margin-bottom: 40px;
-      line-height: 1.3;
-    }
-    .cta-btn-post {
-      display: inline-block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: #050d35;
-      padding: 18px 40px;
-      border-radius: 100px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
+    .related-posts { margin-top: 64px; padding-top: 40px; border-top: 0.5px solid rgba(5,13,53,0.1); }
+    .related-posts-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .related-posts-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    .related-post-card { padding: 24px; border: 0.5px solid rgba(5,13,53,0.12); border-radius: 4px; text-decoration: none; display: block; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+    .related-post-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(5,13,53,0.08); }
+    .related-post-meta { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 8px; }
+    .related-post-title { font-family: 'Raleway', sans-serif; font-size: 0.9rem; font-weight: 600; color: #050d35; line-height: 1.4; }
+    .post-author-block { margin-top: 64px; padding: 0; background: transparent; }
+    .post-author-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 12px; }
+    .post-author-name { font-family: 'Montserrat', sans-serif; font-size: 0.85rem; font-weight: 600; color: #050d35; margin-bottom: 8px; }
+    .post-author-bio { font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: #555555; line-height: 1.75; }
+    .post-author-bio a { color: #050d35; font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+    .cta-section { padding: 100px 48px; text-align: center; max-width: 700px; margin: 0 auto; border-top: 0.5px solid rgba(5,13,53,0.1); }
+    .cta-question { font-family: 'Raleway', sans-serif; font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 400; color: #111111; margin-bottom: 40px; line-height: 1.3; }
+    .cta-btn-post { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 18px 40px; border-radius: 100px; text-decoration: none; transition: background 0.2s; }
     .cta-btn-post:hover { background: #000000; }
     @media (max-width: 768px) {
       .post-hero, .post-body, .cta-section { padding-left: 24px; padding-right: 24px; }
       .post-action-item { padding: 24px; }
+      .related-posts-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -283,24 +199,18 @@
       <a href="/ai-agents/">AI Agents</a>
       <div class="nav-item">
         <a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a>
-        <div class="nav-dropdown">
-          <a href="/web-development/">Web Development</a>
-        </div>
+        <div class="nav-dropdown"><a href="/web-development/">Web Development</a></div>
       </div>
       <div class="nav-item">
         <a href="/about/" class="has-dropdown">About</a>
-        <div class="nav-dropdown">
-          <a href="/partnerships/">Partnerships</a>
-        </div>
+        <div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div>
       </div>
       <a href="/blog/">Blog</a>
       <div class="nav-item">
         <a href="/sunday-sessions/" class="has-dropdown">Sunday Sessions</a>
-        <div class="nav-dropdown">
-          <a href="/resources/">Resources</a>
-        </div>
+        <div class="nav-dropdown"><a href="/resources/">Resources</a></div>
       </div>
-      <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
     </div>
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
   </nav>
@@ -308,7 +218,7 @@
   <!-- POST HERO -->
   <div class="post-hero">
     <p class="post-breadcrumb"><a href="/blog/">Blog</a><span>&rsaquo;</span> AI Strategy</p>
-    <p class="post-meta">April 23, 2026 &nbsp;·&nbsp; Renea Hanks</p>
+    <p class="post-meta">April 23, 2026 &nbsp;·&nbsp; Renea Hanks &nbsp;·&nbsp; 7 min read</p>
     <h1 class="post-title">Why Most AI Implementations Fail — And What Small Businesses Should Do Instead</h1>
     <div class="post-rule"></div>
   </div>
@@ -326,19 +236,15 @@
     <h2 class="post-section-heading">The 95% Number Nobody Wants to Talk About</h2>
 
     <p class="post-p">MIT's NANDA initiative published research in 2025 that should have stopped the AI hype machine cold. Based on 150 executive interviews, a survey of 350 employees, and an analysis of 300 public AI deployments, the findings were blunt: about 95% of generative AI pilot programs stall — delivering little to no measurable impact on the bottom line. Only 5% achieve anything close to rapid, meaningful results.</p>
-
     <p class="post-p"><a href="https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/" target="_blank" rel="noopener">As Fortune reported on the findings</a>, the core issue was not the quality of the AI models. It was what the MIT researchers called the "learning gap" — the failure to integrate AI into how the business actually operates, not just into a demo environment.</p>
-
-    <p class="post-p">The startups that succeeded? They picked one pain point, executed against it specifically, and partnered with tools designed for their actual workflow — not generic tools bolted onto a generic process. That is not a coincidence. That is architecture.</p>
+    <p class="post-p">The startups that succeeded? They picked one pain point, executed against it specifically, and partnered with tools designed for their actual workflow — not generic tools bolted onto a generic process. That is not a coincidence. That is architecture. If you are wondering <a href="/blog/where-should-a-small-business-start-with-ai/">where a small business should start with AI</a>, the answer begins here — with one specific problem, not a platform.</p>
 
     <div class="post-divider"></div>
 
     <h2 class="post-section-heading">Gartner Said 50%. IBM Said It Differently. Both Are Saying the Same Thing.</h2>
 
     <p class="post-p">Gartner has reported that at least 50% of generative AI projects are abandoned after proof of concept — due to poor data quality, inadequate risk controls, escalating costs, or unclear business value. <a href="https://www.ibm.com/think/insights/why-most-enterprise-ai-projects-stall-before-scale" target="_blank" rel="noopener">IBM's analysis puts it plainly</a>: most enterprise AI initiatives don't fail because of the models. They fail because of what surrounds the models. Fragmented data. Governance requirements that were never built in. Outputs that can't connect to the workflows where decisions actually get made.</p>
-
     <p class="post-p">A global bank IBM cited deployed an AI agent for regulatory reporting. Results were promising. Leadership approved a broader rollout. The system never scaled — because it depended on curated datasets maintained by a small team, and its outputs required manual validation before they could be used anywhere that mattered.</p>
-
     <p class="post-p">What worked in isolation could not survive contact with how the business actually ran. That pattern plays out in every industry, at every size, every time someone treats AI as a product to purchase rather than infrastructure to build.</p>
 
     <div class="post-divider"></div>
@@ -346,9 +252,7 @@
     <h2 class="post-section-heading">The Skills Gap Is Real — But Not Where Everyone Is Looking</h2>
 
     <p class="post-p"><a href="https://builtin.com/articles/ai-skills-gap-backwards-data-engineering" target="_blank" rel="noopener">Built In published a piece in April 2026</a> that said something most of the AI training industry does not want to admit: the skills gap everyone is talking about is pointing in the wrong direction. The obsession with prompt engineering — the idea that learning to talk to AI tools better is the core competency — is focusing on the output layer. The surface. The interface.</p>
-
     <p class="post-p">The real gap is upstream. It is in data infrastructure, data quality, and the systems that determine what your AI actually receives before it produces anything. Gartner has predicted that through 2026, organizations will abandon 60% of AI projects that are not supported by AI-ready data. IBM's Global AI Adoption Index consistently lists data complexity and data quality among the primary barriers to AI deployment.</p>
-
     <p class="post-p">The businesses winning with AI are not the ones whose employees took the most prompt engineering courses. They are the ones who understood what the AI needed to work before they asked it to work.</p>
 
     <div class="post-divider"></div>
@@ -356,12 +260,9 @@
     <h2 class="post-section-heading">What This Means for Small Businesses</h2>
 
     <p class="post-p">You are not behind because you have not implemented AI yet. You may actually be ahead — because you have not implemented it wrong yet.</p>
-
     <p class="post-p">The businesses losing money on AI right now moved fast without a foundation. They bought a chatbot that says the wrong thing to the wrong prospect. They automated a broken process, and now the broken process runs faster. They paid a vendor for something generic and are paying monthly for a tool their customers can see straight through.</p>
-
     <p class="post-p">What actually works starts with one question: <em>What does my business need this to do, and what breaks if it does it wrong?</em></p>
-
-    <p class="post-p">That is not a technology question. That is a business question. And it is the one almost nobody is asking.</p>
+    <p class="post-p">That is not a technology question. That is a business question. And it is the one almost nobody is asking. Before you evaluate any vendor, read <a href="/blog/how-to-know-if-ai-is-right-for-my-business/">the five questions every business owner should ask before spending a dollar on AI</a>.</p>
 
     <div class="post-divider"></div>
 
@@ -371,22 +272,18 @@
       <p class="post-action-label">Start with one problem</p>
       <p class="post-action-text">Not AI in general. One specific friction point where AI could remove work, qualify a lead, or route a decision. The businesses that succeed pick one pain point and execute against it specifically. The ones that fail try to automate everything at once and end up with nothing working reliably.</p>
     </div>
-
     <div class="post-action-item">
       <p class="post-action-label">Understand what your AI will be trained on</p>
       <p class="post-action-text">If the information you give it is incomplete, inconsistent, or wrong — the AI will be those things too. Faster. This is not a limitation of the technology. It is a requirement of the foundation. Garbage in, garbage out has always been true. AI just makes it more expensive and more visible.</p>
     </div>
-
     <div class="post-action-item">
       <p class="post-action-label">Build guardrails before you go live</p>
       <p class="post-action-text">Every AI system needs a defined scope. What it answers. What it escalates. What it never touches. Those boundaries are not restrictions — they are what make the system trustworthy. An agent without guardrails is a liability. An agent with guardrails is infrastructure.</p>
     </div>
-
     <div class="post-action-item">
       <p class="post-action-label">Do not build dependency</p>
       <p class="post-action-text">The goal is to understand what you are deploying well enough to trust it, monitor it, and modify it when the business changes. If you cannot explain what your AI does and why, you do not own it — you are just paying for it.</p>
     </div>
-
     <div class="post-action-item">
       <p class="post-action-label">Know when to get help</p>
       <p class="post-action-text"><a href="https://fortune.com/2025/08/18/mit-report-95-percent-generative-ai-pilots-at-companies-failing-cfo/" target="_blank" rel="noopener">MIT's research found that purchasing AI tools from specialized vendors and building targeted partnerships succeeded about 67% of the time</a> — while internal builds succeeded only one-third as often. Know what you are trying to build. Then find someone who has built it before.</p>
@@ -395,10 +292,8 @@
     <div class="post-divider"></div>
 
     <p class="post-closing">AI does not fail because it is bad technology. It fails because it gets deployed without a foundation, without a clear purpose, and without anyone asking the hard questions first.</p>
-
     <p class="post-closing">The businesses that will use AI well are not the ones who moved fastest. They are the ones who moved deliberately — who understood what they were building before they built it, who chose one real problem over ten theoretical solutions, and who treated AI as infrastructure rather than decoration.</p>
-
-    <p class="post-closing">You are not too late. But you do need a direction.</p>
+    <p class="post-closing">You are not too late. But you do need a direction. Start by understanding <a href="/blog/what-is-ai-exactly/">what AI actually is</a> — not the hype version, the real one.</p>
 
     <!-- SOURCES -->
     <div class="post-sources">
@@ -411,11 +306,30 @@
       <p class="post-source-item">LetsDataScience — <a href="https://letsdatascience.com/news/enterprises-see-ai-pilots-fail-to-scale-a95f7189" target="_blank" rel="noopener">Enterprises See AI Pilots Fail to Scale</a></p>
     </div>
 
+    <!-- RELATED POSTS -->
+    <div class="related-posts">
+      <p class="related-posts-label">You might also find this useful</p>
+      <div class="related-posts-grid">
+        <a href="/blog/how-to-know-if-ai-is-right-for-my-business/" class="related-post-card">
+          <p class="related-post-meta">AI Strategy</p>
+          <p class="related-post-title">How to Know If AI Is Right for Your Business</p>
+        </a>
+        <a href="/blog/where-should-a-small-business-start-with-ai/" class="related-post-card">
+          <p class="related-post-meta">AI Strategy</p>
+          <p class="related-post-title">Where Should a Small Business Start With AI?</p>
+        </a>
+        <a href="/blog/what-is-ai-exactly/" class="related-post-card">
+          <p class="related-post-meta">AI Fundamentals</p>
+          <p class="related-post-title">What Is AI, Exactly?</p>
+        </a>
+      </div>
+    </div>
+
     <!-- AUTHOR -->
     <div class="post-author-block">
       <p class="post-author-label">Written by</p>
       <p class="post-author-name">Renea Hanks</p>
-      <p class="post-author-bio">Founder of <a href="/">Solid Solutions Today</a>. AI Consultant for Small Business. Google Developer Program member. She builds AI infrastructure for small businesses — not demos, not templates. The real thing.</p>
+      <p class="post-author-bio">Founder of <a href="/">Solid Solutions Today</a>. Google Developer Program member. She builds AI infrastructure for small businesses — not demos, not templates. The real thing.</p>
     </div>
 
   </div>
@@ -423,56 +337,32 @@
   <!-- CTA -->
   <div class="cta-section">
     <p class="cta-question">Ready to build AI infrastructure that actually works?</p>
-    <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" class="cta-btn-post">Schedule a Consultation</a>
+    <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn-post">Schedule a Consultation</a>
   </div>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <nav class="footer-social" aria-label="Social links">
-        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-        </a>
-        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg>
-        </a>
-        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-        </a>
-        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg>
-        </a>
-        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
-        </a>
-        <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
-        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram">
-  <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-</a>
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
       </nav>
     </div>
     <div class="footer-sitemap">
-      <a href="/ai-consulting/">AI Consulting</a>
-      <span class="footer-sep">·</span>
-      <a href="/ai-agents/">AI Agents</a>
-      <span class="footer-sep">·</span>
-      <a href="/brand-strategy/">Brand Strategy</a>
-      <span class="footer-sep">·</span>
-      <a href="/web-development/">Web Development</a>
-      <span class="footer-sep">·</span>
-      <a href="/about/">About</a>
-      <span class="footer-sep">·</span>
-      <a href="/partnerships/">Partnerships</a>
-      <span class="footer-sep">·</span>
-      <a href="/blog/">Blog</a>
-      <span class="footer-sep">·</span>
-      <a href="/sunday-sessions/">Sunday Sessions</a>
-      <span class="footer-sep">·</span>
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">·</span>
+      <a href="/ai-agents/">AI Agents</a><span class="footer-sep">·</span>
+      <a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">·</span>
+      <a href="/web-development/">Web Development</a><span class="footer-sep">·</span>
+      <a href="/about/">About</a><span class="footer-sep">·</span>
+      <a href="/partnerships/">Partnerships</a><span class="footer-sep">·</span>
+      <a href="/blog/">Blog</a><span class="footer-sep">·</span>
+      <a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">·</span>
       <a href="/resources/">Resources</a>
     </div>
     <div class="footer-bottom">
@@ -486,11 +376,8 @@
   <div class="soli-circle-launcher" onclick="toggleSoli()">
     <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
   </div>
-
   <div id="soli-window">
-    <div class="soli-header">
-      <h3>Soli &mdash; AI Assistant</h3>
-    </div>
+    <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
     <div class="soli-body" id="soli-chat-history">
       <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
     </div>

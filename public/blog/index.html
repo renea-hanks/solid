@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blog | Solid Solutions Today | Renea Hanks</title>
-  <meta name="description" content="Straight talk on AI, small business strategy, and what actually works. From Renea Hanks at Solid Solutions Today." />
+  <title>AI for Small Business — Blog | Solid Solutions Today</title>
+  <meta name="description" content="The go-to blog for small business owners about AI. We cover the exact questions you are searching for — from where to start to which tools actually work and how to implement them without wasting time or money." />
 
   <link rel="canonical" href="https://solidsolutionstoday.com/blog/" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -25,23 +25,20 @@
     gtag('config', 'G-VQ6YBJ8J45');
   </script>
 
+  <meta property="og:title" content="AI for Small Business — Blog" />
+  <meta property="og:description" content="The go-to blog for small business owners about AI. We cover the exact questions you are searching for — from where to start to which tools actually work and how to implement them without wasting time or money." />
+  <meta property="og:url" content="https://solidsolutionstoday.com/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://solidsolutionstoday.com/images/sst-og-default.png" />
+  <meta property="og:site_name" content="Solid Solutions Today" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://solidsolutionstoday.com/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://solidsolutionstoday.com/blog/"
-      }
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://solidsolutionstoday.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://solidsolutionstoday.com/blog/" }
     ]
   }
   </script>
@@ -49,307 +46,226 @@
   <link rel="stylesheet" href="/css/style.css" />
 
   <style>
-    .page-hero {
-      padding: 140px 48px 80px;
-      max-width: 860px;
-      margin: 0 auto;
-    }
-    .page-hero-label {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: #050d35;
-      margin-bottom: 24px;
-    }
-    .page-hero-headline {
-      font-family: 'Raleway', sans-serif;
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      font-weight: 400;
-      color: #111111;
-      line-height: 1.2;
-      margin-bottom: 0;
-    }
-    .page-rule {
-      width: 48px;
-      height: 1px;
-      background: #050d35;
-      margin: 32px 0;
-    }
-    .page-hero-bio {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.95rem;
-      color: #555555;
-      line-height: 1.75;
-      max-width: 560px;
-    }
-    .page-hero-bio strong {
-      color: #050d35;
-      font-weight: 600;
-    }
-    .blog-index {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 48px 120px;
-    }
-    .blog-post-card {
-      display: block;
-      text-decoration: none;
-      padding: 48px 0;
-      border-top: 0.5px solid rgba(5,13,53,0.1);
-      transition: opacity 0.2s;
-    }
-    .blog-post-card:last-child {
-      border-bottom: 0.5px solid rgba(5,13,53,0.1);
-    }
-    .blog-post-card:hover {
-      opacity: 0.75;
-    }
-    .blog-post-meta {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: rgba(5,13,53,0.4);
-      margin-bottom: 16px;
-    }
-    .blog-post-title {
-      font-family: 'Raleway', sans-serif;
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      font-weight: 400;
-      color: #111111;
-      line-height: 1.3;
-      margin-bottom: 16px;
-    }
-    .blog-post-excerpt {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.95rem;
-      color: #555555;
-      line-height: 1.75;
-      max-width: 640px;
-      margin-bottom: 20px;
-    }
-    .blog-post-read {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #050d35;
-      border-bottom: 1px solid rgba(5,13,53,0.25);
-      padding-bottom: 2px;
-      display: inline-block;
-    }
-    .cta-section {
-      padding: 100px 48px;
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto;
-      border-top: 0.5px solid rgba(5,13,53,0.1);
-    }
-    .cta-question {
-      font-family: 'Raleway', sans-serif;
-      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
-      font-weight: 400;
-      color: #111111;
-      margin-bottom: 40px;
-      line-height: 1.3;
-    }
-    .cta-btn-blog {
-      display: inline-block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #ffffff;
-      background: #050d35;
-      padding: 18px 40px;
-      border-radius: 100px;
-      text-decoration: none;
-      transition: background 0.2s;
-    }
-    .cta-btn-blog:hover {
-      background: #000000;
-    }
-    @media (max-width: 768px) {
-      .page-hero,
-      .blog-index,
-      .cta-section { padding-left: 24px; padding-right: 24px; }
-    }
+    .blog-hero{padding:140px 48px 64px;max-width:860px;margin:0 auto}
+    .blog-hero-label{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(5,13,53,.4);margin-bottom:24px}
+    .blog-hero-title{font-family:'Raleway',sans-serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:400;color:#111;line-height:1.2;margin-bottom:16px}
+    .blog-hero-sub{font-family:'Raleway',sans-serif;font-size:1.05rem;color:#555;line-height:1.8;max-width:600px}
+    .blog-rule{width:48px;height:1px;background:#050d35;margin:32px 0 0}
+    .blog-grid{max-width:860px;margin:0 auto;padding:48px 48px 80px}
+    .blog-card{display:block;padding:36px 0;border-bottom:.5px solid rgba(5,13,53,.1);text-decoration:none;transition:opacity .2s}
+    .blog-card:first-child{border-top:.5px solid rgba(5,13,53,.1)}
+    .blog-card:hover{opacity:.75}
+    .blog-card-meta{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(5,13,53,.4);margin-bottom:12px}
+    .blog-card-title{font-family:'Raleway',sans-serif;font-size:1.25rem;font-weight:400;color:#111;line-height:1.3;margin-bottom:10px}
+    .blog-card-excerpt{font-family:'Raleway',sans-serif;font-size:.95rem;color:#555;line-height:1.7;margin-bottom:12px}
+    .blog-card-read{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#050d35}
+    .blog-author{max-width:860px;margin:0 auto;padding:0 48px 80px}
+    .blog-author-label{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(5,13,53,.4);margin-bottom:12px}
+    .blog-author-name{font-family:'Montserrat',sans-serif;font-size:.85rem;font-weight:600;color:#050d35;margin-bottom:8px}
+    .blog-author-bio{font-family:'Raleway',sans-serif;font-size:.9rem;color:#555;line-height:1.75}
+    .blog-author-bio a{color:#050d35;font-weight:600;text-decoration:underline;text-underline-offset:2px}
+    @media(max-width:768px){.blog-hero,.blog-grid,.blog-author{padding-left:24px;padding-right:24px}}
   </style>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
-    <a href="/" class="nav-logo">
-      <img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" />
-    </a>
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
     <div class="nav-links" id="navLinks">
       <a href="/ai-consulting/">AI Consulting</a>
       <a href="/ai-agents/">AI Agents</a>
-      <div class="nav-item">
-        <a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a>
-        <div class="nav-dropdown">
-          <a href="/web-development/">Web Development</a>
-        </div>
-      </div>
-      <div class="nav-item">
-        <a href="/about/" class="has-dropdown">About</a>
-        <div class="nav-dropdown">
-          <a href="/partnerships/">Partnerships</a>
-        </div>
-      </div>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
       <a href="/blog/">Blog</a>
-      <div class="nav-item">
-        <a href="/sunday-sessions/" class="has-dropdown">Sunday Sessions</a>
-        <div class="nav-dropdown">
-          <a href="/resources/">Resources</a>
-        </div>
-      </div>
-      <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/blog/is-poke-safe-update/">Poke Recipes</a><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
     </div>
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
   </nav>
 
-  <!-- PAGE HERO -->
-  <div class="page-hero">
-    <p class="page-hero-label">Blog</p>
-    <h1 class="page-hero-headline"><br>Just what you need to know.</h1>
-    <div class="page-rule"></div>
-    <p class="page-hero-bio">Written by <strong>Renea Hanks</strong> — AI Consultant for Small Business, founder of Solid Solutions Today, and Google Developer Program member. She builds AI infrastructure for small businesses — not demos, not templates. The real thing.</p>
+  <div class="blog-hero">
+    <p class="blog-hero-label">Solid Solutions Today</p>
+    <h1 class="blog-hero-title">AI for Small Business</h1>
+    <p class="blog-hero-sub">We cover the exact questions small business owners search for about AI — from where to start to what tools actually work.</p>
+    <div class="blog-rule"></div>
   </div>
 
-  <!-- POST LISTING -->
-  <div class="blog-index">
+  <div class="blog-grid">
 
-    <a href="/blog/what-is-ai-exactly/" class="blog-post-card">
-      <p class="blog-post-meta">May 10, 2026 &nbsp;·&nbsp; AI Fundamentals</p>
-      <h2 class="blog-post-title">What Is AI, Exactly?</h2>
-      <p class="blog-post-excerpt">AI is software that makes decisions based on patterns it learned from large amounts of data. Not magic. Not a thinking machine. Here is what it actually is, what it does, and what that means for your business.</p>
-      <span class="blog-post-read">Read the post &rarr;</span>
+    <a href="/blog/is-poke-safe-update/" class="blog-card">
+      <p class="blog-card-meta">June 22, 2026 &nbsp;&middot;&nbsp; AI Tools &nbsp;&middot;&nbsp; 8 min read</p>
+      <p class="blog-card-title">Is Poke Safe? What Happened When I Went All In</p>
+      <p class="blog-card-excerpt">I built 311 recipes across 40 categories. Then the dashboard showed $500 in payouts that disappeared, support claimed to be human, gave a fabricated name, and 12 days passed with zero follow-up. The full account — and what every small business deploying AI needs to learn from it.</p>
+      <span class="blog-card-read">Read &rarr;</span>
     </a>
 
-    <a href="/blog/ai-for-main-street-act-small-business/" class="blog-post-card">
-      <p class="blog-post-meta">May 8, 2026 &nbsp;·&nbsp; AI Strategy</p>
-      <h2 class="blog-post-title">The AI for Main Street Act Just Passed. Here's What It Actually Means for Your Business.</h2>
-      <p class="blog-post-excerpt">Congress just passed federal legislation to help small businesses adopt AI — with training, grants, and technical assistance routed through the SBA. Here's what it actually does, who qualifies, and why the window to act is right now.</p>
-      <span class="blog-post-read">Read the post &rarr;</span>
+    <a href="/blog/is-poke-safe-private-ai-assistant/" class="blog-card">
+      <p class="blog-card-meta">June 16, 2026 &nbsp;&middot;&nbsp; AI Tools &nbsp;&middot;&nbsp; 5 min read</p>
+      <p class="blog-card-title">Is Poke Safe? The Truth About Your Private AI Assistant</p>
+      <p class="blog-card-excerpt">The original assessment of Poke's published privacy and security standards. This post has since been updated — read the full account of what happened when we tested the platform directly.</p>
+      <span class="blog-card-read">Read &rarr;</span>
     </a>
 
-    <a href="/blog/where-should-a-small-business-start-with-ai/" class="blog-post-card">
-      <p class="blog-post-meta">May 4, 2026 &nbsp;·&nbsp; AI Strategy</p>
-      <h2 class="blog-post-title">Where Should a Small Business Start With AI?</h2>
-      <p class="blog-post-excerpt">The right place to start isn't a tool — it's a problem. A practical framework for identifying the highest-friction, lowest-risk function to automate first.</p>
-      <span class="blog-post-read">Read the post &rarr;</span>
+    <a href="/blog/apple-messages-for-business-ai-integration/" class="blog-card">
+      <p class="blog-card-meta">June 6, 2026 &nbsp;&middot;&nbsp; AI Agents &nbsp;&middot;&nbsp; 7 min read</p>
+      <p class="blog-card-title">Apple Messages for Business AI Integration: What Poke Means for Your Brand</p>
+      <p class="blog-card-excerpt">Apple approved Poke as the first AI agent on Messages for Business. Here is what that means for custom AI agent development and how to build an iMessage AI agent for your business.</p>
+      <span class="blog-card-read">Read &rarr;</span>
     </a>
 
-    <a href="/blog/how-to-know-if-ai-is-right-for-my-business/" class="blog-post-card">
-      <p class="blog-post-meta">April 28, 2026 &nbsp;·&nbsp; AI Strategy</p>
-      <h2 class="blog-post-title">How to Know If AI Is Right for Your Business</h2>
-      <p class="blog-post-excerpt">Before you spend a dollar on AI, ask these five questions. They will tell you more about a vendor's credibility than any demo will.</p>
-      <span class="blog-post-read">Read the post &rarr;</span>
+    <a href="/blog/is-my-business-ready-for-ai/" class="blog-card">
+      <p class="blog-card-meta">June 3, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">Is My Business Ready for AI?</p>
+      <p class="blog-card-excerpt">AI readiness is not about technical sophistication. It is about knowing what problem you want to solve, having accurate information about your business, and being willing to build something that works.</p>
+      <span class="blog-card-read">Read &rarr;</span>
     </a>
 
-    <a href="/blog/10-questions-business-owners-ask-about-ai/" class="blog-post-card">
-      <p class="blog-post-meta">April 25, 2026 &nbsp;·&nbsp; AI Strategy</p>
-      <h2 class="blog-post-title">The 10 Questions Every Business Owner Asks About AI — Answered Plainly</h2>
-      <p class="blog-post-excerpt">Not the questions people ask in conference rooms to sound informed. The ones they ask quietly, when the webinar is over and they are still not sure what to do. Answered plainly.</p>
-      <span class="blog-post-read">Read the post &rarr;</span>
+    <a href="/blog/can-ai-handle-phone-calls-route-calls/" class="blog-card">
+      <p class="blog-card-meta">June 1, 2026 &nbsp;&middot;&nbsp; AI Tools &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">Can AI Handle Phone Calls or Route Calls for My Business?</p>
+      <p class="blog-card-excerpt">AI can answer your phone after hours, gather caller information, and route the right calls without a receptionist on the clock. Here is what is realistic, what tools exist, and where a human must stay in the loop.</p>
+      <span class="blog-card-read">Read &rarr;</span>
     </a>
 
-    <a href="/blog/why-most-ai-implementations-fail/" class="blog-post-card">
-      <p class="blog-post-meta">April 23, 2026 &nbsp;·&nbsp; AI Strategy</p>
-      <h2 class="blog-post-title">Why Most AI Implementations Fail — And What Small Businesses Should Do Instead</h2>
-      <p class="blog-post-excerpt">95% of generative AI pilots stall. Not because the technology is bad — because the foundation was never built. Here is what the research says, and what to do instead.</p>
-      <span class="blog-post-read">Read the post &rarr;</span>
+    <a href="/blog/ai-answer-customer-questions-website/" class="blog-card">
+      <p class="blog-card-meta">May 27, 2026 &nbsp;&middot;&nbsp; AI Agents &nbsp;&middot;&nbsp; 7 min read</p>
+      <p class="blog-card-title">Can AI Answer Common Customer Questions on My Website?</p>
+      <p class="blog-card-excerpt">Yes — and it is one of the highest-leverage AI implementations available to a small business today. Here is exactly how it works, what it needs, and what to measure after launch.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/ai-for-customer-service/" class="blog-card">
+      <p class="blog-card-meta">May 25, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 7 min read</p>
+      <p class="blog-card-title">How Can AI Help With Customer Service for Small Business?</p>
+      <p class="blog-card-excerpt">AI can handle a significant portion of your customer service volume. Here is what is realistic right now — what works, what does not, and where the human still belongs.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/what-tasks-to-automate-first/" class="blog-card">
+      <p class="blog-card-meta">May 24, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">What Tasks Should I Automate First With AI?</p>
+      <p class="blog-card-excerpt">Not every task is worth automating. Here is the filter — and the five highest-value first automations for small business, backed by McKinsey and Harvard Business Review research.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/how-to-start-using-ai/" class="blog-card">
+      <p class="blog-card-meta">May 23, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">How Do I Start Using AI in My Business?</p>
+      <p class="blog-card-excerpt">The right place to start is not a tool — it is a problem. Here is the framework for identifying where AI fits in your business and how to implement it without wasting time or money.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/free-low-cost-ai-tools/" class="blog-card">
+      <p class="blog-card-meta">May 22, 2026 &nbsp;&middot;&nbsp; AI Tools &nbsp;&middot;&nbsp; 7 min read</p>
+      <p class="blog-card-title">Which AI Tools Are Free or Low Cost for Small Business?</p>
+      <p class="blog-card-excerpt">Most AI tools used by small businesses today cost between $0 and $50 per month. Here are the ones worth your time — and the ones that are not.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/what-are-the-best-ai-tools-for-small-businesses/" class="blog-card">
+      <p class="blog-card-meta">May 20, 2026 &nbsp;&middot;&nbsp; AI Tools &nbsp;&middot;&nbsp; 9 min read</p>
+      <p class="blog-card-title">What Are the Best AI Tools for Small Businesses?</p>
+      <p class="blog-card-excerpt">Eight tools across seven categories — with honest limitations for each. Plus a free starter stack and three upgrade decision frameworks.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/how-can-ai-help-me-make-more-money/" class="blog-card">
+      <p class="blog-card-meta">May 17, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">How Can AI Help Me Make More Money?</p>
+      <p class="blog-card-excerpt">AI does not print money. It recovers revenue you are already losing — to slow follow-up, missed leads, and manual work that should have been automated months ago.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/how-can-ai-help-my-small-business-save-time/" class="blog-card">
+      <p class="blog-card-meta">May 15, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">How Can AI Help My Small Business Save Time?</p>
+      <p class="blog-card-excerpt">AI saves small business owners time — but only when applied to the right problems. Here are the three tasks worth automating first, backed by real data.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/is-ai-only-for-big-businesses/" class="blog-card">
+      <p class="blog-card-meta">May 12, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 5 min read</p>
+      <p class="blog-card-title">Is AI Only for Big Businesses with Big Budgets?</p>
+      <p class="blog-card-excerpt">AI is not a luxury reserved for enterprise companies. Here is what small business owners actually need to know about cost, access, and where to start.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/what-is-ai-exactly/" class="blog-card">
+      <p class="blog-card-meta">May 10, 2026 &nbsp;&middot;&nbsp; AI Fundamentals &nbsp;&middot;&nbsp; 5 min read</p>
+      <p class="blog-card-title">What Is AI, Exactly?</p>
+      <p class="blog-card-excerpt">A plain-English answer for business owners who are tired of jargon. What AI is, what it is not, and why it matters for your business right now.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/ai-for-main-street-act-small-business/" class="blog-card">
+      <p class="blog-card-meta">May 8, 2026 &nbsp;&middot;&nbsp; AI Policy &nbsp;&middot;&nbsp; 5 min read</p>
+      <p class="blog-card-title">The AI for Main Street Act — What Small Businesses Need to Know</p>
+      <p class="blog-card-excerpt">New federal legislation is putting AI access for small businesses on the policy agenda. Here is what the bill proposes and what it means for you.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/where-should-a-small-business-start-with-ai/" class="blog-card">
+      <p class="blog-card-meta">May 4, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 5 min read</p>
+      <p class="blog-card-title">Where Should a Small Business Start With AI?</p>
+      <p class="blog-card-excerpt">Start with the problem that costs you the most time or revenue right now. Not the most interesting one — the most expensive one.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/how-to-know-if-ai-is-right-for-my-business/" class="blog-card">
+      <p class="blog-card-meta">April 28, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 5 min read</p>
+      <p class="blog-card-title">How to Know If AI Is Right for Your Business</p>
+      <p class="blog-card-excerpt">AI is not right for every business problem. Here is the honest filter — and the questions that tell you whether it is worth your time and money.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/10-questions-business-owners-ask-about-ai/" class="blog-card">
+      <p class="blog-card-meta">April 25, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 8 min read</p>
+      <p class="blog-card-title">The 10 Questions Every Business Owner Asks About AI — Answered Plainly</p>
+      <p class="blog-card-excerpt">These are the questions people ask quietly, when the webinar is over and they are still not sure what to do. All ten, answered without a sales pitch.</p>
+      <span class="blog-card-read">Read &rarr;</span>
+    </a>
+
+    <a href="/blog/why-most-ai-implementations-fail/" class="blog-card">
+      <p class="blog-card-meta">April 23, 2026 &nbsp;&middot;&nbsp; AI Strategy &nbsp;&middot;&nbsp; 6 min read</p>
+      <p class="blog-card-title">Why Most AI Implementations Fail</p>
+      <p class="blog-card-excerpt">Most AI projects fail not because the technology does not work — but because the problem was never defined clearly enough to build a solution for it.</p>
+      <span class="blog-card-read">Read &rarr;</span>
     </a>
 
   </div>
 
-  <!-- CTA -->
-  <div class="cta-section">
-    <p class="cta-question">Ready to build AI infrastructure that actually works?</p>
-    <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" class="cta-btn-blog">Schedule a Consultation</a>
+  <div class="blog-author">
+    <p class="blog-author-label">Written by</p>
+    <p class="blog-author-name">Renea Hanks</p>
+    <p class="blog-author-bio">Founder of <a href="/">Solid Solutions Today</a>. Google Developer Program member. She builds AI infrastructure for small businesses — not demos, not templates. The real thing.</p>
   </div>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
       <nav class="footer-social" aria-label="Social links">
-        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </a>
-        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-        </a>
-        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg>
-        </a>
-        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-        </a>
-        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg>
-        </a>
-        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg>
-        </a>
-        <a href="https://wa.me/reneahanks" target="_blank" rel="noopener" aria-label="WhatsApp">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
-        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-        </a>
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
       </nav>
     </div>
     <div class="footer-sitemap">
-      <a href="/ai-consulting/">AI Consulting</a>
-      <span class="footer-sep">·</span>
-      <a href="/ai-agents/">AI Agents</a>
-      <span class="footer-sep">·</span>
-      <a href="/brand-strategy/">Brand Strategy</a>
-      <span class="footer-sep">·</span>
-      <a href="/web-development/">Web Development</a>
-      <span class="footer-sep">·</span>
-      <a href="/about/">About</a>
-      <span class="footer-sep">·</span>
-      <a href="/partnerships/">Partnerships</a>
-      <span class="footer-sep">·</span>
-      <a href="/blog/">Blog</a>
-      <span class="footer-sep">·</span>
-      <a href="/sunday-sessions/">Sunday Sessions</a>
-      <span class="footer-sep">·</span>
-      <a href="/resources/">Resources</a>
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">&middot;</span><a href="/ai-agents/">AI Agents</a><span class="footer-sep">&middot;</span><a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">&middot;</span><a href="/web-development/">Web Development</a><span class="footer-sep">&middot;</span><a href="/about/">About</a><span class="footer-sep">&middot;</span><a href="/partnerships/">Partnerships</a><span class="footer-sep">&middot;</span><a href="/blog/">Blog</a><span class="footer-sep">&middot;</span><a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">&middot;</span><a href="/resources/">Resources</a><span class="footer-sep">&middot;</span><a href="/blog/is-poke-safe-update/">Poke Recipes</a>
     </div>
     <div class="footer-bottom">
-      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p>
-      <span class="footer-sep">·</span>
-      <a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p><span class="footer-sep">&middot;</span><a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
     </div>
   </footer>
 
-  <!-- SOLI LAUNCHER -->
-  <div class="soli-circle-launcher" onclick="toggleSoli()">
-    <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
-  </div>
-
+  <div class="soli-circle-launcher" onclick="toggleSoli()"><img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" /></div>
   <div id="soli-window">
-    <div class="soli-header">
-      <h3>Soli &mdash; AI Assistant</h3>
-    </div>
-    <div class="soli-body" id="soli-chat-history">
-      <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
-    </div>
-    <div class="soli-footer">
-      <div class="soli-input-row">
-        <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
-        <button id="soli-send" aria-label="Send message">&#10140;</button>
-      </div>
-    </div>
+    <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+    <div class="soli-body" id="soli-chat-history"><p>Hello. I'm Soli &mdash; I know this business inside and out. What can I help you figure out today?</p></div>
+    <div class="soli-footer"><div class="soli-input-row"><input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" /><button id="soli-send" aria-label="Send message">&#10140;</button></div></div>
   </div>
 
   <script src="/js/main.js"></script>

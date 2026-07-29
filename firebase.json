@@ -6,6 +6,13 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/blog/what-is-poke-on-iphone{,/}",
+        "destination": "/blog/apple-messages-for-business-ai-integration/",
+        "type": 301
+      }
     ]
   },
   "functions": [
