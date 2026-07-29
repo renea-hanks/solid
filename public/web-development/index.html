@@ -35,7 +35,12 @@
     "provider": { "@type": "Person", "name": "Renea Hanks", "url": "https://solidsolutionstoday.com/about/" },
     "areaServed": { "@type": "Country", "name": "United States" },
     "url": "https://solidsolutionstoday.com/web-development/",
-    "serviceType": "Web Development"
+    "serviceType": "Web Development",
+    "offers": [
+      { "@type": "Offer", "name": "Tier I - Launch", "price": "9500.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/web-development/", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Tier II - Growth", "price": "15500.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/web-development/", "availability": "https://schema.org/InStock" },
+      { "@type": "Offer", "name": "Tier III - Flagship", "price": "22500.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/web-development/", "availability": "https://schema.org/InStock" }
+    ]
   }
   </script>
   <script type="application/ld+json">
@@ -72,6 +77,11 @@
         "@type": "Question",
         "name": "What does monthly hosting include?",
         "acceptedAnswer": { "@type": "Answer", "text": "Hosting is not a server bill passed along with a markup. It is a managed relationship. Your site is monitored, maintained, and supported by the same person who built it — not a ticket system, not an offshore team, not a chatbot. Standard hosting is $75 per month. Enterprise hosting for luxury, high-liability, or high-traffic builds is $150 per month." }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a full website build cost?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Tier I — Launch starts at $9,500 plus a $950/month retainer and includes a full infrastructure setup, custom website build, analytics ecosystem, SEO, schema, meta, a 30-day Google Business Profile calendar, and QR review capture. Tier II — Growth is $15,500 plus $1,650/month and adds a custom Soli AI agent, hero video, and up to 50 AEO and GEO optimized portfolio entries. Tier III — Flagship is $22,500 plus $2,250/month and is fully turnkey, with 100 portfolio entries, three months of AI advisory, and Soli retraining included." }
       }
     ]
   }
@@ -134,6 +144,13 @@
     .demo-btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; border: 1.5px solid #050d35; padding: 14px 28px; border-radius: 100px; text-decoration: none; transition: background 0.2s, color 0.2s; white-space: nowrap; }
     .demo-btn:hover { background: #050d35; color: #ffffff; }
     .faq-block { margin-top: 64px; }
+    .tier-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
+    .tier-card { border: 0.5px solid rgba(5,13,53,0.15); border-radius: 4px; padding: 36px 28px; background: #ffffff; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+    .tier-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(5,13,53,0.10); }
+    .tier-name { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 16px; }
+    .tier-price { font-family: 'Raleway', sans-serif; font-size: 2rem; font-weight: 300; color: #111111; margin-bottom: 4px; }
+    .tier-sub { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; color: #999999; letter-spacing: 1px; margin-bottom: 20px; }
+    .tier-desc { font-family: 'Raleway', sans-serif; font-size: 0.9rem; color: #555555; line-height: 1.7; }
     .faq-item { border-top: 0.5px solid rgba(5,13,53,0.1); padding: 32px 0; }
     .faq-item:last-child { border-bottom: 0.5px solid rgba(5,13,53,0.1); }
     .faq-q { font-family: 'Raleway', sans-serif; font-size: 1.05rem; font-weight: 600; color: #111111; margin-bottom: 12px; }
@@ -160,7 +177,7 @@
       <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
       <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
       <a href="/blog/">Blog</a>
-      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/poke-recipes/">Poke Recipes</a><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/blog/is-poke-safe-update/">Poke Recipes</a><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
       <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
     </div>
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
@@ -232,6 +249,34 @@
   </div>
 
   <div class="webdev-section">
+    <p class="section-tag">Services &amp; Pricing</p>
+    <h2 class="webdev-heading">A word on pricing.</h2>
+    <p class="webdev-body">The number is on the page because you deserve to know it before we ever speak. No discovery call designed to qualify your budget. No proposal that arrives three days later with a number that surprises you.</p>
+    <p class="webdev-body">You don't get sticker shock at a Corvette dealership. The MSRP is posted. You know what you're walking into. And you know that the $5,000 Corvette on Facebook Marketplace is missing an engine.</p>
+    <p class="webdev-body">Same principle here. What's on this page is what it costs. What's in the engagement is everything it promises. If the investment isn't right for where you are today — the Sunday session exists for exactly that reason. <a href="/sunday-sessions/" class="inline-link" style="color:#050d35;font-weight:600;text-decoration:underline;text-underline-offset:3px;">Take Me To Sunday.</a></p>
+    <div class="tier-row">
+      <div class="tier-card">
+        <p class="tier-name">Tier I — Launch</p>
+        <p class="tier-price">$9,500</p>
+        <p class="tier-sub">+ $950/mo retainer</p>
+        <p class="tier-desc">Full infrastructure setup · Custom website build · Analytics ecosystem · SEO, schema, meta · 30-day GMB calendar · QR review capture</p>
+      </div>
+      <div class="tier-card">
+        <p class="tier-name">Tier II — Growth</p>
+        <p class="tier-price">$15,500</p>
+        <p class="tier-sub">+ $1,650/mo retainer</p>
+        <p class="tier-desc">Everything in Tier I · Soli AI agent built and deployed · Hero video · Portfolio entries up to 50 · AEO and GEO optimization</p>
+      </div>
+      <div class="tier-card">
+        <p class="tier-name">Tier III — Flagship</p>
+        <p class="tier-price">$22,500</p>
+        <p class="tier-sub">+ $2,250/mo retainer</p>
+        <p class="tier-desc">Everything in Tier II · 100 portfolio entries · AI advisory 3 months · Soli retraining · Fully turnkey</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="webdev-section">
     <p class="section-tag">Monthly Hosting</p>
     <h2 class="webdev-heading">Your site stays up because a real person<br>is responsible for keeping it up.</h2>
     <p class="webdev-body">Hosting is not a server bill passed along with a markup. It is a managed relationship. Your site is monitored, maintained, and supported by the same person who built it — not a ticket system, not an offshore team, not a chatbot.</p>
@@ -268,6 +313,10 @@
       <div class="faq-item">
         <p class="faq-q">What does monthly hosting include?</p>
         <p class="faq-a">Hosting is not a server bill passed along with a markup. It is a managed relationship. Your site is monitored, maintained, and supported by the same person who built it — not a ticket system, not an offshore team, not a chatbot. Standard hosting is $75 per month. Enterprise hosting for luxury, high-liability, or high-traffic builds is $150 per month.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How much does a full website build cost?</p>
+        <p class="faq-a">Tier I — Launch starts at $9,500 plus a $950/month retainer and includes a full infrastructure setup, custom website build, analytics ecosystem, SEO, schema, meta, a 30-day Google Business Profile calendar, and QR review capture. Tier II — Growth is $15,500 plus $1,650/month and adds a custom Soli AI agent, hero video, and up to 50 AEO and GEO optimized portfolio entries. Tier III — Flagship is $22,500 plus $2,250/month and is fully turnkey, with 100 portfolio entries, three months of AI advisory, and Soli retraining included.</p>
       </div>
     </div>
   </div>

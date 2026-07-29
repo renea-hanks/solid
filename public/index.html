@@ -78,6 +78,8 @@
         "description": "One person. Your entire digital presence. Nothing outsourced.",
         "url": "https://solidsolutionstoday.com",
         "founder": { "@id": "https://solidsolutionstoday.com/#renea" },
+        "email": "hello@solidsolutionstoday.com",
+        "telephone": "+14054286691",
         "sameAs": [
           "https://linkedin.com/in/renea-hanks",
           "https://github.com/renea-hanks",
@@ -134,7 +136,8 @@
           "addressCountry": "US"
         },
         "url": "https://solidsolutionstoday.com",
-        "telephone": "+15807683321",
+        "telephone": "+14054286691",
+        "email": "hello@solidsolutionstoday.com",
         "slogan": "Where the search stops.",
         "priceRange": "Free - $22,500",
         "hasOfferCatalog": {
@@ -147,7 +150,7 @@
             { "@type": "Offer", "name": "The Follow-Up Engine", "price": "27.00", "priceCurrency": "USD", "url": "https://square.link/u/qGUZ8lCr", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "AI Tool Stack Scorecard", "price": "7.00", "priceCurrency": "USD", "url": "https://square.link/u/URfUDkQK", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Sunday Session", "price": "597.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/sunday-sessions/", "availability": "https://schema.org/InStock" },
-            { "@type": "Offer", "name": "Before You Text — AI Agent Trust Session", "price": "597.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/sunday-sessions/before-you-text/", "availability": "https://schema.org/InStock" },
+            { "@type": "Offer", "name": "Before You Text — AI Agent Trust Session", "price": "297.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/sunday-sessions/before-you-text/", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Rules of the Road", "price": "97.00", "priceCurrency": "USD", "url": "https://square.link/u/G7VO7oKF", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Tier I - Launch", "price": "9500.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/ai-consulting/", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Tier II - Growth", "price": "15500.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/ai-consulting/", "availability": "https://schema.org/InStock" },
@@ -184,6 +187,63 @@
       background: #050d35 !important;
       color: #ffffff !important;
     }
+    .contact-strip {
+      background: #f7f7f9;
+      border-bottom: 0.5px solid rgba(5,13,53,0.1);
+      padding: 14px 48px;
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .contact-strip a {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #050d35;
+      text-decoration: none;
+    }
+    .contact-strip a:hover { opacity: 0.7; }
+    .low-ticket-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .low-ticket-card {
+      border: 0.5px solid rgba(5,13,53,0.12);
+      border-radius: 4px;
+      padding: 28px 24px;
+      background: #ffffff;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      text-decoration: none;
+      display: block;
+    }
+    .low-ticket-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(5,13,53,0.09); }
+    .low-ticket-price {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 300;
+      color: #050d35;
+      margin-bottom: 8px;
+    }
+    .low-ticket-name {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #111111;
+      margin-bottom: 6px;
+    }
+    .low-ticket-desc {
+      font-family: 'Raleway', sans-serif;
+      font-size: 0.85rem;
+      color: #666666;
+      line-height: 1.6;
+    }
+    @media (max-width: 768px) {
+      .contact-strip { padding: 12px 24px; gap: 16px; }
+    }
   </style>
 </head>
 <body>
@@ -218,6 +278,11 @@
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
   </nav>
 
+  <div class="contact-strip">
+    <a href="tel:+14054286691">405-428-6691</a>
+    <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a>
+  </div>
+
   <section class="hero">
     <video class="hero-video" autoplay loop muted playsinline poster="images/hero-poster.jpg">
       <source src="media/Solid-Solutions-Today-Hero-Video.mp4" type="video/mp4" />
@@ -236,6 +301,23 @@
       <p class="section-body">The businesses that figure this out first don't just get efficiency. They get months of advantage that compound. The ones who wait are closing a gap, not opening a door.</p>
       <p class="section-body">The problem isn't access to AI. The problem is that most implementations are built wrong — no guardrails, no strategy, no human in the loop. They fail publicly and expensively.</p>
       <p class="section-body">This is where that stops.</p>
+    </div>
+  </section>
+
+  <section class="case-section" id="proof">
+    <div class="section-inner">
+      <p class="section-label light">Proven Result</p>
+      <h2 class="section-heading light">A 50-year contractor. Zero digital presence. One engagement.</h2>
+      <div class="section-rule light"></div>
+      <p class="section-body light">Dawley Asphalt & Paving — Colorado Springs, CO. Fifty-plus years in business, a sterling reputation, and no digital presence at all before this engagement. One build delivered a full Firebase web application, a custom AI agent trained on every service and escalation path, 40+ AEO and GEO optimized portfolio entries, unified analytics, a 30-day content calendar, and a complete SEO recovery — including 40+ redirect fixes to stop the site from bleeding search equity it never knew it had.</p>
+      <p class="section-body light">Google AI Mode now surfaces the business first for its core local searches. The client owns every asset, every account, every credential.</p>
+      <div class="case-stats">
+        <div class="stat-item"><span class="stat-num">50+</span><span class="stat-label">Years in business before this build</span></div>
+        <div class="stat-item"><span class="stat-num">40+</span><span class="stat-label">AEO / GEO portfolio entries delivered</span></div>
+        <div class="stat-item"><span class="stat-num">0&rarr;1</span><span class="stat-label">Digital presence built from nothing</span></div>
+        <div class="stat-item"><span class="stat-num">#1</span><span class="stat-label">Google AI Mode for core local keywords</span></div>
+      </div>
+      <p class="section-body light" style="margin-top:24px;"><a href="https://dawleyasphalt.com" target="_blank" rel="noopener" class="inline-link" style="color:rgba(255,255,255,0.75); border-bottom: 1px solid rgba(255,255,255,0.35);">Visit the live site &rarr;</a></p>
     </div>
   </section>
 
@@ -317,6 +399,37 @@
     </div>
   </section>
 
+  <section class="content-section" id="start-small">
+    <div class="section-inner">
+      <p class="section-label">Not ready for $9,500?</p>
+      <h2 class="section-heading">Start for as little as $5.</h2>
+      <div class="section-rule"></div>
+      <p class="section-body">Templates, guides, and checklists built to be used today — no consultation required. See where you land, then decide what's next.</p>
+      <div class="low-ticket-grid">
+        <a href="/is-this-ai/" class="low-ticket-card">
+          <p class="low-ticket-price">$5</p>
+          <p class="low-ticket-name">Is This AI? The Detection Checklist</p>
+          <p class="low-ticket-desc">15 signals, instant likelihood score, a clear next step.</p>
+        </a>
+        <a href="https://square.link/u/17KUNN1Y" target="_blank" rel="noopener" class="low-ticket-card">
+          <p class="low-ticket-price">$7</p>
+          <p class="low-ticket-name">The AI Buyer's Guide</p>
+          <p class="low-ticket-desc">The right questions to ask before you spend a dollar.</p>
+        </a>
+        <a href="https://square.link/u/qGUZ8lCr" target="_blank" rel="noopener" class="low-ticket-card">
+          <p class="low-ticket-price">$27</p>
+          <p class="low-ticket-name">The Follow-Up Engine</p>
+          <p class="low-ticket-desc">Five ready-to-use sequences for leads that go quiet.</p>
+        </a>
+        <a href="/resources/" class="low-ticket-card">
+          <p class="low-ticket-price">More</p>
+          <p class="low-ticket-name">See All Resources</p>
+          <p class="low-ticket-desc">The full library of templates, guides, and tools.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <section class="content-section" id="pricing">
     <div class="section-inner">
       <p class="section-label">Services &amp; pricing</p>
@@ -382,6 +495,7 @@
       <h2 class="close-headline">where the search stops.</h2>
       <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn cta-dark">Schedule your consultation</a>
       <p class="close-sub">1-hour consultation · $150 due upon booking</p>
+      <p class="close-sub" style="margin-top:12px;"><a href="tel:+14054286691" style="color:inherit;text-decoration:underline;">405-428-6691</a> &nbsp;·&nbsp; <a href="mailto:hello@solidsolutionstoday.com" style="color:inherit;text-decoration:underline;">hello@solidsolutionstoday.com</a></p>
     </div>
   </section>
 
@@ -407,7 +521,6 @@
       <a href="/partnerships/">Partnerships</a><span class="footer-sep">·</span>
       <a href="/blog/">Blog</a><span class="footer-sep">·</span>
       <a href="/resources/">Resources</a><span class="footer-sep">·</span>
-      <a href="/blog/is-poke-safe-update/">Poke Recipes</a><span class="footer-sep">·</span>
       <a href="/sunday-sessions/">Sunday Sessions</a>
     </div>
     <div class="footer-bottom">
