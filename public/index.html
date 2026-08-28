@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI Consulting for Small Business | Solid Solutions Today | Renea Hanks</title>
-  <meta name="description" content="Custom AI agents and high-performance digital infrastructure for small businesses. We replace templates with hand-coded solutions that actually work. No hype, just results." />
+  <meta name="description" content="Custom AI agents and high-performance digital infrastructure for small businesses. Free 1-hour consultation. Templates start at $5. No hype, just results." />
 
   <link rel="canonical" href="https://solidsolutionstoday.com/" />
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -14,14 +14,14 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
 
   <meta property="og:title" content="AI Consulting for Small Business | Solid Solutions Today" />
-  <meta property="og:description" content="Custom AI agents and high-performance digital infrastructure for small businesses. We replace templates with hand-coded solutions that actually work." />
+  <meta property="og:description" content="Custom AI agents and high-performance digital infrastructure for small businesses. Free 1-hour consultation. Templates start at $5." />
   <meta property="og:url" content="https://solidsolutionstoday.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://solidsolutionstoday.com/images/sst-og-default.png" />
   <meta property="og:site_name" content="Solid Solutions Today" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AI Consulting for Small Business | Solid Solutions Today" />
-  <meta name="twitter:description" content="Custom AI agents and high-performance digital infrastructure for small businesses. We replace templates with hand-coded solutions that actually work." />
+  <meta name="twitter:description" content="Custom AI agents and high-performance digital infrastructure for small businesses. Free 1-hour consultation. Templates start at $5." />
   <meta name="twitter:image" content="https://solidsolutionstoday.com/images/sst-og-default.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -149,6 +149,7 @@
             { "@type": "Offer", "name": "Use AI Like A Pro", "price": "27.00", "priceCurrency": "USD", "url": "https://square.link/u/dJz36FcU", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "The Follow-Up Engine", "price": "27.00", "priceCurrency": "USD", "url": "https://square.link/u/qGUZ8lCr", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "AI Tool Stack Scorecard", "price": "7.00", "priceCurrency": "USD", "url": "https://square.link/u/URfUDkQK", "availability": "https://schema.org/InStock" },
+            { "@type": "Offer", "name": "Free Consultation", "price": "0.00", "priceCurrency": "USD", "url": "https://app.reclaim.ai/m/solid-solutions-today", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Sunday Session", "price": "597.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/sunday-sessions/", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Before You Text — AI Agent Trust Session", "price": "297.00", "priceCurrency": "USD", "url": "https://solidsolutionstoday.com/sunday-sessions/before-you-text/", "availability": "https://schema.org/InStock" },
             { "@type": "Offer", "name": "Rules of the Road", "price": "97.00", "priceCurrency": "USD", "url": "https://square.link/u/G7VO7oKF", "availability": "https://schema.org/InStock" },
@@ -182,91 +183,60 @@
   <link rel="stylesheet" href="/css/style.css" />
 
   <style>
-    .cta-btn:hover,
-    .cta-btn.cta-dark:hover {
-      background: #050d35 !important;
-      color: #ffffff !important;
-    }
+    .cta-btn:hover, .cta-btn.cta-dark:hover { background: #050d35 !important; color: #ffffff !important; }
     .contact-strip {
-      background: #ffffff !important;
-      border-bottom: 0.5px solid rgba(5,13,53,0.1);
-      padding: 14px 48px !important;
-      display: flex !important;
-      justify-content: center;
-      gap: 32px;
-      flex-wrap: wrap;
-      opacity: 1 !important;
-      visibility: visible !important;
-      animation: none !important;
-      transition: none !important;
-      position: relative;
-      z-index: 5;
+      background: #ffffff !important; border-bottom: 0.5px solid rgba(5,13,53,0.1);
+      padding: 14px 48px !important; display: flex !important; justify-content: center;
+      gap: 32px; flex-wrap: wrap; opacity: 1 !important; visibility: visible !important;
+      animation: none !important; transition: none !important; position: relative; z-index: 5;
     }
-    .contact-strip a {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-      color: #050d35 !important;
-      text-decoration: none;
-      opacity: 1 !important;
-    }
+    .contact-strip a { font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35 !important; text-decoration: none; opacity: 1 !important; }
     .contact-strip a:hover { opacity: 0.7 !important; }
-    .low-ticket-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      margin-top: 40px;
+
+    /* STICKY HEADER CTA */
+    .header-cta-sticky {
+      position: fixed; top: 0; right: 24px; z-index: 999;
+      background: #050d35; color: #ffffff; font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+      padding: 12px 22px; border-radius: 0 0 6px 6px; text-decoration: none;
+      transform: translateY(-100%); transition: transform 0.3s ease;
     }
-    .low-ticket-card {
-      border: 0.5px solid rgba(5,13,53,0.12);
-      border-radius: 4px;
-      padding: 28px 24px;
-      background: #ffffff;
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-      text-decoration: none;
-      display: block;
+    .header-cta-sticky.visible { transform: translateY(0); }
+    .header-cta-sticky:hover { background: #000000; }
+
+    /* STICKY MOBILE CTA BAR */
+    .mobile-cta-bar {
+      display: none;
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 998;
+      background: #050d35; padding: 14px 20px; text-align: center;
+      box-shadow: 0 -4px 16px rgba(0,0,0,0.15);
     }
+    .mobile-cta-bar a {
+      display: block; font-family: 'Montserrat', sans-serif; font-size: 0.75rem;
+      font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      color: #ffffff; text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      .mobile-cta-bar { display: block; }
+      body { padding-bottom: 56px; }
+    }
+
+    .low-ticket-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 40px; }
+    .low-ticket-card { border: 0.5px solid rgba(5,13,53,0.12); border-radius: 4px; padding: 28px 24px; background: #ffffff; transition: transform 0.25s ease, box-shadow 0.25s ease; text-decoration: none; display: block; }
     .low-ticket-card:hover { transform: translateY(-5px); box-shadow: 0 12px 28px rgba(5,13,53,0.09); }
-    .low-ticket-price {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.6rem;
-      font-weight: 300;
-      color: #050d35;
-      margin-bottom: 8px;
+    .low-ticket-price { font-family: 'Raleway', sans-serif; font-size: 1.6rem; font-weight: 300; color: #050d35; margin-bottom: 8px; }
+    .low-ticket-name { font-family: 'Raleway', sans-serif; font-size: 0.95rem; font-weight: 500; color: #111111; margin-bottom: 6px; }
+    .low-ticket-desc { font-family: 'Raleway', sans-serif; font-size: 0.85rem; color: #666666; line-height: 1.6; }
+
+    .close-phone { display: block; font-family: 'Raleway', sans-serif; font-size: 30px; font-weight: 400; color: inherit; text-decoration: none; margin-top: 16px; line-height: 1.2; }
+    .close-email { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.8rem; color: inherit; text-decoration: underline; opacity: 0.7; margin-top: 8px; }
+
+    .free-tag {
+      display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.65rem;
+      font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+      background: #c9a84c; color: #050d35; padding: 4px 10px; border-radius: 3px; margin-bottom: 16px;
     }
-    .low-ticket-name {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: #111111;
-      margin-bottom: 6px;
-    }
-    .low-ticket-desc {
-      font-family: 'Raleway', sans-serif;
-      font-size: 0.85rem;
-      color: #666666;
-      line-height: 1.6;
-    }
-    .close-phone {
-      display: block;
-      font-family: 'Raleway', sans-serif;
-      font-size: 30px;
-      font-weight: 400;
-      color: inherit;
-      text-decoration: none;
-      margin-top: 16px;
-      line-height: 1.2;
-    }
-    .close-email {
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 0.8rem;
-      color: inherit;
-      text-decoration: underline;
-      opacity: 0.7;
-      margin-top: 8px;
-    }
+
     @media (max-width: 768px) {
       .contact-strip { padding: 12px 24px !important; gap: 16px; }
       .close-phone { font-size: 24px; }
@@ -275,6 +245,8 @@
 </head>
 <body>
 
+  <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="header-cta-sticky" id="headerStickyCta">Free Consultation</a>
+
   <nav class="nav">
     <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
     <div class="nav-links" id="navLinks">
@@ -282,15 +254,11 @@
       <a href="/ai-agents/">AI Agents</a>
       <div class="nav-item">
         <a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a>
-        <div class="nav-dropdown">
-          <a href="/web-development/">Web Development</a>
-        </div>
+        <div class="nav-dropdown"><a href="/web-development/">Web Development</a></div>
       </div>
       <div class="nav-item">
         <a href="/about/" class="has-dropdown">About</a>
-        <div class="nav-dropdown">
-          <a href="/partnerships/">Partnerships</a>
-        </div>
+        <div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div>
       </div>
       <a href="/blog/">Blog</a>
       <div class="nav-item">
@@ -300,7 +268,7 @@
           <a href="/sunday-sessions/">Sunday Sessions</a>
         </div>
       </div>
-      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Free Consultation</a>
     </div>
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
   </nav>
@@ -315,8 +283,39 @@
       <source src="media/Solid-Solutions-Today-Hero-Video.mp4" type="video/mp4" />
     </video>
     <div class="hero-overlay-text">
-      <h1 class="hero-headline">I build the AI infrastructure your business actually needs.</h1>
+      <h1 class="hero-headline">I build the AI your business actually needs. Let's talk about what that looks like for you — free, one hour, no pitch.</h1>
       <p class="hero-brand">Solid Solutions Today</p>
+    </div>
+  </section>
+
+  <section class="content-section" id="start-small">
+    <div class="section-inner">
+      <p class="free-tag">Start Here — No Call Required</p>
+      <h2 class="section-heading">Not ready to talk yet? Try something for $5 first.</h2>
+      <div class="section-rule"></div>
+      <p class="section-body">Templates and guides built to use today. No consultation, no commitment — just something real you can put to work right now.</p>
+      <div class="low-ticket-grid">
+        <a href="/is-this-ai/" class="low-ticket-card">
+          <p class="low-ticket-price">$5</p>
+          <p class="low-ticket-name">Is This AI? The Detection Checklist</p>
+          <p class="low-ticket-desc">15 signals, instant likelihood score, a clear next step.</p>
+        </a>
+        <a href="https://square.link/u/17KUNN1Y" target="_blank" rel="noopener" class="low-ticket-card">
+          <p class="low-ticket-price">$7</p>
+          <p class="low-ticket-name">The AI Buyer's Guide</p>
+          <p class="low-ticket-desc">The right questions to ask before you spend a dollar.</p>
+        </a>
+        <a href="https://square.link/u/qGUZ8lCr" target="_blank" rel="noopener" class="low-ticket-card">
+          <p class="low-ticket-price">$27</p>
+          <p class="low-ticket-name">The Follow-Up Engine</p>
+          <p class="low-ticket-desc">Five ready-to-use sequences for leads that go quiet.</p>
+        </a>
+        <a href="/resources/" class="low-ticket-card">
+          <p class="low-ticket-price">More</p>
+          <p class="low-ticket-name">See All Resources</p>
+          <p class="low-ticket-desc">The full library of templates, guides, and tools.</p>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -425,44 +424,13 @@
     </div>
   </section>
 
-  <section class="content-section" id="start-small">
-    <div class="section-inner">
-      <p class="section-label">Not ready for $9,500?</p>
-      <h2 class="section-heading">Start for $5. See where you land.</h2>
-      <div class="section-rule"></div>
-      <p class="section-body">Templates and guides built to use today, no consultation required. Try one, decide what's next.</p>
-      <div class="low-ticket-grid">
-        <a href="/is-this-ai/" class="low-ticket-card">
-          <p class="low-ticket-price">$5</p>
-          <p class="low-ticket-name">Is This AI? The Detection Checklist</p>
-          <p class="low-ticket-desc">15 signals, instant likelihood score, a clear next step.</p>
-        </a>
-        <a href="https://square.link/u/17KUNN1Y" target="_blank" rel="noopener" class="low-ticket-card">
-          <p class="low-ticket-price">$7</p>
-          <p class="low-ticket-name">The AI Buyer's Guide</p>
-          <p class="low-ticket-desc">The right questions to ask before you spend a dollar.</p>
-        </a>
-        <a href="https://square.link/u/qGUZ8lCr" target="_blank" rel="noopener" class="low-ticket-card">
-          <p class="low-ticket-price">$27</p>
-          <p class="low-ticket-name">The Follow-Up Engine</p>
-          <p class="low-ticket-desc">Five ready-to-use sequences for leads that go quiet.</p>
-        </a>
-        <a href="/resources/" class="low-ticket-card">
-          <p class="low-ticket-price">More</p>
-          <p class="low-ticket-name">See All Resources</p>
-          <p class="low-ticket-desc">The full library of templates, guides, and tools.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="content-section alt" id="process">
     <div class="section-inner">
       <p class="section-label light">The Process</p>
       <h2 class="section-heading light">No surprises. Not in the price. Not in the process.</h2>
       <div class="section-rule light"></div>
       <div class="process-steps">
-        <div class="process-step"><span class="step-num">01</span><div class="step-body"><p class="step-title">The consultation. $150. Paid before we speak.</p><p class="step-desc">Not a free discovery call — a working hour. You bring where you are. I bring what I see and what I'd do about it. Honest, direct, no pitch at the end.</p></div></div>
+        <div class="process-step"><span class="step-num">01</span><div class="step-body"><p class="step-title">The consultation. Free. One hour.</p><p class="step-desc">A real working conversation — not a scripted sales call. You bring where you are. I bring what I see and what I'd do about it. Honest, direct, no pressure at the end.</p></div></div>
         <div class="process-step"><span class="step-num">02</span><div class="step-body"><p class="step-title">The scope. Same business day.</p><p class="step-desc">Every line item, every deliverable, every revision round, the exact investment — no vague ranges. If you move forward, the scope reflects exactly what we discussed, with your invoice for 50% to begin.</p></div></div>
         <div class="process-step"><span class="step-num">03</span><div class="step-body"><p class="step-title">Your assets. Delivered via ShareFile.</p><p class="step-desc">Once the agreement is signed and deposit received, you get a ShareFile link. Drop everything there — images, logos, current copy, website links, social handles, anything relevant.</p></div></div>
         <div class="process-step"><span class="step-num">04</span><div class="step-body"><p class="step-title">The build. All of it. By one person.</p><p class="step-desc">You are never passed to someone else, never left wondering who's handling what, never chasing anyone for an update.</p></div></div>
@@ -488,8 +456,8 @@
     <div class="section-inner close-inner">
       <img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" class="close-logo" />
       <h2 class="close-headline">where the search stops.</h2>
-      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn cta-dark">Schedule your consultation</a>
-      <p class="close-sub">1-hour consultation · $150 due upon booking</p>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn cta-dark">Book your free consultation</a>
+      <p class="close-sub">1 hour · free · no obligation</p>
       <a href="tel:+14054286691" class="close-phone">405-428-6691</a>
       <a href="mailto:hello@solidsolutionstoday.com" class="close-email">hello@solidsolutionstoday.com</a>
     </div>
@@ -534,6 +502,19 @@
     <div class="soli-body" id="soli-chat-history"><p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p></div>
     <div class="soli-footer"><div class="soli-input-row"><input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" /><button id="soli-send" aria-label="Send message">&#10140;</button></div></div>
   </div>
+
+  <!-- MOBILE STICKY CTA -->
+  <div class="mobile-cta-bar">
+    <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener">Book Your Free Consultation</a>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      var btn = document.getElementById('headerStickyCta');
+      if (window.scrollY > 400) { btn.classList.add('visible'); }
+      else { btn.classList.remove('visible'); }
+    });
+  </script>
 
   <script src="/js/main.js"></script>
 </body>
