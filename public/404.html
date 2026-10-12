@@ -6,14 +6,23 @@
   <title>Page Not Found | Solid Solutions Today</title>
   <meta name="robots" content="noindex" />
 
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6YBJ8J45"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-VQ6YBJ8J45');</script>
+
+  <link rel="stylesheet" href="/css/style.css" />
   <style>
     .not-found {
-      min-height: 100vh;
+      min-height: calc(100vh - 72px);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -45,21 +54,61 @@
       max-width: 480px;
       margin-bottom: 48px;
     }
+    .not-found-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .not-found-link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #050d35;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(5,13,53,0.2);
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+    .not-found-link:hover {
+      border-color: #050d35;
+    }
   </style>
 </head>
 <body>
+
+  <nav class="nav">
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a>
+      <a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
 
   <div class="not-found">
     <p class="not-found-num">404</p>
     <h1 class="not-found-heading">This page does not exist.</h1>
     <p class="not-found-body">The page you are looking for may have moved or never existed. Let's get you back to where you need to be.</p>
-    <a href="index.html" class="cta-btn">Back to Solid Solutions Today</a>
+    <a href="/" class="cta-btn">Back to Solid Solutions Today</a>
+    <div class="not-found-links">
+      <a href="/blog/" class="not-found-link">Blog</a>
+      <a href="/resources/" class="not-found-link">Resources</a>
+      <a href="/about/" class="not-found-link">About</a>
+    </div>
   </div>
 
   <!-- SOLI LAUNCHER -->
   <div class="soli-circle-launcher" onclick="toggleSoli()">
-    <div class="soli-initial">S</div>
-    <div class="soli-label">Soli</div>
+    <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
   </div>
 
   <div id="soli-window">
@@ -77,6 +126,6 @@
     </div>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="/js/main.js"></script>
 </body>
 </html>

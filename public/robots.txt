@@ -2,7 +2,43 @@ User-agent: *
 Allow: /
 Disallow: /functions/
 
-# AI crawlers
+# Core search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# AI search / citation crawlers — these retrieve pages live to answer
+# a specific question and can send real visitors back to the site.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Model training crawlers — allowed. These feed training data rather
+# than live citations, but blocking them provides no ranking or
+# visibility benefit and these are the major labs' own official
+# training agents.
 User-agent: GPTBot
 Allow: /
 
@@ -12,13 +48,26 @@ Allow: /
 User-agent: Anthropic-AI
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Applebot-Extended
 Allow: /
 
-User-agent: YouBot
-Allow: /
+# Training-only scrapers with no citation or referral value — blocked.
+# These crawl purely to feed AI training data (often resold or
+# redistributed to third parties) and never send a visitor or a
+# citation back to the source.
+User-agent: CCBot
+Disallow: /
 
-User-agent: ClaudeBot
-Allow: /
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
 
 Sitemap: https://solidsolutionstoday.com/sitemap.xml

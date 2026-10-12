@@ -178,6 +178,7 @@ body {
   height: 100vh;
   overflow: hidden;
   margin-top: -72px;
+  background: #050d35;
 }
 
 .hero-video {
@@ -793,6 +794,13 @@ body {
 
 .soli-input-row button:hover {
   opacity: 0.85;
+}
+
+/* NEWSLETTER EMBED */
+.newsletter-embed {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /* FOOTER */

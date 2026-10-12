@@ -69,16 +69,6 @@
     .page-rule{width:48px;height:1px;background:#050d35;margin:32px 0}
     .page-intro{padding:0 48px 80px;max-width:860px;margin:0 auto}
     .page-intro-body{font-family:'Raleway',sans-serif;font-size:1rem;color:#555555;line-height:1.85;max-width:640px}
-    .poke-section{max-width:100%;padding:0 48px 40px}
-    .poke-section-inner{max-width:860px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    .poke-card{display:block;background:#050d35;border-radius:4px;padding:40px 48px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
-    .poke-card:hover{transform:translateY(-4px);box-shadow:0 16px 40px rgba(5,13,53,.25)}
-    .poke-card-body{display:flex;flex-direction:column;gap:12px}
-    .poke-card-eyebrow{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.5);margin:0}
-    .poke-card-title{font-family:'Raleway',sans-serif;font-size:clamp(1.1rem,2vw,1.4rem);font-weight:400;color:#ffffff;line-height:1.3;margin:0}
-    .poke-card-desc{font-family:'Raleway',sans-serif;font-size:.88rem;color:rgba(255,255,255,.7);line-height:1.75;max-width:600px;margin:0}
-    .poke-card-cta{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:#fff;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:2px;width:fit-content;transition:border-color .2s}
-    .poke-card:hover .poke-card-cta{border-color:#fff}
     .guides-section{max-width:100%;padding:80px 48px;background:#f7f7f9;border-top:.5px solid rgba(5,13,53,.08)}
     .guides-section-inner{max-width:860px;margin:0 auto}
     .guides-tag{font-family:'Montserrat',sans-serif;font-size:.65rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#050d35;margin-bottom:48px}
@@ -164,9 +154,6 @@
     .cta-btn-resources:hover{background:#000}
     @media(max-width:768px){
       .page-hero,.page-intro,.resource-nav,.resource-section,.cta-section{padding-left:24px;padding-right:24px}
-      .poke-section{padding-left:24px;padding-right:24px}
-      .poke-section-inner{grid-template-columns:1fr}
-      .poke-card{padding:32px 28px}
       .guides-section{padding-left:24px;padding-right:24px}
       .resource-section.dark{padding-left:24px;padding-right:24px}
       .assessment-wrap{padding:28px 24px}
@@ -199,19 +186,6 @@
 
   <div class="page-intro">
     <p class="page-intro-body">Practical tools and plain-language guides to help you think clearly before you build or buy anything.</p>
-  </div>
-
-  <div class="poke-section">
-    <div class="poke-section-inner" style="grid-template-columns:1fr;">
-      <a href="/blog/is-poke-safe-update/" class="poke-card">
-        <div class="poke-card-body">
-          <p class="poke-card-eyebrow">Free Read &nbsp;&middot;&nbsp; Poke Recipe Library</p>
-          <p class="poke-card-title">300+ free tools built for iMessage — and what we learned building them.</p>
-          <p class="poke-card-desc">GameDay schedules, caregiver logs, faith resources, small business follow-up — 40 categories built for real life. Plus the full account of what happened with the platform's support system and why human-in-the-loop design matters.</p>
-          <span class="poke-card-cta">Read the full story &rarr;</span>
-        </div>
-      </a>
-    </div>
   </div>
 
   <div class="guides-section">
@@ -482,8 +456,7 @@
         <div id="result-ready" style="display:none;">
           <p class="result-tier">Your Result &mdash; Ready</p>
           <h3 class="result-heading">You know what you need.<br>You have made the decision.</h3>
-          <p class="result-body">The next step is finding the right person to build it with you. Not someone who will sell you a template or a marketplace install. Someone who will ask the hard questions first, build the foundation correctly, and deliver something that actually works the way your business needs it to.</p>
-          <p class="result-body">That is exactly what gets built here.</p>
+          <p class="result-body">The next step is finding the right person to build it with you — someone who asks the hard questions first, builds the foundation correctly, and is honest with you about what it can and can't do once it's live.</p>
           <div class="result-next-steps">
             <p class="result-next-label">Your next move</p>
             <p class="result-next-item">Schedule a consultation. Come with your questions. You'll leave with a direction.</p>
@@ -510,7 +483,7 @@
       <div class="vendor-item"><p class="vendor-num">04</p><p class="vendor-question">What does success look like — and how will we measure it?</p><p class="vendor-explanation">If a vendor cannot define success in measurable terms before the engagement begins, they are not accountable to any outcome. Push for specifics. Not "improved efficiency" — what metric, what baseline, what target, what timeline? Not "better customer experience" — what does that mean in a number you can track? The businesses losing money on AI right now signed contracts with vague promises attached. The ones winning have documented outcomes with defined milestones. Make the vendor define what winning looks like before you write the check.</p></div>
       <div class="vendor-item"><p class="vendor-num">05</p><p class="vendor-question">Who builds it, who owns it, and what happens if we part ways?</p><p class="vendor-explanation">This question has two parts and both matter. First: who is actually doing the work? Is it the person you are talking to, or is it being outsourced to a team you will never meet? That is not a judgment — it is a risk assessment. You need to know who is accountable. Second: when the engagement ends, what do you walk away with? Do you own the knowledge base? The accounts? The trained model? The codebase? Or does the AI live on their platform, accessible only as long as you keep paying? Ownership at the end is not a detail. It is the whole point. An AI system you cannot access, modify, or take with you is not an asset. It is a dependency.</p></div>
     </div>
-    <p class="vendor-closing">The vendors worth working with will not flinch at any of these questions. They will answer them directly, in writing, before you sign anything. The ones who get defensive or vague when you push — that response is the information. Stay savvy.</p>
+    <p class="vendor-closing">A vendor worth working with will not flinch at any of these questions — they will answer them directly, in writing, before you sign anything. If a vendor gets defensive or vague when you ask, that reaction is itself worth paying attention to.</p>
   </div>
 
   <div class="resource-section dark" id="glossary">
@@ -530,7 +503,7 @@
         <div class="glossary-item"><p class="glossary-term">RAG (Retrieval-Augmented Generation)</p><p class="glossary-def">A method of giving an AI access to a specific body of information — your documents, your FAQs, your knowledge base — so its responses are grounded in your actual content rather than general training data.</p></div>
         <div class="glossary-item"><p class="glossary-term">Fine-Tuning</p><p class="glossary-def">Training an AI model further on specific data to shape its behavior for a particular use case. Not always necessary — and often overkill for small business applications. RAG is usually the right starting point.</p></div>
         <div class="glossary-item"><p class="glossary-term">API</p><p class="glossary-def">Application Programming Interface. A connection point that lets one piece of software talk to another. When your AI agent connects to your CRM, your calendar, or your website — it does that through APIs. You don't need to understand how they work, but you should know they exist.</p></div>
-        <div class="glossary-item"><p class="glossary-term">AEO (Answer Engine Optimization)</p><p class="glossary-def">Structuring your content so AI-powered search tools — ChatGPT, Perplexity, Google's AI Overviews — can accurately represent your business when someone asks a question relevant to what you do. The next layer beyond SEO.</p></div>
+        <div class="glossary-item"><p class="glossary-term">AEO (Answer Engine Optimization)</p><p class="glossary-def">Structuring your content so AI-powered search tools — ChatGPT, Perplexity, Google's AI Overviews — can accurately represent your business when someone asks a question relevant to what you do. The next layer beyond SEO — and one that, as of 2026, no longer guarantees results on its own.</p></div>
       </div>
     </div>
   </div>
@@ -555,6 +528,12 @@
     <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="cta-btn-resources">Schedule a Consultation</a>
   </div>
 
+  <div class="resource-section" style="padding-top: 40px;">
+    <div class="newsletter-embed">
+      <script async src="https://eocampaign1.com/form/67f10a40-ae15-11f1-bb09-97d78fa02067.js" data-form="67f10a40-ae15-11f1-bb09-97d78fa02067"></script>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="footer-inner">
       <nav class="footer-social" aria-label="Social links">
@@ -565,7 +544,6 @@
         <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
         <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
         <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
-        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
       </nav>
     </div>
     <div class="footer-sitemap">
