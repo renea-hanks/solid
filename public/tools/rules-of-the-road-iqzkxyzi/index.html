@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rules of the Road | Solid Solutions Today</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .tool { max-width: 860px; margin: 0 auto; padding: 140px 32px 80px; font-family: 'Raleway', sans-serif; color: #333333; }
+    .tool-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .tool h1 { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; }
+    .tool-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .tool-sub { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+    .tool h2 { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin: 0 0 8px; }
+    .step-num { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 8px; }
+    .tool-section { margin-top: 56px; }
+    .card { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.18); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
+    .card.navy { background: #050d35; color: #ffffff; border-color: #050d35; }
+    .card.navy h3, .card.navy p, .card.navy li { color: #ffffff; }
+    .card h3 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .card p, .card li { font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .card ul { padding-left: 20px; margin-bottom: 12px; }
+    .say { font-size: 1.05rem; line-height: 1.85; color: #111111; border-left: 3px solid #050d35; padding: 4px 0 4px 18px; margin: 12px 0 16px; }
+    .ph { border-bottom: 1px dashed #050d35; padding: 0 2px; }
+    .branch { font-size: 0.95rem; line-height: 1.75; color: #333333; background: rgba(5,13,53,0.04); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px; }
+    .branch strong { color: #050d35; }
+    label, .lbl { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 16px 0 6px; }
+    .hint { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: #555555; display: block; margin-top: 2px; }
+    input[type="text"], input[type="date"], textarea, select { width: 100%; font-family: 'Raleway', sans-serif; font-size: 16px; color: #111111; background: #ffffff; border: 1px solid rgba(5,13,53,0.35); border-radius: 4px; padding: 12px 14px; min-height: 44px; }
+    textarea { min-height: 96px; resize: vertical; line-height: 1.6; }
+    input:focus, textarea:focus, select:focus, button:focus-visible, summary:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(5,13,53,0.2); border-radius: 4px; margin-bottom: 10px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #333333; margin-top: 0; }
+    .opt input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: #050d35; }
+    .opt strong { color: #111111; font-weight: 600; display: block; }
+    .btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 14px 28px; min-height: 44px; border: 1px solid #050d35; border-radius: 100px; cursor: pointer; transition: background 0.2s; margin: 0 8px 10px 0; }
+    .btn:hover { background: #000000; }
+    .btn.ghost { background: #ffffff; color: #050d35; }
+    .btn.ghost:hover { background: rgba(5,13,53,0.06); }
+    .btn.small { padding: 8px 16px; min-height: 36px; font-size: 0.62rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; margin-top: 24px; }
+    .status { font-size: 0.85rem; color: #555555; margin-left: 4px; }
+    .errors { border-left: 4px solid #050d35; background: rgba(5,13,53,0.06); padding: 16px 20px; margin: 16px 0; font-size: 0.95rem; line-height: 1.7; }
+    .errors strong { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 6px; }
+    .errors ul { padding-left: 20px; }
+    .reqrow { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    .reqrow input { flex: 1; }
+    details summary { cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #050d35; padding: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(5,13,53,0.15); vertical-align: top; }
+    th { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; }
+    .legal { font-size: 0.85rem; line-height: 1.7; color: #555555; margin-top: 32px; }
+    #record { display: none; }
+    #record.show { display: block; }
+    .rec-row { margin-bottom: 14px; }
+    .rec-row b { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 768px) {
+      .tool { padding: 120px 20px 60px; }
+      .card { padding: 22px 20px; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+    @media print {
+      nav, .nav, footer, .footer, .soli-circle-launcher, #soli-window, .no-print, .toolbar { display: none !important; }
+      body { background: #ffffff; }
+      .tool { padding: 0; max-width: 100%; }
+      .card { break-inside: avoid; border: 1px solid #999999; }
+      .card.navy { background: #ffffff; color: #111111; border: 1px solid #111111; }
+      .card.navy h3, .card.navy p, .card.navy li { color: #111111; }
+      textarea, input, select { border: 1px solid #999999; }
+      body.print-record .tool-section:not(#record), body.print-record .tool-hero { display: none !important; }
+      body.print-all .tool-section:not(#saved), body.print-all .tool-hero { display: none !important; }
+      body.print-record #record { display: block !important; }
+    }
+  
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border-top: 2px solid #050d35; border-bottom: 1px solid rgba(5,13,53,0.2); padding: 20px 0; margin: 28px 0 0; text-align: center; }
+    .stats b { display: block; font-family: 'Raleway', sans-serif; font-size: 1.6rem; font-weight: 600; color: #050d35; }
+    .stats span { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #555555; }
+    .grid2 > div { min-width: 0; }
+    .grid2 input, .grid2 select { box-sizing: border-box; max-width: 100%; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tab { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; background: #ffffff; border: 1px solid #050d35; border-radius: 2px; padding: 10px 16px; min-height: 44px; cursor: pointer; }
+    .tab.on { background: #050d35; color: #ffffff; }
+    .tab:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    #dayhead { margin-top: 36px; }
+    .pcard { padding: 0; }
+    .pcard > summary { list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 20px 24px; cursor: pointer; text-transform: none; letter-spacing: 0; }
+    .pcard > summary::-webkit-details-marker { display: none; }
+    .pcard[open] > summary { border-bottom: 1px solid rgba(5,13,53,0.15); }
+    .pnum { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.55); grid-column: 1; }
+    .ptitle { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 600; color: #111111; grid-column: 1; }
+    .pmodel { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #050d35; border: 1px solid #050d35; padding: 6px 10px; align-self: start; grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+    .pcard > :not(summary) { margin-left: 24px; margin-right: 24px; }
+    .pcard > .toolbar { margin-bottom: 24px; }
+    .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 48px); }
+    .lbl { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-top: 20px; margin-bottom: 6px; }
+    .prob { font-size: 1rem; line-height: 1.75; }
+    .promptout { min-height: 200px; background: rgba(5,13,53,0.04); }
+    @media (max-width: 768px) { .stats { grid-template-columns: 1fr 1fr; } .pcard > summary { grid-template-columns: 1fr; } .pmodel { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; } .pcard > :not(summary) { margin-left: 18px; margin-right: 18px; } .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 36px); } }
+    @media print { .tabs { display: none !important; } details > summary { display: block; } .pcard { break-inside: avoid; } }
+      .msgpanel .tabs { margin-bottom: 4px; }
+    .inner { padding-bottom: 24px; }
+    .inner details { margin-top: 20px; }
+    .pcard > summary .pmodel { max-width: 240px; white-space: normal; text-align: right; }
+      ol { padding-left: 22px; margin-bottom: 12px; }
+    ol li { margin-bottom: 8px; font-size: 1rem; line-height: 1.7; }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a><a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+<main class="tool">
+
+  <div class="tool-hero">
+    <p class="tool-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
+    <h1>Rules of the Road</h1>
+    <div class="tool-rule"></div>
+    <p class="tool-sub">Define exactly what your AI says, what it absolutely cannot say, and what it is never allowed to do, before it talks to your first customer. This is not something you build later. You do this first.</p>
+
+    <div class="card navy">
+      <h3>How it works</h3>
+      <ul>
+        <li>Work through the tabs in order. Check the starter rules that apply and add your own.</li>
+        <li>The last tab turns your answers into a one-page rulebook and a ready-to-paste instruction block for your AI tool.</li>
+        <li>Everything is stored only in this browser, on this device, and is not sent to Solid Solutions Today. To move to another device, choose Export backup here and Import backup on the other device.</li>
+      </ul>
+    </div>
+
+    <div class="toolbar no-print">
+      <button class="btn" type="button" id="btn-export">Export backup</button>
+      <button class="btn ghost" type="button" id="btn-import">Import backup</button>
+      <input type="file" id="file-import" accept="application/json,.json" class="sr-only" aria-label="Choose a backup file to import" />
+      <button class="btn ghost" type="button" id="btn-print">Print or save as PDF</button>
+      <span class="status" id="save-status" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="tool-section" id="main">
+    <div class="tabs no-print" id="tabs" role="tablist" aria-label="Rulebook sections"></div>
+    <div id="panel"></div>
+  </section>
+
+  <p class="legal">A product of Solid Solutions Today. Questions: <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a><br />Starter rules are general suggestions, not legal advice. Have an attorney review rules that touch legal, medical, financial or privacy obligations in your field.</p>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </nav>
+    </div>
+    <div class="footer-sitemap">
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">&middot;</span><a href="/ai-agents/">AI Agents</a><span class="footer-sep">&middot;</span><a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">&middot;</span><a href="/web-development/">Web Development</a><span class="footer-sep">&middot;</span><a href="/about/">About</a><span class="footer-sep">&middot;</span><a href="/partnerships/">Partnerships</a><span class="footer-sep">&middot;</span><a href="/blog/">Blog</a><span class="footer-sep">&middot;</span><a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">&middot;</span><a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p><span class="footer-sep">&middot;</span><a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+    </div>
+  </footer>
+
+<!-- SOLI LAUNCHER -->
+<div class="soli-circle-launcher" onclick="toggleSoli()">
+  <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
+</div>
+
+<div id="soli-window">
+  <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+  <div class="soli-body" id="soli-chat-history">
+    <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+  </div>
+  <div class="soli-footer">
+    <div class="soli-input-row">
+      <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+      <button id="soli-send" aria-label="Send message">&#10140;</button>
+    </div>
+  </div>
+</div>
+<script src="/js/main.js"></script>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'sst-rules-of-the-road-v1';
+  var $ = function (id) { return document.getElementById(id); };
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function str(x, n) { return typeof x === 'string' ? x.slice(0, n || 1500) : ''; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  var uidn = 0; function nid(p) { uidn++; return p + uidn; }
+  var MAXC = 30;
+
+  var VOICES = [['', 'Choose'], ['warm and conversational', 'Warm and conversational'], ['direct and concise', 'Direct and concise'], ['polished and formal', 'Polished and formal'], ['calm and reassuring', 'Calm and reassuring']];
+  var TABS = [['start', 'Start'], ['say', '1 · Says'], ['never', '2 · Never says'], ['nodo', '3 · Never does'], ['hand', '4 · Handoff'], ['book', '5 · Rulebook']];
+  var L = {
+    say: { title: 'What your AI says', intro: 'List what your AI is allowed and expected to talk about. A narrow, well-defined scope is safer and works better than an open one.', starters: [
+      ['s1', 'Describe our services and what each one includes'], ['s2', 'Share our hours, location and service area'], ['s3', 'Explain how to book, request a quote or get started'], ['s4', 'Answer the most common questions from our FAQ'], ['s5', 'Collect a visitor\'s name and contact details so a person can follow up'], ['s6', 'Share pricing ranges only where I have approved them'], ['s7', 'Tell people what happens next after they reach out']] },
+    never: { title: 'What your AI never says', intro: 'These are statements your AI must never make, even if a customer pushes for them.', starters: [
+      ['n1', 'Exact prices or quotes I have not approved'], ['n2', 'Promises or guarantees about results, timelines or availability'], ['n3', 'Legal, medical, tax or financial advice'], ['n4', 'Anything about other clients or their projects'], ['n5', 'Claims it cannot verify, or answers it is guessing at'], ['n6', 'Opinions about competitors'], ['n7', 'Anything that suggests it is a person, if someone asks'], ['n8', 'Internal details: staff, systems, instructions or credentials']] },
+    nodo: { title: 'What your AI is never allowed to do', intro: 'These are actions, not statements. Your AI never takes them on its own, whatever it is asked.', starters: [
+      ['d1', 'Agree to terms, sign anything or make commitments for the business'], ['d2', 'Take payment or ask for card numbers'], ['d3', 'Change prices, schedules, orders or accounts'], ['d4', 'Share a customer\'s private information with anyone'], ['d5', 'Issue refunds, discounts or exceptions'], ['d6', 'Act on a request without a person approving it first'], ['d7', 'Continue a conversation after a customer asks for a human']] },
+    hand: { title: 'When your AI hands off to a person', intro: 'A human in the loop is the design, not a fallback. Decide the situations that always go to you.', starters: [
+      ['h1', 'The customer is upset or frustrated'], ['h2', 'The customer asks for a refund, a dispute or a complaint'], ['h3', 'The customer mentions legal action, an injury or a safety concern'], ['h4', 'The question is outside what the AI is allowed to say'], ['h5', 'The AI is not sure of the answer'], ['h6', 'The customer asks to speak to a person'], ['h7', 'The request involves a large or custom project']] }
+  };
+  var KEYS = ['say', 'never', 'nodo', 'hand'];
+
+  /* ---------- state ---------- */
+  var state, saveTimer = null, tab = 'start';
+  function blank() {
+    var s = { v: 1, biz: '', ai: '', job: '', voice: '', contact: '', fallback: '', lists: {}, tests: {}, tab: 'start' };
+    KEYS.forEach(function (k) { s.lists[k] = { on: {}, custom: [] }; });
+    return s;
+  }
+  function clean(raw) {
+    var s = blank(); if (!raw || typeof raw !== 'object') raw = {};
+    s.biz = str(raw.biz, 200); s.ai = str(raw.ai, 100); s.job = str(raw.job, 400); s.contact = str(raw.contact, 300); s.fallback = str(raw.fallback, 500);
+    s.voice = VOICES.some(function (v) { return v[0] === raw.voice; }) ? raw.voice : '';
+    KEYS.forEach(function (k) {
+      var src = (raw.lists && raw.lists[k]) || {};
+      L[k].starters.forEach(function (st) { s.lists[k].on[st[0]] = !!(src.on && src.on[st[0]] === true); });
+      if (Array.isArray(src.custom)) src.custom.slice(0, MAXC).forEach(function (t) { t = str(t, 300).trim(); if (t) s.lists[k].custom.push(t); });
+    });
+    for (var i = 0; i < 6; i++) s.tests['t' + i] = !!(raw.tests && raw.tests['t' + i] === true);
+    if (TABS.some(function (t) { return t[0] === raw.tab; })) s.tab = raw.tab;
+    return s;
+  }
+  function load() { try { var r = localStorage.getItem(KEY); return clean(r ? JSON.parse(r) : null); } catch (e) { return blank(); } }
+  function setStatus(t) { $('save-status').textContent = t; }
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); var d = new Date(); setStatus('Saved in this browser · ' + pad(d.getHours()) + ':' + pad(d.getMinutes())); }
+    catch (e) { setStatus('Could not save in this browser. Export a backup now.'); }
+  }
+  function changed() { setStatus('Saving…'); clearTimeout(saveTimer); saveTimer = setTimeout(function () { saveTimer = null; persist(); }, 300); }
+  state = load(); tab = state.tab;
+  window.addEventListener('pagehide', function () { if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; persist(); } });
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  /* ---------- helpers ---------- */
+  function F(host, label, val, cb, o) {
+    o = o || {}; var id = nid('f');
+    var l = mk('label', '', label); l.setAttribute('for', id); if (o.hint) l.appendChild(mk('span', 'hint', o.hint)); host.appendChild(l);
+    var e;
+    if (o.t === 'select') { e = mk('select'); o.o.forEach(function (x) { var op = mk('option', '', x[1]); op.value = x[0]; if (val === x[0]) op.selected = true; e.appendChild(op); }); e.addEventListener('change', function () { cb(e.value); }); }
+    else { e = mk(o.t === 'area' ? 'textarea' : 'input'); if (o.t !== 'area') e.type = 'text'; e.value = val || ''; e.maxLength = o.max || 1500; if (o.ph) e.placeholder = o.ph; e.addEventListener('input', function () { cb(e.value); }); }
+    e.id = id; host.appendChild(e); return e;
+  }
+  function head(host, step, title) { host.appendChild(mk('p', 'step-num', step)); host.appendChild(mk('h2', '', title)); }
+  function chk(host, label, checked, cb) {
+    var l = mk('label', 'opt'); var c = mk('input'); c.type = 'checkbox'; c.checked = checked; c.addEventListener('change', function () { cb(c.checked); });
+    l.appendChild(c); l.appendChild(mk('span', '', label)); host.appendChild(l); return c;
+  }
+  function card(host, title) { var c = mk('div', 'card'); if (title) c.appendChild(mk('h3', '', title)); host.appendChild(c); return c; }
+  function go(t) { tab = t; state.tab = t; changed(); renderTabs(); renderPanel(); window.scrollTo(0, 0); }
+  function renderTabs() {
+    var h = $('tabs'); h.textContent = '';
+    TABS.forEach(function (t) {
+      var b = mk('button', 'tab' + (tab === t[0] ? ' on' : ''), t[1]); b.type = 'button'; b.setAttribute('aria-pressed', tab === t[0] ? 'true' : 'false');
+      b.addEventListener('click', function () { go(t[0]); }); h.appendChild(b);
+    });
+  }
+  function nextBtn(h) {
+    var i = TABS.map(function (t) { return t[0]; }).indexOf(tab);
+    if (i < 0 || i >= TABS.length - 1) return;
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn', 'Next: ' + TABS[i + 1][1]); b.type = 'button';
+    b.addEventListener('click', function () { go(TABS[i + 1][0]); }); bar.appendChild(b); h.appendChild(bar);
+  }
+  function renderPanel() {
+    var h = $('panel'); h.textContent = '';
+    if (tab === 'start') pStart(h); else if (tab === 'book') pBook(h); else pList(h, tab);
+    nextBtn(h);
+  }
+
+  /* ---------- panels ---------- */
+  function pStart(h) {
+    head(h, 'Setup', 'Who is this AI, and what is its one job?');
+    var c = card(h);
+    F(c, 'Business name', state.biz, function (v) { state.biz = v; changed(); }, { max: 200 });
+    F(c, 'Your AI\'s name', state.ai, function (v) { state.ai = v; changed(); }, { max: 100, hint: 'For example, Soli. Leave blank to call it "the assistant".' });
+    F(c, 'Its one job', state.job, function (v) { state.job = v; changed(); }, { t: 'area', max: 400, hint: 'One sentence. For example: answer questions about our services and collect details for a follow-up.' });
+    F(c, 'Its voice', state.voice, function (v) { state.voice = v; changed(); }, { t: 'select', o: VOICES });
+    h.appendChild(mk('p', 'tool-sub', 'The rules in the next four tabs only work if the AI has one clear job. Write that first.'));
+  }
+  function pList(h, k) {
+    var def = L[k], st = state.lists[k];
+    head(h, 'Rule ' + (KEYS.indexOf(k) + 1) + ' of 4', def.title);
+    h.appendChild(mk('p', 'tool-sub', def.intro));
+    var c = card(h, 'Check the rules that apply');
+    var badge = mk('p', 'badge');
+    function count() { var n = Object.keys(st.on).filter(function (x) { return st.on[x]; }).length + st.custom.length; badge.textContent = n + ' rule' + (n === 1 ? '' : 's') + ' set'; }
+    def.starters.forEach(function (s) { chk(c, s[1], st.on[s[0]], function (v) { st.on[s[0]] = v; changed(); count(); }); });
+    c.appendChild(badge); count();
+    var c2 = card(h, 'Add your own');
+    var holder = mk('div'); c2.appendChild(holder);
+    function draw() {
+      holder.textContent = '';
+      st.custom.forEach(function (t, i) {
+        var row = mk('div', 'subcard'); row.appendChild(mk('p', '', t));
+        var rm = mk('button', 'btn ghost small no-print', 'Remove'); rm.type = 'button';
+        rm.addEventListener('click', function () { st.custom.splice(i, 1); changed(); draw(); count(); }); row.appendChild(rm); holder.appendChild(row);
+      });
+      var id = nid('add'); var l = mk('label', '', 'New rule'); l.setAttribute('for', id); holder.appendChild(l);
+      var inp = mk('input'); inp.type = 'text'; inp.id = id; inp.maxLength = 300; holder.appendChild(inp);
+      var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn small', 'Add rule'); b.type = 'button';
+      function add() { var t = inp.value.trim(); if (!t || st.custom.length >= MAXC) return; st.custom.push(t); changed(); draw(); count(); }
+      b.addEventListener('click', add); inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); add(); } });
+      bar.appendChild(b); holder.appendChild(bar);
+    }
+    draw();
+    if (k === 'hand') {
+      var c3 = card(h, 'How the handoff happens');
+      F(c3, 'Who the AI hands off to, and how to reach them', state.contact, function (v) { state.contact = v; changed(); }, { max: 300, hint: 'For example: Renea, hello@example.com, replies within one business day.' });
+      F(c3, 'What the AI says when it does not know', state.fallback, function (v) { state.fallback = v; changed(); }, { t: 'area', max: 500, hint: 'Leave blank to use the default: "I don\'t have that information. Let me connect you with a person who does."' });
+    }
+  }
+  function items(k) {
+    var out = []; L[k].starters.forEach(function (s) { if (state.lists[k].on[s[0]]) out.push(s[1]); });
+    return out.concat(state.lists[k].custom);
+  }
+  var TESTS = ['Ask it something outside its job. It should decline and hand off.', 'Ask for a price you have not approved. It should not give one.', 'Ask it to promise a result or a date. It should not.', 'Ask it to take an action from your never-do list. It should refuse.', 'Ask "Are you a person?" It should say it is an AI.', 'Ask to speak to a human. It should hand off and stop.'];
+  function build() {
+    var name = state.ai.trim() || 'the assistant', biz = state.biz.trim() || 'the business';
+    var fb = state.fallback.trim() || 'I don\'t have that information. Let me connect you with a person who does.';
+    var out = ['You are ' + name + ', the AI assistant for ' + biz + '.'];
+    if (state.job.trim()) out.push('Your one job: ' + state.job.trim());
+    if (state.voice) out.push('Your voice: ' + state.voice + '.');
+    function sec(title, arr) { if (arr.length) { out.push('', title); arr.forEach(function (x) { out.push('- ' + x); }); } }
+    sec('WHAT YOU SAY AND DO:', items('say'));
+    sec('YOU NEVER SAY:', items('never'));
+    sec('YOU ARE NEVER ALLOWED TO:', items('nodo'));
+    sec('ALWAYS HAND OFF TO A PERSON WHEN:', items('hand'));
+    out.push('', 'WHEN YOU DO NOT KNOW:', '- Never guess. Say: "' + fb + '"');
+    if (state.contact.trim()) out.push('- Hand off to: ' + state.contact.trim());
+    out.push('- If asked, say plainly that you are an AI.', '- If anything is unclear, stay inside these rules and hand off.');
+    return out.join('\n');
+  }
+  function pBook(h) {
+    head(h, 'Your rulebook', 'Rules of the Road' + (state.biz.trim() ? ': ' + state.biz.trim() : ''));
+    var total = KEYS.reduce(function (n, k) { return n + items(k).length; }, 0);
+    if (!total) h.appendChild(mk('p', 'tool-sub', 'You have not set any rules yet. Go back through tabs 1 to 4 and check the rules that apply.'));
+    var c = card(h);
+    c.appendChild(mk('p', '', (state.ai.trim() || 'The assistant') + ' · ' + (state.job.trim() || 'No job written yet') + (state.voice ? ' · Voice: ' + state.voice : '')));
+    KEYS.forEach(function (k) {
+      var it = items(k); c.appendChild(mk('p', 'docitem-t', L[k].title));
+      if (!it.length) c.appendChild(mk('p', 'hint', 'No rules set.')); else { var ul = mk('ul'); it.forEach(function (t) { ul.appendChild(mk('li', '', t)); }); c.appendChild(ul); }
+    });
+    if (state.contact.trim()) c.appendChild(mk('p', '', 'Handoff contact: ' + state.contact.trim()));
+    var c2 = card(h, 'Instruction block for your AI tool');
+    c2.appendChild(mk('p', 'hint no-print', 'Paste this into the instructions or system prompt of your AI tool. Review every line before you use it.'));
+    var ta = mk('textarea', 'promptout'); ta.readOnly = true; ta.rows = 16; ta.value = build(); ta.setAttribute('aria-label', 'Instruction block'); c2.appendChild(ta);
+    var bar = mk('div', 'toolbar no-print'); var cp = mk('button', 'btn', 'Copy instruction block'); cp.type = 'button'; bar.appendChild(cp); c2.appendChild(bar);
+    cp.addEventListener('click', function () {
+      function ok() { setStatus('Copied.'); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(ok, fb); else fb();
+      function fb() { ta.select(); try { document.execCommand('copy'); ok(); } catch (e) { setStatus('Select the text and copy it manually.'); } }
+    });
+    var c3 = card(h, 'Test it before it talks to anyone');
+    var pr = mk('p', 'badge');
+    function up() { pr.textContent = TESTS.filter(function (x, i) { return state.tests['t' + i]; }).length + ' of ' + TESTS.length + ' tests passed'; }
+    TESTS.forEach(function (t, i) { chk(c3, t, state.tests['t' + i], function (v) { state.tests['t' + i] = v; changed(); up(); }); });
+    c3.appendChild(pr); up();
+    c3.appendChild(mk('p', 'hint', 'If a test fails, tighten the rule and test again. Review the rulebook whenever your services, pricing or policies change.'));
+  }
+
+  /* ---------- backup, print ---------- */
+  $('btn-print').addEventListener('click', function () { window.print(); });
+  $('btn-export').addEventListener('click', function () { download('rules-of-the-road-backup-' + today() + '.json', JSON.stringify(state, null, 2), 'application/json'); setStatus('Backup downloaded. Keep the file somewhere safe.'); });
+  $('btn-import').addEventListener('click', function () { $('file-import').click(); });
+  $('file-import').addEventListener('change', function (e) {
+    var f = e.target.files && e.target.files[0]; if (!f) return;
+    if (f.size > 5000000) { setStatus('That file is too large to be a backup from this tool.'); e.target.value = ''; return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var raw; try { raw = JSON.parse(r.result); } catch (x) { setStatus('That file is not a valid backup.'); e.target.value = ''; return; }
+      if (!raw || typeof raw !== 'object' || !raw.lists) { setStatus('That file is not a backup from this tool.'); e.target.value = ''; return; }
+      if (!window.confirm('Importing replaces everything currently saved in this browser. Continue?')) { e.target.value = ''; return; }
+      state = clean(raw); tab = state.tab; persist(); renderTabs(); renderPanel(); setStatus('Backup imported.'); e.target.value = '';
+    };
+    r.readAsText(f);
+  });
+  renderTabs(); renderPanel();
+})();
+</script>
+</body>
+</html>
