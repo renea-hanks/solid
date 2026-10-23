@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SOPs in a Day Kit | Solid Solutions Today</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .tool { max-width: 860px; margin: 0 auto; padding: 140px 32px 80px; font-family: 'Raleway', sans-serif; color: #333333; }
+    .tool-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .tool h1 { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; }
+    .tool-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .tool-sub { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+    .tool h2 { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin: 0 0 8px; }
+    .step-num { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 8px; }
+    .tool-section { margin-top: 56px; }
+    .card { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.18); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
+    .card.navy { background: #050d35; color: #ffffff; border-color: #050d35; }
+    .card.navy h3, .card.navy p, .card.navy li { color: #ffffff; }
+    .card h3 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .card p, .card li { font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .card ul { padding-left: 20px; margin-bottom: 12px; }
+    .say { font-size: 1.05rem; line-height: 1.85; color: #111111; border-left: 3px solid #050d35; padding: 4px 0 4px 18px; margin: 12px 0 16px; }
+    .ph { border-bottom: 1px dashed #050d35; padding: 0 2px; }
+    .branch { font-size: 0.95rem; line-height: 1.75; color: #333333; background: rgba(5,13,53,0.04); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px; }
+    .branch strong { color: #050d35; }
+    label, .lbl { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 16px 0 6px; }
+    .hint { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: #555555; display: block; margin-top: 2px; }
+    input[type="text"], input[type="date"], textarea, select { width: 100%; font-family: 'Raleway', sans-serif; font-size: 16px; color: #111111; background: #ffffff; border: 1px solid rgba(5,13,53,0.35); border-radius: 4px; padding: 12px 14px; min-height: 44px; }
+    textarea { min-height: 96px; resize: vertical; line-height: 1.6; }
+    input:focus, textarea:focus, select:focus, button:focus-visible, summary:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(5,13,53,0.2); border-radius: 4px; margin-bottom: 10px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #333333; margin-top: 0; }
+    .opt input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: #050d35; }
+    .opt strong { color: #111111; font-weight: 600; display: block; }
+    .btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 14px 28px; min-height: 44px; border: 1px solid #050d35; border-radius: 100px; cursor: pointer; transition: background 0.2s; margin: 0 8px 10px 0; }
+    .btn:hover { background: #000000; }
+    .btn.ghost { background: #ffffff; color: #050d35; }
+    .btn.ghost:hover { background: rgba(5,13,53,0.06); }
+    .btn.small { padding: 8px 16px; min-height: 36px; font-size: 0.62rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; margin-top: 24px; }
+    .status { font-size: 0.85rem; color: #555555; margin-left: 4px; }
+    .errors { border-left: 4px solid #050d35; background: rgba(5,13,53,0.06); padding: 16px 20px; margin: 16px 0; font-size: 0.95rem; line-height: 1.7; }
+    .errors strong { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 6px; }
+    .errors ul { padding-left: 20px; }
+    .reqrow { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    .reqrow input { flex: 1; }
+    details summary { cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #050d35; padding: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(5,13,53,0.15); vertical-align: top; }
+    th { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; }
+    .legal { font-size: 0.85rem; line-height: 1.7; color: #555555; margin-top: 32px; }
+    #record { display: none; }
+    #record.show { display: block; }
+    .rec-row { margin-bottom: 14px; }
+    .rec-row b { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 768px) {
+      .tool { padding: 120px 20px 60px; }
+      .card { padding: 22px 20px; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+    @media print {
+      nav, .nav, footer, .footer, .soli-circle-launcher, #soli-window, .no-print, .toolbar { display: none !important; }
+      body { background: #ffffff; }
+      .tool { padding: 0; max-width: 100%; }
+      .card { break-inside: avoid; border: 1px solid #999999; }
+      .card.navy { background: #ffffff; color: #111111; border: 1px solid #111111; }
+      .card.navy h3, .card.navy p, .card.navy li { color: #111111; }
+      textarea, input, select { border: 1px solid #999999; }
+      body.print-record .tool-section:not(#record), body.print-record .tool-hero { display: none !important; }
+      body.print-all .tool-section:not(#saved), body.print-all .tool-hero { display: none !important; }
+      body.print-record #record { display: block !important; }
+    }
+  
+    .progress { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 1px; color: #050d35; margin: 20px 0 0; }
+    .proc .pgrid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 16px; }
+    .badge { font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 14px 0 6px; }
+    .bk-name { display: block; font-size: 0.95rem; font-weight: 600; }
+    .subcard { border-left: 3px solid rgba(5,13,53,0.25); padding: 4px 0 8px 16px; margin: 14px 0; }
+    .subhead { margin-top: 24px; }
+    .sopname { font-size: 1.1rem; color: #111111; font-weight: 600; margin-bottom: 4px; }
+    .sopitem.active { border-color: #050d35; border-width: 1.5px; }
+    .promptout { min-height: 220px; background: rgba(5,13,53,0.04); }
+    .doc h3 { margin-top: 22px; }
+    .docrule { border: 0; border-top: 1px solid rgba(5,13,53,0.25); margin: 24px 0 4px; }
+    .docitem { margin-bottom: 14px; }
+    .docitem p { margin-bottom: 4px; }
+    .docitem-t { font-weight: 600; color: #111111; }
+    .chk { font-size: 1.05rem; }
+    @media (max-width: 768px) { .proc .pgrid { grid-template-columns: 1fr; } }
+    @media print {
+      body.print-doc .tool-hero, body.print-doc #c1, body.print-doc #c2, body.print-doc .c3-other, body.print-doc .legal { display: none !important; }
+      body.print-doc #viewer .doc { border: 0; padding: 0; }
+      details { display: block; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav">
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a><a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+<main class="tool">
+
+  <div class="tool-hero">
+    <p class="tool-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
+    <h1>SOPs in a Day Kit</h1>
+    <div class="tool-rule"></div>
+    <p class="tool-sub">The AI-accelerated process documentation system. Stop carrying your business in your head. Rank your processes, build your AI prompts, and write your SOPs here. Your work saves as you type.</p>
+
+    <div class="card navy">
+      <h3>Your outcome</h3>
+      <p>Three fully documented, delegable processes, built in a single day. The knowledge that lives in your head becomes a system someone else can follow.</p>
+      <p>Work in order. Start with Component 01, then Component 02, then Component 03. Finish one process all the way through before you start the next.</p>
+      <p>What you type is stored only in this browser, on this device, and is not sent to Solid Solutions Today. To move to another device or keep a copy, choose Export backup here and Import backup on the other device. Clearing your browser data erases what is stored, so export regularly.</p>
+    </div>
+
+    <p class="progress" id="progress" role="status" aria-live="polite"></p>
+
+    <div class="toolbar no-print">
+      <button class="btn" type="button" id="btn-export">Export backup</button>
+      <button class="btn ghost" type="button" id="btn-import">Import backup</button>
+      <input type="file" id="file-import" accept="application/json,.json" class="sr-only" aria-label="Choose a backup file to import" />
+      <button class="btn ghost" type="button" id="btn-print">Print or save as PDF</button>
+      <span class="status" id="save-status" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <!-- COMPONENT 01 -->
+  <section class="tool-section" id="c1">
+    <p class="step-num">Component 01</p>
+    <h2>The 24-Hour Prioritization Framework</h2>
+    <p class="tool-sub">You cannot document everything at once, and you should not try. This framework identifies the three to five processes that are costing you the most right now, so you start with what actually matters.</p>
+
+    <div class="card">
+      <h3>Step 01 · Identify your bottleneck processes</h3>
+      <p>Write down every recurring task in your business that currently lives only in your head. Do not filter. Do not judge. Just list them. Include anything you have trained someone on verbally but never written down.</p>
+      <details>
+        <summary>Categories to prompt your thinking</summary>
+        <ul>
+          <li><strong>Client intake.</strong> How new clients are onboarded, what information you collect, what happens first.</li>
+          <li><strong>Delivery.</strong> How your core service or product gets produced and delivered.</li>
+          <li><strong>Communication.</strong> How you respond to inquiries, follow up, and handle problems.</li>
+          <li><strong>Admin and finance.</strong> Invoicing, payment tracking, expense logging, reporting.</li>
+          <li><strong>Marketing and content.</strong> How posts get created, scheduled, and published.</li>
+          <li><strong>Vendor and tools.</strong> How you manage subscriptions, credentials, and vendor relationships.</li>
+        </ul>
+      </details>
+    </div>
+
+    <div class="card">
+      <h3>Step 02 · Score each process on three dimensions</h3>
+      <p>For each process, score 1 to 3 on each dimension. The total appears automatically. Your highest scores are your Day One priorities.</p>
+      <p><strong>Reading your scores.</strong> Processes scoring 7 to 9 are your immediate priorities. Processes scoring 4 to 6 are your second wave. Do not attempt to document anything scoring below 4 until everything above it is done.</p>
+    </div>
+
+    <div id="procs"></div>
+    <div class="toolbar no-print" style="margin-top:8px;">
+      <button class="btn" type="button" id="btn-addproc">Add a process</button>
+      <button class="btn ghost" type="button" id="btn-suggest">Select my highest three</button>
+      <span class="status" id="proc-status" role="status" aria-live="polite"></span>
+    </div>
+
+    <div class="card" style="margin-top:28px;">
+      <h3>Step 03 · Confirm your top three</h3>
+      <p>Use the Top three box on a process to select it. These are the only processes you are documenting today. Write them down before you open anything else in this kit.</p>
+      <p>For each of your three, answer this: <strong>If I had to leave this business for two weeks starting tomorrow, what would break first because it is not written down?</strong> If the answer matches your top three, you are in the right place. If it does not, adjust your list.</p>
+      <div id="breaks"></div>
+      <p class="hint" style="margin-top:12px;"><strong>Scope discipline.</strong> The most common mistake is trying to document fifteen things and finishing none of them. Three processes, fully documented, is a usable system. Fifteen half-finished drafts are not. Finish three. Then come back for three more.</p>
+    </div>
+  </section>
+
+  <!-- COMPONENT 02 -->
+  <section class="tool-section" id="c2">
+    <p class="step-num">Component 02</p>
+    <h2>The AI Prompt Matrix</h2>
+    <p class="tool-sub">Six prompts, each designed to pull a different type of process out of your head and turn it into structured, delegable documentation. Use the one that matches how your knowledge currently exists. Fill in the boxes, copy the finished prompt, and paste it into your AI tool.</p>
+    <div id="prompts"></div>
+  </section>
+
+  <!-- COMPONENT 03 -->
+  <section class="tool-section" id="c3">
+    <p class="step-num">Component 03</p>
+    <h2>The SOP Templates</h2>
+    <p class="tool-sub c3-other">Three templates for three types of processes. Paste in the content from your AI-generated draft, and you have a finished, delegable document. Template A is for linear processes. Template B is for decision-heavy processes. Template C is for quality verification.</p>
+
+    <div class="c3-other">
+      <div class="card">
+        <label for="biz">Your business name <span class="hint">Used in the header of every SOP</span></label>
+        <input type="text" id="biz" autocomplete="organization" />
+      </div>
+
+      <div class="toolbar no-print" style="margin-top:0;margin-bottom:20px;">
+        <button class="btn" type="button" data-new="A">New Template A: Standard Process</button>
+        <button class="btn" type="button" data-new="B">New Template B: Decision Process</button>
+        <button class="btn" type="button" data-new="C">New Template C: Quality Checklist</button>
+      </div>
+
+      <div id="soplist"></div>
+      <datalist id="proclist"></datalist>
+      <div id="editor"></div>
+    </div>
+
+    <div id="viewer"></div>
+
+    <div class="card c3-other" style="margin-top:28px;">
+      <h3>Keeping SOPs current</h3>
+      <p>A SOP six months out of date is worse than no SOP. It trains people to do the wrong thing with confidence. Review every document quarterly. Read it, run it against what you currently do, and update anything that has changed. Date every revision. The date at the bottom tells you whether to trust the document. Each SOP above shows a review date 90 days after its last update.</p>
+    </div>
+  </section>
+
+  <p class="legal">A product of Solid Solutions Today. Questions: <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a></p>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </nav>
+    </div>
+    <div class="footer-sitemap">
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">&middot;</span><a href="/ai-agents/">AI Agents</a><span class="footer-sep">&middot;</span><a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">&middot;</span><a href="/web-development/">Web Development</a><span class="footer-sep">&middot;</span><a href="/about/">About</a><span class="footer-sep">&middot;</span><a href="/partnerships/">Partnerships</a><span class="footer-sep">&middot;</span><a href="/blog/">Blog</a><span class="footer-sep">&middot;</span><a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">&middot;</span><a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p><span class="footer-sep">&middot;</span><a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+    </div>
+  </footer>
+
+<!-- SOLI LAUNCHER -->
+<div class="soli-circle-launcher" onclick="toggleSoli()">
+  <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
+</div>
+
+<div id="soli-window">
+  <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+  <div class="soli-body" id="soli-chat-history">
+    <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+  </div>
+  <div class="soli-footer">
+    <div class="soli-input-row">
+      <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+      <button id="soli-send" aria-label="Send message">&#10140;</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/main.js"></script>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'sst-sops-in-a-day-kit-v1';
+  var MAXP = 30, MAXROWS = 40;
+  var $ = function (id) { return document.getElementById(id); };
+  var uidn = 0;
+  function nid(p) { uidn++; return p + uidn; }
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function str(x, n) { return typeof x === 'string' ? x.slice(0, n || 6000) : ''; }
+  function uid() { return 'i' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+  function sc(x) { x = parseInt(x, 10); return (x >= 1 && x <= 3) ? x : 0; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function validDate(s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ''); }
+  function addDays(s, n) { var p = s.split('-'); var d = new Date(+p[0], +p[1] - 1, +p[2] + n); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+
+  /* ---------- schemas ---------- */
+  var TPL = {
+    A: { name: 'Standard Process SOP', sub: 'Linear, repeatable processes', title: 'STANDARD OPERATING PROCEDURE', fields: [
+      { k: 'business', l: 'Business name', t: 'text', hdr: 1 },
+      { k: 'process', l: 'Process name', t: 'text', hint: 'What is this process called?', rule: 1 },
+      { k: 'purpose', l: 'Purpose', t: 'area', hint: 'One sentence: why does this process exist and what does it accomplish?' },
+      { k: 'who', l: 'Who this is for', t: 'area', hint: 'Who is responsible for completing this process?' },
+      { k: 'when', l: 'When to use this SOP', t: 'area', hint: 'What triggers this process?' },
+      { k: 'tools', l: 'Tools and access required', t: 'lines', hint: 'One tool or login per line' },
+      { k: 'steps', l: 'Steps', t: 'list', rule: 1, word: 'Step', num: 'n', first: 1, n: 3, add: 'Add a step', hint: 'Number every step. Do not combine two actions into one step. If a decision is required, write: If (situation), go to Step X.', sub: [
+        { k: 'name', l: 'Step name', t: 'text' }, { k: 'text', l: 'What to do, where to do it, and what the result looks like when done correctly', t: 'area', nolabel: 1 }] },
+      { k: 'done', l: 'Completed when', t: 'area', rule: 1, hint: 'Describe the finished state. What has been sent, saved, or updated?' },
+      { k: 'wrong', l: 'What can go wrong', t: 'list', rule: 1, n: 2, add: 'Add an issue', sub: [
+        { k: 'issue', l: 'Issue', t: 'text' }, { k: 'fix', l: 'What to do', t: 'area' }] },
+      { k: 'contact', l: 'Questions or edge cases: contact', t: 'text', rule: 1, hint: 'Name, role, and how to reach them' },
+      { k: 'updated', l: 'Last updated', t: 'date' },
+      { k: 'by', l: 'Updated by', t: 'text' }
+    ] },
+    B: { name: 'Decision Process SOP', sub: 'Branching paths and judgment calls', title: 'DECISION PROCESS SOP', fields: [
+      { k: 'business', l: 'Business name', t: 'text', hdr: 1 },
+      { k: 'process', l: 'Process name', t: 'text', hint: 'What is this process called?', rule: 1 },
+      { k: 'purpose', l: 'Purpose', t: 'area', hint: 'One sentence: why does this process exist and what does it resolve?' },
+      { k: 'who', l: 'Who can make these decisions', t: 'area', hint: 'List the roles or people authorized to follow this SOP' },
+      { k: 'when', l: 'When to use this SOP', t: 'area', hint: 'What triggers this process?' },
+      { k: 'nonneg', l: 'Non-negotiables', t: 'lines', rule: 1, hint: 'Things that never change regardless of the situation. One per line.' },
+      { k: 'assess', l: 'Step 1: Assess the situation. Before making any decision, gather', t: 'lines', rule: 1, hint: 'What do you need to know first? What context matters? What has already happened? One per line.' },
+      { k: 'paths', l: 'Decision paths', t: 'list', rule: 1, word: 'Situation', num: 'A', first: 1, n: 3, add: 'Add a situation', hint: '"It depends" is not a decision path.', sub: [
+        { k: 'situation', l: 'Describe the situation', t: 'area' }, { k: 'action', l: 'Action: what to do', t: 'area' },
+        { k: 'outcome', l: 'Expected outcome: what happens next', t: 'area' }, { k: 'record', l: 'Document by: how to record this', t: 'text' }] },
+      { k: 'escwhen', l: 'Escalation path: when to escalate', t: 'lines', rule: 1, hint: 'One situation per line' },
+      { k: 'escwho', l: 'Who to contact', t: 'text', hint: 'Name, role, and how to reach them' },
+      { k: 'esctell', l: 'What to tell them', t: 'area', hint: 'The information they need' },
+      { k: 'after', l: 'Where to record decisions', t: 'text', rule: 1, pre: 'Document every situation with: date and time; situation type; action taken; outcome; who handled it.', hint: 'Tool, spreadsheet, or system' },
+      { k: 'updated', l: 'Last updated', t: 'date' },
+      { k: 'by', l: 'Updated by', t: 'text' }
+    ] },
+    C: { name: 'Quality Control Checklist', sub: 'Verify work before it leaves your business', title: 'QUALITY CONTROL CHECKLIST', fields: [
+      { k: 'business', l: 'Business name', t: 'text', hdr: 1 },
+      { k: 'name', l: 'Checklist name', t: 'text', hint: 'What process or deliverable is this for?', rule: 1 },
+      { k: 'usewhen', l: 'Use this checklist when', t: 'area', hint: 'At what point in the process should this be completed?' },
+      { k: 'who', l: 'Who completes this', t: 'area', hint: 'Complete by someone other than the person who did the work, when possible' },
+      { k: 'project', l: 'Client or project name', t: 'text', rule: 1 },
+      { k: 'workdate', l: 'Date of work completed', t: 'date' },
+      { k: 'workby', l: 'Work completed by', t: 'text' },
+      { k: 'checkby', l: 'Checklist completed by', t: 'text' },
+      { k: 'items', l: 'Checklist items', t: 'list', rule: 1, num: 'n', first: 1, check: 1, n: 5, add: 'Add an item', hint: 'Every item must have a clear pass or fail standard. "Looks good" is not a standard.', sub: [
+        { k: 'item', l: 'Item: specific and verifiable', t: 'text' }, { k: 'pass', l: 'Pass criteria: what does correct look like?', t: 'area' },
+        { k: 'fail', l: 'If fail: what to do', t: 'area' }, { k: 'ok', l: 'Passed', t: 'bool' }] },
+      { k: 'mistakes', l: 'Common mistakes to catch', t: 'list', rule: 1, num: 'n', first: 1, n: 3, add: 'Add a mistake', sub: [
+        { k: 'error', l: 'Mistake', t: 'text' }, { k: 'look', l: 'Look for', t: 'text' }] },
+      { k: 'allpass', l: 'All items passed', t: 'bool', rule: 1, head: 'Final sign-off' },
+      { k: 'refix', l: 'Failed items corrected and re-checked', t: 'bool' },
+      { k: 'approved', l: 'Approved by', t: 'text' },
+      { k: 'signdate', l: 'Date', t: 'date' },
+      { k: 'notes', l: 'Notes', t: 'area' },
+      { k: 'updated', l: 'Last updated', t: 'date', rule: 1 },
+      { k: 'by', l: 'Updated by', t: 'text' }
+    ] }
+  };
+
+  var PROMPTS = [
+    { n: '01', title: 'The Brain Dump Converter', when: 'When you can describe it but never wrote it down',
+      fields: [{ k: 'proc', l: 'Process name', t: 'text', ph: '[PROCESS NAME]' }, { k: 'dump', l: 'Your brain dump', t: 'area', ph: '[Paste your brain dump here: bullet points, run-on sentences, incomplete thoughts are all fine]' }],
+      text: 'I need to create a standard operating procedure for the following business process: {{proc}}\n\nHere is everything I know about how this process works, in no particular order:\n{{dump}}\n\nUsing only what I have provided above, create a clear, step-by-step SOP that:\n- Is written so a new team member or contractor could follow it on day one\n- Uses numbered steps in the order they should happen\n- Flags any decision points where the person needs to use judgment\n- Includes a "What can go wrong" section at the end with one or two common issues and how to handle them\n\nDo not add steps or information I have not provided. If something is unclear, note it with [CLARIFY] so I can fill it in.',
+      after: 'After you get the output', afterText: 'Read it as if you have never done this process before. Add anything that is missing. Flag anything that is wrong. The first draft is a starting point, not a finished document.' },
+    { n: '02', title: 'The Voice Memo Transcriber', when: 'When you prefer to talk through processes',
+      fields: [{ k: 'proc', l: 'Process name', t: 'text', ph: '[PROCESS NAME]' }, { k: 'tr', l: 'Your voice memo transcript', t: 'area', ph: '[Paste your voice memo transcript here. Use your phone\'s built-in transcription or Otter.ai]' }],
+      text: 'I recorded myself explaining how to do the following business process: {{proc}}\n\nHere is the transcript of what I said:\n{{tr}}\n\nTurn this transcript into a clean, numbered SOP. Remove filler words, organize the steps in logical order, and make it readable by someone who does not know my business at all. Flag any step where I said something vague like "you know what to do" or "it depends." Mark those with [DECISION POINT: needs clarification] so I can come back and add detail.\n\nFormat: Title, Purpose (one sentence), Who this is for, Steps (numbered), Decision Points, What can go wrong.',
+      after: 'Tip', afterText: 'A 3-minute voice memo produces enough content for a complete SOP. Talk through the process once, narrating what you do as if training someone sitting next to you.' },
+    { n: '03', title: 'The Existing Process Sharpener', when: 'When you have a rough draft or old notes',
+      fields: [{ k: 'proc', l: 'Process name', t: 'text', ph: '[PROCESS NAME]' }, { k: 'notes', l: 'Your existing notes', t: 'area', ph: '[Paste your existing notes, old checklist, email instructions, or rough draft]' }],
+      text: 'I have an existing document or set of notes for the following process: {{proc}}\n\nHere is what I currently have:\n{{notes}}\n\nRewrite this into a clean, professional SOP that a new team member could follow without asking me questions. Keep all the substance. Just make it clear, complete, and logically ordered. Specifically:\n- Fill gaps where the instructions assume knowledge the reader might not have\n- Add a Purpose statement at the top (one sentence explaining why this process exists)\n- Add a "Completed When" statement at the bottom (so the person knows when they are done)\n- Flag anything that seems missing or contradictory with [REVIEW NEEDED]\n\nDo not change the actual process. Only improve how it is written and structured.',
+      after: 'Use this prompt', afterText: 'On anything you have already partially documented. Do not start from scratch if a rough version exists. Improve what is there.' },
+    { n: '04', title: 'The Screen Recording Narrator', when: 'When the process involves software or tools',
+      fields: [{ k: 'proc', l: 'Process name', t: 'text', ph: '[PROCESS NAME]' }, { k: 'tr', l: 'Your recording transcript', t: 'area', ph: '[Paste the transcript. Loom, Otter.ai, or your phone\'s transcription all work]' }, { k: 'tools', l: 'Software, apps, or platforms used', t: 'text', ph: '[List the software, apps, or platforms used]' }],
+      text: 'I recorded a screen recording walkthrough of the following process: {{proc}}\n\nHere is the transcript of what I said while recording:\n{{tr}}\n\nThe tools involved in this process are: {{tools}}\n\nTurn this into a written SOP that someone could follow even without watching the video. Where I referenced something visual (like "click the button on the left"), write it out clearly so it makes sense as text.\n\nFormat each step as: Step number → What to do → Where to do it → What to look for when it is done correctly.\n\nEnd with a Troubleshooting section covering the two most common things that go wrong in this type of process.',
+      after: 'Best practice', afterText: 'Record your screen while narrating out loud. Talk through every click. A 5-minute recording, transcribed, gives you everything you need for a complete written SOP.' },
+    { n: '05', title: 'The Decision Tree Builder', when: 'When the process involves judgment calls',
+      fields: [{ k: 'proc', l: 'Process name', t: 'text', ph: '[PROCESS NAME]' }, { k: 'desc', l: 'How the process works and the different situations that come up', t: 'area', ph: '[Describe the process and the different scenarios: what triggers different paths, what the options are, how you decide]' }],
+      text: 'I need to document a process that involves judgment and decisions, not just a linear set of steps. The process is: {{proc}}\n\nHere is how the process works and the different situations that come up:\n{{desc}}\n\nCreate an SOP that includes:\n1. A decision tree or branching logic section, written in plain text as "If [situation], then [action]. If [other situation], then [other action]."\n2. Clear guidance on who has authority to make which decisions\n3. Any non-negotiables: things that should never change regardless of the situation\n4. Escalation path: when should this decision go to someone else, and who\n\nMake this readable as a standalone document. Someone should be able to handle 80% of the situations in this process without asking me.',
+      after: 'Best for', afterText: 'Client-facing processes, complaint handling, pricing decisions, and anything where "it depends" has been your previous answer.' },
+    { n: '06', title: 'The Quality Check Creator', when: 'When you need someone else to verify the work',
+      fields: [{ k: 'proc', l: 'Process or deliverable name', t: 'text', ph: '[PROCESS OR DELIVERABLE NAME]' }, { k: 'done', l: 'What "done correctly" looks like in your business', t: 'area', ph: '[Describe what a perfect output or completed process looks like: what you check before considering it finished, what would make you redo it, what clients notice when it is wrong]' }],
+      text: 'I need a quality control checklist for the following process or deliverable: {{proc}}\n\nHere is what "done correctly" looks like in my business:\n{{done}}\n\nCreate a quality checklist that:\n- Can be completed by someone other than me\n- Has clear pass/fail criteria for each item, not vague standards like "looks good"\n- Is organized in the order things should be checked\n- Ends with a sign-off line (who checked it and when)\n\nAlso include a "Common Mistakes" section listing the three most frequent errors and how to catch them before they leave the building.',
+      after: 'Use this after the main SOP', afterText: 'A quality checklist is what turns a documented process into a self-correcting one.' }
+  ];
+
+  /* ---------- state ---------- */
+  var state, mode = 'edit', saveTimer = null;
+  function blank() { return { v: 1, business: '', procs: [], prompts: {}, sops: [], cur: '' }; }
+
+  function cleanList(f, arr) {
+    var out = [];
+    if (!Array.isArray(arr)) return out;
+    arr.slice(0, MAXROWS).forEach(function (r) {
+      if (!r || typeof r !== 'object') return;
+      var o = {};
+      f.sub.forEach(function (s) { o[s.k] = s.t === 'bool' ? r[s.k] === true : str(r[s.k], s.t === 'area' ? 4000 : 500); });
+      out.push(o);
+    });
+    return out;
+  }
+  function cleanData(type, d) {
+    var o = {}; d = (d && typeof d === 'object') ? d : {};
+    TPL[type].fields.forEach(function (f) {
+      if (f.t === 'bool') o[f.k] = d[f.k] === true;
+      else if (f.t === 'list') o[f.k] = cleanList(f, d[f.k]);
+      else if (f.t === 'date') o[f.k] = validDate(d[f.k]) ? d[f.k] : '';
+      else o[f.k] = str(d[f.k], f.t === 'text' ? 500 : 6000);
+    });
+    return o;
+  }
+  function clean(raw) {
+    var s = blank();
+    if (!raw || typeof raw !== 'object') return s;
+    s.business = str(raw.business, 200);
+    if (Array.isArray(raw.procs)) raw.procs.slice(0, MAXP).forEach(function (p) {
+      if (!p || typeof p !== 'object') return;
+      s.procs.push({ id: str(p.id, 40) || uid(), name: str(p.name, 300), cat: str(p.cat, 60), risk: sc(p.risk), freq: sc(p.freq), del: sc(p.del), top: p.top === true, breaks: str(p.breaks, 3000) });
+    });
+    var tc = 0; s.procs.forEach(function (p) { if (p.top) { tc++; if (tc > 3) p.top = false; } });
+    if (raw.prompts && typeof raw.prompts === 'object') PROMPTS.forEach(function (p) {
+      var src = raw.prompts[p.n]; if (!src || typeof src !== 'object') return;
+      s.prompts[p.n] = {}; p.fields.forEach(function (f) { s.prompts[p.n][f.k] = str(src[f.k], 8000); });
+    });
+    if (Array.isArray(raw.sops)) raw.sops.slice(0, 60).forEach(function (x) {
+      if (!x || typeof x !== 'object' || !TPL[x.type]) return;
+      s.sops.push({ id: str(x.id, 40) || uid(), type: x.type, created: validDate(x.created) ? x.created : today(), data: cleanData(x.type, x.data) });
+    });
+    s.cur = s.sops.some(function (x) { return x.id === raw.cur; }) ? raw.cur : '';
+    return s;
+  }
+  function load() { try { var r = localStorage.getItem(KEY); return clean(r ? JSON.parse(r) : null); } catch (e) { return blank(); } }
+  function setStatus(t) { $('save-status').textContent = t; }
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); var d = new Date(); setStatus('Saved in this browser · ' + pad(d.getHours()) + ':' + pad(d.getMinutes())); }
+    catch (e) { setStatus('Could not save in this browser. Export a backup now.'); }
+  }
+  function changed() { setStatus('Saving…'); clearTimeout(saveTimer); saveTimer = setTimeout(function () { saveTimer = null; persist(); }, 300); updateProgress(); }
+  state = load();
+  window.addEventListener('pagehide', function () { if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; persist(); } });
+
+  function curSop() { for (var i = 0; i < state.sops.length; i++) if (state.sops[i].id === state.cur) return state.sops[i]; return null; }
+  function topProcs() { return state.procs.filter(function (p) { return p.top; }); }
+  function updateProgress() {
+    $('progress').textContent = 'Top three selected: ' + topProcs().length + ' of 3 · SOPs drafted: ' + state.sops.length;
+  }
+
+  /* ---------- component 01 ---------- */
+  var CATS = ['Client intake', 'Delivery', 'Communication', 'Admin and finance', 'Marketing and content', 'Vendor and tools', 'Other'];
+  var DIMS = [
+    { k: 'risk', l: 'Risk if undocumented', o: ['1 · Low: mildly inconvenient if done wrong', '2 · Medium: causes rework or client friction', '3 · High: lost revenue or damaged trust'] },
+    { k: 'freq', l: 'Frequency', o: ['1 · Rarely: monthly or less', '2 · Weekly', '3 · Daily or several times a week'] },
+    { k: 'del', l: 'Delegability', o: ['1 · Requires deep expertise to hand off', '2 · Could be delegated with training', '3 · Could be delegated today with a clear document'] }
+  ];
+  var rows = [];
+  function total(p) { return (p.risk && p.freq && p.del) ? p.risk + p.freq + p.del : 0; }
+  function waveText(p) {
+    var t = total(p); if (!t) return 'Score all three to see your total';
+    return 'Total ' + t + ' · ' + (t >= 7 ? 'Day One priority' : t >= 4 ? 'Second wave' : 'Do not document yet');
+  }
+  function refreshTop() {
+    var n = topProcs().length;
+    rows.forEach(function (r) { r.chk.disabled = !r.p.top && n >= 3; });
+    $('proc-status').textContent = n + ' of 3 selected';
+    renderBreaks(); renderProclist(); updateProgress();
+  }
+  function renderProcs() {
+    var host = $('procs'); host.textContent = ''; rows = [];
+    state.procs.forEach(function (p, idx) {
+      var card = mk('div', 'card proc');
+      var nid1 = nid('pn'), cid = nid('pc');
+      card.appendChild(mk('label', '', 'Process ' + (idx + 1))).setAttribute('for', nid1);
+      var ni = mk('input'); ni.type = 'text'; ni.id = nid1; ni.value = p.name; ni.maxLength = 300; ni.autocomplete = 'off';
+      ni.addEventListener('input', function () { p.name = ni.value; changed(); renderBreaksLabels(); });
+      card.appendChild(ni);
+      var cl = mk('label', '', 'Category'); cl.setAttribute('for', cid); card.appendChild(cl);
+      var cs = mk('select'); cs.id = cid;
+      var o0 = mk('option', '', 'Choose a category'); o0.value = ''; cs.appendChild(o0);
+      CATS.forEach(function (c) { var o = mk('option', '', c); o.value = c; if (p.cat === c) o.selected = true; cs.appendChild(o); });
+      cs.addEventListener('change', function () { p.cat = cs.value; changed(); });
+      card.appendChild(cs);
+      var grid = mk('div', 'pgrid'); var badge = mk('p', 'badge', waveText(p));
+      DIMS.forEach(function (d) {
+        var w = mk('div'); var id = nid('ps'); var lb = mk('label', '', d.l); lb.setAttribute('for', id); w.appendChild(lb);
+        var s = mk('select'); s.id = id; var z = mk('option', '', 'Select'); z.value = '0'; s.appendChild(z);
+        d.o.forEach(function (t, i) { var o = mk('option', '', t); o.value = String(i + 1); if (p[d.k] === i + 1) o.selected = true; s.appendChild(o); });
+        s.addEventListener('change', function () { p[d.k] = sc(s.value); badge.textContent = waveText(p); changed(); });
+        w.appendChild(s); grid.appendChild(w);
+      });
+      card.appendChild(grid); card.appendChild(badge);
+      var line = mk('div', 'reqrow no-print');
+      var tl = mk('label', 'opt'); tl.style.margin = '0'; tl.style.flex = '1';
+      var chk = mk('input'); chk.type = 'checkbox'; chk.checked = p.top;
+      chk.addEventListener('change', function () { p.top = chk.checked; changed(); refreshTop(); });
+      tl.appendChild(chk); tl.appendChild(mk('span', '', 'Top three'));
+      var del = mk('button', 'btn ghost small', 'Remove'); del.type = 'button';
+      del.addEventListener('click', function () {
+        if (!window.confirm('Remove this process?')) return;
+        state.procs.splice(idx, 1); changed(); renderProcs();
+      });
+      line.appendChild(tl); line.appendChild(del); card.appendChild(line);
+      host.appendChild(card); rows.push({ p: p, chk: chk });
+    });
+    refreshTop();
+  }
+  function renderBreaks() {
+    var host = $('breaks'); host.textContent = '';
+    var tops = topProcs();
+    if (!tops.length) { host.appendChild(mk('p', 'hint', 'Select your top three above and your two-week question appears here.')); return; }
+    tops.forEach(function (p) {
+      var id = nid('bk'); var l = mk('label', '', ''); l.setAttribute('for', id);
+      l.appendChild(mk('span', 'bk-name', p.name || 'Untitled process'));
+      l.appendChild(mk('span', 'hint', 'What would break first because it is not written down?'));
+      host.appendChild(l);
+      var t = mk('textarea'); t.id = id; t.value = p.breaks; t.maxLength = 3000;
+      t.addEventListener('input', function () { p.breaks = t.value; changed(); });
+      host.appendChild(t);
+    });
+  }
+  function renderBreaksLabels() {
+    var names = document.querySelectorAll('#breaks .bk-name'); var tops = topProcs();
+    for (var i = 0; i < names.length && i < tops.length; i++) names[i].textContent = tops[i].name || 'Untitled process';
+  }
+  function renderProclist() {
+    var dl = $('proclist'); dl.textContent = '';
+    topProcs().forEach(function (p) { if (p.name) { var o = mk('option'); o.value = p.name; dl.appendChild(o); } });
+  }
+  $('btn-addproc').addEventListener('click', function () {
+    if (state.procs.length >= MAXP) { $('proc-status').textContent = 'The list holds up to ' + MAXP + ' processes.'; return; }
+    state.procs.push({ id: uid(), name: '', cat: '', risk: 0, freq: 0, del: 0, top: false, breaks: '' });
+    changed(); renderProcs();
+    var inputs = document.querySelectorAll('#procs .proc input[type="text"]'); if (inputs.length) inputs[inputs.length - 1].focus();
+  });
+  $('btn-suggest').addEventListener('click', function () {
+    var scored = state.procs.filter(function (p) { return total(p) > 0; });
+    if (!scored.length) { $('proc-status').textContent = 'Score at least one process first.'; return; }
+    scored.sort(function (a, b) { return total(b) - total(a); });
+    state.procs.forEach(function (p) { p.top = false; });
+    scored.slice(0, 3).forEach(function (p) { p.top = true; });
+    changed(); renderProcs();
+  });
+
+  /* ---------- component 02 ---------- */
+  function buildPrompt(p) {
+    var v = state.prompts[p.n] || {};
+    return p.text.replace(/\{\{(\w+)\}\}/g, function (m, k) {
+      var f = p.fields.filter(function (x) { return x.k === k; })[0];
+      var val = (v[k] || '').trim();
+      return val || (f ? f.ph : m);
+    });
+  }
+  function copyText(text, done) {
+    function fallback() {
+      var t = mk('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(t); done(ok);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+    else fallback();
+  }
+  function renderPrompts() {
+    var host = $('prompts'); host.textContent = '';
+    PROMPTS.forEach(function (p) {
+      var det = mk('details', 'card');
+      var sum = mk('summary', '', 'Prompt ' + p.n + ' · ' + p.title); det.appendChild(sum);
+      det.appendChild(mk('p', 'hint', p.when));
+      state.prompts[p.n] = state.prompts[p.n] || {};
+      var out = mk('textarea', 'promptout'); out.readOnly = true; out.setAttribute('aria-label', 'Finished prompt ' + p.n);
+      function refresh() { out.value = buildPrompt(p); }
+      p.fields.forEach(function (f) {
+        var id = nid('pf'); var l = mk('label', '', f.l); l.setAttribute('for', id); det.appendChild(l);
+        var inp = mk(f.t === 'area' ? 'textarea' : 'input'); if (f.t !== 'area') { inp.type = 'text'; inp.setAttribute('list', 'proclist'); if (f.k !== 'proc') inp.removeAttribute('list'); }
+        inp.id = id; inp.value = state.prompts[p.n][f.k] || ''; inp.maxLength = 8000; inp.placeholder = f.ph;
+        inp.addEventListener('input', function () { state.prompts[p.n][f.k] = inp.value; refresh(); changed(); });
+        det.appendChild(inp);
+      });
+      var l2 = mk('label', '', 'Your finished prompt'); var oid = nid('po'); l2.setAttribute('for', oid); out.id = oid; det.appendChild(l2);
+      det.appendChild(out); refresh();
+      var bar = mk('div', 'toolbar no-print'); var cb = mk('button', 'btn small', 'Copy prompt'); cb.type = 'button';
+      var st = mk('span', 'status'); st.setAttribute('role', 'status');
+      cb.addEventListener('click', function () { copyText(out.value, function (ok) { st.textContent = ok ? 'Copied. Paste it into your AI tool.' : 'Copy did not work. Select the text and copy it manually.'; }); });
+      bar.appendChild(cb); bar.appendChild(st); det.appendChild(bar);
+      var tip = mk('div', 'branch'); tip.appendChild(mk('strong', '', p.after + '. ')); tip.appendChild(document.createTextNode(p.afterText)); det.appendChild(tip);
+      host.appendChild(det);
+    });
+  }
+
+  /* ---------- component 03 ---------- */
+  function newData(type) {
+    var d = {};
+    TPL[type].fields.forEach(function (f) {
+      if (f.t === 'bool') d[f.k] = false;
+      else if (f.t === 'list') { d[f.k] = []; for (var i = 0; i < (f.n || 1); i++) { var r = {}; f.sub.forEach(function (s) { r[s.k] = s.t === 'bool' ? false : ''; }); d[f.k].push(r); } }
+      else d[f.k] = '';
+    });
+    d.business = state.business;
+    return d;
+  }
+  function sopTitle(s) { var d = s.data; return (s.type === 'C' ? d.name : d.process) || 'Untitled SOP'; }
+  function reviewInfo(s) {
+    var base = validDate(s.data.updated) ? s.data.updated : s.created;
+    var due = addDays(base, 90); return { due: due, over: due < today() };
+  }
+  function renderSopList() {
+    var host = $('soplist'); host.textContent = '';
+    if (!state.sops.length) { host.appendChild(mk('p', 'hint', 'No SOPs yet. Choose a template above to start your first one.')); return; }
+    state.sops.forEach(function (s) {
+      var c = mk('div', 'card sopitem' + (s.id === state.cur ? ' active' : ''));
+      c.appendChild(mk('p', 'sopname', sopTitle(s)));
+      var ri = reviewInfo(s);
+      c.appendChild(mk('p', 'hint', 'Template ' + s.type + ': ' + TPL[s.type].name + ' · ' + (ri.over ? 'Review overdue since ' : 'Review by ') + ri.due));
+      var bar = mk('div', 'toolbar no-print');
+      [['Edit', function () { mode = 'edit'; state.cur = s.id; changed(); renderSop(); }],
+       ['View document', function () { mode = 'view'; state.cur = s.id; changed(); renderSop(); }],
+       ['Delete', function () { if (!window.confirm('Delete this SOP? This cannot be undone. Export a backup first if you are unsure.')) return; state.sops = state.sops.filter(function (x) { return x.id !== s.id; }); if (state.cur === s.id) state.cur = ''; changed(); renderSop(); }]
+      ].forEach(function (b) { var bt = mk('button', 'btn ghost small', b[0]); bt.type = 'button'; bt.addEventListener('click', b[1]); bar.appendChild(bt); });
+      c.appendChild(bar); host.appendChild(c);
+    });
+  }
+  function fieldEl(f, obj, container) {
+    var wrap = mk('div');
+    if (f.head) wrap.appendChild(mk('h3', 'subhead', f.head));
+    if (f.t === 'bool') {
+      var lb = mk('label', 'opt'); var cb = mk('input'); cb.type = 'checkbox'; cb.checked = !!obj[f.k];
+      cb.addEventListener('change', function () { obj[f.k] = cb.checked; touch(); });
+      lb.appendChild(cb); lb.appendChild(mk('span', '', f.l)); wrap.appendChild(lb); return wrap;
+    }
+    var id = nid('f'); var l = mk('label', '', f.l); l.setAttribute('for', id);
+    if (f.hint && f.t !== 'list') l.appendChild(mk('span', 'hint', f.hint));
+    wrap.appendChild(l);
+    if (f.t === 'list') { listEl(f, obj, wrap); return wrap; }
+    var inp;
+    if (f.t === 'area' || f.t === 'lines') { inp = mk('textarea'); inp.maxLength = 6000; if (f.t === 'lines') inp.placeholder = 'One per line'; }
+    else { inp = mk('input'); inp.type = f.t === 'date' ? 'date' : 'text'; inp.maxLength = 500; inp.autocomplete = 'off'; if (f.k === 'process' || f.k === 'name') inp.setAttribute('list', 'proclist'); }
+    inp.id = id; inp.value = obj[f.k] || '';
+    inp.addEventListener('input', function () { obj[f.k] = inp.value; if (f.k === 'business') state.business = inp.value; touch(); });
+    wrap.appendChild(inp); return wrap;
+  }
+  function touch() { changed(); }
+  function listEl(f, obj, wrap) {
+    wrap.querySelector('label').removeAttribute('for');
+    if (f.hint) wrap.appendChild(mk('p', 'hint', f.hint));
+    var box = mk('div'); wrap.appendChild(box);
+    function draw() {
+      box.textContent = '';
+      obj[f.k].forEach(function (row, i) {
+        var card = mk('div', 'subcard');
+        var num = f.num === 'A' ? String.fromCharCode(65 + i) : String(i + 1);
+        card.appendChild(mk('p', 'step-num', (f.word || 'Item') + ' ' + num));
+        f.sub.forEach(function (s) {
+          if (s.t === 'bool') {
+            var lb = mk('label', 'opt'); var cb = mk('input'); cb.type = 'checkbox'; cb.checked = !!row[s.k];
+            cb.addEventListener('change', function () { row[s.k] = cb.checked; touch(); });
+            lb.appendChild(cb); lb.appendChild(mk('span', '', s.l)); card.appendChild(lb); return;
+          }
+          var id = nid('r'); var l = mk('label', '', s.l); l.setAttribute('for', id); card.appendChild(l);
+          var inp = mk(s.t === 'area' ? 'textarea' : 'input'); if (s.t !== 'area') { inp.type = 'text'; inp.maxLength = 500; }
+          else { inp.maxLength = 4000; inp.style.minHeight = '72px'; }
+          inp.id = id; inp.value = row[s.k] || '';
+          inp.addEventListener('input', function () { row[s.k] = inp.value; touch(); });
+          card.appendChild(inp);
+        });
+        var rm = mk('button', 'btn ghost small no-print', 'Remove ' + (f.word || 'item').toLowerCase() + ' ' + num); rm.type = 'button'; rm.style.marginTop = '12px';
+        rm.addEventListener('click', function () { obj[f.k].splice(i, 1); touch(); draw(); });
+        card.appendChild(rm); box.appendChild(card);
+      });
+      var add = mk('button', 'btn ghost small no-print', f.add || 'Add'); add.type = 'button';
+      add.addEventListener('click', function () {
+        if (obj[f.k].length >= MAXROWS) return;
+        var r = {}; f.sub.forEach(function (s) { r[s.k] = s.t === 'bool' ? false : ''; }); obj[f.k].push(r); touch(); draw();
+        var ta = box.querySelectorAll('.subcard'); var last = ta[ta.length - 1]; var fi = last && last.querySelector('input[type="text"],textarea'); if (fi) fi.focus();
+      });
+      box.appendChild(add);
+    }
+    draw();
+  }
+
+  /* document model shared by view and text export */
+  function docBlocks(s) {
+    var tpl = TPL[s.type], d = s.data, blocks = [];
+    tpl.fields.forEach(function (f) {
+      if (f.hdr) return;
+      var b = { h: f.l, rule: !!f.rule, head: f.head || '', pre: f.pre || '' };
+      if (f.t === 'bool') { b.check = !!d[f.k]; b.kind = 'check'; }
+      else if (f.t === 'lines') { b.kind = 'lines'; b.lines = (d[f.k] || '').split('\n').map(function (x) { return x.trim(); }).filter(Boolean); }
+      else if (f.t === 'list') {
+        b.kind = 'list'; b.items = [];
+        (d[f.k] || []).forEach(function (row, i) {
+          var num = f.num === 'A' ? String.fromCharCode(65 + i) : String(i + 1);
+          var first = f.first ? (row[f.sub[0].k] || '') : '';
+          var title;
+          if (f.word) title = f.word + ' ' + num + (first ? ' — ' + first : '');
+          else if (f.num) title = num + '. ' + first;
+          else title = '';
+          if (f.check) title = (row.ok ? '☑ ' : '☐ ') + title;
+          var lines = [];
+          f.sub.forEach(function (sub, si) {
+            if (sub.t === 'bool') return; if (f.first && si === 0) return;
+            var v = (row[sub.k] || '').trim(); if (!v) return;
+            lines.push(sub.nolabel ? v : sub.l + ': ' + v);
+          });
+          b.items.push({ title: title, lines: lines });
+        });
+      } else { b.kind = 'text'; b.text = (f.t === 'date' && d[f.k]) ? d[f.k] : (d[f.k] || '').trim(); }
+      blocks.push(b);
+    });
+    return blocks;
+  }
+  function docText(s) {
+    var tpl = TPL[s.type], RULE = '━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━';
+    var out = [tpl.title, (s.data.business || '[Business Name]') + ' · Internal Document', RULE];
+    docBlocks(s).forEach(function (b, i) {
+      if (b.rule && i > 0) out.push(RULE);
+      if (b.head) out.push(b.head.toUpperCase());
+      if (b.kind === 'check') { out.push((b.check ? '[x] ' : '[ ] ') + b.h); return; }
+      out.push(b.h.toUpperCase());
+      if (b.pre) out.push(b.pre);
+      if (b.kind === 'text') out.push(b.text || '—');
+      else if (b.kind === 'lines') { if (!b.lines.length) out.push('—'); b.lines.forEach(function (x) { out.push('· ' + x); }); }
+      else if (b.kind === 'list') { if (!b.items.length) out.push('—'); b.items.forEach(function (it) { if (it.title) out.push(it.title); it.lines.forEach(function (x) { out.push(x); }); out.push(''); }); }
+    });
+    return out.join('\n').replace(/\n{3,}/g, '\n\n');
+  }
+  function renderDoc(s, host) {
+    var tpl = TPL[s.type];
+    var doc = mk('div', 'card doc');
+    doc.appendChild(mk('p', 'tool-label', tpl.title));
+    doc.appendChild(mk('h2', '', s.data.business || '[Business Name]'));
+    doc.appendChild(mk('p', 'hint', 'Internal Document'));
+    docBlocks(s).forEach(function (b, i) {
+      if (b.rule && i > 0) doc.appendChild(mk('hr', 'docrule'));
+      if (b.head) doc.appendChild(mk('h3', 'subhead', b.head));
+      if (b.kind === 'check') { doc.appendChild(mk('p', 'chk', (b.check ? '☑ ' : '☐ ') + b.h)); return; }
+      doc.appendChild(mk('h3', '', b.h));
+      if (b.pre) doc.appendChild(mk('p', '', b.pre));
+      if (b.kind === 'text') doc.appendChild(mk('p', '', b.text || '—'));
+      else if (b.kind === 'lines') { if (!b.lines.length) doc.appendChild(mk('p', '', '—')); else { var ul = mk('ul'); b.lines.forEach(function (x) { ul.appendChild(mk('li', '', x)); }); doc.appendChild(ul); } }
+      else if (b.kind === 'list') {
+        if (!b.items.length) doc.appendChild(mk('p', '', '—'));
+        b.items.forEach(function (it) {
+          var blk = mk('div', 'docitem'); if (it.title) blk.appendChild(mk('p', 'docitem-t', it.title));
+          it.lines.forEach(function (x) { blk.appendChild(mk('p', '', x)); }); doc.appendChild(blk);
+        });
+      }
+    });
+    host.appendChild(doc);
+  }
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+  function slug(s) { return (s || 'sop').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 50) || 'sop'; }
+
+  function renderSop() {
+    renderSopList();
+    var s = curSop(), ed = $('editor'), vw = $('viewer');
+    ed.textContent = ''; vw.textContent = '';
+    if (!s) return;
+    var tpl = TPL[s.type];
+    if (mode === 'view') {
+      ed.style.display = 'none';
+      var bar = mk('div', 'toolbar no-print');
+      var b1 = mk('button', 'btn', 'Print or save as PDF'), b2 = mk('button', 'btn ghost', 'Copy as text'), b3 = mk('button', 'btn ghost', 'Download .txt'), b4 = mk('button', 'btn ghost', 'Back to editing');
+      [b1, b2, b3, b4].forEach(function (b) { b.type = 'button'; bar.appendChild(b); });
+      var st = mk('span', 'status'); st.setAttribute('role', 'status'); bar.appendChild(st);
+      b1.addEventListener('click', function () { printMode('print-doc'); });
+      b2.addEventListener('click', function () { copyText(docText(s), function (ok) { st.textContent = ok ? 'Copied.' : 'Copy did not work. Use Download .txt instead.'; }); });
+      b3.addEventListener('click', function () { download(slug(sopTitle(s)) + '.txt', docText(s), 'text/plain;charset=utf-8'); });
+      b4.addEventListener('click', function () { mode = 'edit'; renderSop(); });
+      vw.appendChild(bar); renderDoc(s, vw);
+      vw.scrollIntoView && vw.scrollIntoView({ block: 'start' });
+      return;
+    }
+    ed.style.display = '';
+    var card = mk('div', 'card');
+    card.appendChild(mk('p', 'step-num', 'Template ' + s.type));
+    card.appendChild(mk('h2', '', tpl.name));
+    card.appendChild(mk('p', 'hint', tpl.sub + '. Paste in the content from your AI-generated draft. Everything saves as you type.'));
+    tpl.fields.forEach(function (f) { card.appendChild(fieldEl(f, s.data, card)); });
+    var bar2 = mk('div', 'toolbar no-print');
+    var v = mk('button', 'btn', 'View finished document'); v.type = 'button';
+    v.addEventListener('click', function () { mode = 'view'; renderSop(); });
+    var c = mk('button', 'btn ghost', 'Close editor'); c.type = 'button';
+    c.addEventListener('click', function () { state.cur = ''; changed(); renderSop(); });
+    bar2.appendChild(v); bar2.appendChild(c); card.appendChild(bar2);
+    ed.appendChild(card);
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-new]'), function (b) {
+    b.addEventListener('click', function () {
+      if (state.sops.length >= 60) return;
+      var type = b.getAttribute('data-new');
+      var s = { id: uid(), type: type, created: today(), data: newData(type) };
+      state.sops.unshift(s); state.cur = s.id; mode = 'edit'; changed(); renderSop();
+      var ed = $('editor'); if (ed.scrollIntoView) ed.scrollIntoView({ block: 'start' });
+    });
+  });
+  $('biz').addEventListener('input', function () { state.business = $('biz').value; changed(); });
+
+  /* ---------- backup + print ---------- */
+  function printMode(cls) {
+    document.body.classList.add(cls);
+    function done() { document.body.classList.remove(cls); window.removeEventListener('afterprint', done); }
+    window.addEventListener('afterprint', done);
+    window.print();
+  }
+  $('btn-print').addEventListener('click', function () { printMode('print-all'); });
+  $('btn-export').addEventListener('click', function () {
+    download('sops-kit-backup-' + today() + '.json', JSON.stringify(state, null, 2), 'application/json');
+    setStatus('Backup downloaded. Keep the file somewhere safe.');
+  });
+  $('btn-import').addEventListener('click', function () { $('file-import').click(); });
+  $('file-import').addEventListener('change', function (e) {
+    var f = e.target.files && e.target.files[0]; if (!f) return;
+    if (f.size > 5000000) { setStatus('That file is too large to be a backup from this kit.'); e.target.value = ''; return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var raw; try { raw = JSON.parse(r.result); } catch (x) { setStatus('That file is not a valid backup.'); e.target.value = ''; return; }
+      if (!raw || typeof raw !== 'object' || !Array.isArray(raw.procs) || !Array.isArray(raw.sops)) { setStatus('That file is not a backup from this kit.'); e.target.value = ''; return; }
+      if (!window.confirm('Importing replaces everything currently saved in this browser. Continue?')) { e.target.value = ''; return; }
+      state = clean(raw); persist(); renderAll(); setStatus('Backup imported.'); e.target.value = '';
+    };
+    r.readAsText(f);
+  });
+
+  function renderAll() { $('biz').value = state.business; renderProcs(); renderPrompts(); renderSop(); updateProgress(); }
+  renderAll();
+  if (!state.procs.length) { state.procs.push({ id: uid(), name: '', cat: '', risk: 0, freq: 0, del: 0, top: false, breaks: '' }); renderProcs(); }
+})();
+</script>
+</body>
+</html>
