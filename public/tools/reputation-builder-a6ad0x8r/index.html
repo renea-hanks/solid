@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reputation Builder | Solid Solutions Today</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .tool { max-width: 860px; margin: 0 auto; padding: 140px 32px 80px; font-family: 'Raleway', sans-serif; color: #333333; }
+    .tool-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .tool h1 { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; }
+    .tool-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .tool-sub { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+    .tool h2 { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin: 0 0 8px; }
+    .step-num { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 8px; }
+    .tool-section { margin-top: 56px; }
+    .card { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.18); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
+    .card.navy { background: #050d35; color: #ffffff; border-color: #050d35; }
+    .card.navy h3, .card.navy p, .card.navy li { color: #ffffff; }
+    .card h3 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .card p, .card li { font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .card ul { padding-left: 20px; margin-bottom: 12px; }
+    .say { font-size: 1.05rem; line-height: 1.85; color: #111111; border-left: 3px solid #050d35; padding: 4px 0 4px 18px; margin: 12px 0 16px; }
+    .ph { border-bottom: 1px dashed #050d35; padding: 0 2px; }
+    .branch { font-size: 0.95rem; line-height: 1.75; color: #333333; background: rgba(5,13,53,0.04); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px; }
+    .branch strong { color: #050d35; }
+    label, .lbl { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 16px 0 6px; }
+    .hint { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: #555555; display: block; margin-top: 2px; }
+    input[type="text"], input[type="date"], textarea, select { width: 100%; font-family: 'Raleway', sans-serif; font-size: 16px; color: #111111; background: #ffffff; border: 1px solid rgba(5,13,53,0.35); border-radius: 4px; padding: 12px 14px; min-height: 44px; }
+    textarea { min-height: 96px; resize: vertical; line-height: 1.6; }
+    input:focus, textarea:focus, select:focus, button:focus-visible, summary:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(5,13,53,0.2); border-radius: 4px; margin-bottom: 10px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #333333; margin-top: 0; }
+    .opt input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: #050d35; }
+    .opt strong { color: #111111; font-weight: 600; display: block; }
+    .btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 14px 28px; min-height: 44px; border: 1px solid #050d35; border-radius: 100px; cursor: pointer; transition: background 0.2s; margin: 0 8px 10px 0; }
+    .btn:hover { background: #000000; }
+    .btn.ghost { background: #ffffff; color: #050d35; }
+    .btn.ghost:hover { background: rgba(5,13,53,0.06); }
+    .btn.small { padding: 8px 16px; min-height: 36px; font-size: 0.62rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; margin-top: 24px; }
+    .status { font-size: 0.85rem; color: #555555; margin-left: 4px; }
+    .errors { border-left: 4px solid #050d35; background: rgba(5,13,53,0.06); padding: 16px 20px; margin: 16px 0; font-size: 0.95rem; line-height: 1.7; }
+    .errors strong { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 6px; }
+    .errors ul { padding-left: 20px; }
+    .reqrow { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    .reqrow input { flex: 1; }
+    details summary { cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #050d35; padding: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(5,13,53,0.15); vertical-align: top; }
+    th { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; }
+    .legal { font-size: 0.85rem; line-height: 1.7; color: #555555; margin-top: 32px; }
+    #record { display: none; }
+    #record.show { display: block; }
+    .rec-row { margin-bottom: 14px; }
+    .rec-row b { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 768px) {
+      .tool { padding: 120px 20px 60px; }
+      .card { padding: 22px 20px; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+    @media print {
+      nav, .nav, footer, .footer, .soli-circle-launcher, #soli-window, .no-print, .toolbar { display: none !important; }
+      body { background: #ffffff; }
+      .tool { padding: 0; max-width: 100%; }
+      .card { break-inside: avoid; border: 1px solid #999999; }
+      .card.navy { background: #ffffff; color: #111111; border: 1px solid #111111; }
+      .card.navy h3, .card.navy p, .card.navy li { color: #111111; }
+      textarea, input, select { border: 1px solid #999999; }
+      body.print-record .tool-section:not(#record), body.print-record .tool-hero { display: none !important; }
+      body.print-all .tool-section:not(#saved), body.print-all .tool-hero { display: none !important; }
+      body.print-record #record { display: block !important; }
+    }
+  
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border-top: 2px solid #050d35; border-bottom: 1px solid rgba(5,13,53,0.2); padding: 20px 0; margin: 28px 0 0; text-align: center; }
+    .stats b { display: block; font-family: 'Raleway', sans-serif; font-size: 1.6rem; font-weight: 600; color: #050d35; }
+    .stats span { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #555555; }
+    .grid2 > div { min-width: 0; }
+    .grid2 input, .grid2 select { box-sizing: border-box; max-width: 100%; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tab { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; background: #ffffff; border: 1px solid #050d35; border-radius: 2px; padding: 10px 16px; min-height: 44px; cursor: pointer; }
+    .tab.on { background: #050d35; color: #ffffff; }
+    .tab:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    #dayhead { margin-top: 36px; }
+    .pcard { padding: 0; }
+    .pcard > summary { list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 20px 24px; cursor: pointer; text-transform: none; letter-spacing: 0; }
+    .pcard > summary::-webkit-details-marker { display: none; }
+    .pcard[open] > summary { border-bottom: 1px solid rgba(5,13,53,0.15); }
+    .pnum { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.55); grid-column: 1; }
+    .ptitle { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 600; color: #111111; grid-column: 1; }
+    .pmodel { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #050d35; border: 1px solid #050d35; padding: 6px 10px; align-self: start; grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+    .pcard > :not(summary) { margin-left: 24px; margin-right: 24px; }
+    .pcard > .toolbar { margin-bottom: 24px; }
+    .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 48px); }
+    .lbl { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-top: 20px; margin-bottom: 6px; }
+    .prob { font-size: 1rem; line-height: 1.75; }
+    .promptout { min-height: 200px; background: rgba(5,13,53,0.04); }
+    @media (max-width: 768px) { .stats { grid-template-columns: 1fr 1fr; } .pcard > summary { grid-template-columns: 1fr; } .pmodel { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; } .pcard > :not(summary) { margin-left: 18px; margin-right: 18px; } .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 36px); } }
+    @media print { .tabs { display: none !important; } details > summary { display: block; } .pcard { break-inside: avoid; } }
+      .msgpanel .tabs { margin-bottom: 4px; }
+    .inner { padding-bottom: 24px; }
+    .inner details { margin-top: 20px; }
+    .pcard > summary .pmodel { max-width: 240px; white-space: normal; text-align: right; }
+      ol { padding-left: 22px; margin-bottom: 12px; }
+    ol li { margin-bottom: 8px; font-size: 1rem; line-height: 1.7; }
+    </style>
+</head>
+<body>
+
+<nav class="nav">
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a><a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+<main class="tool">
+
+  <div class="tool-hero">
+    <p class="tool-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
+    <h1>Reputation Builder</h1>
+    <div class="tool-rule"></div>
+    <p class="tool-sub">Traditional review strategies are built for the human eye. This system is built for how people and AI tools now find local businesses. Ask every customer for a review, respond to each one with specifics, make your profile easy to understand, and know what to do if a fake review appears.</p>
+
+    <div class="card navy">
+      <h3>How it works</h3>
+      <ul>
+        <li><strong>Setup.</strong> Enter your business details once. They fill into every message.</li>
+        <li><strong>Asset 01.</strong> Track review requests for every customer, with the exact message to send and when.</li>
+        <li><strong>Asset 02.</strong> Write a specific response to any review, and track which ones still need an answer.</li>
+        <li><strong>Asset 03.</strong> Configure your Google Business Profile and website, and write your answers and weekly posts.</li>
+        <li><strong>Asset 04.</strong> Spot a fake review, report it, and keep your profile strong while you wait.</li>
+      </ul>
+      <p>Everything you enter is stored only in this browser, on this device, and is not sent to Solid Solutions Today. Use customers' first names only. To move to another device, choose Export backup here and Import backup on the other device.</p>
+    </div>
+
+    <div class="card">
+      <h3>Before you send anything</h3>
+      <p>Ask every customer, not only the happy ones. Do not offer a discount, gift or anything else in return for a review. Do not pressure anyone to write one on the spot. Google's contribution policy does not allow incentivized reviews or selectively soliciting positive reviews, and the FTC's rule on consumer reviews bans fake reviews. Read the current rules: <a href="https://support.google.com/contributionpolicy/answer/7400114" target="_blank" rel="noopener">Google's prohibited and restricted content policy</a> and <a href="https://www.ftc.gov/system/files/ftc_gov/pdf/r311003consumerreviewstestimonialsfinalrulefrn.pdf" target="_blank" rel="noopener">the FTC's final rule on consumer reviews and testimonials</a>.</p>
+      <p>The "Why this helps" notes describe how search and AI tools may use this content. Only those companies know exactly how they choose which businesses to recommend, so treat these as good practice, not guarantees. Google changes its menus and features often, so follow Google's current on-screen options. This is not legal advice.</p>
+    </div>
+
+    <div class="toolbar no-print">
+      <button class="btn" type="button" id="btn-export">Export backup</button>
+      <button class="btn ghost" type="button" id="btn-import">Import backup</button>
+      <input type="file" id="file-import" accept="application/json,.json" class="sr-only" aria-label="Choose a backup file to import" />
+      <button class="btn ghost" type="button" id="btn-print">Print or save as PDF</button>
+      <span class="status" id="save-status" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="tool-section" id="main">
+    <div class="tabs no-print" id="tabs" role="tablist" aria-label="Sections"></div>
+    <div id="panel"></div>
+  </section>
+
+  <p class="legal">A product of Solid Solutions Today. Questions: <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a></p>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </nav>
+    </div>
+    <div class="footer-sitemap">
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">&middot;</span><a href="/ai-agents/">AI Agents</a><span class="footer-sep">&middot;</span><a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">&middot;</span><a href="/web-development/">Web Development</a><span class="footer-sep">&middot;</span><a href="/about/">About</a><span class="footer-sep">&middot;</span><a href="/partnerships/">Partnerships</a><span class="footer-sep">&middot;</span><a href="/blog/">Blog</a><span class="footer-sep">&middot;</span><a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">&middot;</span><a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p><span class="footer-sep">&middot;</span><a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+    </div>
+  </footer>
+
+<!-- SOLI LAUNCHER -->
+<div class="soli-circle-launcher" onclick="toggleSoli()">
+  <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
+</div>
+
+<div id="soli-window">
+  <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+  <div class="soli-body" id="soli-chat-history">
+    <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+  </div>
+  <div class="soli-footer">
+    <div class="soli-input-row">
+      <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+      <button id="soli-send" aria-label="Send message">&#10140;</button>
+    </div>
+  </div>
+</div>
+
+<script src="/js/main.js"></script>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'sst-reputation-builder-v1';
+  var MAXC = 500, MAXR = 500;
+  var $ = function (id) { return document.getElementById(id); };
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function str(x, n) { return typeof x === 'string' ? x.slice(0, n || 3000) : ''; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function fmt(d) { return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function today() { return fmt(new Date()); }
+  function validDate(s) { return /^\d{4}-\d{2}-\d{2}$/.test(s || ''); }
+  function addDays(s, n) { var p = s.split('-'); return fmt(new Date(+p[0], +p[1] - 1, +p[2] + n)); }
+  function nice(s) { if (!validDate(s)) return ''; var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' }); }
+  function uid() { return 'r' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+  var uidn = 0; function nid(p) { uidn++; return p + uidn; }
+  function weekStart() { var d = new Date(); var k = (d.getDay() + 6) % 7; return fmt(new Date(d.getFullYear(), d.getMonth(), d.getDate() - k)); }
+  function monthKey() { return today().slice(0, 7); }
+
+  /* ---------- state ---------- */
+  var PROF = ['business', 'me', 'service', 'city', 'custType', 'link', 'contact', 'related', 'category', 'standard'];
+  var state, saveTimer = null, tab = 'setup';
+  function blank() { return { v: 1, prof: {}, custs: [], reviews: [], checks: {}, answers: {}, reviewedGbp: '', reviewedWeb: '', tab: 'setup' }; }
+  function clean(raw) {
+    var s = blank();
+    if (!raw || typeof raw !== 'object') return s;
+    PROF.forEach(function (k) { s.prof[k] = str(raw.prof && raw.prof[k], 600); });
+    if (Array.isArray(raw.custs)) raw.custs.slice(0, MAXC).forEach(function (c) {
+      if (!c || typeof c !== 'object') return;
+      s.custs.push({ id: str(c.id, 40) || uid(), first: str(c.first, 100), noun: str(c.noun, 300), done: validDate(c.done) ? c.done : today(), sent: validDate(c.sent) ? c.sent : '', fu: validDate(c.fu) ? c.fu : '', got: c.got === true });
+    });
+    if (Array.isArray(raw.reviews)) raw.reviews.slice(0, MAXR).forEach(function (r) {
+      if (!r || typeof r !== 'object') return;
+      var n = parseInt(r.rating, 10);
+      s.reviews.push({ id: str(r.id, 40) || uid(), platform: str(r.platform, 40), who: str(r.who, 100), rating: (n >= 1 && n <= 5) ? n : 0, date: validDate(r.date) ? r.date : today(), responded: validDate(r.responded) ? r.responded : '' });
+    });
+    if (raw.checks && typeof raw.checks === 'object') Object.keys(raw.checks).slice(0, 600).forEach(function (k) { if (/^[a-z0-9:_-]{1,40}$/.test(k) && raw.checks[k] === true) s.checks[k] = true; });
+    if (raw.answers && typeof raw.answers === 'object') Object.keys(raw.answers).slice(0, 20).forEach(function (k) {
+      var a = raw.answers[k]; if (/^[a-z0-9_]{1,20}$/.test(k) && a && typeof a === 'object') s.answers[k] = { a: str(a.a, 4000), x: str(a.x, 300) };
+    });
+    s.reviewedGbp = validDate(raw.reviewedGbp) ? raw.reviewedGbp : ''; s.reviewedWeb = validDate(raw.reviewedWeb) ? raw.reviewedWeb : '';
+    ['setup', 'a1', 'a2', 'a3', 'a4'].indexOf(raw.tab) >= 0 && (s.tab = raw.tab);
+    return s;
+  }
+  function load() { try { var r = localStorage.getItem(KEY); return clean(r ? JSON.parse(r) : null); } catch (e) { return blank(); } }
+  function setStatus(t) { $('save-status').textContent = t; }
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); var d = new Date(); setStatus('Saved in this browser · ' + pad(d.getHours()) + ':' + pad(d.getMinutes())); }
+    catch (e) { setStatus('Could not save in this browser. Export a backup now.'); }
+  }
+  function changed() { setStatus('Saving…'); clearTimeout(saveTimer); saveTimer = setTimeout(function () { saveTimer = null; persist(); }, 300); }
+  state = load(); tab = state.tab;
+  window.addEventListener('pagehide', function () { if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; persist(); } });
+
+  /* ---------- helpers ---------- */
+  var PH = { first: '[First Name]', me: '[Your Name]', business: '[Business Name]', service: '[your service]', city: '[your city/neighborhood]', custType: '[homeowners / business owners / clients]', link: '[Your Google Review Link]', contact: '[your contact method]', related: '[related service]', category: '[your service category]', standard: '[one sentence about your actual standard for this specific service]', noun: '[specific service]', svc: '[specific service]', result: '[specific result]', hard: '[stressful / overwhelming / complicated]', emotion: '[the emotion they used in their review]', issue: '[specific issue they mentioned]', facts: '[one factual, neutral statement about what occurred]', kind: '[customer type]', area: '[city/neighborhood]', involved: '[one sentence about what the project involved]', outcome: '[one sentence about the outcome]', fact: '[one specific fact about your industry]', explain: '[one sentence of explanation]', para: '[paraphrase of a recent review]', x: '[nearby city or neighborhood]' };
+  function tpl(s, v) { return s.replace(/\{\{(\w+)\}\}/g, function (m, k) { var x = (v[k] || '').toString().trim(); return x || PH[k] || '[' + k + ']'; }); }
+  function pv() { return state.prof; }
+  function copyText(text, done) {
+    function fallback() {
+      var t = mk('textarea'); t.value = text; t.setAttribute('readonly', ''); t.style.position = 'fixed'; t.style.opacity = '0';
+      document.body.appendChild(t); t.select();
+      var ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+      document.body.removeChild(t); done(ok);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(function () { done(true); }, fallback);
+    else fallback();
+  }
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+  function F(host, label, val, cb, o) {
+    o = o || {}; var id = nid('f');
+    var l = mk('label', '', label); l.setAttribute('for', id);
+    if (o.hint) l.appendChild(mk('span', 'hint', o.hint));
+    host.appendChild(l);
+    var e;
+    if (o.t === 'select') {
+      e = mk('select'); var z = mk('option', '', o.zero || 'Choose'); z.value = ''; e.appendChild(z);
+      o.o.forEach(function (x) { var op = mk('option', '', x); op.value = x; if (val === x) op.selected = true; e.appendChild(op); });
+      e.addEventListener('change', function () { cb(e.value); });
+    } else {
+      e = mk(o.t === 'area' ? 'textarea' : 'input'); if (o.t !== 'area') e.type = o.t === 'date' ? 'date' : 'text';
+      e.value = val || ''; e.maxLength = o.max || 600; if (o.ph) e.placeholder = o.ph;
+      e.addEventListener(o.t === 'date' ? 'change' : 'input', function () { cb(e.value); });
+    }
+    e.id = id; host.appendChild(e); return e;
+  }
+  function checklist(host, items, onChange, keyFn) {
+    items.forEach(function (it) {
+      var key = keyFn ? keyFn(it.id) : it.id;
+      var l = mk('label', 'opt'); var c = mk('input'); c.type = 'checkbox'; c.checked = !!state.checks[key];
+      c.addEventListener('change', function () { if (c.checked) state.checks[key] = true; else delete state.checks[key]; changed(); if (onChange) onChange(); });
+      var s = mk('span'); if (it.h) s.appendChild(mk('strong', '', it.h)); s.appendChild(document.createTextNode((it.h ? ' ' : '') + it.t));
+      l.appendChild(c); l.appendChild(s); host.appendChild(l);
+    });
+  }
+  function count(items, keyFn) { return items.filter(function (i) { return state.checks[keyFn ? keyFn(i.id) : i.id]; }).length; }
+  function why(host, text) { var n = mk('div', 'branch'); n.appendChild(mk('strong', '', 'Why this helps. ')); n.appendChild(document.createTextNode(text)); host.appendChild(n); }
+  function note(host, label, text) { var n = mk('div', 'branch'); n.appendChild(mk('strong', '', label + ' ')); n.appendChild(document.createTextNode(text)); host.appendChild(n); }
+  function outbox(host, getText, label) {
+    var ta = mk('textarea', 'promptout'); ta.id = nid('o'); ta.value = getText(); ta.setAttribute('aria-label', label || 'Finished message');
+    var l = mk('label', '', label || 'Your finished message'); l.setAttribute('for', ta.id); host.appendChild(l); host.appendChild(ta);
+    var bar = mk('div', 'toolbar no-print'), b = mk('button', 'btn small', 'Copy'); b.type = 'button';
+    var st = mk('span', 'status'); st.setAttribute('role', 'status');
+    b.addEventListener('click', function () { copyText(ta.value, function (ok) { st.textContent = ok ? 'Copied.' : 'Copy did not work. Select the text and copy it manually.'; }); });
+    bar.appendChild(b); bar.appendChild(st); host.appendChild(bar);
+    return { ta: ta, refresh: function () { ta.value = getText(); }, bar: bar };
+  }
+  function head(host, step, title, text) { host.appendChild(mk('p', 'step-num', step)); host.appendChild(mk('h2', '', title)); if (text) host.appendChild(mk('p', 'tool-sub', text)); }
+  function section(host, title) { var c = mk('div', 'card'); if (title) c.appendChild(mk('h3', '', title)); host.appendChild(c); return c; }
+
+  /* ---------- tabs ---------- */
+  var TABS = [['setup', 'Setup'], ['a1', 'Asset 01 · Requests'], ['a2', 'Asset 02 · Responses'], ['a3', 'Asset 03 · Findability'], ['a4', 'Asset 04 · Defense']];
+  function renderTabs() {
+    var h = $('tabs'); h.textContent = '';
+    TABS.forEach(function (t) {
+      var b = mk('button', 'tab' + (tab === t[0] ? ' on' : ''), t[1]); b.type = 'button'; b.setAttribute('aria-pressed', tab === t[0] ? 'true' : 'false');
+      b.addEventListener('click', function () { tab = t[0]; state.tab = tab; changed(); renderTabs(); renderPanel(); }); h.appendChild(b);
+    });
+  }
+  function renderPanel() {
+    var h = $('panel'); h.textContent = '';
+    ({ setup: pSetup, a1: pA1, a2: pA2, a3: pA3, a4: pA4 })[tab](h);
+  }
+
+  /* ---------- setup ---------- */
+  function pSetup(h) {
+    head(h, 'Setup', 'Your business details', 'Enter these once. They fill into every message, response, post and answer in this system.');
+    var c = section(h); var p = pv();
+    function f(k, label, o) { F(c, label, p[k], function (v) { p[k] = v; changed(); }, o); }
+    var g = mk('div', 'grid2'); c.appendChild(g);
+    var g1 = mk('div'), g2 = mk('div'); g.appendChild(g1); g.appendChild(g2);
+    F(g1, 'Business name', p.business, function (v) { p.business = v; changed(); }, { hint: 'Exactly as it appears on your website and Google profile' });
+    F(g2, 'Your name', p.me, function (v) { p.me = v; changed(); });
+    F(g1, 'Primary service', p.service, function (v) { p.service = v; changed(); }, { hint: 'For example: roof inspections' });
+    F(g2, 'City or neighborhood', p.city, function (v) { p.city = v; changed(); });
+    F(c, 'Who you serve', p.custType, function (v) { p.custType = v; changed(); }, { t: 'select', o: ['homeowners', 'business owners', 'clients', 'customers'] });
+    F(c, 'Your Google review link', p.link, function (v) { p.link = v; changed(); }, { hint: 'In your Google Business Profile, choose Ask for reviews and copy the link', max: 400 });
+    F(c, 'Your contact method for unhappy customers', p.contact, function (v) { p.contact = v; changed(); }, { hint: 'A direct phone number or email you check yourself' });
+    F(c, 'Your service category', p.category, function (v) { p.category = v; changed(); }, { hint: 'For example: roofing' });
+    F(c, 'A related service you offer', p.related, function (v) { p.related = v; changed(); });
+    F(c, 'Your quality standard, in one sentence', p.standard, function (v) { p.standard = v; changed(); }, { t: 'area', hint: 'Only state a standard you actually follow. For example: every roof we complete goes through a 12-step quality check before we consider it done' });
+    note(h, 'Next.', 'Open Asset 01 to add the customer you just finished a job for. The message is written for you.');
+  }
+
+  /* ---------- asset 01 ---------- */
+  var CFILTER = 'all';
+  function cStatus(c) {
+    if (c.got) return { k: 'done', t: 'Review received' };
+    if (c.fu) return { k: 'done', t: 'Follow-up sent on ' + nice(c.fu) + '. Do not send another request.' };
+    if (c.sent) { var d = addDays(c.sent, 3); return d <= today() ? { k: 'fu', t: 'Follow-up due. Send it once.' } : { k: 'wait', t: 'Asked on ' + nice(c.sent) + '. Follow-up due ' + nice(d) + ' if no review.' }; }
+    return { k: 'ask', t: 'Not asked yet. Text within 2 hours of finishing, or email within 24 hours.' };
+  }
+  function vals(c) { var p = pv(); return { first: c.first, me: p.me, business: p.business, service: p.service, city: p.city, custType: p.custType, link: p.link, noun: c.noun }; }
+  var CT = {
+    say: { n: 'Say it in person', t: '{{first}}, before I head out — do you mind if I ask you something? When people in {{city}} are looking for {{service}}, they usually search Google or just ask an AI assistant. A review from you — especially one that mentions what we did and what it was like to work with us — would genuinely help someone in your position find us. Would you be willing to leave one? I\'ll text you the link right now.', why: 'Telling customers why a detailed review matters tends to lead to more specific reviews than a bare request.', tip: 'Ask everyone. Offer nothing in return. Ask once and let the answer be no.' },
+    sms: { n: 'Text message', t: 'Hi {{first}} — {{me}} here from {{business}}. Thank you for letting us handle {{noun}}.\n\nIf you have 2 minutes, we\'d love a Google review. When you write it, it really helps future customers if you mention what you needed done, what we actually did, and how it felt to work with us.\n\n{{link}}\n\nThank you — it means a lot.', why: 'Asking for what you needed done, what we did, and how it felt invites a specific, descriptive review that real customers and search tools can use. Send it within 2 hours of finishing, while the experience is fresh.' },
+    email: { n: 'Email', s: 'Quick favor — your experience with {{business}}', t: '{{first}},\n\nThank you for choosing {{business}} for {{noun}}. It was a pleasure working with you.\n\nIf you have two minutes, I\'d be grateful for a Google review. The most helpful reviews for other {{custType}} tend to mention:\n\n— What problem or project brought you to us\n— What the experience was like working with our team\n— The specific result or outcome you walked away with\n\nHere is the link: {{link}}\n\nIt does not need to be long — just honest and specific. That is what helps people most.\n\nThank you,\n{{me}}\n{{business}}', why: 'The three prompts cover the problem, the experience and the result, which gives future customers what they want to know. Send within 24 hours.' },
+    fu: { n: 'Follow-up (once)', t: 'Hi {{first}} — following up on the review request I sent a few days ago. I know life gets busy — no pressure at all.\n\nIf you do have 90 seconds, here is the link again: {{link}}\n\nEven one or two sentences about your experience makes a real difference for us.\n\nThank you either way.\n{{me}}', tip: 'Send this once. Never a third time. Two requests is professional follow-through. Three is pressure, and pressure produces reluctant, short, unhelpful reviews.' }
+  };
+  function custCard(c) {
+    var s = cStatus(c);
+    var det = mk('details', 'card pcard'); if (s.k === 'ask' || s.k === 'fu') det.open = true;
+    var sum = mk('summary'); sum.appendChild(mk('span', 'pnum', s.k === 'done' ? 'Done' : s.k === 'fu' ? 'Follow-up due' : s.k === 'wait' ? 'Waiting' : 'To ask'));
+    sum.appendChild(mk('span', 'ptitle', c.first || 'Unnamed customer')); sum.appendChild(mk('span', 'pmodel', 'Job ' + nice(c.done))); det.appendChild(sum);
+    var inner = mk('div', 'inner'); det.appendChild(inner);
+    var st = mk('p', 'badge', s.t); inner.appendChild(st);
+    var cur = s.k === 'fu' ? 'fu' : 'sms';
+    var tabsH = mk('div', 'tabs'), body = mk('div');
+    inner.appendChild(tabsH); inner.appendChild(body);
+    function draw() {
+      tabsH.textContent = ''; body.textContent = '';
+      ['say', 'sms', 'email', 'fu'].forEach(function (k) {
+        var b = mk('button', 'tab' + (cur === k ? ' on' : ''), CT[k].n); b.type = 'button'; b.setAttribute('aria-pressed', cur === k ? 'true' : 'false');
+        b.addEventListener('click', function () { cur = k; draw(); }); tabsH.appendChild(b);
+      });
+      var m = CT[cur], v = vals(c);
+      if (cur === 'email') { var sub = mk('label', '', 'Subject'); body.appendChild(sub); var si = mk('input'); si.type = 'text'; si.id = nid('s'); sub.setAttribute('for', si.id); si.value = tpl(m.s, v); body.appendChild(si);
+        var cs = mk('button', 'btn ghost small no-print', 'Copy subject'); cs.type = 'button'; cs.style.marginTop = '8px'; cs.addEventListener('click', function () { copyText(si.value, function () {}); }); body.appendChild(cs); }
+      outbox(body, function () { return tpl(m.t, v); }, 'Your message. Edit it before you send.');
+      if (m.why) why(body, m.why); if (m.tip) note(body, 'Coaching note.', m.tip);
+      if (cur === 'fu' && !c.sent) body.appendChild(mk('p', 'hint', 'Mark the first request as sent before you send the follow-up.'));
+    }
+    draw();
+    var bar = mk('div', 'toolbar no-print');
+    var b1 = mk('button', 'btn ghost small', c.sent ? 'Request sent ' + nice(c.sent) + '. Undo' : 'Mark request sent'); b1.type = 'button';
+    b1.addEventListener('click', function () { if (c.sent) { c.sent = ''; c.fu = ''; } else c.sent = today(); changed(); renderPanel(); });
+    var b2 = mk('button', 'btn ghost small', c.fu ? 'Follow-up sent ' + nice(c.fu) + '. Undo' : 'Mark follow-up sent'); b2.type = 'button';
+    b2.addEventListener('click', function () { if (!c.sent) return; c.fu = c.fu ? '' : today(); changed(); renderPanel(); });
+    var b3 = mk('button', 'btn ghost small', c.got ? 'Review received. Undo' : 'Review received'); b3.type = 'button';
+    b3.addEventListener('click', function () { c.got = !c.got; changed(); renderPanel(); });
+    var b4 = mk('button', 'btn ghost small', 'Delete'); b4.type = 'button';
+    b4.addEventListener('click', function () { if (!window.confirm('Delete this customer?')) return; state.custs = state.custs.filter(function (x) { return x.id !== c.id; }); changed(); renderPanel(); });
+    [b1, b2, b3, b4].forEach(function (b) { bar.appendChild(b); }); inner.appendChild(bar);
+    var ed = mk('details'); ed.appendChild(mk('summary', '', 'Edit customer details')); var edi = mk('div'); ed.appendChild(edi);
+    F(edi, 'First name', c.first, function (v) { c.first = v; changed(); }, { max: 100 });
+    F(edi, 'What you did for them', c.noun, function (v) { c.noun = v; changed(); }, { hint: 'For example: your roof inspection', max: 300 });
+    F(edi, 'Job completed', c.done, function (v) { if (validDate(v)) { c.done = v; changed(); } }, { t: 'date' });
+    inner.appendChild(ed);
+    return det;
+  }
+  function pA1(h) {
+    head(h, 'Asset 01', 'Get reviews that actually work', 'Search and AI tools read text, not stars. "Great job!" tells them nothing. A review that mentions the service, the place and a real outcome helps the next customer decide. These messages invite exactly that.');
+    var c = section(h, 'Add a customer');
+    var nf = { first: '', noun: '', done: today() };
+    var g = mk('div', 'grid2'); c.appendChild(g); var g1 = mk('div'), g2 = mk('div'); g.appendChild(g1); g.appendChild(g2);
+    F(g1, 'First name', '', function (v) { nf.first = v; }, { max: 100 });
+    F(g2, 'Job completed', nf.done, function (v) { if (validDate(v)) nf.done = v; }, { t: 'date' });
+    F(c, 'What you did for them', '', function (v) { nf.noun = v; }, { hint: 'For example: your roof inspection', max: 300 });
+    var err = mk('div', 'errors'); err.setAttribute('role', 'alert'); err.style.display = 'none'; c.appendChild(err);
+    var bar = mk('div', 'toolbar no-print'), add = mk('button', 'btn', 'Add customer'); add.type = 'button'; bar.appendChild(add); c.appendChild(bar);
+    add.addEventListener('click', function () {
+      if (!nf.first.trim()) { err.style.display = ''; err.textContent = 'Enter a first name.'; return; }
+      if (state.custs.length >= MAXC) { err.style.display = ''; err.textContent = 'The list holds up to ' + MAXC + ' customers.'; return; }
+      state.custs.unshift({ id: uid(), first: nf.first.trim().slice(0, 100), noun: nf.noun.trim().slice(0, 300), done: nf.done, sent: '', fu: '', got: false });
+      changed(); renderPanel();
+    });
+    var f = section(h); f.classList.add('no-print');
+    F(f, 'Show', CFILTER, function (v) { CFILTER = v || 'all'; drawList(); }, { t: 'select', zero: 'All customers', o: ['ask', 'wait', 'fu', 'done'].map(function (x) { return x; }) });
+    var sel = f.querySelector('select'); Array.prototype.forEach.call(sel.options, function (o) { var m = { ask: 'To ask', wait: 'Waiting', fu: 'Follow-up due', done: 'Done' }; if (m[o.value]) o.textContent = m[o.value]; }); sel.value = CFILTER === 'all' ? '' : CFILTER;
+    var cnt = mk('p', 'status'); cnt.setAttribute('role', 'status'); h.appendChild(cnt);
+    var list = mk('div'); h.appendChild(list);
+    function drawList() {
+      list.textContent = '';
+      var arr = state.custs.filter(function (c) { return CFILTER === 'all' || cStatus(c).k === CFILTER; });
+      var due = state.custs.filter(function (c) { return cStatus(c).k === 'fu'; }).length;
+      cnt.textContent = arr.length + ' customers shown' + (due ? ' · ' + due + ' follow-up due' : '');
+      if (!arr.length) list.appendChild(mk('p', 'hint', state.custs.length ? 'No customers in this view.' : 'No customers yet. Add the customer from your last job above.'));
+      arr.forEach(function (c) { list.appendChild(custCard(c)); });
+    }
+    drawList();
+  }
+
+  /* ---------- asset 02 ---------- */
+  var RS = {
+    r1: { n: 'Positive review: service specific', use: 'Customize per review', fields: [['first', 'Reviewer first name'], ['svc', 'Specific service mentioned in their review'], ['result', 'The result or outcome they mentioned', 'For example: your roof is sealed before the rainy season']],
+      t: 'Thank you, {{first}}. We\'re glad the {{svc}} went smoothly for you.\n\nHelping {{city}} {{custType}} with {{service}} is exactly the kind of work we built this business around. Knowing that {{result}} gave you peace of mind is exactly the outcome we aim for.\n\nWe appreciate you taking the time to share your experience. If you ever need {{related}} or have questions about {{category}}, we\'re always here.\n\n— {{me}}, {{business}}',
+      why: 'A thank-you that names the service, the place and the result gives readers and search tools more to work with than "Thank you so much!"' },
+    r2: { n: 'Positive review: emotion led', use: 'Use when the review mentions a feeling', fields: [['first', 'Reviewer first name'], ['svc', 'Specific service', 'For example: A roof replacement'], ['hard', 'How it can feel for most people', 'For example: stressful'], ['emotion', 'The feeling they used in their review', 'For example: taken care of']],
+      t: 'Thank you, {{first}} — that means a lot to us.\n\n{{svc}} can feel {{hard}} for a lot of {{custType}}, and our goal is always to make the process feel the opposite of that.\n\nThe fact that you felt {{emotion}} tells us we did our job the right way.\n\nIf anyone you know in {{city}} needs {{service}}, we\'d be honored to help them the same way.\n\n— {{me}}, {{business}}',
+      why: 'Mirroring the words a customer used reinforces what they said, and people searching for a calm, professional provider are looking for exactly that language.' },
+    r3: { n: 'Negative review: professional', use: 'Respond within 24 hours', fields: [['first', 'Reviewer first name'], ['issue', 'The specific issue they mentioned']],
+      t: '{{first}}, thank you for sharing your experience. I\'m sorry to hear that {{issue}} did not meet the standard we hold ourselves to.\n\nAt {{business}}, {{standard}}.\n\nI\'d like to make this right. Please reach out to me directly at {{contact}} so I can understand what happened and what we can do to resolve it.\n\n— {{me}}, {{business}}',
+      why: 'It acknowledges the complaint without arguing, states your standard, and moves the resolution out of public view. A composed reply reads as professionalism to future customers.', tip: 'Your quality standard and contact method come from Setup. Only state a standard you actually follow.' },
+    r4: { n: 'Negative review: facts disputed', use: 'Use only when the facts are wrong', fields: [['first', 'Reviewer first name'], ['facts', 'One factual, neutral statement of what occurred', 'For example: Our team completed the inspection on (date), and our documentation shows (what was done and confirmed)']],
+      t: '{{first}}, thank you for taking the time to leave feedback. I want to address this directly because the experience you\'ve described does not match our records of this job.\n\n{{facts}}\n\nI want to make sure every customer\'s experience is accurately represented. I\'d welcome the opportunity to speak with you directly at {{contact}} to work through this.\n\n— {{me}}, {{business}}',
+      tip: 'Never say "this review is fake" in a public response. State the facts, stay composed, and invite direct contact. Do not share private customer details in a public reply. A calm factual dispute reads as credibility. An emotional rebuttal reads as a red flag.' }
+  };
+  function pA2(h) {
+    head(h, 'Asset 02', 'Respond to every review', 'When you respond with your service name, your location and the customer\'s specific outcome, every response becomes useful text for the next person reading your profile. Pick the response that fits, fill in the review details, and copy.');
+    var c = section(h, 'Write a response');
+    var cur = 'r1', vv = {}, body = mk('div');
+    var sel = F(c, 'Which response', cur, function (v) { cur = v || 'r1'; vv = {}; draw(); }, { t: 'select', zero: RS.r1.n, o: ['r2', 'r3', 'r4'] });
+    sel.textContent = ''; Object.keys(RS).forEach(function (k) { var o = mk('option', '', RS[k].n + ' (' + RS[k].use.toLowerCase() + ')'); o.value = k; sel.appendChild(o); }); sel.value = cur;
+    c.appendChild(body);
+    function draw() {
+      body.textContent = ''; var r = RS[cur], ob;
+      r.fields.forEach(function (f) { F(body, f[1], vv[f[0]] || '', function (x) { vv[f[0]] = x; ob.refresh(); }, { t: f[0] === 'facts' ? 'area' : 'text', hint: f[2], max: 500 }); });
+      function all() { var p = pv(); return { first: vv.first, svc: vv.svc, result: vv.result, hard: vv.hard, emotion: vv.emotion, issue: vv.issue, facts: vv.facts, me: p.me, business: p.business, service: p.service, city: p.city, custType: p.custType, related: p.related, category: p.category, standard: p.standard, contact: p.contact }; }
+      ob = outbox(body, function () { return tpl(r.t, all()); }, 'Your response. Edit it before you post.');
+      if (r.why) why(body, r.why); if (r.tip) note(body, 'Coaching note.', r.tip);
+    }
+    draw();
+
+    var lg = section(h, 'Review log');
+    lg.appendChild(mk('p', '', 'Log each new review so none goes unanswered. Respond within 24 hours.'));
+    var nr = { platform: 'Google', who: '', rating: 0, date: today() };
+    var g = mk('div', 'grid2'); lg.appendChild(g); var g1 = mk('div'), g2 = mk('div'); g.appendChild(g1); g.appendChild(g2);
+    F(g1, 'Platform', 'Google', function (v) { nr.platform = v || 'Google'; }, { t: 'select', o: ['Google', 'Yelp', 'Facebook', 'Other'] });
+    g1.querySelector('select').value = 'Google';
+    F(g2, 'Reviewer first name', '', function (v) { nr.who = v; }, { max: 100 });
+    F(g1, 'Stars', '', function (v) { nr.rating = parseInt(v, 10) || 0; }, { t: 'select', zero: 'Choose', o: ['1', '2', '3', '4', '5'] });
+    F(g2, 'Date posted', nr.date, function (v) { if (validDate(v)) nr.date = v; }, { t: 'date' });
+    var bar = mk('div', 'toolbar no-print'), add = mk('button', 'btn small', 'Add review'); add.type = 'button'; bar.appendChild(add); lg.appendChild(bar);
+    add.addEventListener('click', function () {
+      if (state.reviews.length >= MAXR) return;
+      state.reviews.unshift({ id: uid(), platform: nr.platform, who: nr.who.trim().slice(0, 100), rating: nr.rating, date: nr.date, responded: '' }); changed(); renderPanel();
+    });
+    var open = state.reviews.filter(function (r) { return !r.responded; }).length;
+    h.appendChild(mk('p', 'status', open + ' awaiting a response · ' + (state.reviews.length - open) + ' answered'));
+    state.reviews.forEach(function (r) {
+      var cd = mk('div', 'card'); var late = !r.responded && addDays(r.date, 1) < today();
+      cd.appendChild(mk('p', 'sopname', (r.who || 'Reviewer') + ' · ' + r.platform + (r.rating ? ' · ' + r.rating + ' stars' : '')));
+      cd.appendChild(mk('p', 'hint', 'Posted ' + nice(r.date) + ' · ' + (r.responded ? 'Responded ' + nice(r.responded) : late ? 'Overdue. Respond today.' : 'Respond by ' + nice(addDays(r.date, 1)))));
+      var b = mk('div', 'toolbar no-print'); var m = mk('button', 'btn ghost small', r.responded ? 'Undo responded' : 'Mark responded'); m.type = 'button';
+      m.addEventListener('click', function () { r.responded = r.responded ? '' : today(); changed(); renderPanel(); });
+      var d = mk('button', 'btn ghost small', 'Delete'); d.type = 'button'; d.addEventListener('click', function () { state.reviews = state.reviews.filter(function (x) { return x.id !== r.id; }); changed(); renderPanel(); });
+      b.appendChild(m); b.appendChild(d); cd.appendChild(b); h.appendChild(cd);
+    });
+  }
+
+  /* ---------- asset 03 ---------- */
+  var GBP = [
+    { id: 'g1', h: 'Business name', t: 'matches exactly what appears on your website and all other directories. No keyword stuffing in the name field. Google can suspend profiles for it.' },
+    { id: 'g2', h: 'Primary category', t: 'is the most specific one available for your main service. Add secondary categories for every other service you offer. Do not leave them empty.' },
+    { id: 'g3', h: 'Business description', t: 'uses up to 750 characters, your primary service terms, your city or region, and one sentence about your specific approach or standard. Write it for a human.' },
+    { id: 'g4', h: 'Service areas', t: 'are fully populated. List every city, neighborhood and county you serve.' },
+    { id: 'g5', h: 'Services section', t: 'is complete. Every service has a name, a description, and a price range or "contact for pricing."' },
+    { id: 'g6', h: 'Products section', t: '(if applicable) is populated with photos, descriptions and prices.' },
+    { id: 'g7', h: 'Hours', t: 'are accurate and special hours are marked for holidays.' },
+    { id: 'g8', h: 'Phone number, website and address', t: 'are consistent with every other directory listing you have online.' },
+    { id: 'g9', h: 'Booking link', t: 'or appointment URL is connected if you offer scheduling.' },
+    { id: 'g10', h: 'Photos:', t: 'at least 10 uploaded: exterior, interior, team, work in progress, and completed projects.' }
+  ];
+  var WEB = [
+    { id: 'w1', h: 'Title tags.', t: 'Every page has a unique title tag with your primary service and your city. Format: Service in City | Business Name' },
+    { id: 'w2', h: 'Meta descriptions.', t: 'Every page has one that answers the question a customer would actually ask. Write a direct answer, not a tagline.' },
+    { id: 'w3', h: 'Homepage statement.', t: 'Your homepage says what you do, who you do it for and where you serve, in a heading (H1 or H2), not buried in an image.' },
+    { id: 'w4', h: 'Services page.', t: 'Each service has its own paragraph of description, not a bulleted list of names with no explanation.' },
+    { id: 'w5', h: 'FAQ.', t: 'You have an FAQ page or section. Use the actual question as the heading and answer it in the first sentence.' },
+    { id: 'w6', h: 'NAP in text.', t: 'Your name, address and phone appear as text, not only in an image, on your contact page and in your footer.' },
+    { id: 'w7', h: 'Structured data.', t: 'You have LocalBusiness or Service schema installed. It is a block of structured data in your page code that tells search and AI tools what your business does, where it operates and how to contact you. It is strongly recommended.' }
+  ];
+  var QA = [
+    { id: 'q1', t: 'What services does {{business}} offer?', hint: 'A full answer using your specific service names, your city or region, and your service area.' },
+    { id: 'q2', t: 'What makes {{business}} different from other {{service}} companies in {{city}}?', hint: 'One or two specific differentiators, not generic claims. For example: We are the only ___ company in ___ that ___.' },
+    { id: 'q3', t: 'How much does {{service}} cost in {{city}}?', hint: 'An honest range or an explanation of how your pricing works. Transparent pricing builds trust.' },
+    { id: 'q4', t: 'Is {{business}} available for {{x}} {{service}}?', x: 'Type of availability', xph: 'emergency, same-day or weekend', hint: 'A direct answer. If yes, say so clearly. If no, explain what your availability is.' },
+    { id: 'q5', t: 'Does {{business}} serve {{x}}?', x: 'Nearby city or neighborhood', xph: 'a nearby city or neighborhood', hint: 'A direct answer with your full service area listed.' },
+    { id: 'q6', t: 'What should I expect when I hire {{business}} for {{service}}?', hint: 'A step-by-step overview of your process. Specific and honest.' }
+  ];
+  var PT = {
+    p1: { n: 'Completed work post · Monday', f: [['kind', 'Customer type', 'For example: homeowner'], ['area', 'City or neighborhood'], ['involved', 'One sentence about what the project involved'], ['outcome', 'One sentence about the outcome']], t: 'We just completed {{service}} for a {{kind}} in {{area}}. {{involved}} {{outcome}} If you need {{service}} in {{city}}, we\'re taking appointments now.', photo: 'Attach a photo of the completed work.', tip: 'Only say you are taking appointments if it is true.' },
+    p2: { n: 'Education post · Wednesday', f: [['fact', 'One specific fact about your industry that protects people or saves them money'], ['explain', 'One sentence of explanation']], t: 'Most {{custType}} don\'t know that {{fact}} {{explain}} Questions about {{service}} in {{city}}? We\'re happy to talk through it.', photo: 'Attach a relevant photo.' },
+    p3: { n: 'Social proof post · Friday or Sunday', f: [['para', 'A paraphrase of a recent review', 'Never copy a review word for word'], ['svc', 'One sentence about the service that produced that result']], t: '{{para}} {{svc}} Thank you to our clients in {{city}} for trusting us with their {{category}}.', photo: 'Attach a team or job photo.' }
+  };
+  function pA3(h) {
+    head(h, 'Asset 03', 'Make your business easy to find and understand', 'Search and AI tools can draw on your Google Business Profile, your reviews and responses, your categories, your posts and your website. Work through these once, then review each quarter.');
+    var p = pv();
+    var c1 = section(h, 'Google Business Profile: core configuration');
+    var prog1 = mk('p', 'badge'); c1.appendChild(prog1);
+    function up1() { prog1.textContent = count(GBP) + ' of ' + GBP.length + ' complete'; }
+    checklist(c1, GBP, up1); up1();
+    F(c1, 'Last reviewed', state.reviewedGbp, function (v) { state.reviewedGbp = validDate(v) ? v : ''; changed(); nx1(); }, { t: 'date' });
+    var nxt1 = mk('p', 'hint'); c1.appendChild(nxt1); function nx1() { nxt1.textContent = state.reviewedGbp ? 'Next quarterly review: ' + nice(addDays(state.reviewedGbp, 90)) : ''; } nx1();
+    why(c1, 'A complete, consistent profile gives search and AI tools more accurate information to work with, such as your services, areas and hours.');
+
+    var c2 = section(h, 'Your answers library');
+    c2.appendChild(mk('p', '', 'Write clear answers to the six questions customers ask most. Use your real service terms and city. Google has been phasing out the Questions and answers section on Business Profiles, so use these answers in your services descriptions, your website FAQ, and in the Q&A section if your profile still shows it.'));
+    QA.forEach(function (q) {
+      state.answers[q.id] = state.answers[q.id] || { a: '', x: '' };
+      var a = state.answers[q.id], wrap = mk('div', 'subcard'); c2.appendChild(wrap);
+      var qt = mk('p', 'docitem-t'); wrap.appendChild(qt);
+      function qtext() { return tpl(q.t, { business: p.business, service: p.service, city: p.city, x: a.x || (q.xph ? '[' + q.xph + ']' : '') }); }
+      if (q.x) F(wrap, q.x, a.x, function (v) { a.x = v; changed(); qt.textContent = 'Q: ' + qtext(); }, { max: 300 });
+      qt.textContent = 'Q: ' + qtext();
+      F(wrap, 'Your answer', a.a, function (v) { a.a = v; changed(); }, { t: 'area', hint: q.hint, max: 4000 });
+      var b = mk('button', 'btn ghost small no-print', 'Copy question and answer'); b.type = 'button';
+      b.addEventListener('click', function () { copyText('Q: ' + qtext() + '\nA: ' + a.a, function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy question and answer'; }, 1500); }); });
+      wrap.appendChild(b);
+    });
+    why(c2, 'When someone asks an AI assistant who does your service in your city and what it costs, it draws on text connected to your business. Clear, honest answers in your own words give it something accurate to use.');
+
+    var c3 = section(h, 'Weekly Google posts');
+    c3.appendChild(mk('p', '', 'Post three times a week and rotate three types. Fresh posts show that your business is active and current.'));
+    var cur = 'p1', vv = {}, body = mk('div');
+    var sel = F(c3, 'Post type', cur, function (v) { cur = v || 'p1'; vv = {}; draw(); }, { t: 'select', o: ['p2', 'p3'] });
+    sel.textContent = ''; Object.keys(PT).forEach(function (k) { var o = mk('option', '', PT[k].n); o.value = k; sel.appendChild(o); }); sel.value = cur;
+    c3.appendChild(body);
+    function draw() {
+      body.textContent = ''; var r = PT[cur], ob;
+      r.f.forEach(function (f) { F(body, f[1], vv[f[0]] || '', function (x) { vv[f[0]] = x; ob.refresh(); }, { hint: f[2], t: 'area', max: 600 }); });
+      ob = outbox(body, function () { return tpl(r.t, { kind: vv.kind, area: vv.area || p.city, involved: vv.involved, outcome: vv.outcome, fact: vv.fact, explain: vv.explain, para: vv.para, svc: vv.svc, service: p.service, city: p.city, custType: p.custType, category: p.category }); }, 'Your post. Edit it before you publish.');
+      note(body, 'Photo.', r.photo + (r.tip ? ' ' + r.tip : ''));
+    }
+    draw();
+
+    var c4 = section(h, 'Website: readability checklist');
+    var prog4 = mk('p', 'badge'); c4.appendChild(prog4);
+    function up4() { prog4.textContent = count(WEB) + ' of ' + WEB.length + ' complete'; }
+    checklist(c4, WEB, up4); up4();
+    F(c4, 'Last reviewed', state.reviewedWeb, function (v) { state.reviewedWeb = validDate(v) ? v : ''; changed(); nx4(); }, { t: 'date' });
+    var nxt4 = mk('p', 'hint'); c4.appendChild(nxt4); function nx4() { nxt4.textContent = state.reviewedWeb ? 'Next quarterly review: ' + nice(addDays(state.reviewedWeb, 90)) : ''; } nx4();
+  }
+
+  /* ---------- asset 04 ---------- */
+  var SIG = [
+    { id: 'd1', h: 'Reviewer profile.', t: 'The account was created recently (less than 6 months ago), has no profile photo or a generic image, and has zero other reviews or only reviews of unrelated businesses in unrelated places.' },
+    { id: 'd2', h: 'Formal language.', t: 'Unusually formal or structured for a customer review.' },
+    { id: 'd3', h: 'Expert terms.', t: 'Technical terms used correctly in a way a non-expert typically would not.' },
+    { id: 'd4', h: 'No real details.', t: 'No specific detail a real customer would know, such as an employee, a date, a part of the job, or a spot on the property.' },
+    { id: 'd5', h: 'Many failures.', t: 'Multiple service failures in one review. Real customers usually complain about one thing.' },
+    { id: 'd6', h: 'Perfect writing.', t: 'Perfect grammar and sentence structure with no conversational language.' },
+    { id: 'd7', h: 'Service you do not offer.', t: 'It describes a service your business does not provide.' },
+    { id: 'd8', h: 'Closed dates.', t: 'It references a date when your business was closed or not operating.' },
+    { id: 'd9', h: 'Contradicts records.', t: 'It describes an interaction or outcome that contradicts your documented records.' },
+    { id: 'd10', h: 'Impossible complaint.', t: 'The complaint would be impossible given your standard process.' },
+    { id: 'd11', h: 'Cluster.', t: 'Several negative reviews were posted within a short window, such as the same day or week.' },
+    { id: 'd12', h: 'Suspicious timing.', t: 'Negative reviews appeared right after a competitor launched or you lost a bid.' },
+    { id: 'd13', h: 'Spike with no complaints.', t: 'A spike in negative reviews with no matching rise in complaints through your direct channels.' }
+  ];
+  var REP = [
+    { id: 'r1', h: 'Step 1: Flag it in Google Business Profile.', t: 'Open your profile, find the review, use the three-dot menu to flag it, and choose the most accurate category, such as off-topic, spam or fake, or conflict of interest. Menu names change, so follow what Google shows you.' },
+    { id: 'r2', h: 'Step 2: Document before you respond.', t: 'Screenshot the review, the reviewer\'s profile and the date. Check your job records for that date and customer, or confirm there is no record. Save everything.' },
+    { id: 'r3', h: 'Step 3: Submit a formal removal request.', t: 'Go to support.google.com/business and use Contact us for reviews. Describe the specific policy the review violates, reference the signals you checked, and attach your documentation.' },
+    { id: 'r4', h: 'Step 4: Respond publicly.', t: 'Use the factually disputed response in Asset 02. Do not call the review fake. State the facts, stay composed, and move the conversation offline.' },
+    { id: 'r5', h: 'Step 5: Monitor.', t: 'If the review is not removed within 14 days, escalate through Google\'s Business Profile support chat. If several fake reviews keep appearing, you can file a report at reportfraud.ftc.gov. Keep all correspondence in case you need it later.' }
+  ];
+  var NEU = [
+    { id: 'n1', h: '1. Ask your recent customers for reviews.', t: 'Within 24 hours, send the Asset 01 messages to your 5 most recent customers. Ask everyone, not only the ones you think were happy. Each new genuine review adds real information to your profile.' },
+    { id: 'n2', h: '2. Respond to every existing review.', t: 'Use the Asset 02 responses on every positive review that does not have one yet.' },
+    { id: 'n3', h: '3. Post three Google updates in the next 7 days.', t: 'Use the post builder in Asset 03.' },
+    { id: 'n4', h: '4. Refresh your answers.', t: 'Add or update at least two answers from your Asset 03 library on your profile and website.' },
+    { id: 'n5', h: '5. Check your name, address and phone consistency.', t: 'Run a free check with Moz Local, BrightLocal or Whitespark and fix every mismatch right away.' }
+  ];
+  var WK = [
+    { id: 'k1', t: 'Open your Google Business Profile. Check for new reviews since last week and respond to all of them within 24 hours.' },
+    { id: 'k2', t: 'Search your business name on Google. Look at the knowledge panel, the reviews and any news or mentions. Screenshot anything unusual.' },
+    { id: 'k3', t: 'Search "[Your Business Name] reviews." If a negative article, forum post or listing appears in the top 10, note it and decide whether it needs action.' },
+    { id: 'k4', t: 'Search "[Your Service] in [Your City]." Check whether your profile appears in the local map results. If it dropped, look for recent profile changes, review spikes or inconsistencies.' },
+    { id: 'k5', t: 'Ask an AI assistant: "Who are the best [your service] providers in [your city]?" Try Google Gemini, ChatGPT, Perplexity, Claude and Microsoft Copilot. Note whether you are mentioned. If not, decide which asset needs attention.' },
+    { id: 'k6', t: 'Check your review count on Google, Yelp, Facebook and any industry directories. Respond to any review you have not seen.' }
+  ];
+  function pA4(h) {
+    head(h, 'Asset 04', 'Protect what you have built', 'AI-generated fake reviews are a real risk. Use this to spot one, report it, and keep your profile strong while Google reviews your report.');
+    var c1 = section(h, 'Step 01 · Is this review fake?');
+    c1.appendChild(mk('p', '', 'Check the review against these signals. Three or more matches means a high probability that it is fake. This is a guide, not proof.'));
+    var res = mk('p', 'badge');
+    function upd() {
+      var n = count(SIG);
+      res.textContent = n + ' of ' + SIG.length + ' signals checked. ' + (n >= 3 ? 'Three or more matches: high probability of a fake review. Move on to the reporting steps.' : n ? 'Fewer than three. This may still be a real customer. Respond with the professional response in Asset 02.' : '');
+    }
+    checklist(c1, SIG, upd); c1.appendChild(res); upd();
+    var c2 = section(h, 'Step 02 · Report it to Google');
+    checklist(c2, REP);
+    var c3 = section(h, 'Step 03 · Strengthen your profile while you wait');
+    c3.appendChild(mk('p', '', 'Removal can take days or weeks. The goal is to give people more accurate, recent information about your business than the fake review gives against it. Volume and freshness of genuine content help most.'));
+    checklist(c3, NEU);
+    var rb = mk('div', 'toolbar no-print'), rs = mk('button', 'btn ghost small', 'Start a new incident (clears Steps 01 to 03)'); rs.type = 'button'; rb.appendChild(rs); c3.appendChild(rb);
+    rs.addEventListener('click', function () { if (!window.confirm('Clear the checkboxes for Steps 01 to 03?')) return; Object.keys(state.checks).forEach(function (k) { if (/^(d|r|n)\d+$/.test(k)) delete state.checks[k]; }); changed(); renderPanel(); });
+    note(c3, 'Coaching note.', 'The businesses that handle fake reviews best are the ones with the most genuine, consistent, recent positive information in their profile. Build the reputation system before you need the defense.');
+    var wk = weekStart();
+    var c4 = section(h, 'Step 04 · Weekly reputation check · 10 minutes');
+    c4.appendChild(mk('p', '', 'Week of ' + nice(wk) + '. The boxes reset every Monday. Set a recurring calendar reminder.'));
+    var pw = mk('p', 'badge'); function upw() { pw.textContent = count(WK, function (i) { return 'k:' + wk + ':' + i; }) + ' of ' + WK.length + ' done this week'; }
+    checklist(c4, WK, upw, function (i) { return 'k:' + wk + ':' + i; }); c4.appendChild(pw); upw();
+    var mkey = monthKey();
+    checklist(c4, [{ id: 'm1', h: 'Monthly:', t: 'Run your name, address and phone consistency check. Confirm every directory listing matches your Google profile exactly.' }], null, function (i) { return 'm:' + mkey + ':' + i; });
+    note(h, 'How to implement this system.', 'Start with Asset 03 and configure your profile and website once, correctly. Then use Asset 01 after your next job. Build Asset 02 responses into your weekly routine. Set up the Asset 04 weekly check as a recurring calendar event.');
+  }
+
+  /* ---------- backup, print ---------- */
+  $('btn-print').addEventListener('click', function () {
+    var ds = document.querySelectorAll('#panel details'), was = [];
+    Array.prototype.forEach.call(ds, function (d) { was.push(d.open); d.open = true; });
+    function done() { Array.prototype.forEach.call(ds, function (d, i) { d.open = was[i]; }); window.removeEventListener('afterprint', done); }
+    window.addEventListener('afterprint', done); window.print();
+  });
+  $('btn-export').addEventListener('click', function () {
+    download('reputation-builder-backup-' + today() + '.json', JSON.stringify(state, null, 2), 'application/json');
+    setStatus('Backup downloaded. Keep the file somewhere safe.');
+  });
+  $('btn-import').addEventListener('click', function () { $('file-import').click(); });
+  $('file-import').addEventListener('change', function (e) {
+    var f = e.target.files && e.target.files[0]; if (!f) return;
+    if (f.size > 5000000) { setStatus('That file is too large to be a backup from this system.'); e.target.value = ''; return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var raw; try { raw = JSON.parse(r.result); } catch (x) { setStatus('That file is not a valid backup.'); e.target.value = ''; return; }
+      if (!raw || typeof raw !== 'object' || !raw.prof || !Array.isArray(raw.custs)) { setStatus('That file is not a backup from this system.'); e.target.value = ''; return; }
+      if (!window.confirm('Importing replaces everything currently saved in this browser. Continue?')) { e.target.value = ''; return; }
+      state = clean(raw); tab = state.tab; persist(); renderTabs(); renderPanel(); setStatus('Backup imported.'); e.target.value = '';
+    };
+    r.readAsText(f);
+  });
+
+  renderTabs(); renderPanel();
+})();
+</script>
+</body>
+</html>

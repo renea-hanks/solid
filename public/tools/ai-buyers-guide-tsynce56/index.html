@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The AI Buyer's Guide for Small Business | Solid Solutions Today</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .tool { max-width: 860px; margin: 0 auto; padding: 140px 32px 80px; font-family: 'Raleway', sans-serif; color: #333333; }
+    .tool-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .tool h1 { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; }
+    .tool-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .tool-sub { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+    .tool h2 { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin: 0 0 8px; }
+    .step-num { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 8px; }
+    .tool-section { margin-top: 56px; }
+    .card { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.18); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
+    .card.navy { background: #050d35; color: #ffffff; border-color: #050d35; }
+    .card.navy h3, .card.navy p, .card.navy li { color: #ffffff; }
+    .card h3 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .card p, .card li { font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .card ul { padding-left: 20px; margin-bottom: 12px; }
+    .say { font-size: 1.05rem; line-height: 1.85; color: #111111; border-left: 3px solid #050d35; padding: 4px 0 4px 18px; margin: 12px 0 16px; }
+    .ph { border-bottom: 1px dashed #050d35; padding: 0 2px; }
+    .branch { font-size: 0.95rem; line-height: 1.75; color: #333333; background: rgba(5,13,53,0.04); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px; }
+    .branch strong { color: #050d35; }
+    label, .lbl { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 16px 0 6px; }
+    .hint { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: #555555; display: block; margin-top: 2px; }
+    input[type="text"], input[type="date"], textarea, select { width: 100%; font-family: 'Raleway', sans-serif; font-size: 16px; color: #111111; background: #ffffff; border: 1px solid rgba(5,13,53,0.35); border-radius: 4px; padding: 12px 14px; min-height: 44px; }
+    textarea { min-height: 96px; resize: vertical; line-height: 1.6; }
+    input:focus, textarea:focus, select:focus, button:focus-visible, summary:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(5,13,53,0.2); border-radius: 4px; margin-bottom: 10px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #333333; margin-top: 0; }
+    .opt input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: #050d35; }
+    .opt strong { color: #111111; font-weight: 600; display: block; }
+    .btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 14px 28px; min-height: 44px; border: 1px solid #050d35; border-radius: 100px; cursor: pointer; transition: background 0.2s; margin: 0 8px 10px 0; }
+    .btn:hover { background: #000000; }
+    .btn.ghost { background: #ffffff; color: #050d35; }
+    .btn.ghost:hover { background: rgba(5,13,53,0.06); }
+    .btn.small { padding: 8px 16px; min-height: 36px; font-size: 0.62rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; margin-top: 24px; }
+    .status { font-size: 0.85rem; color: #555555; margin-left: 4px; }
+    .errors { border-left: 4px solid #050d35; background: rgba(5,13,53,0.06); padding: 16px 20px; margin: 16px 0; font-size: 0.95rem; line-height: 1.7; }
+    .errors strong { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 6px; }
+    .errors ul { padding-left: 20px; }
+    .reqrow { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    .reqrow input { flex: 1; }
+    details summary { cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #050d35; padding: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(5,13,53,0.15); vertical-align: top; }
+    th { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; }
+    .legal { font-size: 0.85rem; line-height: 1.7; color: #555555; margin-top: 32px; }
+    #record { display: none; }
+    #record.show { display: block; }
+    .rec-row { margin-bottom: 14px; }
+    .rec-row b { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 768px) {
+      .tool { padding: 120px 20px 60px; }
+      .card { padding: 22px 20px; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+    @media print {
+      nav, .nav, footer, .footer, .soli-circle-launcher, #soli-window, .no-print, .toolbar { display: none !important; }
+      body { background: #ffffff; }
+      .tool { padding: 0; max-width: 100%; }
+      .card { break-inside: avoid; border: 1px solid #999999; }
+      .card.navy { background: #ffffff; color: #111111; border: 1px solid #111111; }
+      .card.navy h3, .card.navy p, .card.navy li { color: #111111; }
+      textarea, input, select { border: 1px solid #999999; }
+      body.print-record .tool-section:not(#record), body.print-record .tool-hero { display: none !important; }
+      body.print-all .tool-section:not(#saved), body.print-all .tool-hero { display: none !important; }
+      body.print-record #record { display: block !important; }
+    }
+  
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border-top: 2px solid #050d35; border-bottom: 1px solid rgba(5,13,53,0.2); padding: 20px 0; margin: 28px 0 0; text-align: center; }
+    .stats b { display: block; font-family: 'Raleway', sans-serif; font-size: 1.6rem; font-weight: 600; color: #050d35; }
+    .stats span { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #555555; }
+    .grid2 > div { min-width: 0; }
+    .grid2 input, .grid2 select { box-sizing: border-box; max-width: 100%; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tab { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; background: #ffffff; border: 1px solid #050d35; border-radius: 2px; padding: 10px 16px; min-height: 44px; cursor: pointer; }
+    .tab.on { background: #050d35; color: #ffffff; }
+    .tab:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    #dayhead { margin-top: 36px; }
+    .pcard { padding: 0; }
+    .pcard > summary { list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 20px 24px; cursor: pointer; text-transform: none; letter-spacing: 0; }
+    .pcard > summary::-webkit-details-marker { display: none; }
+    .pcard[open] > summary { border-bottom: 1px solid rgba(5,13,53,0.15); }
+    .pnum { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.55); grid-column: 1; }
+    .ptitle { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 600; color: #111111; grid-column: 1; }
+    .pmodel { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #050d35; border: 1px solid #050d35; padding: 6px 10px; align-self: start; grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+    .pcard > :not(summary) { margin-left: 24px; margin-right: 24px; }
+    .pcard > .toolbar { margin-bottom: 24px; }
+    .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 48px); }
+    .lbl { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-top: 20px; margin-bottom: 6px; }
+    .prob { font-size: 1rem; line-height: 1.75; }
+    .promptout { min-height: 200px; background: rgba(5,13,53,0.04); }
+    @media (max-width: 768px) { .stats { grid-template-columns: 1fr 1fr; } .pcard > summary { grid-template-columns: 1fr; } .pmodel { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; } .pcard > :not(summary) { margin-left: 18px; margin-right: 18px; } .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 36px); } }
+    @media print { .tabs { display: none !important; } details > summary { display: block; } .pcard { break-inside: avoid; } }
+      .msgpanel .tabs { margin-bottom: 4px; }
+    .inner { padding-bottom: 24px; }
+    .inner details { margin-top: 20px; }
+    .pcard > summary .pmodel { max-width: 240px; white-space: normal; text-align: right; }
+      ol { padding-left: 22px; margin-bottom: 12px; }
+    ol li { margin-bottom: 8px; font-size: 1rem; line-height: 1.7; }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a><a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+<main class="tool">
+
+  <div class="tool-hero">
+    <p class="tool-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
+    <h1>The AI Buyer's Guide for Small Business</h1>
+    <div class="tool-rule"></div>
+    <p class="tool-sub">What to ask, what to avoid, and how to know when you're ready.</p>
+
+    <div class="card navy">
+      <h3>How to use this guide</h3>
+      <p>Work through the tabs in order. Part One checks whether you are ready. Part Two gives you five questions to ask every vendor, with a scorecard to record and compare their answers. Parts Three to Five cover what a real implementation looks like, what you should own, and how to measure the result.</p>
+      <p>Everything you enter is stored only in this browser, on this device, and is not sent to Solid Solutions Today. To move to another device, choose Export backup here and Import backup on the other device.</p>
+    </div>
+
+    <div class="toolbar no-print">
+      <button class="btn" type="button" id="btn-export">Export backup</button>
+      <button class="btn ghost" type="button" id="btn-import">Import backup</button>
+      <input type="file" id="file-import" accept="application/json,.json" class="sr-only" aria-label="Choose a backup file to import" />
+      <button class="btn ghost" type="button" id="btn-print">Print or save as PDF</button>
+      <span class="status" id="save-status" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="tool-section" id="main">
+    <div class="tabs no-print" id="tabs" role="tablist" aria-label="Guide sections"></div>
+    <div id="panel"></div>
+  </section>
+
+  <p class="legal">A product of Solid Solutions Today. Questions: <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a><br />This guide is general information based on the author's experience and views. It is not legal advice. Have an attorney review any contract before you sign it.</p>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </nav>
+    </div>
+    <div class="footer-sitemap">
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">&middot;</span><a href="/ai-agents/">AI Agents</a><span class="footer-sep">&middot;</span><a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">&middot;</span><a href="/web-development/">Web Development</a><span class="footer-sep">&middot;</span><a href="/about/">About</a><span class="footer-sep">&middot;</span><a href="/partnerships/">Partnerships</a><span class="footer-sep">&middot;</span><a href="/blog/">Blog</a><span class="footer-sep">&middot;</span><a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">&middot;</span><a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p><span class="footer-sep">&middot;</span><a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+    </div>
+  </footer>
+
+<!-- SOLI LAUNCHER -->
+<div class="soli-circle-launcher" onclick="toggleSoli()">
+  <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
+</div>
+
+<div id="soli-window">
+  <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+  <div class="soli-body" id="soli-chat-history">
+    <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+  </div>
+  <div class="soli-footer">
+    <div class="soli-input-row">
+      <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+      <button id="soli-send" aria-label="Send message">&#10140;</button>
+    </div>
+  </div>
+</div>
+<script src="/js/main.js"></script>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'sst-ai-buyers-guide-v1';
+  var MAXV = 30;
+  var $ = function (id) { return document.getElementById(id); };
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function str(x, n) { return typeof x === 'string' ? x.slice(0, n || 3000) : ''; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  function uid() { return 'v' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+  var uidn = 0; function nid(p) { uidn++; return p + uidn; }
+
+  /* ---------- guide content ---------- */
+  var TABS = [['start', 'Start'], ['p1', '1 · Ready?'], ['p2', '2 · Questions'], ['p3', '3 · Implementation'], ['p4', '4 · Ownership'], ['p5', '5 · Measure'], ['end', 'Closing']];
+  var QS = [
+    { n: '01', t: 'Where does my data go, and who owns it after the engagement ends?', b: ['This is the first question and the most important one. Ask it before anything else.', 'Some AI products are trained on your inputs. Some store your conversations. Some share data across their customer base. Some are built on third-party infrastructure with their own data policies that the vendor has no control over.', 'What you need to know: does your proprietary information (your client data, your pricing, your internal processes) stay yours? Where is it stored? Who has access to it? What happens to it if you cancel?', 'If the vendor cannot answer this clearly and in writing, that is your answer.'],
+      good: 'A good answer names the specific infrastructure, confirms your data is not used for training, and states clearly in writing what happens to your data if the relationship ends.', flags: 'Vague references to "industry-standard security." Refusal to confirm in writing. Inability to name who controls the underlying infrastructure.' },
+    { n: '02', t: 'What does it do when it doesn\'t know something?', b: ['This question separates real AI implementations from dangerous ones.', 'Every AI system will eventually encounter a question outside its knowledge base. What happens next is a design decision, and it tells you everything about how carefully the system was built.', 'The right answer: it says so, clearly, and routes to a human or a defined next step. The wrong answer: it generates something confident and incorrect. That is called hallucination, and in a customer-facing system it means your business is on record for whatever the AI said.', 'Ask to see it fail. Ask the vendor to show you what happens when someone asks a question outside its scope. A vendor confident in their guardrails will show you this without hesitation.'],
+      good: 'The vendor shows you the edge case in real time. The system says something like "I don\'t have that information. Let me connect you with someone who does" and routes gracefully.', flags: 'Reluctance to demonstrate failure. Assurances that "it handles everything." No defined escalation path.' },
+    { n: '03', t: 'What does implementation actually look like, and what do you need from me?', b: ['"We\'ll have you up and running in 48 hours" is a red flag, not a selling point.', 'A real AI implementation requires your input. Your services. Your pricing. Your escalation paths. Your voice. Your edge cases. Your industry-specific knowledge. If a vendor is not asking you for any of that before they promise a deployment timeline, they are not building something for your business.', 'Ask specifically: what information do you need from us, how long does onboarding actually take, and what does the training process look like? The depth of that answer tells you whether they understand your business or just their own product.'],
+      good: 'A detailed list of what they need from you. A realistic timeline. A clear explanation of how your information becomes the AI\'s knowledge base.', flags: 'Generic timelines with no specifics. No intake process. No questions about your business before the pitch ends.' },
+    { n: '04', t: 'What does success look like, and how will we measure it?', b: ['If a vendor cannot define success before the engagement begins, they are not accountable to any outcome.', 'Push for specifics. Not "improved efficiency": what metric, what baseline, what target, what timeline? Not "better customer experience": what does that mean in a number you can track?', 'The businesses losing money on AI right now signed contracts with vague promises attached. The ones winning have documented outcomes with defined milestones. Make the vendor define what winning looks like before you write the check.'],
+      good: 'Specific metrics agreed upon before work begins. A baseline measurement. A timeline for review. A clear definition of what triggers a course correction.', flags: 'Promises of "transformation" or "efficiency gains" with no specifics. Metrics that cannot be measured until well after you have paid.' },
+    { n: '05', t: 'Who builds it, who owns it, and what happens if we part ways?', b: ['This question has two parts and both matter.', 'First: who is actually doing the work? Is it the person you are talking to, or is it being outsourced to a team you will never meet? That is not a judgment. It is a risk assessment. You need to know who is accountable.', 'Second: when the engagement ends, what do you walk away with? Do you own the knowledge base? The accounts? The trained model? The codebase? Or does the AI live on their platform, accessible only as long as you keep paying?', 'Ownership at the end is not a detail. It is the whole point. An AI system you cannot access, modify, or take with you is not an asset. It is a dependency.'],
+      good: 'Named individuals doing the work. Written confirmation that all assets transfer to you upon final payment. A clear offboarding process.', flags: 'Vague references to "our team." Subscription models where the AI disappears if you stop paying. No offboarding clause in the contract.' }
+  ];
+  var RATING = { '': 'Not asked yet', clear: 'Clear answer', vague: 'Vague', flag: 'Red flag' };
+  var READY = [
+    { k: 'problem', q: 'What is the one specific problem I want AI to solve?', h: 'Not AI in general. One problem. Lead qualification, after-hours responses, appointment routing: pick one.', area: false },
+    { k: 'success', q: 'What does success look like, specifically?', h: 'A number, a behavior, a time saved. Something concrete you can measure before and after.', area: false },
+    { k: 'info', q: 'What information does the AI need to do this job well?', h: 'Your services, your pricing, your most common questions, what it should never say. This is your knowledge base.', area: true },
+    { k: 'line', q: 'Where does the AI stop and a human begin?', h: 'Know where that line is before anything goes live. This is your guardrail architecture.', area: true },
+    { k: 'own', q: 'Do I own what gets built?', h: 'Your knowledge base, your agent, your deployment: these should belong to you, not a vendor\'s platform.', area: false }
+  ];
+  var PROVIDE = [
+    { id: 'a1', t: 'A complete list of your services, with descriptions' },
+    { id: 'a2', t: 'Your pricing (or a decision about what the AI should and should not share)' },
+    { id: 'a3', t: 'Your most frequently asked questions, and your preferred answers' },
+    { id: 'a4', t: 'Your escalation paths: what situations require a human, and how that handoff happens' },
+    { id: 'a5', t: 'Your brand voice: formal or conversational, direct or warm' },
+    { id: 'a6', t: 'What the AI should never say: hard limits, off-topic areas, legal or liability considerations' },
+    { id: 'a7', t: 'Any existing materials: website copy, intake forms, FAQ documents' }
+  ];
+  var WEEKS = [['Week 1', 'Intake', 'Learning your business, your services, your voice, your clients\' most common questions, your escalation paths.'], ['Week 2', 'Build and training', 'The system is built and trained on your information.'], ['Week 3', 'Testing', 'Including intentional failure testing, where the system is pushed outside its scope to confirm it responds correctly.'], ['Week 4', 'Deployment and monitoring', 'The system goes live and is watched closely.']];
+  var UPD = [{ k: 'u1', q: 'Who is responsible for updates after deployment?' }, { k: 'u2', q: 'How often does the knowledge base get reviewed?' }, { k: 'u3', q: 'What does retraining cost?' }, { k: 'u4', q: 'What triggers a required update?' }];
+  var OWN = [
+    { k: 'o1', h: 'The knowledge base', t: 'Every document, FAQ, service description, and training material that was used to build the AI. This is your intellectual property. It should be delivered to you in a format you can use.' },
+    { k: 'o2', h: 'All accounts and credentials', t: 'Every platform account, API key, and login created during the engagement. Nothing should be held in the vendor\'s name without your explicit consent.' },
+    { k: 'o3', h: 'The deployed system', t: 'If the AI lives on your website or in your tech stack, you should have direct access to it, not through the vendor\'s dashboard. If removing the vendor\'s access would break the system, that is a dependency you did not agree to.' },
+    { k: 'o4', h: 'Documentation', t: 'A written record of what was built, how it works, what it does, and what it does not do. You should be able to hand this to another developer and have them understand the system.' },
+    { k: 'o5', h: 'All creative assets', t: 'Any copy, scripts, or brand materials created during the engagement belong to you upon final payment. Confirm this is in the contract.' },
+    { k: 'o6', h: 'Ownership language', t: 'The contract says something like: "All assets, accounts, and files created during the engagement become the sole property of the client upon receipt of final payment." If that language, or something equivalent, is not in the agreement, ask for it.' }
+  ];
+  var MET = [
+    { k: 'm1', n: 'Response time', q: 'How long does it take for a prospect to receive a substantive response after inquiry?', lower: true, unit: 'for example, hours' },
+    { k: 'm2', n: 'Lead qualification rate', q: 'What percentage of inquiries are qualified before reaching you?', lower: false, unit: 'for example, %' },
+    { k: 'm3', n: 'Conversion from inquiry to consultation', q: 'Is the AI improving or degrading this number?', lower: false, unit: 'for example, %' },
+    { k: 'm4', n: 'Hours recovered', q: 'How many hours per week are no longer spent on tasks the AI now handles?', lower: false, unit: 'hours per week' },
+    { k: 'm5', n: 'Error rate', q: 'How often does the AI produce an incorrect or out-of-scope response?', lower: true, unit: 'for example, %' }
+  ];
+  var FAIL = [{ k: 'f1', t: 'It is producing more work than it is saving.' }, { k: 'f2', t: 'Clients are being misinformed.' }, { k: 'f3', t: 'I have lost trust in what it says.' }];
+
+  /* ---------- state ---------- */
+  var state, saveTimer = null, tab = 'start';
+  function blank() { return { v: 1, ready: {}, vendors: [], cur: '', provide: {}, cost: '', met: {}, fail: {}, tab: 'start' }; }
+  function clean(raw) {
+    var s = blank(); if (!raw || typeof raw !== 'object') raw = {};
+    READY.forEach(function (r) { s.ready[r.k] = str(raw.ready && raw.ready[r.k], 1500); });
+    if (Array.isArray(raw.vendors)) raw.vendors.slice(0, MAXV).forEach(function (v) {
+      if (!v || typeof v !== 'object') return;
+      var o = { id: str(v.id, 40) || uid(), name: str(v.name, 200), q: {}, own: {}, upd: {} };
+      QS.forEach(function (q) { var x = (v.q && v.q[q.n]) || {}; o.q[q.n] = { r: RATING[x.r] !== undefined ? x.r : '', w: x.w === true, n: str(x.n, 3000) }; });
+      OWN.forEach(function (x) { o.own[x.k] = !!(v.own && v.own[x.k] === true); });
+      UPD.forEach(function (x) { o.upd[x.k] = str(v.upd && v.upd[x.k], 1500); });
+      s.vendors.push(o);
+    });
+    s.cur = s.vendors.some(function (v) { return v.id === raw.cur; }) ? raw.cur : (s.vendors[0] ? s.vendors[0].id : '');
+    PROVIDE.forEach(function (p) { s.provide[p.id] = !!(raw.provide && raw.provide[p.id] === true); });
+    s.cost = str(raw.cost, 3000);
+    MET.forEach(function (m) { var x = (raw.met && raw.met[m.k]) || {}; s.met[m.k] = { b: str(x.b, 40), t: str(x.t, 40), d30: str(x.d30, 40), d60: str(x.d60, 40), d90: str(x.d90, 40) }; });
+    FAIL.forEach(function (f) { s.fail[f.k] = !!(raw.fail && raw.fail[f.k] === true); });
+    if (TABS.some(function (t) { return t[0] === raw.tab; })) s.tab = raw.tab;
+    return s;
+  }
+  function load() { try { var r = localStorage.getItem(KEY); return clean(r ? JSON.parse(r) : null); } catch (e) { return blank(); } }
+  function setStatus(t) { $('save-status').textContent = t; }
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); var d = new Date(); setStatus('Saved in this browser · ' + pad(d.getHours()) + ':' + pad(d.getMinutes())); }
+    catch (e) { setStatus('Could not save in this browser. Export a backup now.'); }
+  }
+  function changed() { setStatus('Saving…'); clearTimeout(saveTimer); saveTimer = setTimeout(function () { saveTimer = null; persist(); }, 300); }
+  state = load(); tab = state.tab;
+  window.addEventListener('pagehide', function () { if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; persist(); } });
+  function vendor() { for (var i = 0; i < state.vendors.length; i++) if (state.vendors[i].id === state.cur) return state.vendors[i]; return null; }
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  /* ---------- helpers ---------- */
+  function F(host, label, val, cb, o) {
+    o = o || {}; var id = nid('f');
+    var l = mk('label', '', label); l.setAttribute('for', id); if (o.hint) l.appendChild(mk('span', 'hint', o.hint)); host.appendChild(l);
+    var e;
+    if (o.t === 'select') { e = mk('select'); o.o.forEach(function (x) { var op = mk('option', '', x[1]); op.value = x[0]; if (val === x[0]) op.selected = true; e.appendChild(op); }); e.addEventListener('change', function () { cb(e.value); }); }
+    else { e = mk(o.t === 'area' ? 'textarea' : 'input'); if (o.t !== 'area') e.type = 'text'; e.value = val || ''; e.maxLength = o.max || 1500; if (o.ph) e.placeholder = o.ph; e.addEventListener('input', function () { cb(e.value); }); }
+    e.id = id; host.appendChild(e); return e;
+  }
+  function paras(host, arr) { arr.forEach(function (t) { host.appendChild(mk('p', 'tool-sub', t)); }); }
+  function box(host, label, text) { var n = mk('div', 'branch'); n.appendChild(mk('strong', '', label + ' ')); n.appendChild(document.createTextNode(text)); host.appendChild(n); }
+  function section(host, title) { var c = mk('div', 'card'); if (title) c.appendChild(mk('h3', '', title)); host.appendChild(c); return c; }
+  function head(host, step, title) { host.appendChild(mk('p', 'step-num', step)); host.appendChild(mk('h2', '', title)); }
+  function chk(host, label, checked, cb) {
+    var l = mk('label', 'opt'); var c = mk('input'); c.type = 'checkbox'; c.checked = checked; c.addEventListener('change', function () { cb(c.checked); });
+    var s = mk('span'); s.appendChild(document.createTextNode(label)); l.appendChild(c); l.appendChild(s); host.appendChild(l); return c;
+  }
+  function vendorPicker(host, onChange) {
+    var c = section(host);
+    if (!state.vendors.length) { c.appendChild(mk('p', '', 'Add the first vendor you are considering. You can compare as many as you like.')); }
+    else {
+      var id = nid('vp'); var l = mk('label', '', 'Vendor you are evaluating'); l.setAttribute('for', id); c.appendChild(l);
+      var s = mk('select'); s.id = id;
+      state.vendors.forEach(function (v) { var o = mk('option', '', v.name || 'Unnamed vendor'); o.value = v.id; if (v.id === state.cur) o.selected = true; s.appendChild(o); });
+      s.addEventListener('change', function () { state.cur = s.value; changed(); onChange(); }); c.appendChild(s);
+      var v = vendor();
+      if (v) F(c, 'Vendor name', v.name, function (x) { v.name = x; changed(); }, { max: 200 });
+    }
+    var bar = mk('div', 'toolbar no-print');
+    var add = mk('button', 'btn small', 'Add a vendor'); add.type = 'button';
+    add.addEventListener('click', function () {
+      if (state.vendors.length >= MAXV) return;
+      var v = { id: uid(), name: '', q: {}, own: {}, upd: {} };
+      QS.forEach(function (q) { v.q[q.n] = { r: '', w: false, n: '' }; }); OWN.forEach(function (x) { v.own[x.k] = false; }); UPD.forEach(function (x) { v.upd[x.k] = ''; });
+      state.vendors.push(v); state.cur = v.id; changed(); onChange();
+    });
+    bar.appendChild(add);
+    if (vendor()) {
+      var rm = mk('button', 'btn ghost small', 'Delete this vendor'); rm.type = 'button';
+      rm.addEventListener('click', function () { if (!window.confirm('Delete this vendor and its notes?')) return; state.vendors = state.vendors.filter(function (x) { return x.id !== state.cur; }); state.cur = state.vendors[0] ? state.vendors[0].id : ''; changed(); onChange(); });
+      bar.appendChild(rm);
+    }
+    c.appendChild(bar);
+  }
+
+  /* ---------- tabs ---------- */
+  function renderTabs() {
+    var h = $('tabs'); h.textContent = '';
+    TABS.forEach(function (t) {
+      var b = mk('button', 'tab' + (tab === t[0] ? ' on' : ''), t[1]); b.type = 'button'; b.setAttribute('aria-pressed', tab === t[0] ? 'true' : 'false');
+      b.addEventListener('click', function () { tab = t[0]; state.tab = tab; changed(); renderTabs(); renderPanel(); window.scrollTo(0, 0); }); h.appendChild(b);
+    });
+  }
+  function nextBtn(h) {
+    var i = TABS.map(function (t) { return t[0]; }).indexOf(tab);
+    if (i < 0 || i >= TABS.length - 1) return;
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn', 'Next: ' + TABS[i + 1][1]); b.type = 'button';
+    b.addEventListener('click', function () { tab = TABS[i + 1][0]; state.tab = tab; changed(); renderTabs(); renderPanel(); window.scrollTo(0, 0); });
+    bar.appendChild(b); h.appendChild(bar);
+  }
+  function renderPanel() {
+    var h = $('panel'); h.textContent = '';
+    ({ start: pStart, p1: pOne, p2: pTwo, p3: pThree, p4: pFour, p5: pFive, end: pEnd })[tab](h);
+    nextBtn(h);
+  }
+
+  /* ---------- panels ---------- */
+  function pStart(h) {
+    head(h, 'Introduction', 'Why this guide exists.');
+    paras(h, ['The AI sales cycle is aggressive right now. Vendors are everywhere: at conferences, in your inbox, on LinkedIn, in your referral network. Some of them are building real things. Some of them are repackaging a ChatGPT wrapper with a logo on it and calling it enterprise software.',
+      'Most small business owners are making expensive decisions without the right questions. Not because they are not smart, but because nobody gave them a plain-language framework for evaluating what they are actually being sold.',
+      'This guide is that framework. It is not a technology manual. It does not require a background in software or data science. It requires honest answers to honest questions, and a willingness to walk away from vendors who cannot provide them.',
+      'You do not need to be a technologist to make a good decision about AI. You need to know what to ask. That is what this guide gives you.']);
+  }
+  function pOne(h) {
+    head(h, 'Part One', 'Are you actually ready?');
+    paras(h, ['Before you talk to a single vendor, answer this question honestly: can you describe the specific problem you want AI to solve in one sentence?', 'Not a category of problems. Not a general desire for efficiency. One sentence. One problem. One measurable outcome.', 'If you cannot, you are not ready to buy anything, and any vendor who tries to sell you something before helping you answer that question is not working in your interest.']);
+    var a = section(h, 'What AI can actually solve');
+    a.appendChild(mk('p', '', 'AI solves problems that are repetitive, predictable, and currently eating time that should be spent elsewhere. Answering the same questions from prospects at 11PM. Following up on leads that went cold because nobody had bandwidth. Routing inquiries to the right person. Qualifying a caller before they ever reach you.'));
+    a.appendChild(mk('p', '', 'These are not glamorous use cases. They are the ones that actually work, because they are specific, bounded, and measurable. AI does not solve vague problems. It solves defined ones.'));
+    var b = section(h, 'What AI cannot solve');
+    b.appendChild(mk('p', '', 'AI cannot fix a broken process. If your lead follow-up is inconsistent, automating it will make the inconsistency faster and more visible. If your client onboarding is unclear, an AI agent will expose that confusion to every new client who interacts with it.'));
+    b.appendChild(mk('p', '', 'AI cannot replace judgment. It cannot build relationships. It cannot make consequential decisions without a human in the chain, and any system that is designed as if it can is a liability, not an asset.'));
+    var c = section(h, 'The readiness checklist');
+    c.appendChild(mk('p', '', 'Answer these before you speak to anyone.'));
+    READY.forEach(function (r) {
+      if (r.k === 'own') F(c, r.q, state.ready.own, function (v) { state.ready.own = v; changed(); upd(); }, { t: 'select', hint: r.h, o: [['', 'Choose'], ['yes', 'Yes, it will be written into the agreement'], ['unsure', 'Not sure yet'], ['no', 'No']] });
+      else F(c, r.q, state.ready[r.k], function (v) { state.ready[r.k] = v; changed(); upd(); }, { t: r.area ? 'area' : 'text', hint: r.h });
+    });
+    var res = mk('p', 'badge'); c.appendChild(res);
+    function upd() {
+      var done = READY.filter(function (r) { return (state.ready[r.k] || '').trim(); }).length;
+      res.textContent = done + ' of 5 answered. ' + (!(state.ready.problem || '').trim() ? 'Start with the one-sentence problem. If you cannot write it yet, you are not ready to buy anything.' : done === 5 ? 'You have your foundation. Move on to the five questions.' : 'Keep going. Each answer makes your vendor conversations sharper.');
+    }
+    upd();
+  }
+  function ratingEl(host, q, v) {
+    var x = v.q[q.n];
+    F(host, 'How did they answer?', x.r, function (r) { x.r = r; changed(); }, { t: 'select', o: Object.keys(RATING).map(function (k) { return [k, RATING[k]]; }) });
+    chk(host, 'They confirmed it in writing', x.w, function (c) { x.w = c; changed(); });
+    F(host, 'Notes on their answer', x.n, function (t) { x.n = t; changed(); }, { t: 'area', max: 3000 });
+  }
+  function pTwo(h) {
+    head(h, 'Part Two', 'The 5 questions to ask any vendor');
+    paras(h, ['These questions are not technical. They are business questions. The way a vendor answers them will tell you everything you need to know before you spend a dollar. A vendor confident in their build will answer every one of these directly, without hesitation. The ones who can\'t, or who redirect, get vague, or get defensive, are telling you something important.']);
+    var holder = mk('div'); h.appendChild(holder);
+    function draw() {
+      holder.textContent = ''; vendorPicker(holder, function () { draw(); renderSummary(); });
+      var v = vendor();
+      QS.forEach(function (q) {
+        var det = mk('details', 'card pcard'); if (q.n === '01') det.open = true;
+        var sum = mk('summary'); sum.appendChild(mk('span', 'pnum', 'Question ' + q.n)); sum.appendChild(mk('span', 'ptitle', q.t));
+        if (v) sum.appendChild(mk('span', 'pmodel', RATING[v.q[q.n].r])); det.appendChild(sum);
+        var inner = mk('div', 'inner'); det.appendChild(inner);
+        q.b.forEach(function (t) { inner.appendChild(mk('p', 'prob', t)); });
+        box(inner, 'What a good answer sounds like.', q.good); box(inner, 'Red flags.', q.flags);
+        if (v) { inner.appendChild(mk('p', 'lbl', 'Record their answer: ' + (v.name || 'this vendor'))); ratingEl(inner, q, v); } else inner.appendChild(mk('p', 'hint', 'Add a vendor above to record their answers.'));
+        holder.appendChild(det);
+      });
+      holder.appendChild(mk('div', 'sumhost')).id = 'sumhost'; renderSummary();
+    }
+    draw();
+  }
+  function renderSummary() {
+    var host = $('sumhost'); if (!host) return; host.textContent = '';
+    if (!state.vendors.length) return;
+    var c = section(host, 'Compare your vendors');
+    c.appendChild(mk('p', '', 'The decision is yours. This shows what you recorded, side by side.'));
+    state.vendors.forEach(function (v) {
+      var cnt = { clear: 0, vague: 0, flag: 0, '': 0 }, wr = 0;
+      QS.forEach(function (q) { cnt[v.q[q.n].r]++; if (v.q[q.n].w) wr++; });
+      var d = mk('div', 'subcard'); d.appendChild(mk('p', 'docitem-t', v.name || 'Unnamed vendor'));
+      d.appendChild(mk('p', 'hint', cnt.clear + ' clear · ' + cnt.vague + ' vague · ' + cnt.flag + ' red flag · ' + cnt[''] + ' not asked · ' + wr + ' of 5 confirmed in writing'));
+      var ul = mk('ul'); QS.forEach(function (q) { ul.appendChild(mk('li', '', q.n + ' ' + q.t.replace(/\?$/, '') + ': ' + RATING[v.q[q.n].r] + (v.q[q.n].w ? ' · in writing' : ''))); }); d.appendChild(ul);
+      c.appendChild(d);
+    });
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn ghost small', 'Download comparison (CSV)'); b.type = 'button'; bar.appendChild(b); c.appendChild(bar);
+    b.addEventListener('click', function () {
+      function cell(x) { x = String(x == null ? '' : x); if (/^[=+\-@\t\r]/.test(x)) x = "'" + x; return '"' + x.replace(/"/g, '""') + '"'; }
+      var rows = [['Vendor'].concat(QS.map(function (q) { return 'Q' + q.n + ' rating'; }), QS.map(function (q) { return 'Q' + q.n + ' in writing'; }), QS.map(function (q) { return 'Q' + q.n + ' notes'; }))];
+      state.vendors.forEach(function (v) { rows.push([v.name].concat(QS.map(function (q) { return RATING[v.q[q.n].r]; }), QS.map(function (q) { return v.q[q.n].w ? 'Yes' : 'No'; }), QS.map(function (q) { return v.q[q.n].n; }))); });
+      download('vendor-comparison-' + today() + '.csv', '﻿' + rows.map(function (r) { return r.map(cell).join(','); }).join('\r\n'), 'text/csv;charset=utf-8');
+    });
+  }
+  function pThree(h) {
+    head(h, 'Part Three', 'What a real implementation looks like');
+    paras(h, ['Most business owners who have been burned by AI implementations describe the same experience: it seemed to work in the demo, but once it was live, it said the wrong things, couldn\'t handle real questions, and required constant intervention. The problem was not the AI. It was the implementation.']);
+    var a = section(h, 'The honest timeline');
+    a.appendChild(mk('p', '', 'A real AI implementation for a small business takes two to four weeks, not 48 hours.'));
+    WEEKS.forEach(function (w) { var d = mk('div', 'subcard'); d.appendChild(mk('p', 'docitem-t', w[0] + ' · ' + w[1])); d.appendChild(mk('p', '', w[2])); a.appendChild(d); });
+    a.appendChild(mk('p', '', 'Any vendor promising same-week deployment without a thorough intake process is skipping the part that makes everything else work.'));
+    var b = section(h, 'What you will be asked to provide');
+    var pr = mk('p', 'badge'); function up() { pr.textContent = PROVIDE.filter(function (p) { return state.provide[p.id]; }).length + ' of ' + PROVIDE.length + ' ready'; }
+    PROVIDE.forEach(function (p) { chk(b, p.t, state.provide[p.id], function (c) { state.provide[p.id] = c; changed(); up(); }); }); b.appendChild(pr); up();
+    b.appendChild(mk('p', '', 'If a vendor does not ask for most of this before they begin building, they are not building something for your business. They are deploying a template.'));
+    var c = section(h, 'What set-and-forget actually means');
+    c.appendChild(mk('p', '', 'There is no such thing as a set-and-forget AI system. Your business changes. Your pricing changes. Your services change. Your clients\' questions evolve. An AI system that is not maintained becomes outdated, and an outdated AI agent is worse than no agent, because it confidently provides wrong information.'));
+    c.appendChild(mk('p', '', 'Before you sign anything, ask:'));
+    var holder = mk('div'); c.appendChild(holder);
+    function draw() {
+      holder.textContent = ''; var v = vendor();
+      if (!v) { holder.appendChild(mk('p', 'hint', 'Add a vendor in Part Two to record their answers here.')); UPD.forEach(function (u) { holder.appendChild(mk('p', 'docitem-t', u.q)); }); return; }
+      holder.appendChild(mk('p', 'hint', 'Recording answers for: ' + (v.name || 'this vendor')));
+      UPD.forEach(function (u) { F(holder, u.q, v.upd[u.k], function (t) { v.upd[u.k] = t; changed(); }, { t: 'area' }); });
+    }
+    draw();
+  }
+  function pFour(h) {
+    head(h, 'Part Four', 'The ownership checklist');
+    paras(h, ['When an AI engagement ends, whether because the project is complete or the relationship ends early, here is what you should own. If any of these items are missing from your contract, ask about them before you sign.']);
+    var holder = mk('div'); h.appendChild(holder);
+    function draw() {
+      holder.textContent = ''; vendorPicker(holder, draw);
+      var v = vendor(), c = section(holder, v ? 'In the contract with ' + (v.name || 'this vendor') : 'The checklist');
+      var pr = mk('p', 'badge');
+      function up() { if (v) pr.textContent = OWN.filter(function (o) { return v.own[o.k]; }).length + ' of ' + OWN.length + ' confirmed in writing'; }
+      OWN.forEach(function (o) {
+        var wrap = mk('div'); wrap.appendChild(mk('p', 'docitem-t', o.h)); wrap.appendChild(mk('p', 'hint', o.t));
+        if (v) chk(wrap, 'Confirmed in writing in the contract', v.own[o.k], function (x) { v.own[o.k] = x; changed(); up(); });
+        c.appendChild(wrap);
+      });
+      if (v) { c.appendChild(pr); up(); } else c.appendChild(mk('p', 'hint', 'Add a vendor above to check items off for their contract.'));
+    }
+    draw();
+  }
+  function num(s) { var n = parseFloat(String(s).replace(/[^0-9.\-]/g, '')); return isNaN(n) ? null : n; }
+  function pFive(h) {
+    head(h, 'Part Five', 'How to measure it');
+    paras(h, ['ROI from AI only becomes real when you attach it to a specific problem with a specific cost. You cannot calculate it in the abstract, and any vendor who promises ROI without tying it to a defined baseline is guessing.']);
+    var a = section(h, 'Start with the cost of the problem');
+    a.appendChild(mk('p', '', 'Before the AI is deployed, document what the problem costs you right now. Not necessarily in dollars: in hours, in lost leads, in follow-up that never happens. Be specific. If your after-hours inquiry response time is currently 18 hours, write that down. If you are losing an estimated two leads per week to slow follow-up, write that down.'));
+    F(a, 'What the problem costs me right now', state.cost, function (v) { state.cost = v; changed(); }, { t: 'area', max: 3000 });
+    a.appendChild(mk('p', '', 'That number, however you define it, is your baseline. It is what you compare against after the AI has been running for 30, 60, and 90 days.'));
+    var b = section(h, 'What to measure');
+    b.appendChild(mk('p', '', 'Enter your baseline and target now. Come back and add your numbers at 30, 60, and 90 days after deployment.'));
+    MET.forEach(function (m) {
+      var x = state.met[m.k], d = mk('div', 'subcard'); d.appendChild(mk('p', 'docitem-t', m.n)); d.appendChild(mk('p', 'hint', m.q + ' (' + (m.lower ? 'lower is better' : 'higher is better') + ')'));
+      var g = mk('div', 'grid2'); d.appendChild(g); var g1 = mk('div'), g2 = mk('div'); g.appendChild(g1); g.appendChild(g2);
+      var res = mk('p', 'badge');
+      function upd() {
+        var base = num(x.b), last = num(x.d90) !== null ? ['d90', num(x.d90)] : num(x.d60) !== null ? ['d60', num(x.d60)] : num(x.d30) !== null ? ['d30', num(x.d30)] : null;
+        if (base === null || !last) { res.textContent = ''; return; }
+        var diff = last[1] - base, good = m.lower ? diff < 0 : diff > 0;
+        res.textContent = 'Latest (' + last[0].replace('d', 'day ') + ') versus baseline: ' + (diff === 0 ? 'unchanged' : good ? 'moving in the right direction' : 'moving in the wrong direction') + '.';
+      }
+      F(g1, 'Baseline', x.b, function (v) { x.b = v; changed(); upd(); }, { max: 40, ph: m.unit }); F(g2, 'Target', x.t, function (v) { x.t = v; changed(); }, { max: 40 });
+      F(g1, 'Day 30', x.d30, function (v) { x.d30 = v; changed(); upd(); }, { max: 40 }); F(g2, 'Day 60', x.d60, function (v) { x.d60 = v; changed(); upd(); }, { max: 40 });
+      F(g1, 'Day 90', x.d90, function (v) { x.d90 = v; changed(); upd(); }, { max: 40 });
+      d.appendChild(res); upd(); b.appendChild(d);
+    });
+    b.appendChild(mk('p', '', 'Review these numbers at 30, 60, and 90 days post-deployment. If the numbers are not moving in the right direction by day 90, something in the implementation needs to change: the knowledge base, the guardrails, the escalation paths, or the scope of what the AI is being asked to do.'));
+    var c = section(h, 'When to call it a failure');
+    c.appendChild(mk('p', '', 'An AI implementation has failed when:'));
+    var msg = mk('p', 'badge');
+    function up() { var n = FAIL.filter(function (f) { return state.fail[f.k]; }).length; msg.textContent = n ? 'At this point, the right move is not to push through. It is to stop, assess the knowledge base and guardrails, and rebuild from a clearer foundation.' : ''; }
+    FAIL.forEach(function (f) { chk(c, f.t, state.fail[f.k], function (x) { state.fail[f.k] = x; changed(); up(); }); }); c.appendChild(msg); up();
+    c.appendChild(mk('p', '', 'A failed implementation is not a reason to give up on AI. It is a reason to build it correctly the next time.'));
+  }
+  function pEnd(h) {
+    head(h, 'Closing', 'Where to go from here.');
+    paras(h, ['AI may be exactly right for your business. The questions in this guide will help you find out, and help you find the right person to build it with.',
+      'The vendors worth working with will not flinch at any of these questions. They will answer them directly, in writing, before you sign anything. The ones who get defensive or vague when you push: that response is the information.',
+      'You are not behind because you have not implemented AI yet. You may actually be ahead, because you have not implemented it wrong yet. The businesses losing money on AI right now moved fast without a foundation. You have the foundation now.',
+      'Use it.']);
+    var c = section(h);
+    c.appendChild(mk('p', '', 'Renea Hanks is the founder of Solid Solutions Today and a Google Developer Program member. She builds Human-in-the-Loop AI infrastructure for small businesses, not demos, not templates. The real thing. One person. Nothing outsourced.'));
+    var p = mk('p'); p.appendChild(document.createTextNode('solidsolutionstoday.com · ')); var m = mk('a', '', 'hello@solidsolutionstoday.com'); m.href = 'mailto:hello@solidsolutionstoday.com'; p.appendChild(m); c.appendChild(p);
+    var p2 = mk('p'); p2.appendChild(document.createTextNode('Schedule a consultation: ')); var s = mk('a', '', 'app.reclaim.ai/m/solid-solutions-today'); s.href = 'https://app.reclaim.ai/m/solid-solutions-today'; s.target = '_blank'; s.rel = 'noopener'; p2.appendChild(s); c.appendChild(p2);
+  }
+
+  /* ---------- backup, print ---------- */
+  $('btn-print').addEventListener('click', function () {
+    var ds = document.querySelectorAll('#panel details'), was = [];
+    Array.prototype.forEach.call(ds, function (d) { was.push(d.open); d.open = true; });
+    function done() { Array.prototype.forEach.call(ds, function (d, i) { d.open = was[i]; }); window.removeEventListener('afterprint', done); }
+    window.addEventListener('afterprint', done); window.print();
+  });
+  $('btn-export').addEventListener('click', function () { download('ai-buyers-guide-backup-' + today() + '.json', JSON.stringify(state, null, 2), 'application/json'); setStatus('Backup downloaded. Keep the file somewhere safe.'); });
+  $('btn-import').addEventListener('click', function () { $('file-import').click(); });
+  $('file-import').addEventListener('change', function (e) {
+    var f = e.target.files && e.target.files[0]; if (!f) return;
+    if (f.size > 5000000) { setStatus('That file is too large to be a backup from this guide.'); e.target.value = ''; return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var raw; try { raw = JSON.parse(r.result); } catch (x) { setStatus('That file is not a valid backup.'); e.target.value = ''; return; }
+      if (!raw || typeof raw !== 'object' || !raw.ready || !Array.isArray(raw.vendors)) { setStatus('That file is not a backup from this guide.'); e.target.value = ''; return; }
+      if (!window.confirm('Importing replaces everything currently saved in this browser. Continue?')) { e.target.value = ''; return; }
+      state = clean(raw); tab = state.tab; persist(); renderTabs(); renderPanel(); setStatus('Backup imported.'); e.target.value = '';
+    };
+    r.readAsText(f);
+  });
+  renderTabs(); renderPanel();
+})();
+</script>
+</body>
+</html>
