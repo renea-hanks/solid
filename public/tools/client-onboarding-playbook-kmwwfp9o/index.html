@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Client Onboarding Playbook | Solid Solutions Today</title>
+  <title>Client Onboarding Playbook | Solid Solutions Today</title>
   <meta name="robots" content="noindex, nofollow" />
 
   <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
@@ -16,37 +16,110 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQ6YBJ8J45"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-VQ6YBJ8J45');
-  </script>
-
   <link rel="stylesheet" href="/css/style.css" />
 
   <style>
-    .thanks-hero { padding: 140px 48px 24px; max-width: 740px; margin: 0 auto; }
-    .thanks-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
-    .thanks-title { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; margin-bottom: 0; }
-    .thanks-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
-    .thanks-body { max-width: 740px; margin: 0 auto; padding: 0 48px 80px; }
-    .thanks-p { font-family: 'Raleway', sans-serif; font-size: 1.05rem; font-weight: 400; color: #333333; line-height: 1.9; margin-bottom: 24px; }
-    .thanks-p a { color: #050d35; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
-    .thanks-btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 18px 40px; border-radius: 100px; text-decoration: none; transition: background 0.2s; margin: 8px 0 40px; }
-    .thanks-btn:hover { background: #000000; }
-    .thanks-item { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.12); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
-    .thanks-item-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
-    .thanks-item-text { font-family: 'Raleway', sans-serif; font-size: 1rem; color: #333333; line-height: 1.8; }
+    .tool { max-width: 860px; margin: 0 auto; padding: 140px 32px 80px; font-family: 'Raleway', sans-serif; color: #333333; }
+    .tool-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .tool h1 { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; }
+    .tool-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .tool-sub { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+    .tool h2 { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin: 0 0 8px; }
+    .step-num { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 8px; }
+    .tool-section { margin-top: 56px; }
+    .card { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.18); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
+    .card.navy { background: #050d35; color: #ffffff; border-color: #050d35; }
+    .card.navy h3, .card.navy p, .card.navy li { color: #ffffff; }
+    .card h3 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .card p, .card li { font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .card ul { padding-left: 20px; margin-bottom: 12px; }
+    .say { font-size: 1.05rem; line-height: 1.85; color: #111111; border-left: 3px solid #050d35; padding: 4px 0 4px 18px; margin: 12px 0 16px; }
+    .ph { border-bottom: 1px dashed #050d35; padding: 0 2px; }
+    .branch { font-size: 0.95rem; line-height: 1.75; color: #333333; background: rgba(5,13,53,0.04); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px; }
+    .branch strong { color: #050d35; }
+    label, .lbl { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 16px 0 6px; }
+    .hint { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: #555555; display: block; margin-top: 2px; }
+    input[type="text"], input[type="date"], textarea, select { width: 100%; font-family: 'Raleway', sans-serif; font-size: 16px; color: #111111; background: #ffffff; border: 1px solid rgba(5,13,53,0.35); border-radius: 4px; padding: 12px 14px; min-height: 44px; }
+    textarea { min-height: 96px; resize: vertical; line-height: 1.6; }
+    input:focus, textarea:focus, select:focus, button:focus-visible, summary:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(5,13,53,0.2); border-radius: 4px; margin-bottom: 10px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #333333; margin-top: 0; }
+    .opt input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: #050d35; }
+    .opt strong { color: #111111; font-weight: 600; display: block; }
+    .btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 14px 28px; min-height: 44px; border: 1px solid #050d35; border-radius: 100px; cursor: pointer; transition: background 0.2s; margin: 0 8px 10px 0; }
+    .btn:hover { background: #000000; }
+    .btn.ghost { background: #ffffff; color: #050d35; }
+    .btn.ghost:hover { background: rgba(5,13,53,0.06); }
+    .btn.small { padding: 8px 16px; min-height: 36px; font-size: 0.62rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; margin-top: 24px; }
+    .status { font-size: 0.85rem; color: #555555; margin-left: 4px; }
+    .errors { border-left: 4px solid #050d35; background: rgba(5,13,53,0.06); padding: 16px 20px; margin: 16px 0; font-size: 0.95rem; line-height: 1.7; }
+    .errors strong { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 6px; }
+    .errors ul { padding-left: 20px; }
+    .reqrow { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    .reqrow input { flex: 1; }
+    details summary { cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #050d35; padding: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(5,13,53,0.15); vertical-align: top; }
+    th { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; }
+    .legal { font-size: 0.85rem; line-height: 1.7; color: #555555; margin-top: 32px; }
+    #record { display: none; }
+    #record.show { display: block; }
+    .rec-row { margin-bottom: 14px; }
+    .rec-row b { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
     @media (max-width: 768px) {
-      .thanks-hero, .thanks-body { padding-left: 24px; padding-right: 24px; }
-      .thanks-item { padding: 24px; }
+      .tool { padding: 120px 20px 60px; }
+      .card { padding: 22px 20px; }
+      .grid2 { grid-template-columns: 1fr; }
     }
-  </style>
+    @media print {
+      nav, .nav, footer, .footer, .soli-circle-launcher, #soli-window, .no-print, .toolbar { display: none !important; }
+      body { background: #ffffff; }
+      .tool { padding: 0; max-width: 100%; }
+      .card { break-inside: avoid; border: 1px solid #999999; }
+      .card.navy { background: #ffffff; color: #111111; border: 1px solid #111111; }
+      .card.navy h3, .card.navy p, .card.navy li { color: #111111; }
+      textarea, input, select { border: 1px solid #999999; }
+      body.print-record .tool-section:not(#record), body.print-record .tool-hero { display: none !important; }
+      body.print-all .tool-section:not(#saved), body.print-all .tool-hero { display: none !important; }
+      body.print-record #record { display: block !important; }
+    }
+  
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border-top: 2px solid #050d35; border-bottom: 1px solid rgba(5,13,53,0.2); padding: 20px 0; margin: 28px 0 0; text-align: center; }
+    .stats b { display: block; font-family: 'Raleway', sans-serif; font-size: 1.6rem; font-weight: 600; color: #050d35; }
+    .stats span { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #555555; }
+    .grid2 > div { min-width: 0; }
+    .grid2 input, .grid2 select { box-sizing: border-box; max-width: 100%; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tab { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; background: #ffffff; border: 1px solid #050d35; border-radius: 2px; padding: 10px 16px; min-height: 44px; cursor: pointer; }
+    .tab.on { background: #050d35; color: #ffffff; }
+    .tab:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    #dayhead { margin-top: 36px; }
+    .pcard { padding: 0; }
+    .pcard > summary { list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 20px 24px; cursor: pointer; text-transform: none; letter-spacing: 0; }
+    .pcard > summary::-webkit-details-marker { display: none; }
+    .pcard[open] > summary { border-bottom: 1px solid rgba(5,13,53,0.15); }
+    .pnum { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.55); grid-column: 1; }
+    .ptitle { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 600; color: #111111; grid-column: 1; }
+    .pmodel { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #050d35; border: 1px solid #050d35; padding: 6px 10px; align-self: start; grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+    .pcard > :not(summary) { margin-left: 24px; margin-right: 24px; }
+    .pcard > .toolbar { margin-bottom: 24px; }
+    .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 48px); }
+    .lbl { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-top: 20px; margin-bottom: 6px; }
+    .prob { font-size: 1rem; line-height: 1.75; }
+    .promptout { min-height: 200px; background: rgba(5,13,53,0.04); }
+    @media (max-width: 768px) { .stats { grid-template-columns: 1fr 1fr; } .pcard > summary { grid-template-columns: 1fr; } .pmodel { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; } .pcard > :not(summary) { margin-left: 18px; margin-right: 18px; } .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 36px); } }
+    @media print { .tabs { display: none !important; } details > summary { display: block; } .pcard { break-inside: avoid; } }
+      .msgpanel .tabs { margin-bottom: 4px; }
+    .inner { padding-bottom: 24px; }
+    .inner details { margin-top: 20px; }
+    .pcard > summary .pmodel { max-width: 240px; white-space: normal; text-align: right; }
+      ol { padding-left: 22px; margin-bottom: 12px; }
+    ol li { margin-bottom: 8px; font-size: 1rem; line-height: 1.7; }
+    </style>
 </head>
 <body>
-
 <nav class="nav">
     <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
     <div class="nav-links" id="navLinks">
@@ -60,36 +133,42 @@
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
   </nav>
 
-<div class="thanks-hero">
-  <p class="thanks-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
-  <h1 class="thanks-title">Thank you. Your Client Onboarding Playbook is ready.</h1>
-  <div class="thanks-rule"></div>
-</div>
+<main class="tool">
 
-<div class="thanks-body">
+  <div class="tool-hero">
+    <p class="tool-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
+    <h1>Client Onboarding Playbook</h1>
+    <div class="tool-rule"></div>
+    <p class="tool-sub">Boundary and Authority Edition. A plug-and-play toolkit that transitions a paying lead into a respectful client, establishing your expert status, your communication standards and your operating rules before the first kickoff call.</p>
 
-  <p class="thanks-p">Your purchase is complete. The Client Onboarding Playbook opens in your browser from the button below.</p>
+    <div class="card navy">
+      <h3>How it works</h3>
+      <ul>
+        <li>Fill in the Setup tab once with your business details and your rules.</li>
+        <li>For each new client, open the four assets in order. Add the client details and the tool fills in every message, guide and script.</li>
+        <li>Copy each one and send it from your own email or tools. Choose New client to clear the client details and keep your setup.</li>
+        <li>Everything is stored only in this browser, on this device, and is not sent to Solid Solutions Today. Use Export backup to move it to another device.</li>
+      </ul>
+    </div>
 
-  <a href="/tools/client-onboarding-playbook-kmwwfp9o/" class="thanks-btn">Open Your Playbook</a>
-
-  <div class="thanks-item">
-    <p class="thanks-item-label">Bookmark the tool</p>
-    <p class="thanks-item-text">Save the page in your browser. It works on any device.</p>
+    <div class="toolbar no-print">
+      <button class="btn" type="button" id="btn-export">Export backup</button>
+      <button class="btn ghost" type="button" id="btn-import">Import backup</button>
+      <input type="file" id="file-import" accept="application/json,.json" class="sr-only" aria-label="Choose a backup file to import" />
+      <button class="btn ghost" type="button" id="btn-print">Print or save as PDF</button>
+      <button class="btn ghost" type="button" id="btn-new">New client</button>
+      <span class="status" id="save-status" role="status" aria-live="polite"></span>
+    </div>
   </div>
-  <div class="thanks-item">
-    <p class="thanks-item-label">Back up your records</p>
-    <p class="thanks-item-text">Your business setup and client details are saved in the browser you use and are never sent to a server. To move to another device or keep a copy, choose Export backup in the tool.</p>
-  </div>
-  <div class="thanks-item">
-    <p class="thanks-item-label">Where to start</p>
-    <p class="thanks-item-text">Fill in the Setup tab once. For each new client, work through Assets 01 to 04 in order and copy each message. Choose New client to clear the client details and keep your setup.</p>
-  </div>
-  <div class="thanks-item">
-    <p class="thanks-item-label">Questions or trouble opening the tool</p>
-    <p class="thanks-item-text">Write to <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a> and include the email address you used at checkout.</p>
-  </div>
 
-</div>
+  <section class="tool-section" id="main">
+    <div class="tabs no-print" id="tabs" role="tablist" aria-label="Playbook sections"></div>
+    <div id="panel"></div>
+  </section>
+
+  <p class="legal">A product of Solid Solutions Today. Questions: <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a><br />These templates are starting points, not legal advice. Make sure your cancellation, refund, scope and payment terms match your signed agreement, and have an attorney review your client agreement and welcome guide.</p>
+
+</main>
 
 <footer class="footer">
     <div class="footer-inner">
@@ -129,7 +208,215 @@
     </div>
   </div>
 </div>
-
 <script src="/js/main.js"></script>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'sst-client-onboarding-playbook-v1';
+  var $ = function (id) { return document.getElementById(id); };
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function str(x, n) { return typeof x === 'string' ? x.slice(0, n || 2000) : ''; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  var uidn = 0; function nid(p) { uidn++; return p + uidn; }
+
+  /* field definitions: key, label, scope (s = setup, c = client), type */
+  var FD = {
+    biz: ['Your business name', 's'], you: ['Your name', 's'], title: ['Your title or specialty', 's'], ctype: ['Who you work with', 's', 'e.g. owner-operated service businesses'], outcome: ['The primary outcome you deliver', 's'],
+    problem: ['The primary problem you solve', 's'], channel: ['Primary communication channel', 's', 'Email, Slack or WhatsApp. Pick one.'], resp: ['Response time in business hours', 's', '24 or 48'], cutoff: ['Daily message cutoff time', 's', 'e.g. 5PM'],
+    emerg: ['What qualifies as a true emergency', 's'], link: ['Your scheduling link', 's'], late: ['Minutes late before a session is forfeited', 's', 'e.g. 10'], resched: ['Rescheduling notice required', 's', 'e.g. 48 hours'], cancel: ['Late cancellation window', 's', 'e.g. 24 hours'],
+    inscope: ['What this engagement covers', 's', 'List exactly what is included'], outscope: ['What this engagement does not cover', 's', 'List exactly what is not included'], between: ['What you expect between sessions', 's', '2 to 3 specific expectations'],
+    contact: ['Your contact method', 's'], formlink: ['Intake form link', 's'], avail: ['Your availability or next engagement', 's'], location: ['Where deliverables are stored', 's', 'Shared folder, email thread, etc.'],
+    client: ['Client name', 'c'], date: ['Kickoff date', 'c'], time: ['Kickoff time', 'c'], length: ['Session length', 'c', '60 or 90 minutes'],
+    bottleneck: ['Their stated bottleneck', 'c'], tried: ['What they said they tried that did not work', 'c'], statedOutcome: ['Their stated definition of success', 'c'],
+    diagnosis: ['Your 3-sentence diagnosis', 'c', 'The real problem, not the symptom, and what it costs them'], constraint: ['The primary constraint', 'c'], reason: ['Your reasoning, in 2 to 3 sentences', 'c'], notFirst: ['What you are not doing first, and why', 'c'],
+    task: ['Their assignment', 'c', 'Specific and measurable'], deadline: ['Assignment deadline', 'c', 'Date and time'], deliverable: ['What they send when it is done', 'c'], myNext: ['What you will prepare or deliver', 'c'], next: ['Next session date, time and link', 'c'],
+    decided: ['What was decided, in one sentence', 'c'], newDeadline: ['New deadline for a missed assignment', 'c', '24 to 48 hours out'], qdate: ['Question-by-date', 'c', 'Gives you time to respond before the deadline'],
+    materials: ['Materials they should bring', 'c'], prepQ: ['One question they should come prepared to answer', 'c'], firstItem: ['First agenda item', 'c'], topic: ['Session topic', 'c'],
+    request: ['Their out-of-scope request', 'c'], reqWhy: ['Why you recommend tabling it', 'c'], priority: ['Current priority', 'c'],
+    endDate: ['Engagement end date', 'c'], outcomes: ['2 to 3 specific outcomes, with numbers where possible', 'c'], lastIssue: ['The problem a referral would be facing', 'c']
+  };
+  var TABS = [['setup', 'Setup'], ['a1', 'Asset 01 · Intake'], ['a2', 'Asset 02 · Welcome'], ['a3', 'Asset 03 · Kickoff'], ['a4', 'Asset 04 · Follow-up']];
+
+  /* ---------- state ---------- */
+  var state, saveTimer = null, tab = 'setup';
+  function blank() { var s = { v: 1, f: {}, tab: 'setup' }; Object.keys(FD).forEach(function (k) { s.f[k] = ''; }); return s; }
+  function clean(raw) {
+    var s = blank(); if (!raw || typeof raw !== 'object') raw = {};
+    Object.keys(FD).forEach(function (k) { s.f[k] = str(raw.f && raw.f[k], k === 'inscope' || k === 'outscope' || k === 'between' || k === 'diagnosis' || k === 'outcomes' ? 3000 : 600); });
+    if (TABS.some(function (t) { return t[0] === raw.tab; })) s.tab = raw.tab;
+    return s;
+  }
+  function load() { try { var r = localStorage.getItem(KEY); return clean(r ? JSON.parse(r) : null); } catch (e) { return blank(); } }
+  function setStatus(t) { $('save-status').textContent = t; }
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); var d = new Date(); setStatus('Saved in this browser · ' + pad(d.getHours()) + ':' + pad(d.getMinutes())); }
+    catch (e) { setStatus('Could not save in this browser. Export a backup now.'); }
+  }
+  function changed() { setStatus('Saving…'); clearTimeout(saveTimer); saveTimer = setTimeout(function () { saveTimer = null; persist(); }, 300); }
+  state = load(); tab = state.tab;
+  window.addEventListener('pagehide', function () { if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; persist(); } });
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  /* ---------- template engine ---------- */
+  function T(t) { return t.replace(/\{\{(\w+)\}\}/g, function (m, k) { var v = (state.f[k] || '').trim(); return v ? v : '[' + (FD[k] ? FD[k][0] : k) + ']'; }); }
+  var blocks = [];
+  function refresh() { blocks.forEach(function (b) { var v = T(b.src()); b.out.value = v; b.out.rows = Math.min(30, Math.max(5, v.split('\n').length + 1)); }); }
+
+  /* ---------- helpers ---------- */
+  function head(host, step, title) { host.appendChild(mk('p', 'step-num', step)); host.appendChild(mk('h2', '', title)); }
+  function card(host, title) { var c = mk('div', 'card'); if (title) c.appendChild(mk('h3', '', title)); host.appendChild(c); return c; }
+  function note(host, label, text) { var n = mk('div', 'branch'); n.appendChild(mk('strong', '', label + ' ')); n.appendChild(document.createTextNode(text)); host.appendChild(n); }
+  function fields(host, keys) {
+    var g = mk('div', 'grid2'); host.appendChild(g); var a = mk('div'), b = mk('div'); g.appendChild(a); g.appendChild(b);
+    keys.forEach(function (k, i) {
+      var d = FD[k], host2 = i % 2 ? b : a, id = nid('f');
+      var l = mk('label', '', d[0]); l.setAttribute('for', id); if (d[2]) l.appendChild(mk('span', 'hint', d[2])); host2.appendChild(l);
+      var long = ['inscope', 'outscope', 'between', 'diagnosis', 'outcomes', 'notFirst', 'reason', 'emerg', 'task', 'tried', 'bottleneck'].indexOf(k) >= 0;
+      var e = mk(long ? 'textarea' : 'input'); if (!long) e.type = 'text'; e.id = id; e.value = state.f[k]; e.maxLength = long ? 3000 : 600;
+      e.addEventListener('input', function () { state.f[k] = e.value; changed(); refresh(); }); host2.appendChild(e);
+    });
+  }
+  function block(host, title, src) {
+    var wrap = mk('div'); if (title) wrap.appendChild(mk('p', 'docitem-t', title));
+    var out = mk('textarea', 'promptout'); out.readOnly = true; out.setAttribute('aria-label', title || 'Text'); wrap.appendChild(out);
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn small', 'Copy'); b.type = 'button'; bar.appendChild(b); wrap.appendChild(bar);
+    b.addEventListener('click', function () {
+      var t = out.value;
+      function ok() { setStatus('Copied.'); }
+      function fb() { out.select(); try { document.execCommand('copy'); ok(); } catch (e) { setStatus('Select the text and copy it manually.'); } }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok, fb); else fb();
+    });
+    blocks.push({ out: out, src: src }); host.appendChild(wrap); return wrap;
+  }
+  function go(t) { tab = t; state.tab = t; changed(); renderTabs(); renderPanel(); window.scrollTo(0, 0); }
+  function renderTabs() {
+    var h = $('tabs'); h.textContent = '';
+    TABS.forEach(function (t) {
+      var b = mk('button', 'tab' + (tab === t[0] ? ' on' : ''), t[1]); b.type = 'button'; b.setAttribute('aria-pressed', tab === t[0] ? 'true' : 'false');
+      b.addEventListener('click', function () { go(t[0]); }); h.appendChild(b);
+    });
+  }
+  function nextBtn(h) {
+    var i = TABS.map(function (t) { return t[0]; }).indexOf(tab); if (i >= TABS.length - 1) return;
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn', 'Next: ' + TABS[i + 1][1]); b.type = 'button'; b.addEventListener('click', function () { go(TABS[i + 1][0]); }); bar.appendChild(b); h.appendChild(bar);
+  }
+  function renderPanel() {
+    var h = $('panel'); h.textContent = ''; blocks = [];
+    ({ setup: pSetup, a1: pA1, a2: pA2, a3: pA3, a4: pA4 })[tab](h);
+    nextBtn(h); refresh();
+  }
+  function det(host, title, open) { var d = mk('details', 'card pcard'); if (open) d.open = true; var s = mk('summary'); s.appendChild(mk('span', 'ptitle', title)); d.appendChild(s); var i = mk('div', 'inner'); d.appendChild(i); host.appendChild(d); return i; }
+
+  /* ---------- panels ---------- */
+  function pSetup(h) {
+    head(h, 'Setup', 'Your business and your rules');
+    h.appendChild(mk('p', 'tool-sub', 'Fill this in once. It feeds every asset. Anything left blank shows as a bracketed field you can fill in by hand.'));
+    var a = card(h, 'About you'); fields(a, ['biz', 'you', 'title', 'ctype', 'outcome', 'problem', 'contact']);
+    var b = card(h, 'How you communicate and meet'); fields(b, ['channel', 'resp', 'cutoff', 'emerg', 'link', 'late', 'resched', 'cancel']);
+    var c = card(h, 'Scope and expectations'); fields(c, ['inscope', 'outscope', 'between', 'formlink', 'avail', 'location']);
+  }
+  function pA1(h) {
+    head(h, 'Asset 01 · Before the first call', 'Authority-Building Strategic Intake Form');
+    h.appendChild(mk('p', 'tool-sub', 'A diagnostic questionnaire that positions you as the expert before you ever speak to the client. It extracts their metrics, bottlenecks and goals, so you walk into the kickoff call prepared.'));
+    var a = card(h, 'Client'); fields(a, ['client']);
+    var i = card(h, 'Client-facing intro message');
+    i.appendChild(mk('p', 'hint', 'Send this when you deliver the intake form link. The framing matters as much as the questions.'));
+    block(i, 'The message', function () { return 'Subject: Your Client Intake Form: Required Before Our Kickoff Call\n\n{{client}},\n\nBefore we meet, I need you to complete a strategic intake form. This is how I prepare. It ensures our first session is spent making decisions and moving forward, not gathering background.\n\nThe form takes 15 to 20 minutes. Every question has a purpose. Please complete it at least 48 hours before our scheduled kickoff.\n\n{{formlink}}\n\nIf anything is unclear or you have questions about a specific item, reply here. Do not guess. Accurate answers produce a better outcome for you.\n\nLooking forward to it.\n\n{{you}}'; });
+    note(i, 'Coaching note.', 'Do not soften this message. "When you get a chance" signals that it is optional. It is not optional. Clients who do not complete intake before the call are not ready to be clients.');
+    var q = card(h, 'Strategic intake questionnaire');
+    q.appendChild(mk('p', 'hint', 'Copy these questions into your form tool of choice. Every question is designed to extract decision-relevant information.'));
+    block(q, 'Section 1: Business foundation', function () { return '1. Describe your business in two sentences. Not what you want it to be, but what it actually is right now.\n\n2. How long have you been operating, and what has been your primary revenue driver to date?\n\n3. What is your current monthly revenue? (Provide a range if you prefer: under $10K / $10-25K / $25-50K / $50K+)\n\n4. How many people are currently on your team, employees, contractors or both?\n\n5. Who is your primary customer and what specific problem do you solve for them?'; });
+    block(q, 'Section 2: Current situation', function () { return '6. What is the single biggest bottleneck in your business right now? Be specific. Not "growth" or "marketing." The actual constraint.\n\n7. What have you already tried to address this bottleneck? What happened?\n\n8. What does your current week look like? Where is your time going that it should not be?\n\n9. What is working in your business right now that you want to protect?\n\n10. What would have to be true six months from now for you to consider this engagement a success? Give me a number or a measurable outcome, not a feeling.'; });
+    block(q, 'Section 3: Working relationship', function () { return '11. Have you worked with a consultant or advisor before? If yes, what worked, what did not?\n\n12. How do you prefer to receive feedback: direct and blunt, or framed with context first?\n\n13. Who else in your organization will be involved in this engagement? What is their role and their decision-making authority?\n\n14. Is there anything about your business, your team or your situation that you think I should know before we begin?\n\n15. What is your primary concern going into this engagement?'; });
+    note(q, 'Coaching note.', 'Read the intake before the kickoff call, not during it. Your preparation is the first demonstration of your professional standard.');
+  }
+  function pA2(h) {
+    head(h, 'Asset 02 · Before the kickoff call', 'Rules of Engagement Welcome Guide');
+    h.appendChild(mk('p', 'tool-sub', 'A customizable document that lays down your communication boundaries, response times, scheduling protocol and expectations. Send it before the kickoff call, not after scope creep has started. Copy it into a document, convert it to PDF and send it.'));
+    var a = card(h, 'Client'); fields(a, ['client']);
+    var g = card(h, 'Client welcome guide');
+    block(g, 'The welcome guide', function () { return 'WELCOME TO {{biz}}\nClient Engagement Guide\n\n{{client}}, welcome. This guide covers how we work together. Please read it before our kickoff call. These are not suggestions.\n\n---\n\nWHO I AM AND WHAT I DO\n\nI am a {{title}} who works with {{ctype}} to {{outcome}}. My role in this engagement is to provide expert strategy and direction. Your role is to execute. We are partners, not employer and employee.\n\n---\n\nHOW WE COMMUNICATE\n\nPrimary channel: {{channel}}\nResponse time: I respond to messages within {{resp}} business hours. Messages received after {{cutoff}} or on weekends will be addressed the next business day.\nPhone calls: I do not take unscheduled calls. If a call is needed, it is scheduled in advance through my booking link.\nEmergencies: A true emergency is {{emerg}}. Everything else is not an emergency.\n\n---\n\nHOW WE MEET\n\nAll sessions are scheduled through {{link}}. Sessions begin on time. If you are more than {{late}} minutes late, the session is forfeited and counts as a used session. Sessions are not extended to compensate for late starts.\n\nRescheduling: Requires {{resched}} notice. Cancellations within {{cancel}} of a scheduled session are forfeited without refund or replacement.\n\n---\n\nSCOPE OF THIS ENGAGEMENT\n\nThis engagement covers: {{inscope}}\nThis engagement does not cover: {{outscope}}\n\nRequests outside this scope are addressed through a separate agreement. I will always tell you clearly when something falls outside scope. I will not simply absorb it.\n\n---\n\nYOUR RESPONSIBILITIES\n\nThe success of this engagement depends on your execution. My job is to give you the strategy, the clarity and the direction. Your job is to implement it. If you are not implementing between sessions, our time together will not produce the results you are expecting.\n\nBetween sessions, you are expected to: {{between}}\n\n---\n\nHOW DECISIONS ARE MADE\n\nI will give you my professional recommendation. You will make the final decision. I will not make decisions for your business without your explicit authorization. I will also not reverse professional recommendations under social pressure. If you disagree, tell me why and we will discuss it.\n\n---\n\nA NOTE ON RESULTS\n\nI am responsible for the quality of my strategy and the rigor of my recommendations. I am not responsible for results that depend on your execution. The work I deliver is only as powerful as the action you take on it.\n\n---\n\nQUESTIONS ABOUT THIS GUIDE\n\nReply to the email this guide came with. We will address any questions at the start of our kickoff call.\n\n{{you}}\n{{biz}}\n{{contact}}'; });
+    note(g, 'Coaching note.', 'Clients who push back on this guide before the engagement starts are showing you who they will be during it. That information is valuable. Use it. Make sure the cancellation and refund terms here match your signed agreement.');
+    var c = card(h, 'Cover message: sending the guide');
+    block(c, 'The message', function () { return 'Subject: Before Our Kickoff: Please Review\n\n{{client}},\n\nAttached is my Client Engagement Guide. It covers how we communicate, how sessions work and what to expect from this engagement.\n\nPlease read it before our kickoff call. If anything raises a question, bring it to the start of our first session and we will address it there.\n\nLooking forward to getting started.\n\n{{you}}'; });
+  }
+  function pA3(h) {
+    head(h, 'Asset 03 · The first official session', 'Commander\'s Kickoff Agenda and Script');
+    h.appendChild(mk('p', 'tool-sub', 'A timed agenda with scripted opening lines and transition phrases. The script is not meant to be read verbatim. It is the framework that keeps you in command when clients try to steer.'));
+    var a = card(h, 'Session details'); fields(a, ['client', 'date', 'time', 'length']);
+    var b = card(h, 'From their intake'); fields(b, ['bottleneck', 'tried', 'statedOutcome']);
+    var c = card(h, 'Your diagnosis and direction'); fields(c, ['diagnosis', 'constraint', 'reason', 'notFirst']);
+    var d = card(h, 'First assignment'); fields(d, ['task', 'deadline', 'next', 'decided', 'myNext']);
+    var s = card(h, 'Kickoff session agenda and script');
+    block(s, 'Segments 1 to 5', function () { return 'KICKOFF SESSION AGENDA\n{{client}} · {{date}} · {{time}} · {{length}}\n\n---\n\nSEGMENT 1: OPEN AND ESTABLISH (5 minutes)\n\nOpening line:\n"Before we get into the work, I want to quickly confirm a few things so we are aligned from the start. Did you have a chance to review the engagement guide I sent?"\n\n[If yes] "Good. Any questions before we begin?"\n[If no] "Take a moment to review it after today\'s session. It covers how we communicate and what to expect. If anything raises a question, send me a message."\n\nTransition:\n"Good. Let\'s get into it. Here is how today works: I am going to ask you a series of questions based on your intake form. My job right now is to listen and clarify, not to give you answers yet. We will get to recommendations before we close."\n\n---\n\nSEGMENT 2: INTAKE DEBRIEF (20 minutes)\n\nKey questions to ask:\n\n1. "You mentioned {{bottleneck}}. Walk me through what a typical week looks like when that bottleneck hits."\n2. "You said {{tried}} did not work. What specifically broke down: the approach, the execution or both?"\n3. "When you described success as {{statedOutcome}}, what does the day-to-day look like if that is actually true?"\n4. "What are you most afraid of getting wrong in this engagement?"\n5. "Is there anything you did not include in the intake that I should know?"\n\nDo not offer solutions yet. Take notes. Clarify only.\n\nTransition:\n"I have what I need. Let me give you my read of the situation."\n\n---\n\nSEGMENT 3: DIAGNOSIS AND DIRECTION (20 minutes)\n\nOpen with your honest read:\n"Based on your intake and what you have just told me, here is what I see: {{diagnosis}}"\n\nState the priority:\n"The first thing we need to solve is {{constraint}}. Everything else builds on that. Here is why: {{reason}}"\n\nState what you are NOT doing first:\n"We are not going to start with {{notFirst}} That comes after {{constraint}} is addressed."\n\nInvite pushback:\n"Do you have a different read? Tell me now, because once we commit to a direction, that is where we go."\n\n---\n\nSEGMENT 4: FIRST ASSIGNMENT (10 minutes)\n\nState the homework:\n"Before our next session, I need you to {{task}}. This is not optional. Our next session depends on it. Do you have any questions about what I am asking for?"\n\nConfirm the deadline:\n"I need this by {{deadline}}. Send it to me at {{channel}}."\n\nConfirm the next session:\n"Our next session is {{next}}. I will send a reminder 24 hours before. If you need to reschedule, I need {{resched}} notice."\n\n---\n\nSEGMENT 5: CLOSE (5 minutes)\n\nClose line:\n"Here is where we are: {{decided}} Your job between now and {{next}} is {{task}}. My job is {{myNext}}. Any questions?"\n\nFinal line:\n"Good. I will send a brief summary of today\'s session within 24 hours. It will confirm what we discussed and what is expected of you next. Talk then."'; });
+    block(s, 'Notes template (complete during or right after the session)', function () { return 'Client: {{client}}\nDate: {{date}}\nPrimary constraint identified: {{constraint}}\nDirection committed to: {{decided}}\nClient assignment: {{task}}\nAssignment deadline: {{deadline}}\nNext session: {{next}}\nRed flags observed: '; });
+    note(s, 'Coaching note.', 'If the client tries to skip Segment 2 and jump to solutions, redirect them: "I want to make sure I understand the full picture before I give you a direction. Walk me through this." You are not being difficult. You are being thorough. That is the service.');
+  }
+  function pA4(h) {
+    head(h, 'Asset 04 · After every session', 'Accountability Follow-Up Swipe File');
+    h.appendChild(mk('p', 'tool-sub', 'Email templates that hand the homework back to the client. The responsibility is theirs and the accountability is built in. You are not chasing. You are confirming what was already agreed.'));
+    var a = card(h, 'Client and current session'); fields(a, ['client', 'task', 'deadline', 'deliverable', 'myNext', 'next', 'decided', 'date']);
+    var i;
+    i = det(h, 'Template 01 · Post-session summary and assignment (send within 24 hours)', true);
+    i.appendChild(mk('p', 'prob', 'Clients leave sessions motivated and return to their inbox distracted. Without a written record of what was decided and what they owe you, the momentum dies.'));
+    block(i, '', function () { return 'Subject: Session Summary: {{date}} + Your Next Step\n\n{{client}},\n\nHere is what we covered and what comes next.\n\nWHAT WE DECIDED\n{{decided}}\n\nYOUR ASSIGNMENT\nTask: {{task}}\nDeadline: {{deadline}}\nDeliverable: {{deliverable}}\n\nMY NEXT STEP\n{{myNext}}\n\nNEXT SESSION\n{{next}}\n\nIf you have a question about your assignment before our next session, send it to {{channel}} by {{qdate}}.\n\n{{you}}'; });
+    i = det(h, 'Template 02 · Assignment not received: first notice (send when the deadline passes)');
+    i.appendChild(mk('p', 'prob', 'How you respond to the first missed deadline sets the tone for the engagement. Silence signals it was optional.'));
+    fields(i, ['newDeadline']);
+    block(i, '', function () { return 'Subject: Assignment Due: {{task}}\n\n{{client}},\n\nI did not receive {{task}} by {{deadline}}.\n\nOur next session is {{next}}. Without it, we cannot move forward on the decision it was tied to, which means our session time will need to be used differently than planned.\n\nPlease send it by {{newDeadline}}. If something came up that prevented you from completing it, reply now and tell me what happened.\n\n{{you}}'; });
+    note(i, 'Coaching note.', 'Do not apologize for sending this. You are holding the standard you both agreed to. Clients who miss deadlines repeatedly without communication are not ready to be clients.');
+    i = det(h, 'Template 03 · Pre-session reminder and prep (send 24 hours before)');
+    i.appendChild(mk('p', 'prob', 'Clients who show up unprepared waste session time on context-setting. A reminder with a specific prep question prevents that.'));
+    fields(i, ['topic', 'materials', 'prepQ', 'firstItem']);
+    block(i, '', function () { return 'Subject: Tomorrow: {{topic}} · {{time}}\n\n{{client}},\n\nReminder: we meet tomorrow at {{time}} for {{length}}.\n\nBefore you join, have ready:\n- {{materials}}\n- Your answer to this question: {{prepQ}}\n\nWe will open with {{firstItem}}. Come ready to make a decision on it.\n\n{{link}} is in the original invite if you need to confirm the link.\n\n{{you}}'; });
+    i = det(h, 'Template 04 · Scope creep response (send when it happens)');
+    i.appendChild(mk('p', 'prob', 'Every out-of-scope request you absorb for free teaches the client that your boundaries are negotiable. This response is clarifying, not confrontational.'));
+    fields(i, ['request', 'priority', 'reqWhy']);
+    block(i, '', function () { return 'Subject: Re: {{request}}\n\n{{client}},\n\nWhat you are describing, {{request}}, falls outside the scope of our current engagement.\n\nOur engagement covers {{inscope}}. This request is a separate body of work.\n\nI have two options for you:\n\nOption A: We address this in a separate engagement. I can put together a scope and investment for you.\nOption B: We table this and stay focused on {{priority}}. I recommend this if {{reqWhy}}.\n\nLet me know which direction you would like to take and I will set it up.\n\n{{you}}'; });
+    note(i, 'Coaching note.', 'The scope creep response is not confrontational. It is clarifying. There is a difference.');
+    i = det(h, 'Template 05 · Engagement close and offboarding (send at engagement end)');
+    i.appendChild(mk('p', 'prob', 'Engagements that end without a formal close leave clients uncertain about what comes next, and leave referrals on the table.'));
+    fields(i, ['endDate', 'outcomes', 'lastIssue']);
+    block(i, '', function () { return 'Subject: Engagement Close: {{you}} + {{client}}\n\n{{client}},\n\nOur engagement is complete as of {{endDate}}.\n\nHere is what we accomplished: {{outcomes}}\n\nEverything I delivered is in {{location}}. You own all of it.\n\nWhat comes next is yours to execute. You have the strategy, the framework and the direction. The results depend on what you do with it.\n\nIf you want to continue working together, I have {{avail}}. Reply here and I will put together a scope.\n\nIf you know someone who is facing {{lastIssue}}, I welcome an introduction.\n\nIt has been a productive engagement.\n\n{{you}}'; });
+    var dep = card(h, 'How to deploy this playbook');
+    dep.appendChild(mk('p', '', 'Send the intake form the moment a client signs. Send the welcome guide within 24 hours of receiving payment, before the kickoff call is scheduled, not after. Run the kickoff agenda until it is internalized. Send every follow-up within 24 hours of each session. The system only works if every asset is used every time.'));
+  }
+
+  /* ---------- new client, backup, print ---------- */
+  $('btn-new').addEventListener('click', function () {
+    if (!window.confirm('Clear the client details and keep your business setup?')) return;
+    Object.keys(FD).forEach(function (k) { if (FD[k][1] === 'c') state.f[k] = ''; });
+    persist(); renderPanel(); setStatus('Ready for a new client.');
+  });
+  $('btn-print').addEventListener('click', function () {
+    var ds = document.querySelectorAll('#panel details'), was = [];
+    Array.prototype.forEach.call(ds, function (d) { was.push(d.open); d.open = true; });
+    function done() { Array.prototype.forEach.call(ds, function (d, i) { d.open = was[i]; }); window.removeEventListener('afterprint', done); }
+    window.addEventListener('afterprint', done); window.print();
+  });
+  $('btn-export').addEventListener('click', function () { download('client-onboarding-playbook-backup-' + today() + '.json', JSON.stringify(state, null, 2), 'application/json'); setStatus('Backup downloaded. Keep the file somewhere safe.'); });
+  $('btn-import').addEventListener('click', function () { $('file-import').click(); });
+  $('file-import').addEventListener('change', function (e) {
+    var f = e.target.files && e.target.files[0]; if (!f) return;
+    if (f.size > 5000000) { setStatus('That file is too large to be a backup from this tool.'); e.target.value = ''; return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var raw; try { raw = JSON.parse(r.result); } catch (x) { setStatus('That file is not a valid backup.'); e.target.value = ''; return; }
+      if (!raw || typeof raw !== 'object' || !raw.f) { setStatus('That file is not a backup from this tool.'); e.target.value = ''; return; }
+      if (!window.confirm('Importing replaces everything currently saved in this browser. Continue?')) { e.target.value = ''; return; }
+      state = clean(raw); tab = state.tab; persist(); renderTabs(); renderPanel(); setStatus('Backup imported.'); e.target.value = '';
+    };
+    r.readAsText(f);
+  });
+  renderTabs(); renderPanel();
+})();
+</script>
 </body>
 </html>
