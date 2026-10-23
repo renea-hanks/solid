@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Use AI Like a Pro | Solid Solutions Today</title>
+  <meta name="robots" content="noindex, nofollow" />
+
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/favicon-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/images/favicon-512x512.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/style.css" />
+
+  <style>
+    .tool { max-width: 860px; margin: 0 auto; padding: 140px 32px 80px; font-family: 'Raleway', sans-serif; color: #333333; }
+    .tool-label { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.4); margin-bottom: 24px; }
+    .tool h1 { font-family: 'Raleway', sans-serif; font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 400; color: #111111; line-height: 1.2; }
+    .tool-rule { width: 48px; height: 1px; background: #050d35; margin: 32px 0; }
+    .tool-sub { font-size: 1.05rem; line-height: 1.9; margin-bottom: 24px; }
+    .tool h2 { font-family: 'Raleway', sans-serif; font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 400; color: #111111; line-height: 1.3; margin: 0 0 8px; }
+    .step-num { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 8px; }
+    .tool-section { margin-top: 56px; }
+    .card { padding: 28px 32px; border: 0.5px solid rgba(5,13,53,0.18); border-radius: 4px; margin-bottom: 20px; background: #ffffff; }
+    .card.navy { background: #050d35; color: #ffffff; border-color: #050d35; }
+    .card.navy h3, .card.navy p, .card.navy li { color: #ffffff; }
+    .card h3 { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-bottom: 12px; }
+    .card p, .card li { font-size: 1rem; line-height: 1.8; margin-bottom: 12px; }
+    .card ul { padding-left: 20px; margin-bottom: 12px; }
+    .say { font-size: 1.05rem; line-height: 1.85; color: #111111; border-left: 3px solid #050d35; padding: 4px 0 4px 18px; margin: 12px 0 16px; }
+    .ph { border-bottom: 1px dashed #050d35; padding: 0 2px; }
+    .branch { font-size: 0.95rem; line-height: 1.75; color: #333333; background: rgba(5,13,53,0.04); padding: 14px 18px; border-radius: 4px; margin-bottom: 16px; }
+    .branch strong { color: #050d35; }
+    label, .lbl { display: block; font-family: 'Montserrat', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; color: #050d35; margin: 16px 0 6px; }
+    .hint { font-family: 'Raleway', sans-serif; font-size: 0.85rem; font-weight: 400; letter-spacing: 0; color: #555555; display: block; margin-top: 2px; }
+    input[type="text"], input[type="date"], textarea, select { width: 100%; font-family: 'Raleway', sans-serif; font-size: 16px; color: #111111; background: #ffffff; border: 1px solid rgba(5,13,53,0.35); border-radius: 4px; padding: 12px 14px; min-height: 44px; }
+    textarea { min-height: 96px; resize: vertical; line-height: 1.6; }
+    input:focus, textarea:focus, select:focus, button:focus-visible, summary:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 20px; }
+    .opt { display: flex; gap: 12px; align-items: flex-start; padding: 12px 14px; border: 1px solid rgba(5,13,53,0.2); border-radius: 4px; margin-bottom: 10px; cursor: pointer; font-family: 'Raleway', sans-serif; font-size: 1rem; letter-spacing: 0; font-weight: 400; color: #333333; margin-top: 0; }
+    .opt input { width: 22px; height: 22px; margin-top: 2px; flex-shrink: 0; accent-color: #050d35; }
+    .opt strong { color: #111111; font-weight: 600; display: block; }
+    .btn { display: inline-block; font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #ffffff; background: #050d35; padding: 14px 28px; min-height: 44px; border: 1px solid #050d35; border-radius: 100px; cursor: pointer; transition: background 0.2s; margin: 0 8px 10px 0; }
+    .btn:hover { background: #000000; }
+    .btn.ghost { background: #ffffff; color: #050d35; }
+    .btn.ghost:hover { background: rgba(5,13,53,0.06); }
+    .btn.small { padding: 8px 16px; min-height: 36px; font-size: 0.62rem; }
+    .toolbar { display: flex; flex-wrap: wrap; align-items: center; margin-top: 24px; }
+    .status { font-size: 0.85rem; color: #555555; margin-left: 4px; }
+    .errors { border-left: 4px solid #050d35; background: rgba(5,13,53,0.06); padding: 16px 20px; margin: 16px 0; font-size: 0.95rem; line-height: 1.7; }
+    .errors strong { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 6px; }
+    .errors ul { padding-left: 20px; }
+    .reqrow { display: flex; gap: 10px; margin-bottom: 10px; align-items: center; }
+    .reqrow input { flex: 1; }
+    details summary { cursor: pointer; font-family: 'Montserrat', sans-serif; font-size: 0.75rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #050d35; padding: 6px 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid rgba(5,13,53,0.15); vertical-align: top; }
+    th { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; }
+    .legal { font-size: 0.85rem; line-height: 1.7; color: #555555; margin-top: 32px; }
+    #record { display: none; }
+    #record.show { display: block; }
+    .rec-row { margin-bottom: 14px; }
+    .rec-row b { font-family: 'Montserrat', sans-serif; font-size: 0.68rem; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; display: block; margin-bottom: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+    @media (max-width: 768px) {
+      .tool { padding: 120px 20px 60px; }
+      .card { padding: 22px 20px; }
+      .grid2 { grid-template-columns: 1fr; }
+    }
+    @media print {
+      nav, .nav, footer, .footer, .soli-circle-launcher, #soli-window, .no-print, .toolbar { display: none !important; }
+      body { background: #ffffff; }
+      .tool { padding: 0; max-width: 100%; }
+      .card { break-inside: avoid; border: 1px solid #999999; }
+      .card.navy { background: #ffffff; color: #111111; border: 1px solid #111111; }
+      .card.navy h3, .card.navy p, .card.navy li { color: #111111; }
+      textarea, input, select { border: 1px solid #999999; }
+      body.print-record .tool-section:not(#record), body.print-record .tool-hero { display: none !important; }
+      body.print-all .tool-section:not(#saved), body.print-all .tool-hero { display: none !important; }
+      body.print-record #record { display: block !important; }
+    }
+  
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; border-top: 2px solid #050d35; border-bottom: 1px solid rgba(5,13,53,0.2); padding: 20px 0; margin: 28px 0 0; text-align: center; }
+    .stats b { display: block; font-family: 'Raleway', sans-serif; font-size: 1.6rem; font-weight: 600; color: #050d35; }
+    .stats span { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #555555; }
+    .grid2 > div { min-width: 0; }
+    .grid2 input, .grid2 select { box-sizing: border-box; max-width: 100%; }
+    .tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tab { font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: #050d35; background: #ffffff; border: 1px solid #050d35; border-radius: 2px; padding: 10px 16px; min-height: 44px; cursor: pointer; }
+    .tab.on { background: #050d35; color: #ffffff; }
+    .tab:focus-visible { outline: 3px solid #050d35; outline-offset: 2px; }
+    #dayhead { margin-top: 36px; }
+    .pcard { padding: 0; }
+    .pcard > summary { list-style: none; display: grid; grid-template-columns: 1fr auto; gap: 4px 16px; padding: 20px 24px; cursor: pointer; text-transform: none; letter-spacing: 0; }
+    .pcard > summary::-webkit-details-marker { display: none; }
+    .pcard[open] > summary { border-bottom: 1px solid rgba(5,13,53,0.15); }
+    .pnum { font-family: 'Montserrat', sans-serif; font-size: 0.62rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: rgba(5,13,53,0.55); grid-column: 1; }
+    .ptitle { font-family: 'Raleway', sans-serif; font-size: 1.1rem; font-weight: 600; color: #111111; grid-column: 1; }
+    .pmodel { font-family: 'Montserrat', sans-serif; font-size: 0.6rem; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: #050d35; border: 1px solid #050d35; padding: 6px 10px; align-self: start; grid-column: 2; grid-row: 1 / span 2; white-space: nowrap; }
+    .pcard > :not(summary) { margin-left: 24px; margin-right: 24px; }
+    .pcard > .toolbar { margin-bottom: 24px; }
+    .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 48px); }
+    .lbl { font-family: 'Montserrat', sans-serif; font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #050d35; margin-top: 20px; margin-bottom: 6px; }
+    .prob { font-size: 1rem; line-height: 1.75; }
+    .promptout { min-height: 200px; background: rgba(5,13,53,0.04); }
+    @media (max-width: 768px) { .stats { grid-template-columns: 1fr 1fr; } .pcard > summary { grid-template-columns: 1fr; } .pmodel { grid-column: 1; grid-row: auto; justify-self: start; margin-top: 8px; } .pcard > :not(summary) { margin-left: 18px; margin-right: 18px; } .pcard > input, .pcard > textarea, .pcard > select { width: calc(100% - 36px); } }
+    @media print { .tabs { display: none !important; } details > summary { display: block; } .pcard { break-inside: avoid; } }
+      .msgpanel .tabs { margin-bottom: 4px; }
+    .inner { padding-bottom: 24px; }
+    .inner details { margin-top: 20px; }
+    .pcard > summary .pmodel { max-width: 240px; white-space: normal; text-align: right; }
+      ol { padding-left: 22px; margin-bottom: 12px; }
+    ol li { margin-bottom: 8px; font-size: 1rem; line-height: 1.7; }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <a href="/" class="nav-logo"><img src="/images/Solid_Solutions_Today_logo_horizontal.png" alt="Solid Solutions Today" /></a>
+    <div class="nav-links" id="navLinks">
+      <a href="/ai-consulting/">AI Consulting</a><a href="/ai-agents/">AI Agents</a>
+      <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
+      <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
+      <a href="/blog/">Blog</a>
+      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
+  </nav>
+
+<main class="tool">
+
+  <div class="tool-hero">
+    <p class="tool-label">Solid Solutions Today &nbsp;·&nbsp; Digital Product</p>
+    <h1>Use AI Like a Pro</h1>
+    <div class="tool-rule"></div>
+    <p class="tool-sub">A Practical Guide for Solopreneurs and SMBs</p>
+
+    <div class="card navy">
+      <h3>How to use this guide</h3>
+      <ul>
+        <li>Work through the tabs in order, or jump to what you need.</li>
+        <li>Build your own lists, fill in the prompt frameworks, and copy the finished prompts into your AI tool.</li>
+        <li>Everything is stored only in this browser, on this device, and is not sent to Solid Solutions Today. Use Export backup to move it to another device.</li>
+      </ul>
+    </div>
+
+    <div class="toolbar no-print">
+      <button class="btn" type="button" id="btn-export">Export backup</button>
+      <button class="btn ghost" type="button" id="btn-import">Import backup</button>
+      <input type="file" id="file-import" accept="application/json,.json" class="sr-only" aria-label="Choose a backup file to import" />
+      <button class="btn ghost" type="button" id="btn-print">Print or save as PDF</button>
+      <span class="status" id="save-status" role="status" aria-live="polite"></span>
+    </div>
+  </div>
+
+  <section class="tool-section" id="main">
+    <div class="tabs no-print" id="tabs" role="tablist" aria-label="Guide sections"></div>
+    <div id="panel"></div>
+  </section>
+
+  <p class="legal">A product of Solid Solutions Today. Questions: <a href="mailto:hello@solidsolutionstoday.com">hello@solidsolutionstoday.com</a><br />This guide reflects the author's own experience and views. Tools and features change, so check each provider's current terms and privacy policy before you put business information into it.</p>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://linkedin.com/in/renea-hanks" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <a href="https://github.com/renea-hanks" target="_blank" rel="noopener" aria-label="GitHub"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="https://www.producthunt.com/@reneahanks" target="_blank" rel="noopener" aria-label="Product Hunt"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M13.604 8.4h-3.405V12h3.405c.99 0 1.8-.81 1.8-1.8 0-.99-.81-1.8-1.8-1.8zM12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zm1.604 13.2H10.2v3.6H8.4V7.2h5.204c1.699 0 3 1.301 3 3 0 1.699-1.301 3-3 3z"/></svg></a>
+        <a href="https://youtube.com/@reneahanks" target="_blank" rel="noopener" aria-label="YouTube"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 0 0-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 0 0 .527 6.205a31.247 31.247 0 0 0-.522 5.805 31.247 31.247 0 0 0 .522 5.783 3.007 3.007 0 0 0 2.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 0 0 2.088-2.088 31.247 31.247 0 0 0 .5-5.783 31.247 31.247 0 0 0-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg></a>
+        <a href="https://reneahanks.com" target="_blank" rel="noopener" aria-label="Personal Website"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-1 17.93c-3.94-.494-7-3.858-7-7.93 0-.618.075-1.217.202-1.797L9 13v1c0 1.1.9 2 2 2v1.93zm6.9-2.54C17.57 14.547 16.35 14 15 14h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V5h2c1.1 0 2-.9 2-2v-.41C17.928 3.924 20 7.73 20 12c0 1.29-.26 2.51-.1 3.39z"/></svg></a>
+        <a href="https://developers.google.com/profile/u/renea-hanks" target="_blank" rel="noopener" aria-label="Google Developer Profile"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg></a>
+        <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+        <a href="https://instagram.com/ai4smb" target="_blank" rel="noopener" aria-label="Instagram"><svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></a>
+      </nav>
+    </div>
+    <div class="footer-sitemap">
+      <a href="/ai-consulting/">AI Consulting</a><span class="footer-sep">&middot;</span><a href="/ai-agents/">AI Agents</a><span class="footer-sep">&middot;</span><a href="/brand-strategy/">Brand Strategy</a><span class="footer-sep">&middot;</span><a href="/web-development/">Web Development</a><span class="footer-sep">&middot;</span><a href="/about/">About</a><span class="footer-sep">&middot;</span><a href="/partnerships/">Partnerships</a><span class="footer-sep">&middot;</span><a href="/blog/">Blog</a><span class="footer-sep">&middot;</span><a href="/sunday-sessions/">Sunday Sessions</a><span class="footer-sep">&middot;</span><a href="/resources/">Resources</a>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 Solid Solutions Today</p><span class="footer-sep">&middot;</span><a href="/legal/" class="footer-copy" style="text-decoration:none;">Legal</a>
+    </div>
+  </footer>
+
+<!-- SOLI LAUNCHER -->
+<div class="soli-circle-launcher" onclick="toggleSoli()">
+  <img src="/images/Soli_by_Solid_Solutions_Today.png" alt="Chat with Soli" class="soli-launcher-img" />
+</div>
+
+<div id="soli-window">
+  <div class="soli-header"><h3>Soli &mdash; AI Assistant</h3></div>
+  <div class="soli-body" id="soli-chat-history">
+    <p>Hello. I'm Soli — I know this business inside and out. What can I help you figure out today?</p>
+  </div>
+  <div class="soli-footer">
+    <div class="soli-input-row">
+      <input type="text" id="soli-input" placeholder="Ask Soli anything..." aria-label="Chat with Soli" />
+      <button id="soli-send" aria-label="Send message">&#10140;</button>
+    </div>
+  </div>
+</div>
+<script src="/js/main.js"></script>
+
+<script>
+(function () {
+  'use strict';
+  var KEY = 'sst-use-ai-like-a-pro-v1';
+  var MAXC = 30;
+  var $ = function (id) { return document.getElementById(id); };
+  function mk(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; }
+  function str(x, n) { return typeof x === 'string' ? x.slice(0, n || 3000) : ''; }
+  function pad(n) { return (n < 10 ? '0' : '') + n; }
+  function today() { var d = new Date(); return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()); }
+  var uidn = 0; function nid(p) { uidn++; return p + uidn; }
+
+  var TABS = [['intro', 'Start'], ['lanes', '1 · Two lanes'], ['prompts', '2 · Prompts'], ['daily', '3 · Daily use'], ['tools', '4 · Tools'], ['check', '5 · Checklist']];
+  var USE = [['u1', 'Reframing key ideas without compromising their meaning'], ['u2', 'Refining undeveloped ideas into structured workflows'], ['u3', 'Outlining strategic content such as emails, carousels, blog posts, and offers'], ['u4', 'Reducing time spent on repetitive outputs like captions, summaries, and checklists'], ['u5', 'Simulating a client, critic, or buyer to pressure-test messaging and insight'], ['u6', 'Generating working drafts that support quicker decision-making and refinement']];
+  var NOT = [['n1', 'Writing in my voice without review or correction'], ['n2', 'Defining my audience or assigning value to what I do'], ['n3', 'Determining the direction of my messaging or communication'], ['n4', 'Discerning what is true'], ['n5', 'Replacing prayer, wise counsel, or obedience to God'], ['n6', 'Final judgment']];
+  var DAILY = [
+    { k: 'd1', t: 'Thinking through complex decisions', p: 'Whether I\'m working through a client problem or refining my own strategy, I use AI to organize thoughts, surface blind spots, and help me evaluate tradeoffs quickly.', ex: ['Here\'s the situation. What are 2–3 outcomes based on this direction?', 'Where\'s the real constraint I\'m not naming yet?'], n: 'I use these kinds of prompts when I want a second lens, not a final answer. AI helps me surface possibilities. It cannot provide what only life experience and, more importantly, the wisdom of God supplies. Its output is shaped by data. Mine is shaped by discernment.' },
+    { k: 'd2', t: 'Structuring offers and services', p: 'Before I publish or present anything, I use AI to help me pressure-test how it communicates.', ex: ['Is the core problem clear?', 'Where might the value be misread or diluted?'], n: 'I\'m not outsourcing strategy. I\'m checking for gaps. AI helps me refine how an offer is received, but I\'m still responsible for what it actually delivers.' },
+    { k: 'd3', t: 'Content and visual development', p: 'Before I open Canva, or finalize copy, I use AI to shape the direction of the content. The goal is to work through the concept first so execution is focused, not scattered.', ex: ['Turn this idea into a 3-part teaching sequence.', 'Give me five ways to say this without watering it down.'], n: 'AI helps me explore language and structure. The final tone, purpose, and authority stay with me.' },
+    { k: 'd4', t: 'Solving high-stakes client challenges', p: 'When a client brings me a complex, time-sensitive problem, I use AI to map possible outcomes, surface blind spots, or test frameworks before we move into solution mode.', ex: ['What\'s a potential path forward based on these conditions?', 'What\'s missing from this offer, workflow, or plan that I\'m not seeing?'], n: 'AI doesn\'t replace discernment. It helps me build a clear response when the stakes are high and the clock is ticking.' },
+    { k: 'd5', t: 'Building repeatable prompts and systems', p: 'I\'m not here to prompt and hope. I build tested workflows that help me delegate the structure of the work.', ex: [], n: 'Every prompt included can be used in real working scenarios for solopreneurs and SMBs.' }
+  ];
+  var TOOLS = [
+    { k: 't1', n: 'ChatGPT Pro', how: ['Strategy sessions (role prompts and scenario modeling)', 'Content frameworks (emails, mini-blog breakdowns, carousel flows)', 'Language refinement and tone testing', 'Coding', 'Deep reasoning with long-form context and memory', 'Image generation'], why: 'Starting in November of 2022, I tested it extensively for years, and I was a top 10% global user in 2025. That hands-on testing taught me to think with AI instead of just typing at it. I learned what real reasoning looks like versus a good-sounding guess, how to catch a model bluffing, and how to iterate a prompt until the output was worth using.' },
+    { k: 't2', n: 'Claude (Anthropic)', how: ['Building and deploying real websites: Firebase hosting, GitHub workflows, DNS configuration, from empty repo to live site', 'Design systems: pulling palettes from reference images, typography pairing, full CSS architecture', 'Structuring multi-page site builds and content strategy from a single brief', 'AEO (Answer Engine Optimization) and technical setup: schema markup, favicon generation, metadata', 'Iterative collaboration: going back and forth and correcting course in real time'], why: 'This is the tool I actually build with, every day. Anyone can ask an AI for ideas. I use Claude to ship real, working products, and that difference is the whole point.' },
+    { k: 't3', n: 'Google Gemini', how: ['Real-time information that benefits from Google\'s ecosystem', 'Working inside Docs, Gmail, or Drive', 'Analyzing longer documents natively', 'Multimodal tasks, like generating images or video ideas'], why: 'My parallel tool for comparison and Google-powered context. It integrates well with Google Workspace and is best when I need to process a lot of files or large amounts of media.' },
+    { k: 't4', n: 'Perplexity.ai', how: ['Source verification', 'Research-backed answers', 'Summarizing complex information fast'], why: 'AI is not a source of truth. Perplexity helps me keep accuracy and integrity tight.' },
+    { k: 't5', n: 'Canva (Magic Write and design ecosystem)', how: ['Turning structured ideas into branded visuals', 'Speeding up carousel and template design', 'Staying in flow between copy and content'], why: 'This is where thinking turns visual. It lets me finish what AI helps me start, and my visual workflow doesn\'t break rhythm.' }
+  ];
+  var CHECK = ['I can prompt clearly and get strong first drafts, without wrestling with the tool.', 'I\'ve used AI to map real strategies, not just play with ideas.', 'I\'ve created at least one repeatable prompt or workflow that actually saves me time.', 'I can edit AI output without losing my tone, conviction, or message.', 'I\'ve used AI to prepare for real meetings, sessions, or launches.', 'I don\'t expect AI to think for me. I use it to think better.', 'I can tell when AI gives shallow advice, and I don\'t take it as truth.', 'I\'ve used AI to strengthen client work, not just my own content.', 'I\'ve challenged my own thinking using AI as a mirror, not just a megaphone.', 'I trust the Holy Spirit and my God-given wisdom more than any tool.'];
+  var OUTS = [['caption', 'caption'], ['email', 'email'], ['blog post', 'blog post'], ['offer description', 'offer description'], ['social post', 'social post']];
+
+  /* ---------- state ---------- */
+  var state, saveTimer = null, tab = 'intro';
+  function blank() { return { v: 1, use: { on: {}, custom: [] }, not: { on: {}, custom: [] }, lean: '', pia: '', swipe: '', outType: 'caption', daily: {}, tools: {}, check: {}, tab: 'intro' }; }
+  function cleanList(src, defs) {
+    var o = { on: {}, custom: [] }; src = src || {};
+    defs.forEach(function (d) { o.on[d[0]] = !!(src.on && src.on[d[0]] === true); });
+    if (Array.isArray(src.custom)) src.custom.slice(0, MAXC).forEach(function (t) { t = str(t, 300).trim(); if (t) o.custom.push(t); });
+    return o;
+  }
+  function clean(raw) {
+    var s = blank(); if (!raw || typeof raw !== 'object') raw = {};
+    s.use = cleanList(raw.use, USE); s.not = cleanList(raw.not, NOT);
+    s.lean = str(raw.lean, 3000); s.pia = str(raw.pia, 3000); s.swipe = str(raw.swipe, 6000);
+    s.outType = OUTS.some(function (o) { return o[0] === raw.outType; }) ? raw.outType : 'caption';
+    DAILY.forEach(function (d) { s.daily[d.k] = str(raw.daily && raw.daily[d.k], 3000); });
+    TOOLS.forEach(function (t) { var x = (raw.tools && raw.tools[t.k]) || {}; s.tools[t.k] = { on: x.on === true, n: str(x.n, 1500) }; });
+    CHECK.forEach(function (c, i) { s.check['c' + i] = !!(raw.check && raw.check['c' + i] === true); });
+    if (TABS.some(function (t) { return t[0] === raw.tab; })) s.tab = raw.tab;
+    return s;
+  }
+  function load() { try { var r = localStorage.getItem(KEY); return clean(r ? JSON.parse(r) : null); } catch (e) { return blank(); } }
+  function setStatus(t) { $('save-status').textContent = t; }
+  function persist() {
+    try { localStorage.setItem(KEY, JSON.stringify(state)); var d = new Date(); setStatus('Saved in this browser · ' + pad(d.getHours()) + ':' + pad(d.getMinutes())); }
+    catch (e) { setStatus('Could not save in this browser. Export a backup now.'); }
+  }
+  function changed() { setStatus('Saving…'); clearTimeout(saveTimer); saveTimer = setTimeout(function () { saveTimer = null; persist(); }, 300); }
+  state = load(); tab = state.tab;
+  window.addEventListener('pagehide', function () { if (saveTimer) { clearTimeout(saveTimer); saveTimer = null; persist(); } });
+  function download(name, text, type) {
+    var blob = new Blob([text], { type: type });
+    var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name;
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function () { URL.revokeObjectURL(a.href); }, 1000);
+  }
+
+  /* ---------- helpers ---------- */
+  function F(host, label, val, cb, o) {
+    o = o || {}; var id = nid('f');
+    var l = mk('label', '', label); l.setAttribute('for', id); if (o.hint) l.appendChild(mk('span', 'hint', o.hint)); host.appendChild(l);
+    var e;
+    if (o.t === 'select') { e = mk('select'); o.o.forEach(function (x) { var op = mk('option', '', x[1]); op.value = x[0]; if (val === x[0]) op.selected = true; e.appendChild(op); }); e.addEventListener('change', function () { cb(e.value); }); }
+    else { e = mk(o.t === 'area' ? 'textarea' : 'input'); if (o.t !== 'area') e.type = 'text'; e.value = val || ''; e.maxLength = o.max || 3000; e.addEventListener('input', function () { cb(e.value); }); }
+    e.id = id; host.appendChild(e); return e;
+  }
+  function head(host, step, title) { host.appendChild(mk('p', 'step-num', step)); host.appendChild(mk('h2', '', title)); }
+  function chk(host, label, checked, cb) {
+    var l = mk('label', 'opt'); var c = mk('input'); c.type = 'checkbox'; c.checked = checked; c.addEventListener('change', function () { cb(c.checked); });
+    l.appendChild(c); l.appendChild(mk('span', '', label)); host.appendChild(l); return c;
+  }
+  function card(host, title) { var c = mk('div', 'card'); if (title) c.appendChild(mk('h3', '', title)); host.appendChild(c); return c; }
+  function para(host, t) { host.appendChild(mk('p', 'tool-sub', t)); }
+  function go(t) { tab = t; state.tab = t; changed(); renderTabs(); renderPanel(); window.scrollTo(0, 0); }
+  function renderTabs() {
+    var h = $('tabs'); h.textContent = '';
+    TABS.forEach(function (t) {
+      var b = mk('button', 'tab' + (tab === t[0] ? ' on' : ''), t[1]); b.type = 'button'; b.setAttribute('aria-pressed', tab === t[0] ? 'true' : 'false');
+      b.addEventListener('click', function () { go(t[0]); }); h.appendChild(b);
+    });
+  }
+  function nextBtn(h) {
+    var i = TABS.map(function (t) { return t[0]; }).indexOf(tab);
+    if (i < 0 || i >= TABS.length - 1) return;
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn', 'Next: ' + TABS[i + 1][1]); b.type = 'button';
+    b.addEventListener('click', function () { go(TABS[i + 1][0]); }); bar.appendChild(b); h.appendChild(bar);
+  }
+  function renderPanel() {
+    var h = $('panel'); h.textContent = '';
+    ({ intro: pIntro, lanes: pLanes, prompts: pPrompts, daily: pDaily, tools: pTools, check: pCheck })[tab](h);
+    nextBtn(h);
+  }
+  function copyBtn(host, getText) {
+    var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn small', 'Copy prompt'); b.type = 'button';
+    b.addEventListener('click', function () {
+      var t = getText();
+      function ok() { setStatus('Copied.'); }
+      function fb() { var ta = mk('textarea'); ta.value = t; ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); ok(); } catch (e) { setStatus('Select the text and copy it manually.'); } document.body.removeChild(ta); }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(t).then(ok, fb); else fb();
+    });
+    bar.appendChild(b); host.appendChild(bar);
+  }
+
+  /* ---------- panels ---------- */
+  function pIntro(h) {
+    head(h, 'Introduction', 'Why I wrote this guide');
+    para(h, 'I\'ve watched AI go from a novelty to a necessity almost overnight. Most people are either overwhelmed by it or wildly misusing it.');
+    para(h, 'As an early adopter and a top 10% global user, I\'ve tested nearly every major model and advised founders, solopreneurs, and operators on how to use AI with focus and integrity.');
+    para(h, 'This guide is how I use AI to think clearly, move faster, and protect what matters most, which is your time, energy, and the truth. This is how I actually use AI, and how you can too.');
+    var c = card(h, 'A personal note before we begin');
+    c.appendChild(mk('p', '', 'I don\'t let AI lead. Discernment matters. I\'m not here to automate everything. I\'m here to use what\'s available wisely, faithfully, and in service of the work I\'ve been called to do.'));
+    c.appendChild(mk('p', '', 'Respectfully, Renea'));
+    var d = card(h, 'What AI can and cannot do');
+    d.appendChild(mk('p', '', 'This is where most people start falling off track. AI is powerful, but it\'s not magic. It doesn\'t replace skill, strategy, or Spirit. It amplifies what you already bring to the table, for the better or for the worse.'));
+    d.appendChild(mk('p', '', 'Over time, I\'ve learned to divide AI into two lanes. One is what I delegate, and the other is what I never hand off. Build yours in the next tab.'));
+  }
+  function laneList(h, title, defs, st, intro) {
+    var c = card(h, title); if (intro) c.appendChild(mk('p', 'hint', intro));
+    var badge = mk('p', 'badge');
+    function cnt() { var n = Object.keys(st.on).filter(function (x) { return st.on[x]; }).length + st.custom.length; badge.textContent = n + ' on your list'; }
+    defs.forEach(function (d) { chk(c, d[1], st.on[d[0]], function (v) { st.on[d[0]] = v; changed(); cnt(); }); });
+    var holder = mk('div'); c.appendChild(holder);
+    function draw() {
+      holder.textContent = '';
+      st.custom.forEach(function (t, i) {
+        var row = mk('div', 'subcard'); row.appendChild(mk('p', '', t));
+        var rm = mk('button', 'btn ghost small no-print', 'Remove'); rm.type = 'button'; rm.addEventListener('click', function () { st.custom.splice(i, 1); changed(); draw(); cnt(); }); row.appendChild(rm); holder.appendChild(row);
+      });
+      var id = nid('add'); var l = mk('label', '', 'Add your own'); l.setAttribute('for', id); holder.appendChild(l);
+      var inp = mk('input'); inp.type = 'text'; inp.id = id; inp.maxLength = 300; holder.appendChild(inp);
+      var bar = mk('div', 'toolbar no-print'); var b = mk('button', 'btn small', 'Add'); b.type = 'button';
+      function add() { var t = inp.value.trim(); if (!t || st.custom.length >= MAXC) return; st.custom.push(t); changed(); draw(); cnt(); }
+      b.addEventListener('click', add); inp.addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); add(); } });
+      bar.appendChild(b); holder.appendChild(bar);
+    }
+    draw(); c.appendChild(badge); cnt();
+  }
+  function pLanes(h) {
+    head(h, 'Part one', 'Two lanes: what you delegate and what you never hand off');
+    para(h, 'These are the lists I work from. Check the ones that fit you and add your own. I don\'t use AI to skip the hard parts. I use it to clear the clutter so I can focus on what matters most.');
+    laneList(h, 'What I use AI for', USE, state.use, 'Check what you will delegate.');
+    laneList(h, 'What I don\'t let AI do', NOT, state.not, 'Check what stays with you, and write your own lines.');
+  }
+  function promptCard(h, num, title, intro, build, fields) {
+    var c = card(h, num + '. ' + title); c.appendChild(mk('p', '', intro));
+    fields(c);
+    var out = mk('textarea', 'promptout'); out.readOnly = true; out.rows = 7; out.setAttribute('aria-label', title + ' prompt'); c.appendChild(out);
+    function upd() { out.value = build(); }
+    c.addEventListener('input', upd); c.addEventListener('change', upd); upd();
+    copyBtn(c, function () { return out.value; });
+    return c;
+  }
+  function pPrompts(h) {
+    head(h, 'Part two', 'Prompt frameworks that work');
+    para(h, 'AI is only as useful as the way you speak to it. I treat prompts like instruments, not commands. When structured well, they give me usable thinking, not noise. Here are three frameworks I rely on regularly.');
+    promptCard(h, '1', 'Lean Loop Prompt', 'I use this when I need directional thinking, but I don\'t want the model to over-assume or spin out. It keeps the output anchored to the goal.',
+      function () { return (state.lean.trim() ? state.lean.trim() + '\n\n' : '') + 'Based on what I\'ve told you, give me three insights. Then ask a clarifying question before continuing.'; },
+      function (c) { F(c, 'What you want the AI to know first', state.lean, function (v) { state.lean = v; changed(); }, { t: 'area', hint: 'Optional. Describe your goal and situation. This is placed before the prompt.' }); });
+    promptCard(h, '2', 'Problem → Insight → Action', 'I reach for this when I\'m stuck in overthinking or ambiguity. It forces a useful response without the overwhelm.',
+      function () { return 'Here\'s the situation: ' + (state.pia.trim() || '[insert]') + '. I\'m looking for one meaningful insight and a recommended next step.'; },
+      function (c) { F(c, 'The situation', state.pia, function (v) { state.pia = v; changed(); }, { t: 'area' }); });
+    promptCard(h, '3', 'Signature Swipe Prompt', 'This helps maintain consistency across platforms. I don\'t ask AI to sound like me. I give it what already sounds like me, and build from there.',
+      function () { return 'Here\'s something I\'ve written in my voice: ' + (state.swipe.trim() || '[insert sample]') + '. Match the tone, rhythm, and structure to help me draft a ' + state.outType + '.'; },
+      function (c) { F(c, 'A sample of your own writing', state.swipe, function (v) { state.swipe = v; changed(); }, { t: 'area', max: 6000 }); F(c, 'What you want drafted', state.outType, function (v) { state.outType = v; changed(); }, { t: 'select', o: OUTS }); });
+  }
+  function pDaily(h) {
+    head(h, 'Part three', 'How I use AI daily');
+    para(h, 'AI is part of how I operate. It\'s not a side tool that I check in with once in a while. I use it every day to think clearly, make decisions faster and more thoroughly, and move through creative, strategic, and client-related work without stalling out.');
+    DAILY.forEach(function (d) {
+      var det = mk('details', 'card pcard'); if (d.k === 'd1') det.open = true;
+      var sum = mk('summary'); sum.appendChild(mk('span', 'ptitle', d.t)); det.appendChild(sum);
+      var inner = mk('div', 'inner'); det.appendChild(inner);
+      inner.appendChild(mk('p', '', d.p));
+      d.ex.forEach(function (t) {
+        inner.appendChild(mk('p', 'say', '“' + t + '”')); var s = mk('div'); inner.appendChild(s); copyBtn(s, function () { return t; });
+      });
+      inner.appendChild(mk('p', '', d.n));
+      F(inner, 'My version for my business', state.daily[d.k], function (v) { state.daily[d.k] = v; changed(); }, { t: 'area', hint: 'Write the prompt or routine you will use.' });
+      h.appendChild(det);
+    });
+  }
+  function pTools(h) {
+    head(h, 'Part four', 'AI tools I actually use, and why');
+    para(h, 'I\'ve tested many tools. These are the ones in my daily stack because they help me work sharper, not just faster. I don\'t choose tools because they are trending. I use them because they help me think more clearly, communicate more effectively, and stay consistent across everything I build.');
+    var pr = mk('p', 'badge');
+    function up() { var n = TOOLS.filter(function (t) { return state.tools[t.k].on; }).length; pr.textContent = n + ' of ' + TOOLS.length + ' in your stack'; }
+    TOOLS.forEach(function (t) {
+      var det = mk('details', 'card pcard'); var sum = mk('summary'); sum.appendChild(mk('span', 'ptitle', t.n)); det.appendChild(sum);
+      var inner = mk('div', 'inner'); det.appendChild(inner);
+      inner.appendChild(mk('p', 'lbl', 'How I use it')); var ul = mk('ul'); t.how.forEach(function (x) { ul.appendChild(mk('li', '', x)); }); inner.appendChild(ul);
+      inner.appendChild(mk('p', 'lbl', 'Why it matters')); inner.appendChild(mk('p', '', t.why));
+      chk(inner, 'This is in my stack', state.tools[t.k].on, function (v) { state.tools[t.k].on = v; changed(); up(); });
+      F(inner, 'My notes on this tool', state.tools[t.k].n, function (v) { state.tools[t.k].n = v; changed(); }, { t: 'area', max: 1500 });
+      h.appendChild(det);
+    });
+    h.appendChild(pr); up();
+    h.appendChild(mk('p', 'tool-sub', 'You don\'t need more AI tools. You need a method and a strategy, and to use them well.'));
+  }
+  function pCheck(h) {
+    head(h, 'Part five', 'AI Confidence Checklist');
+    para(h, 'Am I using AI wisely, or just wasting time with it? Use this quick 10-point scan to evaluate your current approach.');
+    var c = card(h); var res = mk('p', 'badge');
+    function up() {
+      var n = CHECK.filter(function (x, i) { return state.check['c' + i]; }).length;
+      res.textContent = n + ' of 10. ' + (n >= 8 ? 'You\'re a strategic user. Keep refining and teaching others.' : n >= 5 ? 'You\'re making progress, but it\'s time to tighten systems and deepen usage.' : 'You\'re still in experimentation mode. This guide can anchor you.');
+    }
+    CHECK.forEach(function (t, i) { chk(c, t, state.check['c' + i], function (v) { state.check['c' + i] = v; changed(); up(); }); });
+    c.appendChild(res); up();
+    h.appendChild(mk('p', 'tool-sub', 'If you\'re not using AI to think better, you\'re just using it to stay busy.'));
+    var d = card(h, 'Closing thoughts');
+    d.appendChild(mk('p', '', 'You don\'t need more AI tools. You need a method, a strategy, and to use them well. This guide is a starting point. It\'s not a rulebook. Use what\'s here. Adjust it to your style. Repeat what works. Skip what doesn\'t.'));
+    d.appendChild(mk('p', '', 'If you want help applying this inside your business, whether for insight, strategy, or next steps, you can reach out to request a focused advisory session.'));
+    d.appendChild(mk('p', '', 'Renea Hanks, AI Advisor'));
+    var p = mk('p'); p.appendChild(document.createTextNode('Schedule a consultation: ')); var a = mk('a', '', 'app.reclaim.ai/m/solid-solutions-today'); a.href = 'https://app.reclaim.ai/m/solid-solutions-today'; a.target = '_blank'; a.rel = 'noopener'; p.appendChild(a); d.appendChild(p);
+  }
+
+  /* ---------- backup, print ---------- */
+  $('btn-print').addEventListener('click', function () {
+    var ds = document.querySelectorAll('#panel details'), was = [];
+    Array.prototype.forEach.call(ds, function (d) { was.push(d.open); d.open = true; });
+    function done() { Array.prototype.forEach.call(ds, function (d, i) { d.open = was[i]; }); window.removeEventListener('afterprint', done); }
+    window.addEventListener('afterprint', done); window.print();
+  });
+  $('btn-export').addEventListener('click', function () { download('use-ai-like-a-pro-backup-' + today() + '.json', JSON.stringify(state, null, 2), 'application/json'); setStatus('Backup downloaded. Keep the file somewhere safe.'); });
+  $('btn-import').addEventListener('click', function () { $('file-import').click(); });
+  $('file-import').addEventListener('change', function (e) {
+    var f = e.target.files && e.target.files[0]; if (!f) return;
+    if (f.size > 5000000) { setStatus('That file is too large to be a backup from this guide.'); e.target.value = ''; return; }
+    var r = new FileReader();
+    r.onload = function () {
+      var raw; try { raw = JSON.parse(r.result); } catch (x) { setStatus('That file is not a valid backup.'); e.target.value = ''; return; }
+      if (!raw || typeof raw !== 'object' || !raw.use || !raw.check) { setStatus('That file is not a backup from this guide.'); e.target.value = ''; return; }
+      if (!window.confirm('Importing replaces everything currently saved in this browser. Continue?')) { e.target.value = ''; return; }
+      state = clean(raw); tab = state.tab; persist(); renderTabs(); renderPanel(); setStatus('Backup imported.'); e.target.value = '';
+    };
+    r.readAsText(f);
+  });
+  renderTabs(); renderPanel();
+})();
+</script>
+</body>
+</html>
