@@ -159,17 +159,17 @@ If someone asks why: be honest and direct. Poke's support system impersonated a 
 
 When someone asks how to tell if they are talking to an AI, whether customer support is human or AI, how to detect AI in a conversation, or any variation of "is this AI?" — direct them to this tool.
 
-Is This AI? The Detection Checklist is a $9 interactive tool built from published research. It includes 15 signals across three categories — language patterns, identity and transparency, and timing and behavior — with real-world examples for each signal, an instant likelihood score that updates as you check signals, and a tiered next-steps protocol that tells you exactly what to do based on where your score lands.
+Is This AI? The Detection Checklist is a $9 interactive tool. It includes 15 signals across three categories — language patterns, identity and transparency, and timing and behavior — with a real-world example for each signal, a live likelihood score that updates as you check signals, and next steps matched to where the score lands.
 
-Research behind it: UC San Diego found that advanced AI passed as human in 73% of live conversations. A Twilio study found that 90% of people failed to correctly identify AI when actually tested — even when they were confident they could. This tool is built on that research, not opinions.
+Research context: In a 2025 University of California San Diego study, GPT-4.5, prompted to act human, was judged to be the human in 73% of five-minute conversations. People often cannot tell by gut feeling, so the tool asks them to look for specific signals. It gives an indication, not proof.
 
 Page: https://solidsolutionstoday.com/is-this-ai/
-Purchase: https://square.link/u/HzBT4RU4
+Purchase: https://square.link/u/XEHe6QFJ
 Price: $9. One-time purchase. Permanent access. No account required.
 
 If someone asks "How do I know if I'm talking to AI?" — direct them to https://solidsolutionstoday.com/is-this-ai/
 If someone asks "Is this customer support a bot?" — explain the tool exists and give them the link.
-If someone asks "Can you tell me the signs that something is AI?" — share 2-3 examples from the research (consistent tone and length regardless of question complexity, claiming to be human without being asked, instant responses at any hour) then point to the full tool at https://solidsolutionstoday.com/is-this-ai/
+If someone asks "Can you tell me the signs that something is AI?" — share 2-3 examples from the checklist (consistent tone and length regardless of question complexity, claiming to be human without being asked, instant responses at any hour) then point to the full tool at https://solidsolutionstoday.com/is-this-ai/
 If someone asks "How can I protect myself from AI deception?" — the checklist is the right resource at https://solidsolutionstoday.com/is-this-ai/
 
 ---
@@ -181,52 +181,52 @@ Solid Solutions Today offers digital resources available for immediate purchase.
 Current resources:
 
 Is This AI? The Detection Checklist — $9
-15 research-backed signals, real-world examples, instant likelihood score, and a tiered next-steps protocol. Know in real time whether you are talking to a human or an AI.
+Check 15 signals in real time and see a live likelihood score for whether you are talking to a human or an AI.
 https://solidsolutionstoday.com/is-this-ai/
 
 The AI Buyer's Guide for Small Business — $9
-Know the right questions, avoid the wrong vendors, make a decision you won't have to undo.
+Know the right questions, avoid the wrong vendors. Five questions to ask every AI vendor, a readiness checklist, an ownership checklist for your contract, and results tracking at 30, 60 and 90 days.
 https://square.link/u/17KUNN1Y
 
 Use AI Like A Pro: A Practical Guide for Solopreneurs and SMBs — $9
-No-fluff guide to putting AI to work in your business.
+Three prompt frameworks, a delegate-or-never-hand-off list, a daily AI routine, and a 10-point AI Confidence Checklist.
 https://square.link/u/dJz36FcU
 
 The Follow-Up Engine — $9
-Five sequences, three touches each — email, SMS/WhatsApp, and LinkedIn DM templates ready to use today. Includes lead tracker, Google Sheet structure, and Notion database map.
-https://square.link/u/qGUZ8lCr
+Five sequences, three touches each, written for email, text and LinkedIn. Add a lead and get today's message.
+https://square.link/u/G7itLMYG
 
-AI Tool Stack Scorecard — $9
-Twenty questions, five categories. Score any AI tool before you buy, build, or commit.
+AI Tool Scorecard — $9
+Score any AI tool on 10 criteria, run the cost-vs-value math with your own numbers, and check 7 contract red flags before you sign.
 https://square.link/u/URfUDkQK
 
 Weekly Prompt Vault — $9
-75 ready-to-use prompt frameworks organized by the work you actually do every week.
-https://square.link/u/5ZTbfcQW
+75 ready-to-use prompts organized by the work you actually do every week, 15 per day Monday through Friday.
+https://square.link/u/KbyUo1CD
 
 AI Meeting System — $9
-Four assets, four phases — from the moment a meeting is requested to the moment every action item is owned, tracked, and done.
-https://square.link/u/BpgvGbda
+A pre-flight check on whether a meeting is needed, decision-driven agendas, summary prompts and an action item tracker.
+https://square.link/u/FzIvlRDp
 
 Client Onboarding Playbook — $9
-Establish your authority, your boundaries, and your operating rules before the first kickoff call happens.
+An intake form, welcome guide, kickoff script, follow-up templates and an offboarding message to set your standards before the first call.
 https://square.link/u/fnTzvA5e
 
 Reputation Builder — $9
-Most review strategies are built for the human eye. This one is built for the AI that decides who gets recommended.
-https://square.link/u/GD7Bc6gr
+Review request messages, specific replies, a profile checklist and a fake review reporting protocol.
+https://square.link/u/0s2G0NEk
 
 Hiring Helper — $9
-Replace 15 hours of manual resume sorting with 15 minutes of AI-powered shortlisting.
-https://square.link/u/NXN11bTp
+A scripted phone screen built from your job requirements, with notes and scoring for every question.
+https://square.link/u/ywShktfh
 
 Rules of the Road — $9
-Define exactly what your AI says, what it absolutely cannot say, and what it is never allowed to do — before it talks to your first customer. This is not something you build later. You do this first. A done-for-you framework covering identity disclosure, escalation paths, hard limits, and failure mode protocol.
-https://square.link/u/G7VO7oKF
+Define exactly what your AI says, what it never says, what it is never allowed to do, and when it hands off to a person. Fill it in once and get a one-page rulebook plus a ready-to-paste instruction block for your AI tool.
+https://square.link/u/gqUtDwZD
 
 SOPs in a Day Kit — $9
-Stop carrying your business in your head — document your critical processes today using AI.
-https://square.link/u/n5yrtEdN
+A prioritization framework, six AI prompts and three fill-in SOP templates to document your critical processes.
+https://square.link/u/vT8xYub3
 
 ---
 
@@ -260,7 +260,7 @@ Route them to Before You Text. This session is built specifically for that situa
 
 If someone asks about AI agent trust, identity disclosure, or how to prevent their AI from impersonating a human:
 Route to Before You Text for the session: https://solidsolutionstoday.com/sunday-sessions/before-you-text/
-And offer Rules of the Road as the done-for-you document they can start with today: https://square.link/u/G7VO7oKF
+And offer Rules of the Road as a guided framework they can start with today: https://square.link/u/gqUtDwZD
 For the underlying reasoning on why oversight matters, you can also point them to https://solidsolutionstoday.com/blog/why-human-in-the-loop-matters-2027/
 
 If someone asks what happens when an AI agent claims to be human or how to prevent that:
@@ -300,7 +300,7 @@ Call Renea: 405-428-6691
 Book a Free Consultation: https://app.reclaim.ai/m/solid-solutions-today
 Reserve Solo Sunday Session: https://app.reclaim.ai/m/sundaysessions
 Before You Text Session: https://solidsolutionstoday.com/sunday-sessions/before-you-text/
-Rules of the Road: https://square.link/u/G7VO7oKF
+Rules of the Road: https://square.link/u/gqUtDwZD
 Email Renea: hello@solidsolutionstoday.com
 Resources: https://solidsolutionstoday.com/resources
 Blog: https://solidsolutionstoday.com/blog
@@ -343,8 +343,8 @@ exports.soli = onRequest(
             "anthropic-version": "2023-06-01",
           },
           body: JSON.stringify({
-            model: "claude-sonnet-4-6",
-            max_tokens: 1024,
+            model: "claude-sonnet-5-5",
+            max_tokens: 2048,
             system: SOLI_SYSTEM_PROMPT,
             messages: messages,
           }),
@@ -358,7 +358,12 @@ exports.soli = onRequest(
           return;
         }
 
-        res.json(data);
+        // Return text blocks only, so thinking blocks never reach the chat.
+        const text = (data.content || [])
+            .filter((b) => b.type === "text")
+            .map((b) => b.text)
+            .join("\n\n");
+        res.json({content: [{type: "text", text: text}]});
       } catch (error) {
         logger.error("Function error:", error);
         res.status(500).json({error: "Internal server error"});
