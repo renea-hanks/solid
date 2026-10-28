@@ -37,12 +37,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://solidsolutionstoday.com/sunday-sessions/before-you-text/</loc>
-    <lastmod>2026-06-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://solidsolutionstoday.com/about/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -68,7 +62,7 @@
   </url>
   <url>
     <loc>https://solidsolutionstoday.com/blog/</loc>
-    <lastmod>2026-10-22</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -218,7 +212,7 @@
   </url>
   <url>
     <loc>https://solidsolutionstoday.com/blog/apple-messages-for-business-ai-integration/</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

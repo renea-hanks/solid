@@ -9,15 +9,9 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-# AI search / citation crawlers — these retrieve pages live to answer
-# a specific question and can send real visitors back to the site.
+# AI search crawlers. These index pages so an AI search product can
+# cite and link to the site.
 User-agent: OAI-SearchBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: ClaudeBot
 Allow: /
 
 User-agent: Claude-SearchBot
@@ -26,35 +20,46 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Perplexity-User
-Allow: /
-
 User-agent: YouBot
 Allow: /
 
+# Apple's search crawler (Spotlight, Siri, Safari).
 User-agent: Applebot
 Allow: /
 
-# Model training crawlers — allowed. These feed training data rather
-# than live citations, but blocking them provides no ranking or
-# visibility benefit and these are the major labs' own official
-# training agents.
+# User-initiated fetchers. These load a page when a person asks an AI
+# assistant a question. Some providers say these may not follow
+# robots.txt, so these rules mainly state intent.
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Model training crawlers and control tokens. Allowed by choice. Blocking
+# GPTBot does not remove a site from ChatGPT search. Google-Extended and
+# Applebot-Extended are control tokens, not separate crawlers, and do not
+# affect Google Search or Apple search inclusion.
 User-agent: GPTBot
 Allow: /
 
-User-agent: Google-Extended
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Anthropic-AI
 Allow: /
 
+User-agent: Google-Extended
+Allow: /
+
 User-agent: Applebot-Extended
 Allow: /
 
-# Training-only scrapers with no citation or referral value — blocked.
-# These crawl purely to feed AI training data (often resold or
-# redistributed to third parties) and never send a visitor or a
-# citation back to the source.
+# Training and data-collection crawlers blocked by choice. Meta's link
+# preview crawler is facebookexternalhit, which this file does not block.
 User-agent: CCBot
 Disallow: /
 
