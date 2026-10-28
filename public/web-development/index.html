@@ -61,32 +61,50 @@
       {
         "@type": "Question",
         "name": "Is a fast, well-built website enough to be found in AI search now?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. Speed, schema, AEO structure, and good content still matter, but 2026 research shows domain authority now correlates with AI citation at only about r=0.18, while off-site brand mentions correlate at r=0.664. A technically excellent site can still be passed over if it lacks corroborating mentions elsewhere on the web." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Speed, schema, and good content still matter, but they are not the whole picture. Ahrefs' study of 75,000 brands found that brand web mentions correlate with AI Overview brand visibility at 0.664, ahead of Domain Rating at 0.326 and backlinks at 0.218. A technically excellent site can still be passed over if the business is rarely mentioned elsewhere on the web. Correlation is not proof of cause."
+        }
       },
       {
         "@type": "Question",
         "name": "Why does my service-area business struggle to show up in the map pack?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Google's local ranking system still anchors proximity to a registered physical address. Service-area businesses without a storefront face a structural disadvantage in that calculation, regardless of review count or website quality. BrightLocal's 2026 data found only 44% of businesses appear in the map pack for their own primary keyword at all." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google says local results are ranked on relevance, distance, and prominence. Distance is one of the three, so a closer competitor starts ahead on that factor regardless of your website. A verified, complete Business Profile and genuine reviews help the other two."
+        }
       },
       {
         "@type": "Question",
-        "name": "How does ChatGPT decide which local business to recommend?",
-        "acceptedAnswer": { "@type": "Answer", "text": "ChatGPT's local answers are grounded heavily in Google's own data, not your website. A 2026 scrape of 1,732 AI citations found ChatGPT cited google.com roughly 60 times more often than any other single domain, rendering Google Business Profile fields — name, hours, rating, category — directly into its answers." }
+        "name": "How does ChatGPT find my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "OpenAI uses OAI-SearchBot to find sites for ChatGPT search and a separate crawler, GPTBot, for training. Blocking GPTBot does not remove a site from ChatGPT search. To be considered in ChatGPT search, allow OAI-SearchBot in your robots.txt."
+        }
       },
       {
         "@type": "Question",
-        "name": "Does Claude work the same way as ChatGPT for local recommendations?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Not exactly. Claude behaves more like a research assistant, cross-referencing multiple independent sources — your website, Google Business Profile, Yelp, directories — and looking for consensus before naming a business with confidence. Businesses with consistent, structured information across more sources get cited more often." }
+        "name": "How does Claude find my business?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Anthropic uses separate crawlers: Claude-SearchBot for search, ClaudeBot for training, and Claude-User for requests a person makes. Allowing Claude-SearchBot in your robots.txt lets Claude's search reach your site."
+        }
       },
       {
         "@type": "Question",
-        "name": "How much of search is still controlled by Google?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Google still holds roughly 90% of global search market share as of mid-2026. Gemini 3.5 Flash is now the default model powering both AI Overviews and Google's AI Mode worldwide, and AI Mode alone passed 1 billion monthly users by May 2026. Google's decisions about how it ranks and cites content still shape the majority of how small businesses are found." }
+        "name": "Is AI replacing Google search?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not by itself, but the shift is real. Google says AI Mode has passed 1 billion monthly users. G2's March 2026 survey of 1,076 B2B software buyers found 51% now start research in an AI chatbot more often than in Google, up from 29% the year before. That survey covers software buyers, not every kind of customer."
+        }
       },
       {
         "@type": "Question",
         "name": "How much does a full website build cost?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Through December 31, 2026, all tiers are 50% off — both the one-time build price and the monthly retainer. Tier I — Launch is normally $9,500 plus a $950/month retainer, now $4,750 plus $475/month. Tier II — Growth is normally $15,500 plus $1,650/month, now $7,750 plus $825/month. Tier III — Flagship is normally $22,500 plus $2,250/month, now $11,250 plus $1,125/month. This is the first time this offer has run, and it returns for Q4 2027 on the same terms if this year's window is missed." }
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Through December 31, 2026, all tiers are 50% off — both the one-time build price and the monthly retainer. Tier I — Launch is normally $9,500 plus a $950/month retainer, now $4,750 plus $475/month. Tier II — Growth is normally $15,500 plus $1,650/month, now $7,750 plus $825/month. Tier III — Flagship is normally $22,500 plus $2,250/month, now $11,250 plus $1,125/month. This is the first time this offer has run, and it returns for Q4 2027 on the same terms if this year's window is missed."
+        }
       }
     ]
   }
@@ -190,7 +208,7 @@
       <div class="nav-item"><a href="/brand-strategy/" class="has-dropdown">Brand Strategy</a><div class="nav-dropdown"><a href="/web-development/">Web Development</a></div></div>
       <div class="nav-item"><a href="/about/" class="has-dropdown">About</a><div class="nav-dropdown"><a href="/partnerships/">Partnerships</a></div></div>
       <a href="/blog/">Blog</a>
-      <div class="nav-item"><a href="/resources/" class="has-dropdown">Resources</a><div class="nav-dropdown"><a href="/sunday-sessions/">Sunday Sessions</a></div></div>
+      <div class="nav-item"><a href="/sunday-sessions/" class="has-dropdown">Sunday Sessions</a><div class="nav-dropdown"><a href="/resources/">Resources</a></div></div>
       <a href="https://app.reclaim.ai/m/solid-solutions-today" target="_blank" rel="noopener" class="nav-cta">Schedule a Consultation</a>
     </div>
     <button class="nav-toggle" id="navToggle" onclick="toggleNav()" aria-label="Toggle navigation">&#9776;</button>
@@ -205,52 +223,50 @@
   <div class="webdev-section">
     <p class="section-tag">The Reality</p>
     <h2 class="webdev-heading">Most Google searches don't send anyone to your website anymore.</h2>
-    <p class="webdev-body">In the first four months of 2026, 68.01% of U.S. Google searches ended without a single click to any website — up from 60.45% just two years earlier, the fastest two-year jump on record (SparkToro/Similarweb, June 2026). When an AI Overview appears in the results, that number climbs to roughly 83%. In Google's AI Mode, it's closer to 93%.</p>
-    <p class="webdev-body">That means the search itself gets answered — and the person never leaves Google. Your business can be accurate, complete, and exactly what they were looking for, and still get zero visits, because the answer was already delivered on the results page.</p>
+    <p class="webdev-body">In the first four months of 2026, 68.01% of U.S. Google searches ended without a single click to any website, up from 60.45% in 2024 (SparkToro, using Similarweb clickstream data, reported June 2026).</p>
+    <p class="webdev-body">That means the search itself gets answered, and the person never leaves Google. Your business can be accurate, complete, and exactly what they were looking for, and still get zero visits, because the answer was already delivered on the results page.</p>
     <div class="speed-callout">
       <p class="speed-callout-label">What "zero-click" actually looks like</p>
-      <p class="speed-callout-text">AI Overviews now appear on roughly 43–48% of U.S. Google searches (Similarweb/BrightEdge, 2026), more than triple the coverage from a year earlier. When one appears, organic click-through rate drops by around 61% compared to a search with no AI Overview at all (Similarweb Zero-Click Study). The traffic isn't going to a competitor. It's often not going anywhere.</p>
+      <p class="speed-callout-text">SparkToro's research found AI Overviews on more than 20% of Google searches, with click-through rates dropping by nearly 60% when one appears. Semrush found that 92% to 94% of AI Mode sessions end without a click to an outside website (both as reported by TechWyse, June 2026). The traffic isn't going to a competitor. It's often not going anywhere.</p>
     </div>
   </div>
 
   <div class="webdev-section">
     <p class="section-tag">Domain Authority</p>
-    <h2 class="webdev-heading">The metric you were told to chase for a decade stopped predicting what it used to.</h2>
-    <p class="webdev-body">For years, the advice was simple: build backlinks, raise your domain authority, and rankings follow. That relationship is breaking down for AI-driven search. A 2026 analysis of citation signals across major AI platforms found domain authority correlates with AI citation probability at only about r=0.18 — while brand mentions across the web, independent of any link, correlate at r=0.664 (Wellows/LumenGEO, 2026).</p>
-    <p class="webdev-body">Separately, research across more than 22,000 domains found only 7.2% overlap between the sites Google's AI Overviews cite and the sites large language models like ChatGPT and Claude cite for the same topics. They are, in large part, reading from two different libraries.</p>
-    <p class="webdev-body">Ranking position has weakened too. In mid-2025, about 76% of AI Overview citations came from a page in Google's top 10 organic results. By early 2026, that had dropped to somewhere between 17% and 38%, depending on the study (Ahrefs, BrightEdge, SeoClarity). Ranking #1 today gives you roughly a one-in-three chance of being the one cited.</p>
+    <h2 class="webdev-heading">Brand mentions now track AI visibility more closely than backlinks do.</h2>
+    <p class="webdev-body">For years, the advice was simple: build backlinks, raise your domain authority, and rankings follow. Ahrefs analyzed 75,000 brands and found that brand web mentions correlate with AI Overview brand visibility at 0.664, the strongest of the factors it tested. Domain Rating correlated at 0.326, referring domains at 0.295, and backlinks at 0.218.</p>
+    <p class="webdev-body">Ahrefs notes that correlation is not causation, and so do we. The study does show where the signal is strongest: whether other places on the web talk about your business, not only whether other sites link to it.</p>
   </div>
 
   <div class="webdev-section wide">
     <div class="inner">
       <p class="section-tag">The Map Pack</p>
-      <h2 class="webdev-heading">If your business isn't a storefront, Google's local system is working against you from the start.</h2>
+      <h2 class="webdev-heading">Distance is one of three local ranking factors, and you can't change it.</h2>
       <div class="page-rule"></div>
-      <p class="webdev-body">Google's local ranking system still weighs proximity to a single registered physical address heavily — even when a business legitimately serves an entire region. A service-area business without a storefront is compared against businesses with a fixed location, using a system that was built around the fixed location. That's a structural disadvantage, not a content problem, and no amount of blog writing fixes it.</p>
-      <p class="webdev-body">This hits rural businesses two ways at once. There's less local search volume to be found in overall, and when a search does happen, the map pack itself favors whoever sits closest to the searcher's device — which, in a sparsely populated area, might be a competitor two towns over who simply has a better-optimized Google Business Profile, or no competitor at all, in which case the business is invisible not because it did anything wrong, but because Google's local layer wasn't built with rural service areas in mind.</p>
-      <p class="webdev-body">BrightLocal's 2026 research found only 44% of businesses appear in the map pack at all for their own primary keyword — meaning more than half of local businesses, including many with solid websites, are simply absent from the most visible real estate in local search.</p>
+      <p class="webdev-body">Google says local results are ranked on relevance, distance, and prominence. Distance is one of the three, so a competitor who is closer to the searcher starts ahead on that factor no matter how good your website is. That is a structural limit, not a content problem, and no amount of blog writing fixes it.</p>
+      <p class="webdev-body">Relevance and prominence are where a business can act. Google says a verified, complete Business Profile with accurate information, and more reviews with positive ratings, can help local ranking. That work belongs to the business, and it is part of what gets built here.</p>
     </div>
   </div>
 
   <div class="webdev-section dark">
     <div class="inner">
       <p class="section-tag light">Where Search Actually Happens Now</p>
-      <h2 class="webdev-heading light">Google still owns most of it. But your customer might be asking Gemini, ChatGPT, or Claude instead — and each one works differently.</h2>
+      <h2 class="webdev-heading light">Your customer might ask Google's AI Mode, ChatGPT, or Claude instead, and each one finds businesses differently.</h2>
       <div class="page-rule light"></div>
-      <p class="webdev-body light">Google still holds roughly 90% of global search market share as of mid-2026 (StatCounter). That has not collapsed. What has changed is what happens inside that share: Gemini 3.5 Flash became the default model powering both AI Overviews and Google's AI Mode worldwide as of Google's May 2026 I/O announcement, and AI Mode alone passed 1 billion monthly active users within its first year.</p>
-      <p class="webdev-body light">Outside of Google, a real and growing share of buyers are asking AI chatbots directly instead of searching at all. 51% of B2B software buyers now start their research in an AI chatbot more often than Google, and 71% use one somewhere in the process (G2 Answer Economy report, April 2026). McKinsey's 2026 research found 44% of AI search users now call it their preferred source for buying decisions — ahead of traditional search engines, brand websites, and review sites combined.</p>
+      <p class="webdev-body light">Google announced at I/O on May 20, 2026 that AI Mode has passed 1 billion monthly users and that Gemini 3.5 Flash is its new default model worldwide.</p>
+      <p class="webdev-body light">Outside Google, a real share of buyers ask AI chatbots directly. G2's March 2026 survey of 1,076 B2B software buyers found that 51% now start research in an AI chatbot more often than in Google, up from 29% the year before, and 71% rely on one at some point. That survey covers software buyers, not every kind of customer.</p>
       <div class="platform-grid">
         <div class="platform-card">
           <p class="platform-name">Google AI Mode / Gemini</p>
-          <p class="platform-text">Runs on Google's own index. Rewards structured data, schema, and E-E-A-T signals — but citation is decoupled from classic ranking position more than ever.</p>
+          <p class="platform-text">Google says no special optimization is needed beyond the fundamentals of Search: pages that are indexed and eligible to show with a snippet, content in plain text, and structured data that matches the page.</p>
         </div>
         <div class="platform-card">
           <p class="platform-name">ChatGPT</p>
-          <p class="platform-text">For local business questions, it leans heavily on Google itself. One 2026 study of 1,732 citations found it referenced google.com roughly 60 times more often than the next domain — reading your Google Business Profile back to the user, not your site.</p>
+          <p class="platform-text">OpenAI uses OAI-SearchBot for ChatGPT search and a separate crawler, GPTBot, for training. Blocking GPTBot does not remove a site from ChatGPT search. Allowing OAI-SearchBot in robots.txt lets search reach your site.</p>
         </div>
         <div class="platform-card">
           <p class="platform-name">Claude</p>
-          <p class="platform-text">Behaves more like a research assistant. It cross-references multiple independent sources — your site, your GBP, Yelp, directories — and looks for consensus before naming a business with confidence. Consistency across sources matters more than any single one.</p>
+          <p class="platform-text">Anthropic uses Claude-SearchBot for search, ClaudeBot for training, and Claude-User for requests a person makes. Allowing Claude-SearchBot in robots.txt lets Claude's search reach your site.</p>
         </div>
       </div>
     </div>
@@ -287,7 +303,7 @@
 
     <div class="promo-banner">
       <p class="promo-banner-label">Q4 2026 Offer — Ends 12/31/2026</p>
-      <p class="promo-banner-text">This is the first time this discount has ever been offered, and it's tied to this specific Q4. <strong>Every tier is 50% off</strong> — both the one-time build and the monthly retainer — for engagements booked through December 31, 2026. If this is the right fit for you, this is the moment for it. And if you see this too late, or the timing just isn't right this year — that's completely understandable, and no hard feelings at all. This offer will simply return next September, for Q4 2027, exactly as it is now.</p>
+      <p class="promo-banner-text">This is the first time this discount has been offered, and it is tied to this specific Q4. <strong>Every tier is 50% off</strong>, both the one-time build and the monthly retainer, for engagements booked through December 31, 2026. If the timing does not suit you this year, that is completely understandable. The offer will return next September for Q4 2027, exactly as it is now.</p>
     </div>
 
     <div class="tier-row">
@@ -345,23 +361,23 @@
       <p class="section-tag">Frequently Asked Questions</p>
       <div class="faq-item">
         <p class="faq-q">Is a fast, well-built website enough to be found in AI search now?</p>
-        <p class="faq-a">No. Speed, schema, AEO structure, and good content still matter, but 2026 research shows domain authority now correlates with AI citation at only about r=0.18, while off-site brand mentions correlate at r=0.664. A technically excellent site can still be passed over if it lacks corroborating mentions elsewhere on the web.</p>
+        <p class="faq-a">No. Speed, schema, and good content still matter, but they are not the whole picture. Ahrefs' study of 75,000 brands found that brand web mentions correlate with AI Overview brand visibility at 0.664, ahead of Domain Rating at 0.326 and backlinks at 0.218. A technically excellent site can still be passed over if the business is rarely mentioned elsewhere on the web. Correlation is not proof of cause.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">Why does my service-area business struggle to show up in the map pack?</p>
-        <p class="faq-a">Google's local ranking system still anchors proximity to a registered physical address. Service-area businesses without a storefront face a structural disadvantage in that calculation, regardless of review count or website quality. BrightLocal's 2026 data found only 44% of businesses appear in the map pack for their own primary keyword at all.</p>
+        <p class="faq-a">Google says local results are ranked on relevance, distance, and prominence. Distance is one of the three, so a closer competitor starts ahead on that factor regardless of your website. A verified, complete Business Profile and genuine reviews help the other two.</p>
       </div>
       <div class="faq-item">
-        <p class="faq-q">How does ChatGPT decide which local business to recommend?</p>
-        <p class="faq-a">ChatGPT's local answers are grounded heavily in Google's own data, not your website. A 2026 scrape of 1,732 AI citations found ChatGPT cited google.com roughly 60 times more often than any other single domain, rendering Google Business Profile fields — name, hours, rating, category — directly into its answers.</p>
+        <p class="faq-q">How does ChatGPT find my business?</p>
+        <p class="faq-a">OpenAI uses OAI-SearchBot to find sites for ChatGPT search and a separate crawler, GPTBot, for training. Blocking GPTBot does not remove a site from ChatGPT search. To be considered in ChatGPT search, allow OAI-SearchBot in your robots.txt.</p>
       </div>
       <div class="faq-item">
-        <p class="faq-q">Does Claude work the same way as ChatGPT for local recommendations?</p>
-        <p class="faq-a">Not exactly. Claude behaves more like a research assistant, cross-referencing multiple independent sources — your website, Google Business Profile, Yelp, directories — and looking for consensus before naming a business with confidence. Businesses with consistent, structured information across more sources get cited more often.</p>
+        <p class="faq-q">How does Claude find my business?</p>
+        <p class="faq-a">Anthropic uses separate crawlers: Claude-SearchBot for search, ClaudeBot for training, and Claude-User for requests a person makes. Allowing Claude-SearchBot in your robots.txt lets Claude's search reach your site.</p>
       </div>
       <div class="faq-item">
-        <p class="faq-q">How much of search is still controlled by Google?</p>
-        <p class="faq-a">Google still holds roughly 90% of global search market share as of mid-2026. Gemini 3.5 Flash is now the default model powering both AI Overviews and Google's AI Mode worldwide, and AI Mode alone passed 1 billion monthly users by May 2026. Google's decisions about how it ranks and cites content still shape the majority of how small businesses are found.</p>
+        <p class="faq-q">Is AI replacing Google search?</p>
+        <p class="faq-a">Not by itself, but the shift is real. Google says AI Mode has passed 1 billion monthly users. G2's March 2026 survey of 1,076 B2B software buyers found 51% now start research in an AI chatbot more often than in Google, up from 29% the year before. That survey covers software buyers, not every kind of customer.</p>
       </div>
       <div class="faq-item">
         <p class="faq-q">How much does a full website build cost?</p>
@@ -375,18 +391,16 @@
       <p class="section-tag">Sources</p>
       <h2 class="webdev-heading">Look it up yourself. That's the point.</h2>
       <div class="page-rule"></div>
-      <p class="webdev-body">Every figure on this page comes from a named, dated, publicly available study. None of it is proprietary or unverifiable.</p>
+      <p class="webdev-body">Every figure on this page links to its source below. The zero-click figures link to a published report of the SparkToro and Semrush research, not the original studies. Open any link and check the figure for yourself.</p>
       <div class="sources-list">
-        <p class="source-item">SparkToro / Similarweb, "Zero-Click Search Report," June 2026 — <a href="https://searchengineland.com/google-zero-click-searches-2026-study-479717" target="_blank" rel="noopener">searchengineland.com</a></p>
-        <p class="source-item">BrightEdge AI Overview coverage data, February 2026, via DeepMarketing analysis — <a href="https://www.deepmarketing.it/en/blog/zero-click-search-google-ai-sme-2026" target="_blank" rel="noopener">deepmarketing.it</a></p>
-        <p class="source-item">Wellows / LumenGEO, domain authority and brand-mention correlation to AI citation, 2026 — <a href="https://machinerelations.ai/research/ai-search-citation-factors-2026" target="_blank" rel="noopener">machinerelations.ai</a></p>
-        <p class="source-item">Domain overlap study across 22,410 domains, Google AI Overviews vs. LLM citations, 2026 — <a href="https://authoritytech.io/curated/da-score-ai-citations-niche-expert-strategy" target="_blank" rel="noopener">authoritytech.io</a></p>
-        <p class="source-item">Ahrefs / BrightEdge / SeoClarity, AI Overview citation vs. organic ranking position, 2026 — <a href="https://www.leapd.ai/blog/ai-visibility/how-chatgpt-google-ai-overviews-and-perplexity-source-information-in-2026" target="_blank" rel="noopener">leapd.ai</a></p>
-        <p class="source-item">BrightLocal, Local Pack visibility data, 2026 — <a href="https://www.jonalonso.com/the-local-pack-in-2026-how-google-decides-who-shows-up-in-the-3-pack/" target="_blank" rel="noopener">jonalonso.com</a></p>
-        <p class="source-item">Google, "Search I/O 2026" official announcement, May 2026 — <a href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank" rel="noopener">blog.google</a></p>
-        <p class="source-item">Formative Digital, scrape of 1,732 AI local citations across Ontario, May 2026 — <a href="https://formativedigital.com/research/chatgpt-google-maps-local-citations/" target="_blank" rel="noopener">formativedigital.com</a></p>
-        <p class="source-item">Scalemee, Claude local-citation structured-attribute analysis, May 2026 — <a href="https://www.scalemee.com/blog/how-to-get-local-business-on-chatgpt-and-claude" target="_blank" rel="noopener">scalemee.com</a></p>
-        <p class="source-item">G2, "Answer Economy Report," April 2026 (1,076 B2B buyers) and McKinsey, "The New Front Door to the Internet," 2026 — <a href="https://www.getpassionfruit.com/blog/ai-search-statistics-the-numbers-marketers-need-updated-monthly" target="_blank" rel="noopener">getpassionfruit.com</a></p>
+        <p class="source-item">SparkToro / Similarweb, share of U.S. Google searches ending without a click, January to April 2026, as reported by TechWyse, June 11, 2026 &mdash; <a href="https://www.techwyse.com/news/reports-data/google-zero-click-searches-68-percent-2026" target="_blank" rel="noopener">techwyse.com</a></p>
+        <p class="source-item">Ahrefs, "An Analysis of AI Overview Brand Visibility Factors (75K Brands Studied)," May 2025, updated April 2026 &mdash; <a href="https://ahrefs.com/blog/ai-overview-brand-correlation/" target="_blank" rel="noopener">ahrefs.com</a></p>
+        <p class="source-item">Google, "100 things we announced at I/O 2026," May 20, 2026 &mdash; <a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener">blog.google</a></p>
+        <p class="source-item">G2, "In the Answer Economy, Don't Win the Click, Win the Answer," April 15, 2026 (survey of 1,076 B2B software buyers, March 2026) &mdash; <a href="https://company.g2.com/news/g2-research-the-answer-economy" target="_blank" rel="noopener">company.g2.com</a></p>
+        <p class="source-item">Google Business Profile Help, "How to improve your local ranking on Google" &mdash; <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener">support.google.com</a></p>
+        <p class="source-item">Google Search Central, "AI features and your website" &mdash; <a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener">developers.google.com</a></p>
+        <p class="source-item">OpenAI, crawler documentation for OAI-SearchBot, GPTBot, and ChatGPT-User &mdash; <a href="https://developers.openai.com/api/docs/bots" target="_blank" rel="noopener">developers.openai.com</a></p>
+        <p class="source-item">Anthropic, "Does Anthropic crawl data from the web, and how can site owners block the crawlers?" &mdash; <a href="https://support.claude.com/en/articles/8896518" target="_blank" rel="noopener">support.claude.com</a></p>
       </div>
     </div>
   </div>
